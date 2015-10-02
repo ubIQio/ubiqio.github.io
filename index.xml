@@ -80,20 +80,6 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
     </item>
     
     <item>
-      <title>Community</title>
-      <link>http://ubiqio.com/community/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/community/</guid>
-      <description>
-
-&lt;h2 id=&#34;a-community-headline:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;A Community headline&lt;/h2&gt;
-
-&lt;p&gt;Some Content&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Configuration</title>
       <link>http://ubiqio.com/doc/configuration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -138,24 +124,16 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
     </item>
     
     <item>
-      <title>GitHub</title>
-      <link>http://ubiqio.com/doc/github/</link>
+      <title>Community</title>
+      <link>http://ubiqio.com/community/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://ubiqio.com/doc/github/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://pages.github.com&#34;&gt;GitHub Pages&lt;/a&gt; are public web pages for users,
-organizations, and repositories, that are freely hosted on GitHub&amp;rsquo;s
-&lt;code&gt;github.io&lt;/code&gt; domain or on a custom domain name of your choice.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>IDE</title>
-      <link>http://ubiqio.com/doc/ide/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/ide/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/ArdhatIDE.png&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
+      <guid>http://ubiqio.com/community/</guid>
+      <description>
+
+&lt;h2 id=&#34;a-community-headline:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;A Community headline&lt;/h2&gt;
+
+&lt;p&gt;Some Content&lt;/p&gt;
 </description>
     </item>
     
@@ -184,40 +162,34 @@ organizations, and repositories, that are freely hosted on GitHub&amp;rsquo;s
     </item>
     
     <item>
+      <title>GitHub</title>
+      <link>http://ubiqio.com/doc/github/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/github/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://pages.github.com&#34;&gt;GitHub Pages&lt;/a&gt; are public web pages for users,
+organizations, and repositories, that are freely hosted on GitHub&amp;rsquo;s
+&lt;code&gt;github.io&lt;/code&gt; domain or on a custom domain name of your choice.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>IDE</title>
+      <link>http://ubiqio.com/doc/ide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/ide/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/ArdhatIDE.png&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>History</title>
       <link>http://ubiqio.com/doc/history/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://ubiqio.com/doc/history/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>IMU</title>
-      <link>http://ubiqio.com/doc/imu/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/imu/</guid>
-      <description>
-
-&lt;h3 id=&#34;inertial-measurement-unit:53cfe453f14e91a110c18a8c31803e02&#34;&gt;(Inertial Measurement Unit)&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/mpu9250.png&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The IMU is connected to the I2C bus. It is is mounted at &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&amp;rsquo;s  geographic center to avoid offset errors. It consists of an Invensense MPU9250, which provides&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;3-axis accelerometer&lt;/li&gt;
-&lt;li&gt;3-axis gyroscope&lt;/li&gt;
-&lt;li&gt;3-axis magnetometer (compass)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/balbot.png&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;During normal operation, these devices are monitored directly by the Raspberry Pi  but in sleep mode they can be monitored by the Arduino and used to wakeup the Raspberry Pi.&lt;/p&gt;
-
-&lt;p&gt;The MPU9250 is compatible with the popular &lt;a href=&#34;https://github.com/richards-tech/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;&lt;/p&gt;
-</description>
     </item>
     
     <item>
@@ -261,6 +233,50 @@ hazardous. Here’s what to look out for.&lt;/p&gt;
 
 &lt;p&gt;If you come across anything along the way that we haven’t covered, or if you
 know of a tip you think others would find handy, &lt;a href=&#34;http://ubiqio.com/community&#34;&gt;head over to the forum&lt;/a&gt; and we’ll see about including it in this guide.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>IMU</title>
+      <link>http://ubiqio.com/doc/imu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/imu/</guid>
+      <description>
+
+&lt;h3 id=&#34;inertial-measurement-unit:53cfe453f14e91a110c18a8c31803e02&#34;&gt;(Inertial Measurement Unit)&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/mpu9250.png&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The IMU is connected to the I2C bus. It is is mounted at &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&amp;rsquo;s  geographic center to avoid offset errors. It consists of an Invensense MPU9250, which provides&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;3-axis accelerometer&lt;/li&gt;
+&lt;li&gt;3-axis gyroscope&lt;/li&gt;
+&lt;li&gt;3-axis magnetometer (compass)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/balbot.png&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;During normal operation, these devices are monitored directly by the Raspberry Pi  but in sleep mode they can be monitored by the Arduino and used to wakeup the Raspberry Pi.&lt;/p&gt;
+
+&lt;p&gt;The MPU9250 is compatible with the popular &lt;a href=&#34;https://github.com/richards-tech/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Interprocessor Comms</title>
+      <link>http://ubiqio.com/doc/interprocessor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/interprocessor/</guid>
+      <description>
+
+&lt;h2 id=&#34;raspberry-pi-arduino-communication:7b112374fed250db8d9da63a73b64a10&#34;&gt;Raspberry Pi &amp;lt;&amp;gt; Arduino communication&lt;/h2&gt;
+
+&lt;p&gt;The Raspberry Pi and Arduino can communicate over both Serial and I2C. Serial is used for the main inter-processor communication, and the Arduino can be programmed using the Arduino IDE through the Raspberry Pi serial port. DTR emulation is provided using Raspberry Pi GPIO 13.&lt;/p&gt;
+
+&lt;p&gt;When the Raspberry Pi is active, it is the master on the  I2C bus, and is responsible for setup of the Ardhat  I2C peripherals (IMU, Altimeter, RTC).  When the Raspberry Pi is inactive, the Arduino can master the bus and interrogate the peripherals.  For example by watching the RTC, the Raspberry Pi can be started when the next crontab entry is about to come due.&lt;/p&gt;
 </description>
     </item>
     
@@ -376,22 +392,6 @@ know of a tip you think others would find handy, &lt;a href=&#34;http://ubiqio.c
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Interprocessor Comms</title>
-      <link>http://ubiqio.com/doc/interprocessor/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/interprocessor/</guid>
-      <description>
-
-&lt;h2 id=&#34;raspberry-pi-arduino-communication:7b112374fed250db8d9da63a73b64a10&#34;&gt;Raspberry Pi &amp;lt;&amp;gt; Arduino communication&lt;/h2&gt;
-
-&lt;p&gt;The Raspberry Pi and Arduino can communicate over both Serial and I2C. Serial is used for the main inter-processor communication, and the Arduino can be programmed using the Arduino IDE through the Raspberry Pi serial port. DTR emulation is provided using Raspberry Pi GPIO 13.&lt;/p&gt;
-
-&lt;p&gt;When the Raspberry Pi is active, it is the master on the  I2C bus, and is responsible for setup of the Ardhat  I2C peripherals (IMU, Altimeter, RTC).  When the Raspberry Pi is inactive, the Arduino can master the bus and interrogate the peripherals.  For example by watching the RTC, the Raspberry Pi can be started when the next crontab entry is about to come due.&lt;/p&gt;
 </description>
     </item>
     
