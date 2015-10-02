@@ -1,0 +1,382 @@
+<html>
+<head>
+<title>Responsive Image Grids Using CSS</title>
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<style type="text/css">
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url(/images/noise_light-grey.jpg);
+    font-family: 'Helvetica Neue', arial, sans-serif;
+    font-weight: 200;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 4em;
+    font-weight: 400;
+    margin: 0 0 20px;
+    text-align: center;
+    text-shadow: 1px 1px 0 #fff, 2px 2px 0 #bbb;
+}
+hr {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #fff;
+    margin: 25px 0;
+    clear: both;
+}
+.centered {
+    text-align: center;
+}
+.wrapper {
+    width: 100%;
+    padding: 30px 0;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+ul.grid-nav {
+    list-style: none;
+    font-size: .85em;
+    font-weight: 200;
+    text-align: center;
+}
+ul.grid-nav li {
+    display: inline-block;
+}
+ul.grid-nav li a {
+    display: inline-block;
+    background: #999;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+ul.grid-nav li a:hover {
+    background: #7b0;
+}
+ul.grid-nav li a.active {
+    background: #333;
+}
+.grid-container {
+    display: none;
+}
+ 
+ul.rig {
+    list-style: none;
+    font-size: 0px;
+    margin-left: -2.5%;  
+}
+ul.rig li {
+    display: inline-block;
+    padding: 10px;
+    margin: 0 0 2.5% 2.5%;
+    background: #fff;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    font-size: 1rem;
+    vertical-align: top;
+    box-shadow: 0 0 5px #ddd;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+ul.rig li img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 0 10px;
+}
+ul.rig li h3 {
+    margin: 0 0 5px;
+}
+ul.rig li p {
+    font-size: .9em;
+    line-height: 1.5em;
+    color: #999;
+}
+ 
+ul.rig.columns-2 li {
+    width: 47.5%;  
+}
+ 
+ul.rig.columns-3 li {
+    width: 30.83%;  
+}
+ 
+ul.rig.columns-4 li {
+    width: 22.5%;  
+}
+
+@media (max-width: 1199px) {
+    .container {
+        width: auto;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    ul.grid-nav li {
+        display: block;
+        margin: 0 0 5px;
+    }
+    ul.grid-nav li a {
+        display: block;
+    }
+    ul.rig {
+        margin-left: 0;
+    }
+    ul.rig li {
+        width: 100% !important;  
+        margin: 0 0 20px;
+    }
+}
+</style>
+</head>
+
+<body>
+         
+        <div class="wrapper">
+            <div class="container">
+                <div id="three-columns" class="grid-container" style="display:block">
+                    <ul class="rig columns-3">
+                     
+                         <li style="height:400px">
+                         <div style="position:relative;">
+                            <img src="/media/002AB.png" style="width:200; height:200"/>
+                            <span   style=" position:absolute;bottom:-150px;right:0;left:0;
+                                            background: #fff;
+                                            color: #0;
+                                            padding: 10px 20px;
+                                            text-decoration: none;
+                                            border-radius: 4px;
+                                            -moz-border-radius: 4px;
+                                            -webkit-border-radius: 4px;"
+                                            > 
+                            <h2>Ardhat Basic</h3>
+                            <p>Arduino compatible Analog I/O with real-time responsiveness , Multi source Power management and battery backed Real Time clock</p>
+                            <h3> £19.50</h2>
+                            <a href="#"
+                                class="snipcart-add-item " 
+                                data-item-id=""
+                                data-item-name="Ardhat Basic"
+                                data-item-price="19.50"
+                                data-item-weight="15"
+                                data-item-url="/"
+                                style=" display: inline-block;
+                                        background: #7b0;
+                                        color: #fff;
+                                        padding: 10px 20px;
+                                        text-decoration: none;
+                                        border-radius: 4px;
+                                        -moz-border-radius: 4px;
+                                        -webkit-border-radius: 4px;">
+                               Add to Cart 
+                            </a>
+                            </span>
+                            </div>
+                        </li>
+                    
+                         <li style="height:400px">
+                         <div style="position:relative;">
+                            <img src="/media/003AB.png" style="width:200; height:200"/>
+                            <span   style=" position:absolute;bottom:-150px;right:0;left:0;
+                                            background: #fff;
+                                            color: #0;
+                                            padding: 10px 20px;
+                                            text-decoration: none;
+                                            border-radius: 4px;
+                                            -moz-border-radius: 4px;
+                                            -webkit-border-radius: 4px;"
+                                            > 
+                            <h2>Ardhat-I</h3>
+                            <p>All the features of Ardhat Basic plus 10-DOF IMU with 3D gyroscope, accelerometer, magnetometer and altimeter. Oh, and there&#39;s a humidity sensor too!</p>
+                            <h3> £29.50</h2>
+                            <a href="#"
+                                class="snipcart-add-item " 
+                                data-item-id=""
+                                data-item-name="Ardhat-I"
+                                data-item-price="29.50"
+                                data-item-weight="15"
+                                data-item-url="/"
+                                style=" display: inline-block;
+                                        background: #7b0;
+                                        color: #fff;
+                                        padding: 10px 20px;
+                                        text-decoration: none;
+                                        border-radius: 4px;
+                                        -moz-border-radius: 4px;
+                                        -webkit-border-radius: 4px;">
+                               Add to Cart 
+                            </a>
+                            </span>
+                            </div>
+                        </li>
+                    
+                         <li style="height:400px">
+                         <div style="position:relative;">
+                            <img src="/media/ardhatbottom400.png" style="width:200; height:200"/>
+                            <span   style=" position:absolute;bottom:-150px;right:0;left:0;
+                                            background: #fff;
+                                            color: #0;
+                                            padding: 10px 20px;
+                                            text-decoration: none;
+                                            border-radius: 4px;
+                                            -moz-border-radius: 4px;
+                                            -webkit-border-radius: 4px;"
+                                            > 
+                            <h2>Ardhat-W</h3>
+                            <p>Long-range mesh radio networking, compatible with Jeenode and Moteino. Uses sub-GHz frequencies for multi-km range</p>
+                            <h3> £39.50</h2>
+                            <a href="#"
+                                class="snipcart-add-item " 
+                                data-item-id=""
+                                data-item-name="Ardhat-W"
+                                data-item-price="39.50"
+                                data-item-weight="15"
+                                data-item-url="/"
+                                style=" display: inline-block;
+                                        background: #7b0;
+                                        color: #fff;
+                                        padding: 10px 20px;
+                                        text-decoration: none;
+                                        border-radius: 4px;
+                                        -moz-border-radius: 4px;
+                                        -webkit-border-radius: 4px;">
+                               Add to Cart 
+                            </a>
+                            </span>
+                            </div>
+                        </li>
+                    
+                         <li style="height:400px">
+                         <div style="position:relative;">
+                            <img src="/media/005AX.png" style="width:200; height:200"/>
+                            <span   style=" position:absolute;bottom:-150px;right:0;left:0;
+                                            background: #fff;
+                                            color: #0;
+                                            padding: 10px 20px;
+                                            text-decoration: none;
+                                            border-radius: 4px;
+                                            -moz-border-radius: 4px;
+                                            -webkit-border-radius: 4px;"
+                                            > 
+                            <h2>Screw Terminal Adapter</h3>
+                            <p>Allows easy connection of an Ardhat to many popular DC power sources. Especially useful for using Ardhat in an automotive application!</p>
+                            <h3> £1.95</h2>
+                            <a href="#"
+                                class="snipcart-add-item " 
+                                data-item-id=""
+                                data-item-name="Screw Terminal Adapter"
+                                data-item-price="1.95"
+                                data-item-weight="15"
+                                data-item-url="/"
+                                style=" display: inline-block;
+                                        background: #7b0;
+                                        color: #fff;
+                                        padding: 10px 20px;
+                                        text-decoration: none;
+                                        border-radius: 4px;
+                                        -moz-border-radius: 4px;
+                                        -webkit-border-radius: 4px;">
+                               Add to Cart 
+                            </a>
+                            </span>
+                            </div>
+                        </li>
+                    
+                         <li style="height:400px">
+                         <div style="position:relative;">
+                            <img src="/media/005AB.png" style="width:200; height:200"/>
+                            <span   style=" position:absolute;bottom:-150px;right:0;left:0;
+                                            background: #fff;
+                                            color: #0;
+                                            padding: 10px 20px;
+                                            text-decoration: none;
+                                            border-radius: 4px;
+                                            -moz-border-radius: 4px;
+                                            -webkit-border-radius: 4px;"
+                                            > 
+                            <h2>Ardhat Battery</h3>
+                            <p>2200maH high capacity Lithium Polymer battery designed especially for Ardhat, fits snugly between the Arduino compatible headers </p>
+                            <h3> £8.95</h2>
+                            <a href="#"
+                                class="snipcart-add-item " 
+                                data-item-id=""
+                                data-item-name="Ardhat Battery"
+                                data-item-price="8.95"
+                                data-item-weight="15"
+                                data-item-url="/"
+                                style=" display: inline-block;
+                                        background: #7b0;
+                                        color: #fff;
+                                        padding: 10px 20px;
+                                        text-decoration: none;
+                                        border-radius: 4px;
+                                        -moz-border-radius: 4px;
+                                        -webkit-border-radius: 4px;">
+                               Add to Cart 
+                            </a>
+                            </span>
+                            </div>
+                        </li>
+                    
+                         <li style="height:400px">
+                         <div style="position:relative;">
+                            <img src="/media/006AB.png" style="width:200; height:200"/>
+                            <span   style=" position:absolute;bottom:-150px;right:0;left:0;
+                                            background: #fff;
+                                            color: #0;
+                                            padding: 10px 20px;
+                                            text-decoration: none;
+                                            border-radius: 4px;
+                                            -moz-border-radius: 4px;
+                                            -webkit-border-radius: 4px;"
+                                            > 
+                            <h2>Ardhat TopHat</h3>
+                            <p>Laser cut top layer replacement for PiBow case, provides protected access to Arduino compatible headers for projects and educational use</p>
+                            <h3> £4.95</h2>
+                            <a href="#"
+                                class="snipcart-add-item " 
+                                data-item-id=""
+                                data-item-name="Ardhat TopHat"
+                                data-item-price="4.95"
+                                data-item-weight="15"
+                                data-item-url="/"
+                                style=" display: inline-block;
+                                        background: #7b0;
+                                        color: #fff;
+                                        padding: 10px 20px;
+                                        text-decoration: none;
+                                        border-radius: 4px;
+                                        -moz-border-radius: 4px;
+                                        -webkit-border-radius: 4px;">
+                               Add to Cart 
+                            </a>
+                            </span>
+                            </div>
+                        </li>
+                      
+                    </ul>
+                </div>        
+            </div>
+            
+        </div>
+        
+
+
+
+<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fubiqio.com%2ftest%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2fubiqio.com%2ftest%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-linkedin" onClick="return popupShare(this.href);" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fubiqio.com%2ftest%2f&title=Test&summary=Just%20a%20test}&source=ubIQio" target="_blank"><i class="fa fa-linkedin"><span>Share on LinkedIn</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Test&url=http%3a%2f%2fubiqio.com%2ftest%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div> 
+</body>
+
+
+</html>

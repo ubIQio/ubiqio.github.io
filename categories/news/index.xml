@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News on ubIQio</title>
+    <link>http://ubiqio.com/categories/news/</link>
+    <description>Recent content in News on ubIQio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://ubiqio.com/categories/news/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Ardhat Pre-Order</title>
+      <link>http://ubiqio.com/news/Ardhat%20Preorder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/news/Ardhat%20Preorder/</guid>
+      <description>
+
+&lt;p&gt;&lt;img align=&#34;left&#34; src=&#34;http://ubiqio.com/media/fizzy.jpeg&#34;&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;huzzah:1615f1ebc7df664cb753fc189f24a8d9&#34;&gt;Huzzah!&lt;/h5&gt;
+
+&lt;p&gt;After many months of hard work by Ardhat&amp;rsquo;s contributors, we&amp;rsquo;re excited
+to announce that Ardhat is now available to pre-order!&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s 3 flavours to choose from, not including Champagne.&lt;/p&gt;
+
+&lt;p&gt;Head over to the shop and order yours today!!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ubIQio Magazine now on Flipboard!</title>
+      <link>http://ubiqio.com/news/FlipboardMag/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/news/FlipboardMag/</guid>
+      <description>&lt;p&gt;The ubIQio magazine &lt;strong&gt;Maker Planet&lt;/strong&gt; is full of awesome projects and news related to Ardhat.&lt;/p&gt;
+
+&lt;p&gt;Hit the link below  for inspiration!&lt;/p&gt;
+
+&lt;p&gt;&lt;a align=&#34;right&#34; data-flip-widget=&#34;mag&#34; href=&#34;https://flipboard.com/@ubiqio/maker-planet-24lrfupcy&#34;&gt;View my Flipboard Magazine.&lt;/a&gt;
+&lt;script src=&#34;https://cdn.flipboard.com/web/buttons/js/flbuttons.min.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
