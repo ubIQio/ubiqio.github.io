@@ -12,10 +12,6 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/battery/</loc>
-  </url>
-  
-  <url>
     <loc>http://ubiqio.com/doc/configuration/</loc>
   </url>
   
@@ -28,7 +24,7 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/expansion/</loc>
+    <loc>http://ubiqio.com/doc/battery/</loc>
   </url>
   
   <url>
@@ -36,11 +32,15 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/history/</loc>
+    <loc>http://ubiqio.com/doc/ide/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/ide/</loc>
+    <loc>http://ubiqio.com/doc/expansion/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ubiqio.com/doc/history/</loc>
   </url>
   
   <url>
@@ -48,7 +48,7 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/interprocessor/</loc>
+    <loc>http://ubiqio.com/doc/</loc>
   </url>
   
   <url>
@@ -56,11 +56,7 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ubiqio.com/doc/leds/</loc>
+    <loc>http://ubiqio.com/doc/interprocessor/</loc>
   </url>
   
   <url>
@@ -68,7 +64,7 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/progmodel/</loc>
+    <loc>http://ubiqio.com/doc/leds/</loc>
   </url>
   
   <url>
@@ -76,15 +72,19 @@
   </url>
   
   <url>
+    <loc>http://ubiqio.com/doc/progmodel/</loc>
+  </url>
+  
+  <url>
     <loc>http://ubiqio.com/doc/resources/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/rtc/</loc>
+    <loc>http://ubiqio.com/doc/sleep/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/sleep/</loc>
+    <loc>http://ubiqio.com/doc/rtc/</loc>
   </url>
   
   <url>
@@ -96,11 +96,11 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/news/Screwy/</loc>
+    <loc>http://ubiqio.com/news/FlipboardMag/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/news/FlipboardMag/</loc>
+    <loc>http://ubiqio.com/news/Screwy/</loc>
   </url>
   
   <url>
@@ -108,7 +108,7 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/power/</loc>
+    <loc>http://ubiqio.com/doc/quickstart/</loc>
   </url>
   
   <url>
@@ -116,7 +116,7 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/quickstart/</loc>
+    <loc>http://ubiqio.com/doc/power/</loc>
   </url>
   
   <url>
