@@ -37,6 +37,38 @@
     </item>
     
     <item>
+      <title>Battery Operation</title>
+      <link>http://ubiqio.com/doc/battery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/battery/</guid>
+      <description>
+
+&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/ardhatbattside400.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; can use an optional single cell LiPo battery, and a custom 2200mAh battery that fits snugly between the shield headers is available in the &lt;a href=&#34;http://ubiqio.com/shop&#34;&gt;store&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&#34;note warning&#34;&gt;
+  &lt;p&gt;
+Any cell with a standard JST-PH connector that physically fits your application may also be used, but make sure the polarity is correct before attachment.
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;battery-operation:dc4df0175cfa07cfdc9b78ac4adb3b60&#34;&gt;Battery Operation&lt;/h3&gt;
+
+&lt;p&gt;During battery operation, &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; generates the supplies required for the Raspberry Pi and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; peripherals from a boost converter. When the remaining battery capacity reaches 5%, the Raspberry Pi is gracefully shutdown (see below) by a power  management daemon, which is also able to schedule events, for example time-lapse image capture.  When the battery voltage reaches a critical level, all circuits are switched off to avoid damage to the battery due to over-discharging.&lt;/p&gt;
+
+&lt;h3 id=&#34;charge-control-system:dc4df0175cfa07cfdc9b78ac4adb3b60&#34;&gt;Charge Control System&lt;/h3&gt;
+
+&lt;p&gt;When connected to external power, the battery is charged using a constant-current /constant-voltage charge algorithm, with pre-conditioning and charge termination phases.&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; will charge and maintain any single 3.7V LiPo cell attached to the industry standard 2-pin JST-PH connector.&lt;/p&gt;
+
+&lt;p&gt;If external power is disconnected, Ardhat transitions seamlessly to battery operation, and sends a notification to the Raspberry Pi over the inter-processor communication channel.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Configuration</title>
       <link>http://ubiqio.com/doc/configuration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -88,38 +120,6 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
     the forum describing your experience so we can make it better.
   &lt;/p&gt;
 &lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Battery Operation</title>
-      <link>http://ubiqio.com/doc/battery/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/battery/</guid>
-      <description>
-
-&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/ardhatbattside400.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; can use an optional single cell LiPo battery, and a custom 2200mAh battery that fits snugly between the shield headers is available in the &lt;a href=&#34;http://ubiqio.com/shop&#34;&gt;store&lt;/a&gt;&lt;/p&gt;
-
-&lt;div class=&#34;note warning&#34;&gt;
-  &lt;p&gt;
-Any cell with a standard JST-PH connector that physically fits your application may also be used, but make sure the polarity is correct before attachment.
-  &lt;/p&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&#34;battery-operation:dc4df0175cfa07cfdc9b78ac4adb3b60&#34;&gt;Battery Operation&lt;/h3&gt;
-
-&lt;p&gt;During battery operation, &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; generates the supplies required for the Raspberry Pi and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; peripherals from a boost converter. When the remaining battery capacity reaches 5%, the Raspberry Pi is gracefully shutdown (see below) by a power  management daemon, which is also able to schedule events, for example time-lapse image capture.  When the battery voltage reaches a critical level, all circuits are switched off to avoid damage to the battery due to over-discharging.&lt;/p&gt;
-
-&lt;h3 id=&#34;charge-control-system:dc4df0175cfa07cfdc9b78ac4adb3b60&#34;&gt;Charge Control System&lt;/h3&gt;
-
-&lt;p&gt;When connected to external power, the battery is charged using a constant-current /constant-voltage charge algorithm, with pre-conditioning and charge termination phases.&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; will charge and maintain any single 3.7V LiPo cell attached to the industry standard 2-pin JST-PH connector.&lt;/p&gt;
-
-&lt;p&gt;If external power is disconnected, Ardhat transitions seamlessly to battery operation, and sends a notification to the Raspberry Pi over the inter-processor communication channel.&lt;/p&gt;
 </description>
     </item>
     
@@ -287,6 +287,69 @@ know of a tip you think others would find handy, &lt;a href=&#34;http://ubiqio.c
     </item>
     
     <item>
+      <title>LEDs</title>
+      <link>http://ubiqio.com/doc/leds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/leds/</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; supports LEDs in two ways; the first is through an onboard LED that is connected to port D9. Note that this is different from the standard Arduino port, which is D13.&lt;/p&gt;
+
+&lt;p&gt;This was done to avoid conflict with the use of D13 for SPI_SS, and also so that the hardware PWM function can be used, for example for pulsating the LED in sleep mode.&lt;/p&gt;
+
+&lt;p&gt;The other form of support is through the inclusion of a 3.3V to 5V converter on the output of the Pi PWM pin, which can be used to connect WS8212 LED strings directly to Ardhat.&lt;/p&gt;
+
+&lt;p&gt;The 5V rail can provide upto 2.5A which is sufficient to drive 4m light strings in normal use (ie not all illuminated at full brigtness)&lt;/p&gt;
+
+&lt;p&gt;See &lt;a href=&#34;https://github.com/Ardhat/spiralLED&#34;&gt;Spiralled&lt;/a&gt; for an example of this in use.&lt;/p&gt;
+
+&lt;p&gt;&lt;img align=&#34;center&#34; src=&#34;http://ubiqio.com/media/SpiralLED.jpg&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>GitHub</title>
+      <link>http://ubiqio.com/doc/navi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/navi/</guid>
+      <description>&lt;p&gt;The navigation switch is connected to the AVR analog port A7. This port is not present on a standard Arduino, so does not affect normal sketch operation.&lt;/p&gt;
+
+&lt;p&gt;When operated, the switch forms a potential divider from the output of the LiPo charger, as shown in the following table:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;Navigation Switch&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Open&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;5V (= 1024) or LiPo voltage when running on battery&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Left&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;sup&gt;2&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt; open circuit voltage&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Right&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt; open circuit voltage&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Pressed&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;0V&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
       <title>I/O usage</title>
       <link>http://ubiqio.com/doc/io/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -395,69 +458,6 @@ know of a tip you think others would find handy, &lt;a href=&#34;http://ubiqio.c
 &lt;tr&gt;
 &lt;td&gt;&lt;strong&gt;A7&lt;/strong&gt;&lt;/td&gt;
 &lt;td&gt;Power/Nav Switch and LiPo  voltage  monitor&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>LEDs</title>
-      <link>http://ubiqio.com/doc/leds/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/leds/</guid>
-      <description>&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; supports LEDs in two ways; the first is through an onboard LED that is connected to port D9. Note that this is different from the standard Arduino port, which is D13.&lt;/p&gt;
-
-&lt;p&gt;This was done to avoid conflict with the use of D13 for SPI_SS, and also so that the hardware PWM function can be used, for example for pulsating the LED in sleep mode.&lt;/p&gt;
-
-&lt;p&gt;The other form of support is through the inclusion of a 3.3V to 5V converter on the output of the Pi PWM pin, which can be used to connect WS8212 LED strings directly to Ardhat.&lt;/p&gt;
-
-&lt;p&gt;The 5V rail can provide upto 2.5A which is sufficient to drive 4m light strings in normal use (ie not all illuminated at full brigtness)&lt;/p&gt;
-
-&lt;p&gt;See &lt;a href=&#34;https://github.com/Ardhat/spiralLED&#34;&gt;Spiralled&lt;/a&gt; for an example of this in use.&lt;/p&gt;
-
-&lt;p&gt;&lt;img align=&#34;center&#34; src=&#34;http://ubiqio.com/media/SpiralLED.jpg&#34;&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>GitHub</title>
-      <link>http://ubiqio.com/doc/navi/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/navi/</guid>
-      <description>&lt;p&gt;The navigation switch is connected to the AVR analog port A7. This port is not present on a standard Arduino, so does not affect normal sketch operation.&lt;/p&gt;
-
-&lt;p&gt;When operated, the switch forms a potential divider from the output of the LiPo charger, as shown in the following table:&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;strong&gt;Navigation Switch&lt;/strong&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Open&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;5V (= 1024) or LiPo voltage when running on battery&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Left&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;&lt;sup&gt;2&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt; open circuit voltage&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Right&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt; open circuit voltage&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Pressed&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;0V&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
