@@ -9,6 +9,20 @@
     <atom:link href="http://ubiqio.com/doc/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title></title>
+      <link>http://ubiqio.com/doc/README/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/README/</guid>
+      <description>
+
+&lt;h1 id=&#34;docs:04c6e90faac2675aa89e2176d2eec7d8&#34;&gt;docs&lt;/h1&gt;
+
+&lt;p&gt;Markdown docs for Ardhat website&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Battery Operation</title>
       <link>http://ubiqio.com/doc/battery/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -417,109 +431,6 @@ organizations, and repositories, that are freely hosted on GitHub&amp;rsquo;s
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Programming model</title>
-      <link>http://ubiqio.com/doc/progmodel/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/progmodel/</guid>
-      <description>&lt;p&gt;Ardhat employs a future-proof programming environment ready for large distributed node networks.&lt;/p&gt;
-
-&lt;p&gt;In principle, an application can be written in any language that can access the Raspberry Pi hardware (e.g. GPIOs, I2C, network etc). However, in an IoT environment, services are often distributed over a network whose availability cannot be guaranteed. A responsive system cannot  block while  waiting for these services to respond.&lt;/p&gt;
-
-&lt;p&gt;JavaScript’s support of callbacks, and the availability of non-blocking app frameworks such as &lt;a href=&#34;http://nodejs.org/&#34;&gt;node.js&lt;/a&gt;, make it the natural choice for a web enabled system such as Ardhat.&lt;/p&gt;
-
-&lt;p&gt;The Ardhat programming framework uses javascript in a &lt;a href=&#34;http://mean.io/#!/&#34;&gt;MEAN&lt;/a&gt; (MongoDB, Express, Angular, Node) environment, which is a set of technologies that work well together to allow the creation of distributed web-enabled applications.&lt;/p&gt;
-
-&lt;p&gt;The main supported framework for local programming of Ardhat is &lt;a href=&#34;http://nodejs.org/&#34;&gt;Node.js&lt;/a&gt;, which is built on top of Google’s V8 javascript runtime, and is widely extensible through the use of additional libraries.  The addition of Express and AngularJs allow applications to be exposed over the web if required. Some of the key libraries are shown below:&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;strong&gt;Library&lt;/strong&gt;&lt;/th&gt;
-&lt;th&gt;&lt;strong&gt;Function&lt;/strong&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;http://www.mongodb.org/&#34;&gt;Mongodb&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;em&gt;noSQL database , for example to keep track of authenticated users and nodes&lt;/em&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;http://expressjs.com/&#34;&gt;Express&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;em&gt;minimal node.js web application framework that provides a robust set of features for web and mobile applications&lt;/em&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://angularjs.org/&#34;&gt;AngularJS&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;em&gt;front-end application framework toolset for Single Page Applications&lt;/em&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;http://nodejs.org/&#34;&gt;Node.js&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;em&gt;event-driven, non-blocking back-end javascript environment&lt;/em&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://github.com/jgautier/firmata&#34;&gt;firmata&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;em&gt;node.js library to interact with  local Arduino running the firmata protocol (currently limited to serial port only (use of node-i2c TBD))&lt;/em&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://www.npmjs.com/package/pi-gpio&#34;&gt;pi-gpio&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;em&gt;node.js based library to access the GPIO of the Raspberry Pi&lt;/em&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;http://socket.io/&#34;&gt;socket.io&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;em&gt;real-time bidirectional event-based network communication&lt;/em&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;http://mqtt.org/&#34;&gt;mqtt&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;em&gt;machine-to-machine (M2M)/&amp;ldquo;Internet of Things&amp;rdquo; connectivity protocol&lt;/em&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;http://mosquitto.org/&#34;&gt;mosquitto&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;em&gt;message broker for mqtt, supports MQTT,MQTT-SN&lt;/em&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://eclipse.org/ponte/&#34;&gt;ponte&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;em&gt;node.js server bridges MQTT, CoAP&lt;/em&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://github.com/louischatriot/nedb&#34;&gt;NeDB&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;em&gt;lightweight MongoDB-like noSQL database for node.js&lt;/em&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://github.com/patchwork-toolkit/patchwork/wiki/Freeboard&#34;&gt;freeboard&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;em&gt;local dashboard function&lt;/em&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;Application-specific user flows  can be written on top of this framework using accessible app generators such as  &lt;a href=&#34;http://nodered.org/&#34;&gt;Node-Red&lt;/a&gt; or &lt;a href=&#34;http://emoncms.org/&#34;&gt;Emoncms&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div class=&#34;note unreleased&#34;&gt;
-  &lt;h5&gt;IoT System Model &lt;/h5&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The overall system model is as shown below.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/IOTmodel.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The Applications and Services may run on the Pi  (typically written in javascript), or may in part or whole be provided by a cloud service, subscribed to by the Ardhat software, eg &lt;a href=&#34;https://ifttt.com/&#34;&gt;IFTTT&lt;/a&gt;.  Sensor node topology and authentication info is stored in a &lt;a href=&#34;https://github.com/louischatriot/nedb&#34;&gt;NeDB&lt;/a&gt; a MongoDB-like noSQL database.&lt;/p&gt;
-
-&lt;p&gt;The Arduino RealTime code is responsible for monitoring and handling system power, realtime events,  and graceful sleep/shutdown/restart cycles of the Raspberry Pi.  It is also responsible for transmitting application information to the Wireless Sensor Nodes, for example using a simplified MQTT (MQTT-SN) over a link layer protocol such as &lt;a href=&#34;http://www.mike-stirling.com/redmine/projects/tinyhan/&#34;&gt;TinyHAN&lt;/a&gt; on top of  the relevant PHY (eg RFM96).&lt;/p&gt;
 </description>
     </item>
     

@@ -1443,90 +1443,15 @@
         <div class="unit four-fifths">
           <article>
             <div class="improve right hide-on-mobiles">
-              <a href="https://github.com/Ardhat/docs/edit/master/doc/usage/"><i class="fa fa-pencil"></i> &nbsp;Improve this page</a>
+              <a href="https://github.com/Ardhat/docs/edit/master/doc/README/"><i class="fa fa-pencil"></i> &nbsp;Improve this page</a>
             </div>
-            <h1>Basic Usage</h1>
+            <h1></h1>
             <hr />
-            <p>The Ardhat gem makes a <code>Ardhat</code> executable available to you in your Terminal
-window. You can use this command in a number of ways:</p>
+            
 
-<pre><code class="language-bash">$ Ardhat build
-# =&gt; The current folder will be generated into ./_site
+<h1 id="docs:04c6e90faac2675aa89e2176d2eec7d8">docs</h1>
 
-$ Ardhat build --destination &lt;destination&gt;
-# =&gt; The current folder will be generated into &lt;destination&gt;
-
-$ Ardhat build --source &lt;source&gt; --destination &lt;destination&gt;
-# =&gt; The &lt;source&gt; folder will be generated into &lt;destination&gt;
-
-$ Ardhat build --watch
-# =&gt; The current folder will be generated into ./_site,
-#    watched for changes, and regenerated automatically.
-</code></pre>
-
-<div class="note warning">
-  <h5>Destination folders are cleaned on site builds</h5>
-  <p>
-    The contents of <code>&lt;destination&gt;</code> are automatically
-    cleaned, by default, when the site is built. Files or folders that are not
-    created by your site will be removed. Files and folders you wish to retain
-    in <code>&lt;destination&gt;</code> may be specified within the <code>&lt;keep_files&gt;</code>
-    configuration directive.
-  </p>
-  <p>
-    Do not use an important location for <code>&lt;destination&gt;</code>;
-    instead, use it as a staging area and copy files from there to your web server.
-  </p>
-</div>
-
-<p>Ardhat also comes with a built-in development server that will allow you to
-preview what the generated site will look like in your browser locally.</p>
-
-<pre><code class="language-bash">$ Ardhat serve
-# =&gt; A development server will run at http://localhost:4000/
-# Auto-regeneration: enabled. Use `--no-watch` to disable.
-
-$ Ardhat serve --detach
-# =&gt; Same as `Ardhat serve` but will detach from the current terminal.
-#    If you need to kill the server, you can `kill -9 1234` where &quot;1234&quot; is the PID.
-#    If you cannot find the PID, then do, `ps aux | grep Ardhat` and kill the instance. 
-</code></pre>
-
-<p><a href="http://unixhelp.ed.ac.uk/shell/jobz5.html">Read more</a>.</p>
-
-<div class="note info">
-  <h5>Be aware of default behavior</h5>
-  <p>
-    As of version 2.4, the <code>serve</code> command will watch for changes automatically. To disable this, you can use <code>Ardhat serve --no-watch</code>, which preserves the old behavior.
-  </p>
-</div>
-
-<pre><code class="language-bash">$ Ardhat serve --no-watch
-# =&gt; Same as `Ardhat serve` but will not watch for changes.
-</code></pre>
-
-<p>These are just a few of the available <a href="../configuration/">configuration options</a>.
-Many configuration options can either be specified as flags on the command line,
-or alternatively (and more commonly) they can be specified in a <code>_config.yml</code>
-file at the root of the source directory. Ardhat will automatically use the
-options from this file when run. For example, if you place the following lines
-in your <code>_config.yml</code> file:</p>
-
-<pre><code class="language-yaml">source:      _source
-destination: _deploy
-</code></pre>
-
-<p>Then the following two commands will be equivalent:</p>
-
-<pre><code class="language-bash">$ Ardhat build
-$ Ardhat build --source _source --destination _deploy
-</code></pre>
-
-<p>For more about the possible configuration options, see the
-<a href="../configuration/">configuration</a> page.</p>
-
-<p>If you&rsquo;re interested in browsing these docs on-the-go, install the
-<code>Ardhat-docs</code> gem and run <code>Ardhat docs</code> in your terminal.</p>
+<p>Markdown docs for Ardhat website</p>
 
             
 
@@ -1550,13 +1475,13 @@ $ Ardhat build --source _source --destination _deploy
 
 
 
-        <a href="/doc/installation" class="prev">Prev</a>
+        <a href="" class="prev">Prev</a>
 
   </div>
   <div class="right align-left">
 
 
-        <a href="/doc/structure" class="next">Next</a>
+        <a href="" class="next">Next</a>
 
   </div>
 </div>
