@@ -172,11 +172,15 @@
             
            
             
+           
+            
           
         
           
           
           
+           
+            
            
             
            
@@ -234,6 +238,8 @@
           
           
           
+           
+            
            
             
            
@@ -343,6 +349,8 @@
             
            
             
+           
+            
           
         
      </optgroup>
@@ -397,8 +405,8 @@
            
             
            
-              
-                <option value="http://localhost:1313/doc/power/">Power</option>
+            
+           
             
            
             
@@ -409,6 +417,8 @@
           
           
           
+           
+            
            
             
            
@@ -518,13 +528,13 @@
             
            
             
+           
+            
           
         
           
           
           
-           
-            
            
             
            
@@ -575,11 +585,17 @@
             
            
             
+           
+            
+           
+            
           
         
           
           
           
+           
+            
            
             
            
@@ -682,6 +698,8 @@
            
             
            
+            
+           
               
                 <option value="http://localhost:1313/doc/installation/">Installation</option>
             
@@ -698,6 +716,8 @@
           
           
           
+           
+            
            
             
            
@@ -770,6 +790,67 @@
            
             
            
+              
+                <option value="http://localhost:1313/doc/ide/">IDE</option>
+            
+           
+            
+           
+            
+           
+            
+           
+            
+           
+            
+           
+            
+           
+            
+           
+            
+           
+            
+           
+            
+           
+            
+           
+            
+           
+            
+           
+            
+           
+            
+           
+            
+           
+            
+           
+            
+          
+        
+          
+          
+          
+           
+            
+           
+            
+           
+            
+           
+            
+           
+            
+           
+            
+           
+            
+           
+            
+           
             
            
             
@@ -812,6 +893,8 @@
           
           
           
+           
+            
            
             
            
@@ -921,6 +1004,8 @@
             
            
             
+           
+            
           
         
      </optgroup>
@@ -957,8 +1042,10 @@
            
             
            
+            
+           
               
-                <option value="http://localhost:1313/doc/navi/">GitHub</option>
+                <option value="http://localhost:1313/doc/navi/">Navigation Switch</option>
             
            
             
@@ -987,6 +1074,8 @@
           
           
           
+           
+            
            
             
            
@@ -1061,6 +1150,8 @@
            
             
            
+            
+           
               
                 <option value="http://localhost:1313/doc/imu/">IMU</option>
             
@@ -1101,8 +1192,6 @@
           
           
           
-           
-            
            
             
            
@@ -1153,11 +1242,17 @@
             
            
             
+           
+            
+           
+            
           
         
           
           
           
+           
+            
            
             
            
@@ -1219,6 +1314,8 @@
           
           
           
+           
+            
            
             
            
@@ -1309,6 +1406,8 @@
            
             
            
+            
+           
               
                 <option value="http://localhost:1313/doc/resources/">Resources</option>
             
@@ -1342,21 +1441,31 @@
         <div class="unit four-fifths">
           <article>
             <div class="improve right hide-on-mobiles">
-              <a href="https://github.com/Ardhat/docs/edit/master/radio.md "><i class="fa fa-pencil"></i> &nbsp;Improve this page</a>
+              <a href="https://github.com/Ardhat/docs/edit/master/.md "><i class="fa fa-pencil"></i> &nbsp;Improve this page</a>
             </div>
-            <h1>Mesh Radio</h1>
+            <h1>Power</h1>
             <hr />
-            
+            <p><span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> supports external power from a 2.1mm DC power jack, which is the same as is used by Arduinos and many laptop power supplies.</p>
 
-<p><img src="/media/ardhatradio400.jpg" alt="image alt text" /></p>
+<p>The wide input voltage range mean that just about any laptop power supply that physically fits can be used.</p>
 
-<h3 id="long-range-wireless-node:1bd5eb89186ef6bf841b9646b5fe2314">Long-range wireless node</h3>
+<p>Adapters are available to connect to bare wires,for example to use in cars and R<img align="right" style="width:200px;height:200px" src="/media/005AX.jpg">Vs.</p>
 
-<p><span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> includes an optional long-range wireless mesh network transceiver that operates on either 433, 868, or 915 MHz  license-free ISM (Industrial, Scientific and Medical) frequency bands. Using lower frequencies than those of the 2.4 or 5.8 GHz ISM bands enables much better coverage to be achieved especially when the nodes are within buildings.</p>
+<p>This input is protected against polarity reversals and over-current and will accept any voltage from 8-28V. The polarity protected voltage from this connector is presented to the Arduino shield header for use by shields. <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> integrates a 5v@ 3A switching regulator driven by this external supply , for use by peripherals, such as small servo motors or ESCs. Note that the maximum current drawn by shields from the 5V rail must be less than 2.5A.</p>
 
-<p><span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> is available with 2 radio transceiver options. The first is compatible with the Moteino and <a href="http://emoncms.org/">EmonCMS</a> nodes and can thus enable the Raspberry Pi as a gateway or master controller.  The second uses the LoRa RF physical layer, a form of spread spectrum modulation that significantly increases the link budget.</p>
+<p>Power to the Raspberry Pi is switched by setting Ardhat port A3 high, which drives a power MOSFET to turn off 5V power from the Ardhat to Raspberry Pi</p>
 
-<p>With both options, the radio nodes are driven by the Arduino processor, so they can be maintained at very lower power, only waking up the Raspberry Pi when required.</p>
+<div class="note">
+  <p>Note that the Raspberry Pi will not turn off if it is connected to USB power on its micro-USB connector.
+Also note that power from the Raspberry Pi will always be supplied to Ardhat even if this switch is off.</p>
+</div>
+
+<p><span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> also support solar charging using the 0.1&rdquo; header next to the ICSP header.</p>
+
+<div class="note warning">
+  <h5>NB <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> requires a 6V solar panel</h5>
+  <p>Also please ensure the polarity is correct, as this input is not protected against polarity reversal. Ground is the pin nearest the edge of the board</p>
+</div>
 
             
 
@@ -1380,13 +1489,13 @@
 
 
 
-        <a href="/doc/env" class="prev">Prev</a>
+        <a href="/doc/" class="prev">Prev</a>
 
   </div>
   <div class="right align-left">
 
 
-        <a href="/doc/contributing" class="next">Next</a>
+        <a href="/doc/installation" class="next">Next</a>
 
   </div>
 </div>
@@ -1486,6 +1595,9 @@
           
 
             
+          
+
+            
         
       
 
@@ -1493,6 +1605,9 @@
         
         
             
+
+            
+          
 
             
           
@@ -1577,6 +1692,9 @@
         
         
             
+
+            
+          
 
             
           
@@ -1738,6 +1856,9 @@
           
 
             
+          
+
+            
         
       
     </ul>
@@ -1817,10 +1938,10 @@
             
           
 
-              
-            <li class="" >
-            <a href="/doc/power/">Power</a></li>
+            
           
+
+            
           
 
             
@@ -1834,6 +1955,9 @@
         
         
             
+
+            
+          
 
             
           
@@ -1995,6 +2119,9 @@
           
 
             
+          
+
+            
         
       
 
@@ -2002,9 +2129,6 @@
         
         
             
-
-            
-          
 
             
           
@@ -2079,6 +2203,12 @@
           
 
             
+          
+
+            
+          
+
+            
         
       
 
@@ -2086,6 +2216,9 @@
         
         
             
+
+            
+          
 
             
           
@@ -2236,6 +2369,9 @@
             
           
 
+            
+          
+
               
             <li class="" >
             <a href="/doc/installation/">Installation</a></li>
@@ -2259,6 +2395,9 @@
         
         
             
+
+            
+          
 
             
           
@@ -2365,6 +2504,96 @@
             
           
 
+              
+            <li class="" >
+            <a href="/doc/ide/">IDE</a></li>
+          
+          
+
+            
+          
+
+            
+          
+
+            
+          
+
+            
+          
+
+            
+          
+
+            
+          
+
+            
+          
+
+            
+          
+
+            
+          
+
+            
+          
+
+            
+          
+
+            
+          
+
+            
+          
+
+            
+          
+
+            
+          
+
+            
+          
+
+            
+          
+
+            
+        
+      
+
+        
+        
+        
+            
+
+            
+          
+
+            
+          
+
+            
+          
+
+            
+          
+
+            
+          
+
+            
+          
+
+            
+          
+
+            
+          
+
             
           
 
@@ -2427,6 +2656,9 @@
         
         
             
+
+            
+          
 
             
           
@@ -2588,6 +2820,9 @@
           
 
             
+          
+
+            
         
       
     </ul>
@@ -2640,9 +2875,12 @@
             
           
 
+            
+          
+
               
             <li class="" >
-            <a href="/doc/navi/">GitHub</a></li>
+            <a href="/doc/navi/">Navigation Switch</a></li>
           
           
 
@@ -2684,6 +2922,9 @@
         
         
             
+
+            
+          
 
             
           
@@ -2793,6 +3034,9 @@
             
           
 
+            
+          
+
               
             <li class="" >
             <a href="/doc/imu/">IMU</a></li>
@@ -2852,9 +3096,6 @@
         
         
             
-
-            
-          
 
             
           
@@ -2929,6 +3170,12 @@
           
 
             
+          
+
+            
+          
+
+            
         
       
 
@@ -2936,6 +3183,9 @@
         
         
             
+
+            
+          
 
             
           
@@ -2983,9 +3233,7 @@
           
 
               
-            <li class=" 
-            current 
-            " >
+            <li class="" >
             <a href="/doc/radio/">Mesh Radio</a></li>
           
           
@@ -3027,6 +3275,9 @@
         
         
             
+
+            
+          
 
             
           
@@ -3111,6 +3362,9 @@
         
         
             
+
+            
+          
 
             
           
