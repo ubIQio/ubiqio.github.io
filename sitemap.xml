@@ -20,11 +20,11 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/doc/battery/</loc>
+    <loc>http://localhost:1313/doc/configuration/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/doc/configuration/</loc>
+    <loc>http://localhost:1313/doc/battery/</loc>
   </url>
   
   <url>
@@ -32,7 +32,7 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/doc/env/</loc>
+    <loc>http://localhost:1313/doc/history/</loc>
   </url>
   
   <url>
@@ -40,7 +40,7 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/doc/history/</loc>
+    <loc>http://localhost:1313/doc/env/</loc>
   </url>
   
   <url>
@@ -84,6 +84,10 @@
   </url>
   
   <url>
+    <loc>http://localhost:1313/doc/upgrading/</loc>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/doc/sleep/</loc>
   </url>
   
@@ -92,15 +96,11 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/doc/upgrading/</loc>
+    <loc>http://localhost:1313/news/FlipboardMag/</loc>
   </url>
   
   <url>
     <loc>http://localhost:1313/news/Screwy/</loc>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/news/FlipboardMag/</loc>
   </url>
   
   <url>
@@ -124,12 +124,12 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/test/</loc>
+    <loc>http://localhost:1313/shop/</loc>
     <lastmod>2015-09-21T14:29:14+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/shop/</loc>
+    <loc>http://localhost:1313/test/</loc>
     <lastmod>2015-09-21T14:29:14+01:00</lastmod>
   </url>
   
