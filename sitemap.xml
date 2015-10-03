@@ -12,15 +12,15 @@
   </url>
   
   <url>
+    <loc>http://ubiqio.com/community/</loc>
+  </url>
+  
+  <url>
     <loc>http://ubiqio.com/doc/contributing/</loc>
   </url>
   
   <url>
     <loc>http://ubiqio.com/doc/configuration/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ubiqio.com/community/</loc>
   </url>
   
   <url>
@@ -32,15 +32,11 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/github/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ubiqio.com/doc/history/</loc>
-  </url>
-  
-  <url>
     <loc>http://ubiqio.com/doc/expansion/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ubiqio.com/doc/github/</loc>
   </url>
   
   <url>
@@ -48,11 +44,19 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/</loc>
+    <loc>http://ubiqio.com/doc/history/</loc>
   </url>
   
   <url>
     <loc>http://ubiqio.com/doc/interprocessor/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ubiqio.com/doc/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ubiqio.com/doc/io/</loc>
   </url>
   
   <url>
@@ -64,19 +68,15 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/io/</loc>
-  </url>
-  
-  <url>
     <loc>http://ubiqio.com/doc/progmodel/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/resources/</loc>
+    <loc>http://ubiqio.com/doc/radio/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/radio/</loc>
+    <loc>http://ubiqio.com/doc/resources/</loc>
   </url>
   
   <url>
@@ -96,11 +96,11 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/news/FlipboardMag/</loc>
+    <loc>http://ubiqio.com/news/Screwy/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/news/Screwy/</loc>
+    <loc>http://ubiqio.com/news/FlipboardMag/</loc>
   </url>
   
   <url>
@@ -108,11 +108,11 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/overview/</loc>
+    <loc>http://ubiqio.com/doc/power/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/power/</loc>
+    <loc>http://ubiqio.com/doc/overview/</loc>
   </url>
   
   <url>
