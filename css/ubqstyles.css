@@ -207,9 +207,39 @@ pre code {
   margin-right: 0;
 }
 /* ======= Promo Section ======= */
+
+/* control image loading */
+
+.img_wrapper{
+    position: relative;
+
+
+}
+ 
+.img_wrapper img{
+    position: absolute;
+    margin-left: auto;
+    top: -658px;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 40%;
+    opacity: 0;
+    min-width: 300px;
+ 
+    -webkit-transition: opacity 150ms;
+    -moz-transition: opacity 150ms;
+    -ms-transition: opacity 150ms;
+    transition: opacity 250ms;
+}
+
+.img_wrapper.loaded img{
+    opacity: 1;
+}
+
 .promo {
-  background: #fff;
-  background-image: url(/img/hero.jpg);
+  background: #000;
+  background-image: url(/img/hero_high.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: auto 100%;
@@ -242,7 +272,6 @@ pre code {
 .promo .intro {
   font-size: 28px;
   max-width: 680px;
-  margin: 0 auto;
   margin-bottom: 30px;
 }
 .promo .btns .btn {
