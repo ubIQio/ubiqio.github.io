@@ -16,10 +16,6 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/contributing/</loc>
-  </url>
-  
-  <url>
     <loc>http://ubiqio.com/doc/battery/</loc>
   </url>
   
@@ -28,11 +24,11 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/env/</loc>
+    <loc>http://ubiqio.com/doc/contributing/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/expansion/</loc>
+    <loc>http://ubiqio.com/doc/env/</loc>
   </url>
   
   <url>
@@ -40,7 +36,7 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/history/</loc>
+    <loc>http://ubiqio.com/doc/expansion/</loc>
   </url>
   
   <url>
@@ -49,6 +45,10 @@
   
   <url>
     <loc>http://ubiqio.com/doc/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ubiqio.com/doc/history/</loc>
   </url>
   
   <url>
@@ -84,19 +84,19 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/sleep/</loc>
-  </url>
-  
-  <url>
     <loc>http://ubiqio.com/doc/upgrading/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/news/FlipboardMag/</loc>
+    <loc>http://ubiqio.com/doc/sleep/</loc>
   </url>
   
   <url>
     <loc>http://ubiqio.com/news/Ardhat%20Preorder/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ubiqio.com/news/FlipboardMag/</loc>
   </url>
   
   <url>

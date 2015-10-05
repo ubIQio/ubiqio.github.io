@@ -37,41 +37,6 @@
     </item>
     
     <item>
-      <title>Contributing</title>
-      <link>http://ubiqio.com/doc/contributing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/contributing/</guid>
-      <description>
-
-&lt;p&gt;So you&amp;rsquo;ve got an awesome idea to throw into Ardhat. Great! Head over to &lt;a href=&#34;http://ubiqio.com/community&#34;&gt;the forum&lt;/a&gt; and let us know!&lt;/p&gt;
-
-&lt;h2 id=&#34;updating-documentation:cc4aac3e9be04e0413c9520f223b493c&#34;&gt;Updating Documentation&lt;/h2&gt;
-
-&lt;p&gt;We want the Ardhat documentation to be the best it can be. We&amp;rsquo;ve
-open-sourced our docs and we welcome any pull requests if you find it
-lacking.&lt;/p&gt;
-
-&lt;p&gt;You can access the documentation for Ardhat just by clicking the pencil at the top of each document.&lt;/p&gt;
-
-&lt;p&gt;All documentation pull requests should be directed at &lt;code&gt;master&lt;/code&gt;. Pull
-requests directed at another branch will not be accepted.&lt;/p&gt;
-
-&lt;h2 id=&#34;finally:cc4aac3e9be04e0413c9520f223b493c&#34;&gt;Finally&amp;hellip;&lt;/h2&gt;
-
-&lt;div class=&#34;note&#34;&gt;
-  &lt;h5&gt;Let us know what could be better!&lt;/h5&gt;
-  &lt;p&gt;
-    Both using and hacking on Ardhat should be fun, simple, and easy, so if for
-    some reason you find it’s a pain, please &lt;a
-    href=&#34;http://ubiqio.com/community&#34;&gt;flag it&lt;/a&gt; on
-    the forum describing your experience so we can make it better.
-  &lt;/p&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Battery Operation</title>
       <link>http://ubiqio.com/doc/battery/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -124,6 +89,41 @@ Any cell with a standard JST-PH connector that physically fits your application 
     </item>
     
     <item>
+      <title>Contributing</title>
+      <link>http://ubiqio.com/doc/contributing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/contributing/</guid>
+      <description>
+
+&lt;p&gt;So you&amp;rsquo;ve got an awesome idea to throw into Ardhat. Great! Head over to &lt;a href=&#34;http://ubiqio.com/community&#34;&gt;the forum&lt;/a&gt; and let us know!&lt;/p&gt;
+
+&lt;h2 id=&#34;updating-documentation:cc4aac3e9be04e0413c9520f223b493c&#34;&gt;Updating Documentation&lt;/h2&gt;
+
+&lt;p&gt;We want the Ardhat documentation to be the best it can be. We&amp;rsquo;ve
+open-sourced our docs and we welcome any pull requests if you find it
+lacking.&lt;/p&gt;
+
+&lt;p&gt;You can access the documentation for Ardhat just by clicking the pencil at the top of each document.&lt;/p&gt;
+
+&lt;p&gt;All documentation pull requests should be directed at &lt;code&gt;master&lt;/code&gt;. Pull
+requests directed at another branch will not be accepted.&lt;/p&gt;
+
+&lt;h2 id=&#34;finally:cc4aac3e9be04e0413c9520f223b493c&#34;&gt;Finally&amp;hellip;&lt;/h2&gt;
+
+&lt;div class=&#34;note&#34;&gt;
+  &lt;h5&gt;Let us know what could be better!&lt;/h5&gt;
+  &lt;p&gt;
+    Both using and hacking on Ardhat should be fun, simple, and easy, so if for
+    some reason you find it’s a pain, please &lt;a
+    href=&#34;http://ubiqio.com/community&#34;&gt;flag it&lt;/a&gt; on
+    the forum describing your experience so we can make it better.
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Environment Sensor</title>
       <link>http://ubiqio.com/doc/env/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -144,6 +144,24 @@ Any cell with a standard JST-PH connector that physically fits your application 
 &lt;/blockquote&gt;
 
 &lt;p&gt;The BMP180/280 is compatible with the popular &lt;a href=&#34;https://github.com/richards-tech/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>GitHub</title>
+      <link>http://ubiqio.com/doc/github/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/github/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://pages.github.com&#34;&gt;GitHub Pages&lt;/a&gt; are public web pages for users,
+organizations, and repositories, that are freely hosted on GitHub&amp;rsquo;s
+&lt;code&gt;github.io&lt;/code&gt; domain or on a custom domain name of your choice.&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&amp;rsquo;s documentation is kept on github and you can help improve it.&lt;/p&gt;
+
+&lt;p&gt;Just click the pencil link  at the top right of any of the docs to go straight there.&lt;/p&gt;
+
+&lt;p&gt;(You may to clone the repo and generate a pull request).&lt;/p&gt;
 </description>
     </item>
     
@@ -169,33 +187,6 @@ Any cell with a standard JST-PH connector that physically fits your application 
 
 &lt;p&gt;When the Raspberry Pi is active, it is the master on the  I2C bus, and is responsible for setup of the Ardhat  I2C peripherals (IMU, Altimeter, RTC).  When the Raspberry Pi is inactive, the Arduino can master the bus and interrogate the peripherals.  For example by watching the RTC, the Raspberry Pi can be started when the next crontab entry is about to come due.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>GitHub</title>
-      <link>http://ubiqio.com/doc/github/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/github/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://pages.github.com&#34;&gt;GitHub Pages&lt;/a&gt; are public web pages for users,
-organizations, and repositories, that are freely hosted on GitHub&amp;rsquo;s
-&lt;code&gt;github.io&lt;/code&gt; domain or on a custom domain name of your choice.&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&amp;rsquo;s documentation is kept on github and you can help improve it.&lt;/p&gt;
-
-&lt;p&gt;Just click the pencil link  at the top right of any of the docs to go straight there.&lt;/p&gt;
-
-&lt;p&gt;(You may to clone the repo and generate a pull request).&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>History</title>
-      <link>http://ubiqio.com/doc/history/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/history/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -268,6 +259,15 @@ hazardous. Here’s what to look out for.&lt;/p&gt;
 &lt;p&gt;If you come across anything along the way that we haven’t covered, or if you
 know of a tip you think others would find handy, &lt;a href=&#34;http://ubiqio.com/community&#34;&gt;head over to the forum&lt;/a&gt; and we’ll see about including it in this guide.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>History</title>
+      <link>http://ubiqio.com/doc/history/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/history/</guid>
+      <description></description>
     </item>
     
     <item>
