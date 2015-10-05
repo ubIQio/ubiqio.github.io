@@ -37,6 +37,26 @@
     </item>
     
     <item>
+      <title>Configuration</title>
+      <link>http://ubiqio.com/doc/configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/configuration/</guid>
+      <description>
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; has several configuration options detailed here.&lt;/p&gt;
+
+&lt;h4 id=&#34;writing-to-hat-eeprom:a66b35d20295cb764719ac8bd35837ec&#34;&gt;Writing to HAT eeprom&lt;/h4&gt;
+
+&lt;p&gt;By default Ardhat this is enabled. To disable remove the solder jumper bridge from the CFG jumper next to the RTC output pin.&lt;/p&gt;
+
+&lt;h4 id=&#34;arduino-shield-headers:a66b35d20295cb764719ac8bd35837ec&#34;&gt;Arduino shield headers&lt;/h4&gt;
+
+&lt;p&gt;As shipped, Ardhat does not come with headers pre installed.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Contributing</title>
       <link>http://ubiqio.com/doc/contributing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -68,26 +88,6 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
     the forum describing your experience so we can make it better.
   &lt;/p&gt;
 &lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Configuration</title>
-      <link>http://ubiqio.com/doc/configuration/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/configuration/</guid>
-      <description>
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; has several configuration options detailed here.&lt;/p&gt;
-
-&lt;h4 id=&#34;writing-to-hat-eeprom:a66b35d20295cb764719ac8bd35837ec&#34;&gt;Writing to HAT eeprom&lt;/h4&gt;
-
-&lt;p&gt;By default Ardhat this is enabled. To disable remove the solder jumper bridge from the CFG jumper next to the RTC output pin.&lt;/p&gt;
-
-&lt;h4 id=&#34;arduino-shield-headers:a66b35d20295cb764719ac8bd35837ec&#34;&gt;Arduino shield headers&lt;/h4&gt;
-
-&lt;p&gt;As shipped, Ardhat does not come with headers pre installed.&lt;/p&gt;
 </description>
     </item>
     
@@ -148,24 +148,6 @@ Any cell with a standard JST-PH connector that physically fits your application 
     </item>
     
     <item>
-      <title>GitHub</title>
-      <link>http://ubiqio.com/doc/github/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/github/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://pages.github.com&#34;&gt;GitHub Pages&lt;/a&gt; are public web pages for users,
-organizations, and repositories, that are freely hosted on GitHub&amp;rsquo;s
-&lt;code&gt;github.io&lt;/code&gt; domain or on a custom domain name of your choice.&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&amp;rsquo;s documentation is kept on github and you can help improve it.&lt;/p&gt;
-
-&lt;p&gt;Just click the pencil link  at the top right of any of the docs to go straight there.&lt;/p&gt;
-
-&lt;p&gt;(You may to clone the repo and generate a pull request).&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Expansion</title>
       <link>http://ubiqio.com/doc/expansion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -186,6 +168,24 @@ organizations, and repositories, that are freely hosted on GitHub&amp;rsquo;s
 &lt;p&gt;The Raspberry Pi and Arduino can communicate over both Serial and I2C. Serial is used for the main inter-processor communication, and the Arduino can be programmed using the Arduino IDE through the Raspberry Pi serial port. DTR emulation is provided using Raspberry Pi GPIO 13.&lt;/p&gt;
 
 &lt;p&gt;When the Raspberry Pi is active, it is the master on the  I2C bus, and is responsible for setup of the Ardhat  I2C peripherals (IMU, Altimeter, RTC).  When the Raspberry Pi is inactive, the Arduino can master the bus and interrogate the peripherals.  For example by watching the RTC, the Raspberry Pi can be started when the next crontab entry is about to come due.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>GitHub</title>
+      <link>http://ubiqio.com/doc/github/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/github/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://pages.github.com&#34;&gt;GitHub Pages&lt;/a&gt; are public web pages for users,
+organizations, and repositories, that are freely hosted on GitHub&amp;rsquo;s
+&lt;code&gt;github.io&lt;/code&gt; domain or on a custom domain name of your choice.&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&amp;rsquo;s documentation is kept on github and you can help improve it.&lt;/p&gt;
+
+&lt;p&gt;Just click the pencil link  at the top right of any of the docs to go straight there.&lt;/p&gt;
+
+&lt;p&gt;(You may to clone the repo and generate a pull request).&lt;/p&gt;
 </description>
     </item>
     
@@ -223,22 +223,6 @@ organizations, and repositories, that are freely hosted on GitHub&amp;rsquo;s
 &lt;p&gt;During normal operation, these devices are monitored directly by the Raspberry Pi  but in sleep mode they can be monitored by the Arduino and used to wakeup the Raspberry Pi.&lt;/p&gt;
 
 &lt;p&gt;The MPU9250 is compatible with the popular &lt;a href=&#34;https://github.com/richards-tech/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Interprocessor Comms</title>
-      <link>http://ubiqio.com/doc/interprocessor/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/interprocessor/</guid>
-      <description>
-
-&lt;h2 id=&#34;raspberry-pi-arduino-communication:7b112374fed250db8d9da63a73b64a10&#34;&gt;Raspberry Pi &amp;lt;&amp;gt; Arduino communication&lt;/h2&gt;
-
-&lt;p&gt;The Raspberry Pi and Arduino can communicate over both Serial and I2C. Serial is used for the main inter-processor communication, and the Arduino can be programmed using the Arduino IDE through the Raspberry Pi serial port. DTR emulation is provided using Raspberry Pi GPIO 13.&lt;/p&gt;
-
-&lt;p&gt;When the Raspberry Pi is active, it is the master on the  I2C bus, and is responsible for setup of the Ardhat  I2C peripherals (IMU, Altimeter, RTC).  When the Raspberry Pi is inactive, the Arduino can master the bus and interrogate the peripherals.  For example by watching the RTC, the Raspberry Pi can be started when the next crontab entry is about to come due.&lt;/p&gt;
 </description>
     </item>
     
@@ -283,6 +267,22 @@ hazardous. Here’s what to look out for.&lt;/p&gt;
 
 &lt;p&gt;If you come across anything along the way that we haven’t covered, or if you
 know of a tip you think others would find handy, &lt;a href=&#34;http://ubiqio.com/community&#34;&gt;head over to the forum&lt;/a&gt; and we’ll see about including it in this guide.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Interprocessor Comms</title>
+      <link>http://ubiqio.com/doc/interprocessor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/interprocessor/</guid>
+      <description>
+
+&lt;h2 id=&#34;raspberry-pi-arduino-communication:7b112374fed250db8d9da63a73b64a10&#34;&gt;Raspberry Pi &amp;lt;&amp;gt; Arduino communication&lt;/h2&gt;
+
+&lt;p&gt;The Raspberry Pi and Arduino can communicate over both Serial and I2C. Serial is used for the main inter-processor communication, and the Arduino can be programmed using the Arduino IDE through the Raspberry Pi serial port. DTR emulation is provided using Raspberry Pi GPIO 13.&lt;/p&gt;
+
+&lt;p&gt;When the Raspberry Pi is active, it is the master on the  I2C bus, and is responsible for setup of the Ardhat  I2C peripherals (IMU, Altimeter, RTC).  When the Raspberry Pi is inactive, the Arduino can master the bus and interrogate the peripherals.  For example by watching the RTC, the Raspberry Pi can be started when the next crontab entry is about to come due.&lt;/p&gt;
 </description>
     </item>
     
@@ -422,7 +422,7 @@ know of a tip you think others would find handy, &lt;a href=&#34;http://ubiqio.c
     </item>
     
     <item>
-      <title>GitHub</title>
+      <title>Navigation Switch</title>
       <link>http://ubiqio.com/doc/navi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
