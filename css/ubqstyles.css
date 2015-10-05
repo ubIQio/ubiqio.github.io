@@ -226,6 +226,7 @@ pre code {
     width: 40%;
     opacity: 0;
     min-width: 300px;
+    max-width: 383px;
  
     -webkit-transition: opacity 150ms;
     -moz-transition: opacity 150ms;
@@ -233,9 +234,35 @@ pre code {
     transition: opacity 250ms;
 }
 
+
+.img_wrapper .caption { 
+  position: absolute; 
+  width: 283px; 
+  height: 50px; 
+  bottom: 0px; 
+  left: 0px; 
+  color: #ccc; 
+  background: green; 
+  text-align:center; 
+  font-weight:bold; 
+  opacity:0.7; 
+} 
+
+
+
 .img_wrapper.loaded img{
     opacity: 1;
 }
+
+.img_wrapper p{
+vertical-align: bottom;
+ 
+    -webkit-transition: opacity 150ms;
+    -moz-transition: opacity 150ms;
+    -ms-transition: opacity 150ms;
+    transition: opacity 250ms;
+}
+
 
 .promo {
   background: #000;

@@ -72,26 +72,6 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
     </item>
     
     <item>
-      <title>Configuration</title>
-      <link>http://ubiqio.com/doc/configuration/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/configuration/</guid>
-      <description>
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; has several configuration options detailed here.&lt;/p&gt;
-
-&lt;h4 id=&#34;writing-to-hat-eeprom:a66b35d20295cb764719ac8bd35837ec&#34;&gt;Writing to HAT eeprom&lt;/h4&gt;
-
-&lt;p&gt;By default Ardhat this is enabled. To disable remove the solder jumper bridge from the CFG jumper next to the RTC output pin.&lt;/p&gt;
-
-&lt;h4 id=&#34;arduino-shield-headers:a66b35d20295cb764719ac8bd35837ec&#34;&gt;Arduino shield headers&lt;/h4&gt;
-
-&lt;p&gt;As shipped, Ardhat does not come with headers pre installed.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Battery Operation</title>
       <link>http://ubiqio.com/doc/battery/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -120,6 +100,26 @@ Any cell with a standard JST-PH connector that physically fits your application 
 &lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; will charge and maintain any single 3.7V LiPo cell attached to the industry standard 2-pin JST-PH connector.&lt;/p&gt;
 
 &lt;p&gt;If external power is disconnected, Ardhat transitions seamlessly to battery operation, and sends a notification to the Raspberry Pi over the inter-processor communication channel.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Configuration</title>
+      <link>http://ubiqio.com/doc/configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/configuration/</guid>
+      <description>
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; has several configuration options detailed here.&lt;/p&gt;
+
+&lt;h4 id=&#34;writing-to-hat-eeprom:a66b35d20295cb764719ac8bd35837ec&#34;&gt;Writing to HAT eeprom&lt;/h4&gt;
+
+&lt;p&gt;By default Ardhat this is enabled. To disable remove the solder jumper bridge from the CFG jumper next to the RTC output pin.&lt;/p&gt;
+
+&lt;h4 id=&#34;arduino-shield-headers:a66b35d20295cb764719ac8bd35837ec&#34;&gt;Arduino shield headers&lt;/h4&gt;
+
+&lt;p&gt;As shipped, Ardhat does not come with headers pre installed.&lt;/p&gt;
 </description>
     </item>
     

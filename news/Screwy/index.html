@@ -1,7 +1,9 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
 
-<head>
+	<head>
+	    
+
   <meta charset="UTF-8">
   <title>ubIQio</title>
 
@@ -42,47 +44,20 @@
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-   <link rel="stylesheet" href="https://cdn.muut.com/1/moot.css" />
-   <style>.m-custom .nested {margin-left: 1em;}</style>
 
 
-    
-    <style>
-
-      .m-moot.m-collapsed .m-title { font-size: 110% }
-         .moot { font-size: 18px }
-         .m-sidebar { background-color: rgba(143, 116, 116, 0.0470588) }
-         .m-wrap, .m-tablet { max-width: 1020px }
-         .moot .m-moot, .m-create .m-input-wrap, .m-preview { background-color: rgb(250, 250, 250) }
-         .m-reply { padding-bottom: 0.7em }
-         .m-body p, .moot textarea { line-height: 2.1em; padding-bottom: 0.7em }
-         .moot .m-header { background-color: rgb(221, 221, 221) }
-         .moot .m-face { border-radius: 50% }
-         .moot button, .m-button { background-color: rgba(39, 102, 210, 0.862745) }
-         .m-focused .m-input-wrap, .m-focused.m-replyform textarea { border-radius: rgba(39, 102, 210, 0.862745) 0px 0px 0.2em inset }
-         .m-heart.m-has-likes span, .moot .m-button::after, .moot .m-show-help { color: rgba(39, 102, 210, 0.862745) }
-         .moot .m-body, .m-input-body { color: rgb(39, 39, 39); font-family: Lato; font-size: 93%; font-weight: normal; letter-spacing: 0px }
-         .moot .m-title, .moot textarea.m-input-title { color: rgb(89, 77, 77); font-family: Lato; font-size: 125%; letter-spacing: 0px; font-weight: 100 }
-         .moot .m-sidebar .m-h3, .m-pagetitle, .m-navi a { font-family: Lato; font-size: 80%; letter-spacing: 0px; font-weight: normal; text-transform: uppercase }
-         .m-links { font-family: Lato; font-size: 92%; letter-spacing: 0.5px; font-weight: normal }
-
-    </style>
- 
-
-    <link id="snipcart-theme" type="text/css"
-        href="https://cdn.snipcart.com/themes/base/snipcart.min.css"
-        rel="stylesheet">
 
 	          
 
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script type="text/javascript" src="/js/main.js"></script>  
 
-	<script type="text/javascript" src="/js/jquery-1.11.1.min.js" ></script>
-	<script type="text/javascript" src="/js/jquery-migrate-1.2.1.min.js" async></script>    
-	<script type="text/javascript" src="/js/jquery.easing.1.3.js" async></script>   
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js" async></script>    
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" async></script>   
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" async></script>     
-	<script type="text/javascript" src="/js/jquery-scrollTo/jquery.scrollTo.min.js" async></script> 
-	<script type="text/javascript" src="/js/prism/prism.js" async></script>   
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js" async></script> 
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js" async></script>   
 
 
 
@@ -90,12 +65,13 @@
     
  
 
-</head>
 
 
-<body style="padding:0px 0; position:absolute; top:0; bottom:0; left:0; right:0;">
+	</head>
 
-     
+	<body style="padding:0px 0; position:absolute; top:0; bottom:0; left:0; right:0;">
+
+	     
     <div id="header" class="header" >  
         <div class="container">            
             <h1 class="logo pull-left">
@@ -123,18 +99,18 @@
         </div>
     </div>
 
-<section class="news" style="padding-top: 70px, overflow:auto; min-height: 100%; position: relative" >
-  <div class="grid" >
+	<section class="news" style="padding-top: 70px, overflow:auto; min-height: 100%; position: relative" >
+	  <div class="grid" >
 
-   <div class="docs-nav-mobile unit whole show-on-mobiles">
+	   <div class="docs-nav-mobile unit whole show-on-mobiles">
 	<select onchange="if (this.value) window.location.href=this.value">
 		<option value="">Pick a news item…</option>
 		<option value="/news/">All</option>
 		<optgroup label="Recent">
 			  
-			<option value="/news/Ardhat%20Preorder/">Ardhat Pre-Order</option>
-			  
 			<option value="/news/FlipboardMag/">ubIQio Magazine now on Flipboard!</option>
+			  
+			<option value="/news/Ardhat%20Preorder/">Ardhat Pre-Order</option>
 			  
 			<option value="/news/Screwy/">All Screwed Up</option>
 			
@@ -147,9 +123,9 @@
 
 
 
-    <div class="unit four-fifths">
+	    <div class="unit four-fifths">
 
-    
+	    
 <article>
   <h2>
     <a style = "color: inherit" href="/news/Screwy/">
@@ -191,10 +167,10 @@
 </article>
 
 
-    
-    </div>
+	    
+	    </div>
 
-  <div class="unit one-fifth hide-on-mobiles">
+	  <div class="unit one-fifth hide-on-mobiles">
   <aside>
     <ul>
       <li class="{% if page.title == 'News' %}current{% endif %}">
@@ -209,13 +185,13 @@
       
 
       <li class="">
-        <a href="/news/Ardhat%20Preorder/">Ardhat Pre-Order</a>
+        <a href="/news/FlipboardMag/">ubIQio Magazine now on Flipboard!</a>
       </li>
 
       
 
       <li class="">
-        <a href="/news/FlipboardMag/">ubIQio Magazine now on Flipboard!</a>
+        <a href="/news/Ardhat%20Preorder/">Ardhat Pre-Order</a>
       </li>
 
       
@@ -232,12 +208,12 @@
 
 
 
-  <div class="clear"></div>
-</div>
-</section>
+	  <div class="clear"></div>
+	</div>
+	</section>
 
 
-     
+	     
     <div class="footer" style="margin-bottom:-50px; height:50px; text-center;" >
         <div class="foocontainer text-center" style="background-color: #333">
             <small class="copyright">Designed by <a href="http://airvox.it" target="_blank">Airvox </a> - Powered by <a href="https://gohugo.io/" target="_blank">Hugo.</a> </small>
@@ -293,5 +269,5 @@ ga('send', 'pageview');
 
 
 
-</body>
+	</body>
 </html>

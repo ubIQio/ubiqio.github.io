@@ -20,11 +20,11 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/configuration/</loc>
+    <loc>http://ubiqio.com/doc/battery/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/battery/</loc>
+    <loc>http://ubiqio.com/doc/configuration/</loc>
   </url>
   
   <url>
@@ -72,11 +72,11 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/resources/</loc>
+    <loc>http://ubiqio.com/doc/radio/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/radio/</loc>
+    <loc>http://ubiqio.com/doc/resources/</loc>
   </url>
   
   <url>
@@ -84,19 +84,19 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/upgrading/</loc>
-  </url>
-  
-  <url>
     <loc>http://ubiqio.com/doc/sleep/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/news/Ardhat%20Preorder/</loc>
+    <loc>http://ubiqio.com/doc/upgrading/</loc>
   </url>
   
   <url>
     <loc>http://ubiqio.com/news/FlipboardMag/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ubiqio.com/news/Ardhat%20Preorder/</loc>
   </url>
   
   <url>
