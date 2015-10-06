@@ -37,26 +37,6 @@
     </item>
     
     <item>
-      <title>Configuration</title>
-      <link>http://ubiqio.com/doc/configuration/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/configuration/</guid>
-      <description>
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; has several configuration options detailed here.&lt;/p&gt;
-
-&lt;h4 id=&#34;writing-to-hat-eeprom:a66b35d20295cb764719ac8bd35837ec&#34;&gt;Writing to HAT eeprom&lt;/h4&gt;
-
-&lt;p&gt;By default Ardhat this is enabled. To disable remove the solder jumper bridge from the CFG jumper next to the RTC output pin.&lt;/p&gt;
-
-&lt;h4 id=&#34;arduino-shield-headers:a66b35d20295cb764719ac8bd35837ec&#34;&gt;Arduino shield headers&lt;/h4&gt;
-
-&lt;p&gt;As shipped, Ardhat does not come with headers pre installed.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Contributing</title>
       <link>http://ubiqio.com/doc/contributing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -124,26 +104,49 @@ Any cell with a standard JST-PH connector that physically fits your application 
     </item>
     
     <item>
-      <title>Environment Sensor</title>
-      <link>http://ubiqio.com/doc/env/</link>
+      <title>Configuration</title>
+      <link>http://ubiqio.com/doc/configuration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://ubiqio.com/doc/env/</guid>
-      <description>&lt;p&gt;Environmental sensing is performed by a Bosch BME280 integrated sensor&lt;/p&gt;
+      <guid>http://ubiqio.com/doc/configuration/</guid>
+      <description>
 
-&lt;ul&gt;
-&lt;li&gt;humidity sensor&lt;/li&gt;
-&lt;li&gt;barometric pressure sensor&lt;/li&gt;
-&lt;li&gt;temperature sensor&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; has several configuration options detailed here.&lt;/p&gt;
 
-&lt;p&gt;From the Bosch &lt;a href=&#34;http://www.bosch-sensortec.com/de/homepage/products_3/environmental_sensors_1/bme280/bme280_1&#34;&gt;website&lt;/a&gt;&amp;hellip;&lt;/p&gt;
+&lt;h4 id=&#34;writing-to-hat-eeprom:a66b35d20295cb764719ac8bd35837ec&#34;&gt;Writing to HAT eeprom&lt;/h4&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;&amp;ldquo;The humidity sensor features an extremely fast response time which supports performance requirements for emerging applications such as context awareness, and high accuracy over a wide temperature range. The pressure sensor is an absolute barometric pressure sensor with features exceptionally high accuracy and resolution at very low noise. The integrated temperature sensor has been optimized for very low noise and high resolution. It is primarily used for temperature compensation of the pressure and humidity sensors, and can also be used for estimating ambient temperature.&amp;rdquo;&amp;rdquo;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;By default Ardhat this is enabled. To disable remove the solder jumper bridge from the CFG jumper next to the RTC output pin.&lt;/p&gt;
 
-&lt;p&gt;The BMP180/280 is compatible with the popular &lt;a href=&#34;https://github.com/richards-tech/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;arduino-shield-headers:a66b35d20295cb764719ac8bd35837ec&#34;&gt;Arduino shield headers&lt;/h4&gt;
+
+&lt;p&gt;As shipped, Ardhat does not come with headers pre installed.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>History</title>
+      <link>http://ubiqio.com/doc/history/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/history/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GitHub</title>
+      <link>http://ubiqio.com/doc/github/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/github/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://pages.github.com&#34;&gt;GitHub Pages&lt;/a&gt; are public web pages for users,
+organizations, and repositories, that are freely hosted on GitHub&amp;rsquo;s
+&lt;code&gt;github.io&lt;/code&gt; domain or on a custom domain name of your choice.&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&amp;rsquo;s documentation is kept on github and you can help improve it.&lt;/p&gt;
+
+&lt;p&gt;Just click the pencil link  at the top right of any of the docs to go straight there.&lt;/p&gt;
+
+&lt;p&gt;(You may to clone the repo and generate a pull request).&lt;/p&gt;
 </description>
     </item>
     
@@ -172,30 +175,27 @@ Any cell with a standard JST-PH connector that physically fits your application 
     </item>
     
     <item>
-      <title>GitHub</title>
-      <link>http://ubiqio.com/doc/github/</link>
+      <title>Environment Sensor</title>
+      <link>http://ubiqio.com/doc/env/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://ubiqio.com/doc/github/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://pages.github.com&#34;&gt;GitHub Pages&lt;/a&gt; are public web pages for users,
-organizations, and repositories, that are freely hosted on GitHub&amp;rsquo;s
-&lt;code&gt;github.io&lt;/code&gt; domain or on a custom domain name of your choice.&lt;/p&gt;
+      <guid>http://ubiqio.com/doc/env/</guid>
+      <description>&lt;p&gt;Environmental sensing is performed by a Bosch BME280 integrated sensor&lt;/p&gt;
 
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&amp;rsquo;s documentation is kept on github and you can help improve it.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;humidity sensor&lt;/li&gt;
+&lt;li&gt;barometric pressure sensor&lt;/li&gt;
+&lt;li&gt;temperature sensor&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Just click the pencil link  at the top right of any of the docs to go straight there.&lt;/p&gt;
+&lt;p&gt;From the Bosch &lt;a href=&#34;http://www.bosch-sensortec.com/de/homepage/products_3/environmental_sensors_1/bme280/bme280_1&#34;&gt;website&lt;/a&gt;&amp;hellip;&lt;/p&gt;
 
-&lt;p&gt;(You may to clone the repo and generate a pull request).&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;The humidity sensor features an extremely fast response time which supports performance requirements for emerging applications such as context awareness, and high accuracy over a wide temperature range. The pressure sensor is an absolute barometric pressure sensor with features exceptionally high accuracy and resolution at very low noise. The integrated temperature sensor has been optimized for very low noise and high resolution. It is primarily used for temperature compensation of the pressure and humidity sensors, and can also be used for estimating ambient temperature.&amp;rdquo;&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The BMP180/280 is compatible with the popular &lt;a href=&#34;https://github.com/richards-tech/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>History</title>
-      <link>http://ubiqio.com/doc/history/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/history/</guid>
-      <description></description>
     </item>
     
     <item>
