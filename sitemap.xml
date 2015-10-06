@@ -16,11 +16,11 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/contributing/</loc>
+    <loc>http://ubiqio.com/doc/battery/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/battery/</loc>
+    <loc>http://ubiqio.com/doc/contributing/</loc>
   </url>
   
   <url>
@@ -28,11 +28,11 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/history/</loc>
+    <loc>http://ubiqio.com/doc/env/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/github/</loc>
+    <loc>http://ubiqio.com/doc/history/</loc>
   </url>
   
   <url>
@@ -40,7 +40,7 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/env/</loc>
+    <loc>http://ubiqio.com/doc/github/</loc>
   </url>
   
   <url>
@@ -72,10 +72,6 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/radio/</loc>
-  </url>
-  
-  <url>
     <loc>http://ubiqio.com/doc/resources/</loc>
   </url>
   
@@ -84,11 +80,19 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/upgrading/</loc>
+    <loc>http://ubiqio.com/doc/radio/</loc>
   </url>
   
   <url>
     <loc>http://ubiqio.com/doc/sleep/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ubiqio.com/doc/upgrading/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ubiqio.com/news/Screwy/</loc>
   </url>
   
   <url>
@@ -100,10 +104,6 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/news/Screwy/</loc>
-  </url>
-  
-  <url>
     <loc>http://ubiqio.com/doc/installation/</loc>
   </url>
   
@@ -112,11 +112,11 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/overview/</loc>
+    <loc>http://ubiqio.com/doc/quickstart/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/quickstart/</loc>
+    <loc>http://ubiqio.com/doc/overview/</loc>
   </url>
   
   <url>
