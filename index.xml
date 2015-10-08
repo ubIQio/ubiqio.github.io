@@ -37,6 +37,26 @@
     </item>
     
     <item>
+      <title>Configuration</title>
+      <link>http://ubiqio.com/doc/configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/configuration/</guid>
+      <description>
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; has several configuration options detailed here.&lt;/p&gt;
+
+&lt;h4 id=&#34;writing-to-hat-eeprom:a66b35d20295cb764719ac8bd35837ec&#34;&gt;Writing to HAT eeprom&lt;/h4&gt;
+
+&lt;p&gt;By default Ardhat this is enabled. To disable remove the solder jumper bridge from the CFG jumper next to the RTC output pin.&lt;/p&gt;
+
+&lt;h4 id=&#34;arduino-shield-headers:a66b35d20295cb764719ac8bd35837ec&#34;&gt;Arduino shield headers&lt;/h4&gt;
+
+&lt;p&gt;As shipped, Ardhat does not come with headers pre installed.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Contributing</title>
       <link>http://ubiqio.com/doc/contributing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -72,26 +92,6 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
     </item>
     
     <item>
-      <title>Configuration</title>
-      <link>http://ubiqio.com/doc/configuration/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/configuration/</guid>
-      <description>
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; has several configuration options detailed here.&lt;/p&gt;
-
-&lt;h4 id=&#34;writing-to-hat-eeprom:a66b35d20295cb764719ac8bd35837ec&#34;&gt;Writing to HAT eeprom&lt;/h4&gt;
-
-&lt;p&gt;By default Ardhat this is enabled. To disable remove the solder jumper bridge from the CFG jumper next to the RTC output pin.&lt;/p&gt;
-
-&lt;h4 id=&#34;arduino-shield-headers:a66b35d20295cb764719ac8bd35837ec&#34;&gt;Arduino shield headers&lt;/h4&gt;
-
-&lt;p&gt;As shipped, Ardhat does not come with headers pre installed.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Battery Operation</title>
       <link>http://ubiqio.com/doc/battery/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -121,39 +121,6 @@ Any cell with a standard JST-PH connector that physically fits your application 
 
 &lt;p&gt;If external power is disconnected, Ardhat transitions seamlessly to battery operation, and sends a notification to the Raspberry Pi over the inter-processor communication channel.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Environment Sensor</title>
-      <link>http://ubiqio.com/doc/env/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/env/</guid>
-      <description>&lt;p&gt;Environmental sensing is performed by a Bosch BME280 integrated sensor&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;humidity sensor&lt;/li&gt;
-&lt;li&gt;barometric pressure sensor&lt;/li&gt;
-&lt;li&gt;temperature sensor&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;From the Bosch &lt;a href=&#34;http://www.bosch-sensortec.com/de/homepage/products_3/environmental_sensors_1/bme280/bme280_1&#34;&gt;website&lt;/a&gt;&amp;hellip;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&amp;ldquo;The humidity sensor features an extremely fast response time which supports performance requirements for emerging applications such as context awareness, and high accuracy over a wide temperature range. The pressure sensor is an absolute barometric pressure sensor with features exceptionally high accuracy and resolution at very low noise. The integrated temperature sensor has been optimized for very low noise and high resolution. It is primarily used for temperature compensation of the pressure and humidity sensors, and can also be used for estimating ambient temperature.&amp;rdquo;&amp;rdquo;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The BMP180/280 is compatible with the popular &lt;a href=&#34;https://github.com/richards-tech/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>History</title>
-      <link>http://ubiqio.com/doc/history/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/history/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -199,6 +166,39 @@ organizations, and repositories, that are freely hosted on GitHub&amp;rsquo;s
     </item>
     
     <item>
+      <title>Environment Sensor</title>
+      <link>http://ubiqio.com/doc/env/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/env/</guid>
+      <description>&lt;p&gt;Environmental sensing is performed by a Bosch BME280 integrated sensor&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;humidity sensor&lt;/li&gt;
+&lt;li&gt;barometric pressure sensor&lt;/li&gt;
+&lt;li&gt;temperature sensor&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;From the Bosch &lt;a href=&#34;http://www.bosch-sensortec.com/de/homepage/products_3/environmental_sensors_1/bme280/bme280_1&#34;&gt;website&lt;/a&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;The humidity sensor features an extremely fast response time which supports performance requirements for emerging applications such as context awareness, and high accuracy over a wide temperature range. The pressure sensor is an absolute barometric pressure sensor with features exceptionally high accuracy and resolution at very low noise. The integrated temperature sensor has been optimized for very low noise and high resolution. It is primarily used for temperature compensation of the pressure and humidity sensors, and can also be used for estimating ambient temperature.&amp;rdquo;&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The BMP180/280 is compatible with the popular &lt;a href=&#34;https://github.com/richards-tech/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>History</title>
+      <link>http://ubiqio.com/doc/history/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/history/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>IMU</title>
       <link>http://ubiqio.com/doc/imu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -227,46 +227,38 @@ organizations, and repositories, that are freely hosted on GitHub&amp;rsquo;s
     </item>
     
     <item>
-      <title>Welcome</title>
-      <link>http://ubiqio.com/doc/</link>
+      <title>Interprocessor Comms</title>
+      <link>http://ubiqio.com/doc/interprocessor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://ubiqio.com/doc/</guid>
+      <guid>http://ubiqio.com/doc/interprocessor/</guid>
       <description>
 
-&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/ArdhatSunrise400.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;raspberry-pi-arduino-communication:7b112374fed250db8d9da63a73b64a10&#34;&gt;Raspberry Pi &amp;lt;&amp;gt; Arduino communication&lt;/h2&gt;
 
-&lt;p&gt;For makers, educators and experimenters worldwide, the &lt;a href=&#34;http://www.raspberrypi.org/help/what-is-a-raspberry-pi/&#34;&gt;Raspberry Pi&lt;/a&gt; has quickly become the compact computing platform of choice for those eager to create, learn and develop for the expanding universe of connected devices.&lt;/p&gt;
+&lt;p&gt;The Raspberry Pi and Arduino can communicate over both Serial and I2C. Serial is used for the main inter-processor communication, and the Arduino can be programmed using the Arduino IDE through the Raspberry Pi serial port. DTR emulation is provided using Raspberry Pi GPIO 13.&lt;/p&gt;
 
-&lt;p&gt;With analogue sensors and 5V PWM, UI controls and supply monitoring, LiPo and automotive voltage operation, the standard Ardhat is the missing link that connects the Raspberry Pi with the Real World.  If you need more, the Ardhat-I adds a 10-DOF IMU, and Ardhat-W adds a LoRa ISM wireless node with up to 10km range.&lt;/p&gt;
+&lt;p&gt;When the Raspberry Pi is active, it is the master on the  I2C bus, and is responsible for setup of the Ardhat  I2C peripherals (IMU, Altimeter, RTC).  When the Raspberry Pi is inactive, the Arduino can master the bus and interrogate the peripherals.  For example by watching the RTC, the Raspberry Pi can be started when the next crontab entry is about to come due.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>LEDs</title>
+      <link>http://ubiqio.com/doc/leds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/leds/</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; supports LEDs in two ways; the first is through an onboard LED that is connected to port D9. Note that this is different from the standard Arduino port, which is D13.&lt;/p&gt;
 
-&lt;p&gt;This repository is your goto resource for everything Ardhat, from pinouts to language bindings and everything in between.&lt;/p&gt;
+&lt;p&gt;This was done to avoid conflict with the use of D13 for SPI_SS, and also so that the hardware PWM function can be used, for example for pulsating the LED in sleep mode.&lt;/p&gt;
 
-&lt;p&gt;Find an error, or want to add something? See &lt;a href=&#34;http://ubiqio.com/doc/contributing&#34;&gt;this article&lt;/a&gt; on how to contribute for more info.&lt;/p&gt;
+&lt;p&gt;The other form of support is through the inclusion of a 3.3V to 5V converter on the output of the Pi PWM pin, which can be used to connect WS8212 LED strings directly to Ardhat.&lt;/p&gt;
 
-&lt;h2 id=&#34;helpful-hints:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Helpful Hints&lt;/h2&gt;
+&lt;p&gt;The 5V rail can provide upto 2.5A which is sufficient to drive 4m light strings in normal use (ie not all illuminated at full brigtness)&lt;/p&gt;
 
-&lt;p&gt;Throughout this guide there are a number of small-but-handy pieces of
-information that can make using Ardhat easier, more interesting, and less
-hazardous. Here’s what to look out for.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://github.com/Ardhat/spiralLED&#34;&gt;Spiralled&lt;/a&gt; for an example of this in use.&lt;/p&gt;
 
-&lt;div class=&#34;note info&#34;&gt;
-  &lt;h5&gt;Notes are handy pieces of information&lt;/h5&gt;
-  &lt;p&gt;Extra tidbits to help you understand Ardhat.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class=&#34;note&#34;&gt;
-  &lt;h5&gt;ProTips™ help you get more from Ardhat&lt;/h5&gt;
-  &lt;p&gt;These are tips and tricks that will help you be an Ardhat wizard!&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class=&#34;note warning&#34;&gt;
-  &lt;h5&gt;Warnings help you not to blow things up&lt;/h5&gt;
-  &lt;p&gt;Heed these messages if you wish to avoid certain death.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;If you come across anything along the way that we haven’t covered, or if you
-know of a tip you think others would find handy, &lt;a href=&#34;http://ubiqio.com/community&#34;&gt;head over to the forum&lt;/a&gt; and we’ll see about including it in this guide.&lt;/p&gt;
+&lt;p&gt;&lt;img align=&#34;center&#34; src=&#34;http://ubiqio.com/media/SpiralLED.jpg&#34;&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -386,42 +378,6 @@ know of a tip you think others would find handy, &lt;a href=&#34;http://ubiqio.c
     </item>
     
     <item>
-      <title>LEDs</title>
-      <link>http://ubiqio.com/doc/leds/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/leds/</guid>
-      <description>&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; supports LEDs in two ways; the first is through an onboard LED that is connected to port D9. Note that this is different from the standard Arduino port, which is D13.&lt;/p&gt;
-
-&lt;p&gt;This was done to avoid conflict with the use of D13 for SPI_SS, and also so that the hardware PWM function can be used, for example for pulsating the LED in sleep mode.&lt;/p&gt;
-
-&lt;p&gt;The other form of support is through the inclusion of a 3.3V to 5V converter on the output of the Pi PWM pin, which can be used to connect WS8212 LED strings directly to Ardhat.&lt;/p&gt;
-
-&lt;p&gt;The 5V rail can provide upto 2.5A which is sufficient to drive 4m light strings in normal use (ie not all illuminated at full brigtness)&lt;/p&gt;
-
-&lt;p&gt;See &lt;a href=&#34;https://github.com/Ardhat/spiralLED&#34;&gt;Spiralled&lt;/a&gt; for an example of this in use.&lt;/p&gt;
-
-&lt;p&gt;&lt;img align=&#34;center&#34; src=&#34;http://ubiqio.com/media/SpiralLED.jpg&#34;&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Interprocessor Comms</title>
-      <link>http://ubiqio.com/doc/interprocessor/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/interprocessor/</guid>
-      <description>
-
-&lt;h2 id=&#34;raspberry-pi-arduino-communication:7b112374fed250db8d9da63a73b64a10&#34;&gt;Raspberry Pi &amp;lt;&amp;gt; Arduino communication&lt;/h2&gt;
-
-&lt;p&gt;The Raspberry Pi and Arduino can communicate over both Serial and I2C. Serial is used for the main inter-processor communication, and the Arduino can be programmed using the Arduino IDE through the Raspberry Pi serial port. DTR emulation is provided using Raspberry Pi GPIO 13.&lt;/p&gt;
-
-&lt;p&gt;When the Raspberry Pi is active, it is the master on the  I2C bus, and is responsible for setup of the Ardhat  I2C peripherals (IMU, Altimeter, RTC).  When the Raspberry Pi is inactive, the Arduino can master the bus and interrogate the peripherals.  For example by watching the RTC, the Raspberry Pi can be started when the next crontab entry is about to come due.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Navigation Switch</title>
       <link>http://ubiqio.com/doc/navi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -461,6 +417,50 @@ know of a tip you think others would find handy, &lt;a href=&#34;http://ubiqio.c
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Welcome</title>
+      <link>http://ubiqio.com/doc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/</guid>
+      <description>
+
+&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/ArdhatSunrise400.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For makers, educators and experimenters worldwide, the &lt;a href=&#34;http://www.raspberrypi.org/help/what-is-a-raspberry-pi/&#34;&gt;Raspberry Pi&lt;/a&gt; has quickly become the compact computing platform of choice for those eager to create, learn and develop for the expanding universe of connected devices.&lt;/p&gt;
+
+&lt;p&gt;With analogue sensors and 5V PWM, UI controls and supply monitoring, LiPo and automotive voltage operation, the standard Ardhat is the missing link that connects the Raspberry Pi with the Real World.  If you need more, the Ardhat-I adds a 10-DOF IMU, and Ardhat-W adds a LoRa ISM wireless node with up to 10km range.&lt;/p&gt;
+
+&lt;p&gt;This repository is your goto resource for everything Ardhat, from pinouts to language bindings and everything in between.&lt;/p&gt;
+
+&lt;p&gt;Find an error, or want to add something? See &lt;a href=&#34;http://ubiqio.com/doc/contributing&#34;&gt;this article&lt;/a&gt; on how to contribute for more info.&lt;/p&gt;
+
+&lt;h2 id=&#34;helpful-hints:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Helpful Hints&lt;/h2&gt;
+
+&lt;p&gt;Throughout this guide there are a number of small-but-handy pieces of
+information that can make using Ardhat easier, more interesting, and less
+hazardous. Here’s what to look out for.&lt;/p&gt;
+
+&lt;div class=&#34;note info&#34;&gt;
+  &lt;h5&gt;Notes are handy pieces of information&lt;/h5&gt;
+  &lt;p&gt;Extra tidbits to help you understand Ardhat.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;note&#34;&gt;
+  &lt;h5&gt;ProTips™ help you get more from Ardhat&lt;/h5&gt;
+  &lt;p&gt;These are tips and tricks that will help you be an Ardhat wizard!&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;note warning&#34;&gt;
+  &lt;h5&gt;Warnings help you not to blow things up&lt;/h5&gt;
+  &lt;p&gt;Heed these messages if you wish to avoid certain death.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;If you come across anything along the way that we haven’t covered, or if you
+know of a tip you think others would find handy, &lt;a href=&#34;http://ubiqio.com/community&#34;&gt;head over to the forum&lt;/a&gt; and we’ll see about including it in this guide.&lt;/p&gt;
 </description>
     </item>
     
