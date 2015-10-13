@@ -380,7 +380,31 @@ The <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</
                     </div> 
                 </div> 
         </section>
+        <script type="text/javascript">
+            function setSnipcartShippingMethods(address) {
+                if (address.country == "UK") {
+                    Snipcart.execute('config', 'allowed_shipping_methods', ['UK']);
+                }
+                else {
+                    Snipcart.execute('config', 'allowed_shipping_methods', ['EU']);
+                }
+            }
 
+            Snipcart.execute('bind', 'billingaddress.changed', function (address) {
+                if (address.shippingSameAsBilling) {
+                    setSnipcartShippingMethods(address);
+                }
+            });
+
+            Snipcart.execute('bind', 'shippingaddress.changed', function (address) {
+               setSnipcartShippingMethods(address); 
+            });
+
+            Snipcart.execute('bind', 'cart.ready', function (cart) {
+                setSnipcartShippingMethods(cart.order.shippingAddress);
+            });
+        </script>
+        
              
     <div class="footer" style="margin-bottom:-50px; height:50px; text-center;" >
         <div class="foocontainer text-center" style="background-color: #333">
