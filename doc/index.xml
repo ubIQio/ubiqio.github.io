@@ -220,7 +220,7 @@ organizations, and repositories, that are freely hosted on GitHub&amp;rsquo;s
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;GPIO 13&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;GPIO 22&lt;/strong&gt;&lt;/td&gt;
 &lt;td&gt;Arduino ‘Reset’ line – used for programming with serial port&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
