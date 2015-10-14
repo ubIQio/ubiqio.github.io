@@ -383,10 +383,10 @@ The <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</
         <script type="text/javascript">
             function setSnipcartShippingMethods(address) {
                 if (address.country == "UK") {
-                    Snipcart.execute('config', 'allowed_shipping_methods', ['UK']);
+                    Snipcart.execute('config', 'allowed_shipping_methods', ['uk']);
                 }
                 else {
-                    Snipcart.execute('config', 'allowed_shipping_methods', ['EU']);
+                    Snipcart.execute('config', 'allowed_shipping_methods', ['eu']);
                 }
             }
 
@@ -404,7 +404,7 @@ The <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</
                 setSnipcartShippingMethods(cart.order.shippingAddress);
             });
         </script>
-        
+
              
     <div class="footer" style="margin-bottom:-50px; height:50px; text-center;" >
         <div class="foocontainer text-center" style="background-color: #333">
