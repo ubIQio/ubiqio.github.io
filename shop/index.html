@@ -385,7 +385,8 @@ The <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</
                 if (address.country == "GB") {
                     Snipcart.execute('config', 'allowed_shipping_methods', ['uk']);
                 }
-                else if (address.country == "AT" ||
+                else if (
+                         address.country == "AT" ||
                          address.country == "BE" ||
                          address.country == "BG" ||
                          address.country == "HR" ||
@@ -412,7 +413,7 @@ The <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</
                          address.country == "RO" ||
                          address.country == "SE" ||
                          address.country == "SI" ||
-                         address.country == "SK" ||
+                         address.country == "SK"
                          ){
                     Snipcart.execute('config', 'allowed_shipping_methods', ['eu']);
                 }
