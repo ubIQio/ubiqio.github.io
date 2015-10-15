@@ -120,7 +120,7 @@ pre code {
   background: #fff;
 }
 .header.navbar-fixed-top .main-nav .nav .nav-item a:hover {
-   color: #fd0;
+   color: #ffd400;
 }
 
 .header.navbar-fixed-top .logo a {
@@ -149,7 +149,7 @@ pre code {
   text-decoration: none;
 }
 .header .main-nav button {
-  background: #fd0;
+  background: #ffd400;
   color: #fff !important;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -180,7 +180,7 @@ pre code {
   background: none;
 }
 .header .main-nav .nav .nav-item a {
-  color: #fd0;
+  color: #ffd400;
   -webkit-transition: none;
   -moz-transition: none;
   -ms-transition: none;

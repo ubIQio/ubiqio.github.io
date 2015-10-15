@@ -16,7 +16,7 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/contributing/</loc>
+    <loc>http://ubiqio.com/doc/battery/</loc>
   </url>
   
   <url>
@@ -24,7 +24,7 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/battery/</loc>
+    <loc>http://ubiqio.com/doc/contributing/</loc>
   </url>
   
   <url>
@@ -56,11 +56,11 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/leds/</loc>
+    <loc>http://ubiqio.com/doc/io/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/io/</loc>
+    <loc>http://ubiqio.com/doc/leds/</loc>
   </url>
   
   <url>
@@ -72,15 +72,15 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/radio/</loc>
-  </url>
-  
-  <url>
     <loc>http://ubiqio.com/doc/resources/</loc>
   </url>
   
   <url>
     <loc>http://ubiqio.com/doc/rtc/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ubiqio.com/doc/radio/</loc>
   </url>
   
   <url>
