@@ -16,10 +16,6 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/contributing/</loc>
-  </url>
-  
-  <url>
     <loc>http://ubiqio.com/doc/configuration/</loc>
   </url>
   
@@ -33,6 +29,10 @@
   
   <url>
     <loc>http://ubiqio.com/doc/expansion/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ubiqio.com/doc/contributing/</loc>
   </url>
   
   <url>
@@ -64,11 +64,11 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/navi/</loc>
+    <loc>http://ubiqio.com/doc/progmodel/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/progmodel/</loc>
+    <loc>http://ubiqio.com/doc/navi/</loc>
   </url>
   
   <url>
@@ -84,11 +84,11 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/sleep/</loc>
+    <loc>http://ubiqio.com/doc/upgrading/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/upgrading/</loc>
+    <loc>http://ubiqio.com/doc/sleep/</loc>
   </url>
   
   <url>
@@ -108,11 +108,11 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/power/</loc>
+    <loc>http://ubiqio.com/doc/overview/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/overview/</loc>
+    <loc>http://ubiqio.com/doc/power/</loc>
   </url>
   
   <url>
