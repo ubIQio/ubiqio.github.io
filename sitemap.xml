@@ -16,7 +16,7 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/configuration/</loc>
+    <loc>http://ubiqio.com/doc/battery/</loc>
   </url>
   
   <url>
@@ -24,7 +24,7 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/battery/</loc>
+    <loc>http://ubiqio.com/doc/configuration/</loc>
   </url>
   
   <url>
@@ -36,11 +36,11 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/github/</loc>
+    <loc>http://ubiqio.com/doc/history/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/history/</loc>
+    <loc>http://ubiqio.com/doc/github/</loc>
   </url>
   
   <url>
@@ -48,11 +48,11 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/interprocessor/</loc>
+    <loc>http://ubiqio.com/doc/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/</loc>
+    <loc>http://ubiqio.com/doc/interprocessor/</loc>
   </url>
   
   <url>
@@ -60,19 +60,19 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/leds/</loc>
-  </url>
-  
-  <url>
     <loc>http://ubiqio.com/doc/navi/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/progmodel/</loc>
+    <loc>http://ubiqio.com/doc/leds/</loc>
   </url>
   
   <url>
     <loc>http://ubiqio.com/doc/radio/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ubiqio.com/doc/progmodel/</loc>
   </url>
   
   <url>
@@ -108,11 +108,11 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/power/</loc>
+    <loc>http://ubiqio.com/doc/overview/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/overview/</loc>
+    <loc>http://ubiqio.com/doc/power/</loc>
   </url>
   
   <url>
