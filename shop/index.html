@@ -385,8 +385,11 @@ The <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</
                 if (address.country == "GB") {
                     Snipcart.execute('config', 'allowed_shipping_methods', ['uk']);
                 }
-                else {
+                else if (address.country == "AT" || address.country == "BE" ){
                     Snipcart.execute('config', 'allowed_shipping_methods', ['eu']);
+                }
+                else {
+                    Snipcart.execute('config', 'allowed_shipping_methods', ['international']);
                 }
             }
 
