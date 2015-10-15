@@ -385,7 +385,35 @@ The <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</
                 if (address.country == "GB") {
                     Snipcart.execute('config', 'allowed_shipping_methods', ['uk']);
                 }
-                else if (address.country == "AT" || address.country == "BE" ){
+                else if (address.country == "AT" ||
+                         address.country == "BE" ||
+                         address.country == "BG" ||
+                         address.country == "HR" ||
+                         address.country == "CY" ||
+                         address.country == "CZ" ||
+                         address.country == "DE" ||
+                         address.country == "DK" ||
+                         address.country == "EE" ||
+                         address.country == "ES" ||
+                         address.country == "FI" ||
+                         address.country == "FR" ||
+                         address.country == "GR" ||
+                         address.country == "HR" ||
+                         address.country == "HU" ||
+                         address.country == "IE" ||
+                         address.country == "IT" ||
+                         address.country == "LT" ||
+                         address.country == "LU" ||
+                         address.country == "LV" ||
+                         address.country == "MT" ||
+                         address.country == "NL" ||
+                         address.country == "PL" ||
+                         address.country == "PT" ||
+                         address.country == "RO" ||
+                         address.country == "SE" ||
+                         address.country == "SI" ||
+                         address.country == "SK" ||
+                         ){
                     Snipcart.execute('config', 'allowed_shipping_methods', ['eu']);
                 }
                 else {
