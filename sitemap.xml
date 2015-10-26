@@ -16,7 +16,7 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/battery/</loc>
+    <loc>http://ubiqio.com/doc/configuration/</loc>
   </url>
   
   <url>
@@ -24,11 +24,11 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/configuration/</loc>
+    <loc>http://ubiqio.com/doc/battery/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/env/</loc>
+    <loc>http://ubiqio.com/doc/history/</loc>
   </url>
   
   <url>
@@ -36,7 +36,7 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/history/</loc>
+    <loc>http://ubiqio.com/doc/env/</loc>
   </url>
   
   <url>
@@ -48,19 +48,19 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/interprocessor/</loc>
-  </url>
-  
-  <url>
     <loc>http://ubiqio.com/doc/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/io/</loc>
+    <loc>http://ubiqio.com/doc/leds/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/leds/</loc>
+    <loc>http://ubiqio.com/doc/interprocessor/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ubiqio.com/doc/io/</loc>
   </url>
   
   <url>
@@ -96,11 +96,11 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/news/Screwy/</loc>
+    <loc>http://ubiqio.com/news/FlipboardMag/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/news/FlipboardMag/</loc>
+    <loc>http://ubiqio.com/news/Screwy/</loc>
   </url>
   
   <url>
@@ -108,11 +108,11 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/power/</loc>
+    <loc>http://ubiqio.com/doc/overview/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/overview/</loc>
+    <loc>http://ubiqio.com/doc/power/</loc>
   </url>
   
   <url>
@@ -124,12 +124,12 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/shop/</loc>
+    <loc>http://ubiqio.com/test/</loc>
     <lastmod>2015-09-21T14:29:14+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/test/</loc>
+    <loc>http://ubiqio.com/shop/</loc>
     <lastmod>2015-09-21T14:29:14+01:00</lastmod>
   </url>
   
