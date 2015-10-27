@@ -24,10 +24,6 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/configuration/</loc>
-  </url>
-  
-  <url>
     <loc>http://ubiqio.com/doc/env/</loc>
   </url>
   
@@ -44,15 +40,19 @@
   </url>
   
   <url>
+    <loc>http://ubiqio.com/doc/configuration/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ubiqio.com/doc/</loc>
+  </url>
+  
+  <url>
     <loc>http://ubiqio.com/doc/imu/</loc>
   </url>
   
   <url>
     <loc>http://ubiqio.com/doc/interprocessor/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ubiqio.com/doc/</loc>
   </url>
   
   <url>
@@ -88,11 +88,11 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/upgrading/</loc>
+    <loc>http://ubiqio.com/news/Ardhat%20Preorder/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/news/Ardhat%20Preorder/</loc>
+    <loc>http://ubiqio.com/doc/upgrading/</loc>
   </url>
   
   <url>
@@ -112,15 +112,15 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/overview/</loc>
-  </url>
-  
-  <url>
     <loc>http://ubiqio.com/doc/power/</loc>
   </url>
   
   <url>
     <loc>http://ubiqio.com/doc/quickstart/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ubiqio.com/doc/overview/</loc>
   </url>
   
   <url>
