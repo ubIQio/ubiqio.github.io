@@ -376,9 +376,31 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 
 &lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; includes an optional long-range wireless mesh network transceiver that operates on either 433, 868, or 915 MHz  license-free ISM (Industrial, Scientific and Medical) frequency bands. Using lower frequencies than those of the 2.4 or 5.8 GHz ISM bands enables much better coverage to be achieved especially when the nodes are within buildings.&lt;/p&gt;
 
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; is available with 2 radio transceiver options. The first is compatible with the Moteino and &lt;a href=&#34;http://emoncms.org/&#34;&gt;EmonCMS&lt;/a&gt; nodes and can thus enable the Raspberry Pi as a gateway or master controller.  The second uses the LoRa RF physical layer, a form of spread spectrum modulation that significantly increases the link budget.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; is available with 2 radio transceiver options. The first is compatible with the Jeelabs, Moteino and &lt;a href=&#34;http://emoncms.org/&#34;&gt;EmonCMS&lt;/a&gt; nodes and can thus enable the Raspberry Pi as a gateway or master controller.  Ardhat uses the high power verion of the HopeRF module, the RFM68HCW.
+The second uses the LoRa RF physical layer, a form of spread spectrum modulation that significantly increases the available link budget.&lt;/p&gt;
 
 &lt;p&gt;With both options, the radio nodes are driven by the Arduino processor, so they can be maintained at very lower power, only waking up the Raspberry Pi when required.&lt;/p&gt;
+
+&lt;p&gt;The recommended library is the the Radiohead library from Airspayce, as this supports both RFM69 and RFM95 modules. In addition, the radio manager also supports sevaral different types of radio network configuration:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;RHDatagram Addressed, unreliable variable length messages, with optional broadcast facilities.&lt;/li&gt;
+&lt;li&gt;RHReliableDatagram Addressed, reliable, retransmitted, acknowledged variable length messages.&lt;/li&gt;
+&lt;li&gt;RHRouter Multi-hop delivery from source node to destination node via 0 or more intermediate nodes, with manual routing.&lt;/li&gt;
+&lt;li&gt;RHMesh Multi-hop delivery with automatic route discovery and rediscovery.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Great documentation on the library is available &lt;a href=&#34;http://www.airspayce.com/mikem/arduino/RadioHead/index.html&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;You&amp;rsquo;ll need 2 radios of course, preferably 2 &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;s :), but you can also use &lt;a href=&#34;http://www.digitalsmarties.net/products/jeelink&#34;&gt;Jeelink&lt;/a&gt;,  &lt;a href=&#34;http://lowpowerlab.com/moteino/&#34;&gt;Moteino&lt;/a&gt; or &lt;a href=&#34;https://oshpark.com/shared_projects/RIumMBtN&#34;&gt;Teensy&lt;/a&gt; nodes.  Prepare the Ardhat board by attaching the antenna to the board. (The antenna is best left straight but will also work coiled).&lt;/p&gt;
+
+&lt;p&gt;Then install the Radiohead &lt;a href=&#34;https://github.com/Ardhat/Radiohead&#34;&gt;library&lt;/a&gt; into the Arduino library folder, either from the Arduino GUI Library Manager or alternatively from the console using the excellent Platformio code builder, which natively supports both &lt;a href=&#34;http://platformio.org/#!/lib/search?query=radiohead&#34;&gt;Radiohead&lt;/a&gt; and &lt;a href=&#34;http://docs.platformio.org/en/latest/platforms/atmelavr.html#boards&#34;&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&lt;/a&gt; .&lt;/p&gt;
+
+&lt;p&gt;There are a large number of examples provided with the library, but the RF69_client and RF_69_server are a great starting point.&lt;/p&gt;
+
+&lt;p&gt;You&amp;rsquo;ll need to make sure you&amp;rsquo;ve set the frequency correctly, in both sketches, depending on the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; radio module you have.&lt;/p&gt;
+
+&lt;p&gt;Then load up the server Sketch on the &amp;lsquo;gateway&amp;rsquo; &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;, and the client on the node. On the client, you should get replies to sent message with a RSSI (Received Signal Strength Indication).&lt;/p&gt;
 </description>
     </item>
     

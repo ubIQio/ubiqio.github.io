@@ -260,10 +260,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/overview/">Overview</option>
+            
+           
             
            
             
@@ -279,12 +279,12 @@
            
             
            
-            
-           
-            
-           
               
                 <option value="http://ubiqio.com/doc/configuration/">Configuration</option>
+            
+           
+            
+           
             
            
             
@@ -474,12 +474,12 @@
            
             
            
+            
+           
+            
+           
               
                 <option value="http://ubiqio.com/doc/io/">I/O usage</option>
-            
-           
-            
-           
             
            
             
@@ -508,6 +508,16 @@
           
           
           
+           
+            
+           
+            
+           
+            
+           
+            
+           
+            
            
             
            
@@ -550,16 +560,6 @@
             
            
             
-           
-            
-           
-            
-           
-            
-           
-            
-           
-            
           
         
           
@@ -574,10 +574,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/expansion/">Expansion</option>
+            
+           
             
            
             
@@ -667,10 +667,10 @@
            
             
            
-              
-                <option value="http://ubiqio.com/doc/installation/">Installation</option>
             
            
+              
+                <option value="http://ubiqio.com/doc/installation/">Installation</option>
             
            
             
@@ -777,10 +777,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/upgrading/">Upgrading</option>
+            
+           
             
            
             
@@ -797,6 +797,8 @@
           
           
           
+           
+            
            
             
            
@@ -847,8 +849,6 @@
             
            
             
-           
-            
           
         
           
@@ -867,10 +867,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/github/">GitHub</option>
+            
+           
             
            
             
@@ -938,12 +938,12 @@
            
             
            
-            
-           
-            
-           
               
                 <option value="http://ubiqio.com/doc/navi/">Navigation Switch</option>
+            
+           
+            
+           
             
            
             
@@ -1093,10 +1093,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/env/">Environment Sensor</option>
+            
+           
             
            
             
@@ -1207,10 +1207,10 @@
            
             
            
-              
-                <option value="http://ubiqio.com/doc/contributing/">Contributing</option>
             
            
+              
+                <option value="http://ubiqio.com/doc/contributing/">Contributing</option>
             
            
             
@@ -1339,9 +1339,31 @@
 
 <p><span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> includes an optional long-range wireless mesh network transceiver that operates on either 433, 868, or 915 MHz  license-free ISM (Industrial, Scientific and Medical) frequency bands. Using lower frequencies than those of the 2.4 or 5.8 GHz ISM bands enables much better coverage to be achieved especially when the nodes are within buildings.</p>
 
-<p><span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> is available with 2 radio transceiver options. The first is compatible with the Moteino and <a href="http://emoncms.org/">EmonCMS</a> nodes and can thus enable the Raspberry Pi as a gateway or master controller.  The second uses the LoRa RF physical layer, a form of spread spectrum modulation that significantly increases the link budget.</p>
+<p><span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> is available with 2 radio transceiver options. The first is compatible with the Jeelabs, Moteino and <a href="http://emoncms.org/">EmonCMS</a> nodes and can thus enable the Raspberry Pi as a gateway or master controller.  Ardhat uses the high power verion of the HopeRF module, the RFM68HCW.
+The second uses the LoRa RF physical layer, a form of spread spectrum modulation that significantly increases the available link budget.</p>
 
 <p>With both options, the radio nodes are driven by the Arduino processor, so they can be maintained at very lower power, only waking up the Raspberry Pi when required.</p>
+
+<p>The recommended library is the the Radiohead library from Airspayce, as this supports both RFM69 and RFM95 modules. In addition, the radio manager also supports sevaral different types of radio network configuration:</p>
+
+<ul>
+<li>RHDatagram Addressed, unreliable variable length messages, with optional broadcast facilities.</li>
+<li>RHReliableDatagram Addressed, reliable, retransmitted, acknowledged variable length messages.</li>
+<li>RHRouter Multi-hop delivery from source node to destination node via 0 or more intermediate nodes, with manual routing.</li>
+<li>RHMesh Multi-hop delivery with automatic route discovery and rediscovery.</li>
+</ul>
+
+<p>Great documentation on the library is available <a href="http://www.airspayce.com/mikem/arduino/RadioHead/index.html">here</a></p>
+
+<p>You&rsquo;ll need 2 radios of course, preferably 2 <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span>s :), but you can also use <a href="http://www.digitalsmarties.net/products/jeelink">Jeelink</a>,  <a href="http://lowpowerlab.com/moteino/">Moteino</a> or <a href="https://oshpark.com/shared_projects/RIumMBtN">Teensy</a> nodes.  Prepare the Ardhat board by attaching the antenna to the board. (The antenna is best left straight but will also work coiled).</p>
+
+<p>Then install the Radiohead <a href="https://github.com/Ardhat/Radiohead">library</a> into the Arduino library folder, either from the Arduino GUI Library Manager or alternatively from the console using the excellent Platformio code builder, which natively supports both <a href="http://platformio.org/#!/lib/search?query=radiohead">Radiohead</a> and <a href="http://docs.platformio.org/en/latest/platforms/atmelavr.html#boards"><span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span></a> .</p>
+
+<p>There are a large number of examples provided with the library, but the RF69_client and RF_69_server are a great starting point.</p>
+
+<p>You&rsquo;ll need to make sure you&rsquo;ve set the frequency correctly, in both sketches, depending on the <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> radio module you have.</p>
+
+<p>Then load up the server Sketch on the &lsquo;gateway&rsquo; <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span>, and the client on the node. On the client, you should get replies to sent message with a RSSI (Received Signal Strength Indication).</p>
 
               
 
@@ -1623,13 +1645,13 @@
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/overview/">Overview</a></li>
           
+          
+
+            
           
 
             
@@ -1650,16 +1672,16 @@
             
           
 
-            
-          
-
-            
-          
-
               
             <li class="" >
             <a href="/doc/configuration/">Configuration</a></li>
           
+          
+
+            
+          
+
+            
           
 
             
@@ -1937,16 +1959,16 @@
             
           
 
+            
+          
+
+            
+          
+
               
             <li class="" >
             <a href="/doc/io/">I/O usage</a></li>
           
-          
-
-            
-          
-
-            
           
 
             
@@ -1987,6 +2009,21 @@
         
         
             
+
+            
+          
+
+            
+          
+
+            
+          
+
+            
+          
+
+            
+          
 
             
           
@@ -2049,21 +2086,6 @@
           
 
             
-          
-
-            
-          
-
-            
-          
-
-            
-          
-
-            
-          
-
-            
         
       
 
@@ -2084,13 +2106,13 @@
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/expansion/">Expansion</a></li>
           
+          
+
+            
           
 
             
@@ -2221,13 +2243,13 @@
             
           
 
+            
+          
+
               
             <li class="" >
             <a href="/doc/installation/">Installation</a></li>
           
-          
-
-            
           
 
             
@@ -2383,13 +2405,13 @@
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/upgrading/">Upgrading</a></li>
           
+          
+
+            
           
 
             
@@ -2412,6 +2434,9 @@
         
         
             
+
+            
+          
 
             
           
@@ -2486,9 +2511,6 @@
           
 
             
-          
-
-            
         
       
 
@@ -2515,13 +2537,13 @@
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/github/">GitHub</a></li>
           
+          
+
+            
           
 
             
@@ -2619,16 +2641,16 @@
             
           
 
-            
-          
-
-            
-          
-
               
             <li class="" >
             <a href="/doc/navi/">Navigation Switch</a></li>
           
+          
+
+            
+          
+
+            
           
 
             
@@ -2847,13 +2869,13 @@
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/env/">Environment Sensor</a></li>
           
+          
+
+            
           
 
             
@@ -3016,13 +3038,13 @@
             
           
 
+            
+          
+
               
             <li class="" >
             <a href="/doc/contributing/">Contributing</a></li>
           
-          
-
-            
           
 
             
