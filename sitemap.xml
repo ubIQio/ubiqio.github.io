@@ -16,27 +16,11 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/contributing/</loc>
-  </url>
-  
-  <url>
     <loc>http://ubiqio.com/doc/battery/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/env/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ubiqio.com/doc/expansion/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ubiqio.com/doc/github/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ubiqio.com/doc/history/</loc>
+    <loc>http://ubiqio.com/doc/contributing/</loc>
   </url>
   
   <url>
@@ -44,7 +28,19 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/</loc>
+    <loc>http://ubiqio.com/doc/env/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ubiqio.com/doc/history/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ubiqio.com/doc/github/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ubiqio.com/doc/expansion/</loc>
   </url>
   
   <url>
@@ -52,15 +48,19 @@
   </url>
   
   <url>
+    <loc>http://ubiqio.com/doc/</loc>
+  </url>
+  
+  <url>
     <loc>http://ubiqio.com/doc/interprocessor/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/io/</loc>
+    <loc>http://ubiqio.com/doc/leds/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/leds/</loc>
+    <loc>http://ubiqio.com/doc/io/</loc>
   </url>
   
   <url>
@@ -84,6 +84,10 @@
   </url>
   
   <url>
+    <loc>http://ubiqio.com/doc/upgrading/</loc>
+  </url>
+  
+  <url>
     <loc>http://ubiqio.com/doc/sleep/</loc>
   </url>
   
@@ -92,19 +96,15 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/upgrading/</loc>
-  </url>
-  
-  <url>
     <loc>http://ubiqio.com/news/FlipboardMag/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/news/PlatformIO/</loc>
+    <loc>http://ubiqio.com/news/Screwy/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/news/Screwy/</loc>
+    <loc>http://ubiqio.com/news/PlatformIO/</loc>
   </url>
   
   <url>
@@ -116,11 +116,11 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/quickstart/</loc>
+    <loc>http://ubiqio.com/doc/overview/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/overview/</loc>
+    <loc>http://ubiqio.com/doc/quickstart/</loc>
   </url>
   
   <url>
