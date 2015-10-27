@@ -48,11 +48,15 @@
   </url>
   
   <url>
+    <loc>http://ubiqio.com/doc/</loc>
+  </url>
+  
+  <url>
     <loc>http://ubiqio.com/doc/interprocessor/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/</loc>
+    <loc>http://ubiqio.com/doc/leds/</loc>
   </url>
   
   <url>
@@ -68,15 +72,11 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/leds/</loc>
+    <loc>http://ubiqio.com/doc/resources/</loc>
   </url>
   
   <url>
     <loc>http://ubiqio.com/doc/radio/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ubiqio.com/doc/resources/</loc>
   </url>
   
   <url>
@@ -112,11 +112,11 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/overview/</loc>
+    <loc>http://ubiqio.com/doc/power/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/power/</loc>
+    <loc>http://ubiqio.com/doc/overview/</loc>
   </url>
   
   <url>
