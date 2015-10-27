@@ -164,6 +164,8 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;The BMP180/280 is compatible with the popular &lt;a href=&#34;https://github.com/richards-tech/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The Ardhat-I has a BMP180 which has a altimeter and thermometer, but no humidity sensor.&lt;/p&gt;
 </description>
     </item>
     
@@ -456,7 +458,7 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
       <guid>http://ubiqio.com/doc/leds/</guid>
       <description>&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; supports LEDs in two ways; the first is through an onboard LED that is connected to port D9. Note that this is different from the standard Arduino port, which is D13.&lt;/p&gt;
 
-&lt;p&gt;This was done to avoid conflict with the use of D13 for SPI_SS, and also so that the hardware PWM function can be used, for example for pulsating the LED in sleep mode.&lt;/p&gt;
+&lt;p&gt;This was done to avoid conflict with the use of D13 for SPI_SCK, and also so that the hardware PWM function can be used, for example for pulsating the LED in sleep mode.&lt;/p&gt;
 
 &lt;p&gt;The other form of support is through the inclusion of a 3.3V to 5V converter on the output of the Pi PWM pin, which can be used to connect WS8212 LED strings directly to Ardhat.&lt;/p&gt;
 
