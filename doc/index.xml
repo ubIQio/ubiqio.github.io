@@ -149,7 +149,7 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://ubiqio.com/doc/env/</guid>
-      <description>&lt;p&gt;The Ardhat-E provides Environmental Sensing in addition to the basic functions of Arduino compatibility and power management. This is performed by a Bosch BME280 integrated sensor&lt;/p&gt;
+      <description>&lt;p&gt;The Ardhat-E provides Environmental Sensing in addition to the basic functions of Arduino compatibility and power management. This is performed by a Bosch BME280 integrated sensor, which provides&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;humidity sensor&lt;/li&gt;
@@ -164,8 +164,6 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;The BMP180/280 is compatible with the popular &lt;a href=&#34;https://github.com/richards-tech/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Note that the Ardhat-I uses a BMP280 which has an altimeter and thermometer, but no humidity sensor.&lt;/p&gt;
 </description>
     </item>
     
@@ -183,13 +181,13 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 
 &lt;h3 id=&#34;arduino-shield-support:636f077861fb676b2ad14870f3ad09aa&#34;&gt;Arduino Shield Support&lt;/h3&gt;
 
-&lt;p&gt;Ardhat supports all Uno compatible shields. AVR SPI is available on the ICSP header which is used by the majority of shields that require SPI.  The latest R3 features such as IOREF are included.&lt;/p&gt;
+&lt;p&gt;Ardhat supports all Uno compatible shields. AVR SPI is available on the ICSP header which is used by the majority of shields that require SPI.  The latest R3 features such as IOREF are included. For more information see the &lt;a href=&#34;http://ubiqio.com/doc/io/&#34;&gt;IO usage page&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;raspberry-pi-arduino-communication:636f077861fb676b2ad14870f3ad09aa&#34;&gt;Raspberry Pi &amp;lt;&amp;gt; Arduino communication&lt;/h3&gt;
 
-&lt;p&gt;The Raspberry Pi and Arduino can communicate over both Serial and I2C. Serial is used for the main inter-processor communication, and the Arduino can be programmed using the Arduino IDE through the Raspberry Pi serial port. DTR emulation is provided using Raspberry Pi GPIO 13.&lt;/p&gt;
+&lt;p&gt;The Raspberry Pi and Arduino can communicate over both Serial and I2C. Serial is used for the main inter-processor communication, and the Arduino can be programmed using the Arduino IDE through the Raspberry Pi serial port. DTR emulation is provided using Raspberry Pi GPIO 22.&lt;/p&gt;
 
-&lt;p&gt;When the Raspberry Pi is active, it is the master on the  I2C bus, and is responsible for setup of the Ardhat  I2C peripherals (IMU, Altimeter, RTC).  When the Raspberry Pi is inactive, the Arduino can master the bus and interrogate the peripherals.  For example by watching the RTC, the Raspberry Pi can be started when the next crontab entry is about to come due.&lt;/p&gt;
+&lt;p&gt;When the Raspberry Pi is active, it is the master on the  I2C bus, and is responsible for setup of the Ardhat  I2C peripherals (e.g.IMU, Altimeter, RTC etc.).  When the Raspberry Pi is inactive, the Arduino can master the bus and interrogate the peripherals.  For example by watching the RTC, the Raspberry Pi can be started when the next crontab entry is about to come due.&lt;/p&gt;
 </description>
     </item>
     
@@ -336,12 +334,12 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 
 &lt;tr&gt;
 &lt;td&gt;&lt;strong&gt;A4&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;I2C SDA to Raspberry Pi&lt;/td&gt;
+&lt;td&gt;I2C SDA to Raspberry Pi and Peripherals&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
 &lt;td&gt;&lt;strong&gt;A5&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;I2C SCL to Raspberry Pi&lt;/td&gt;
+&lt;td&gt;I2C SCL to Raspberry Pi and Peripherals&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
@@ -399,7 +397,7 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 
 &lt;tr&gt;
 &lt;td&gt;&lt;strong&gt;RTC Clock Out&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;PCF8643 RTC can be programmed to generate a Clock O/P on the test point next to Pi GPIO26&lt;/td&gt;
+&lt;td&gt;PCF8653 RTC can be programmed to generate a Clock O/P on the test point next to Pi GPIO26&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;

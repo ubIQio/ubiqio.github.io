@@ -258,10 +258,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/overview/">Overview</option>
+            
+           
             
            
             
@@ -372,10 +372,10 @@
            
             
            
-              
-                <option value="http://ubiqio.com/doc/power/">Power</option>
             
            
+              
+                <option value="http://ubiqio.com/doc/power/">Power</option>
             
            
             
@@ -384,6 +384,10 @@
           
           
           
+           
+            
+           
+            
            
             
            
@@ -430,17 +434,11 @@
             
            
             
-           
-            
-           
-            
           
         
           
           
           
-           
-            
            
             
            
@@ -489,11 +487,15 @@
             
            
             
+           
+            
           
         
           
           
           
+           
+            
            
             
            
@@ -542,8 +544,6 @@
             
            
             
-           
-            
           
         
           
@@ -558,14 +558,14 @@
            
             
            
-            
-           
-            
-           
-            
-           
               
                 <option value="http://ubiqio.com/doc/expansion/">Expansion</option>
+            
+           
+            
+           
+            
+           
             
            
             
@@ -755,10 +755,10 @@
            
             
            
-              
-                <option value="http://ubiqio.com/doc/upgrading/">Upgrading</option>
             
            
+              
+                <option value="http://ubiqio.com/doc/upgrading/">Upgrading</option>
             
            
             
@@ -810,10 +810,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/sleep/">Sleep Management</option>
+            
+           
             
            
             
@@ -912,10 +912,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/navi/">Navigation Switch</option>
+            
+           
             
            
             
@@ -1061,10 +1061,10 @@
            
             
            
-              
-                <option value="http://ubiqio.com/doc/env/">Environment Sensor</option>
             
            
+              
+                <option value="http://ubiqio.com/doc/env/">Environment Sensor</option>
             
            
             
@@ -1169,10 +1169,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/contributing/">Contributing</option>
+            
+           
             
            
             
@@ -1297,7 +1297,7 @@
 
 <p>This input is protected against polarity reversals and over-current and will accept any voltage from 8-28V. The polarity protected voltage from this connector is presented to the Arduino shield header for use by shields. <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> integrates a 5v@ 3A switching regulator driven by this external supply , for use by peripherals, such as small servo motors or ESCs. Note that the maximum current drawn by shields from the 5V rail must be less than 2.5A.</p>
 
-<p>Power to the Raspberry Pi is switched by setting Ardhat port A3 high, which drives a power MOSFET to turn off 5V power from the Ardhat to Raspberry Pi</p>
+<p>5V power to the Raspberry Pi is switched off by setting <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> pin A3 high, which drives a power MOSFET to turn off 5V power to Raspberry Pi, or compatible.</p>
 
 <div class="note">
   <p>Note that the Raspberry Pi will not turn off if it is connected to USB power on its micro-USB connector.
@@ -1588,13 +1588,13 @@ Also note that power from the Raspberry Pi will always be supplied to Ardhat eve
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/overview/">Overview</a></li>
           
+          
+
+            
           
 
             
@@ -1755,15 +1755,15 @@ Also note that power from the Raspberry Pi will always be supplied to Ardhat eve
             
           
 
+            
+          
+
               
             <li class=" 
             current 
             " >
             <a href="/doc/power/">Power</a></li>
           
-          
-
-            
           
 
             
@@ -1774,6 +1774,12 @@ Also note that power from the Raspberry Pi will always be supplied to Ardhat eve
         
         
             
+
+            
+          
+
+            
+          
 
             
           
@@ -1842,12 +1848,6 @@ Also note that power from the Raspberry Pi will always be supplied to Ardhat eve
           
 
             
-          
-
-            
-          
-
-            
         
       
 
@@ -1855,9 +1855,6 @@ Also note that power from the Raspberry Pi will always be supplied to Ardhat eve
         
         
             
-
-            
-          
 
             
           
@@ -1929,6 +1926,9 @@ Also note that power from the Raspberry Pi will always be supplied to Ardhat eve
           
 
             
+          
+
+            
         
       
 
@@ -1936,6 +1936,9 @@ Also note that power from the Raspberry Pi will always be supplied to Ardhat eve
         
         
             
+
+            
+          
 
             
           
@@ -2007,9 +2010,6 @@ Also note that power from the Raspberry Pi will always be supplied to Ardhat eve
           
 
             
-          
-
-            
         
       
 
@@ -2030,19 +2030,19 @@ Also note that power from the Raspberry Pi will always be supplied to Ardhat eve
             
           
 
-            
-          
-
-            
-          
-
-            
-          
-
               
             <li class="" >
             <a href="/doc/expansion/">Expansion</a></li>
           
+          
+
+            
+          
+
+            
+          
+
+            
           
 
             
@@ -2320,13 +2320,13 @@ Also note that power from the Raspberry Pi will always be supplied to Ardhat eve
             
           
 
+            
+          
+
               
             <li class="" >
             <a href="/doc/upgrading/">Upgrading</a></li>
           
-          
-
-            
           
 
             
@@ -2401,13 +2401,13 @@ Also note that power from the Raspberry Pi will always be supplied to Ardhat eve
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/sleep/">Sleep Management</a></li>
           
+          
+
+            
           
 
             
@@ -2550,13 +2550,13 @@ Also note that power from the Raspberry Pi will always be supplied to Ardhat eve
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/navi/">Navigation Switch</a></li>
           
+          
+
+            
           
 
             
@@ -2769,13 +2769,13 @@ Also note that power from the Raspberry Pi will always be supplied to Ardhat eve
             
           
 
+            
+          
+
               
             <li class="" >
             <a href="/doc/env/">Environment Sensor</a></li>
           
-          
-
-            
           
 
             
@@ -2927,13 +2927,13 @@ Also note that power from the Raspberry Pi will always be supplied to Ardhat eve
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/contributing/">Contributing</a></li>
           
+          
+
+            
           
 
             
