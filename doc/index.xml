@@ -149,7 +149,7 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://ubiqio.com/doc/env/</guid>
-      <description>&lt;p&gt;Environmental sensing is performed by a Bosch BME280 integrated sensor&lt;/p&gt;
+      <description>&lt;p&gt;The Ardhat-E provides Environmental Sensing in addition to the basic functions of Ardiuno compatitibility and power management. This is performed by a Bosch BME280 integrated sensor&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;humidity sensor&lt;/li&gt;
@@ -165,7 +165,7 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 
 &lt;p&gt;The BMP180/280 is compatible with the popular &lt;a href=&#34;https://github.com/richards-tech/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;The Ardhat-I has a BMP180 which has a altimeter and thermometer, but no humidity sensor.&lt;/p&gt;
+&lt;p&gt;Note that the Ardhat-I uses a BMP180 which has an altimeter and thermometer, but no humidity sensor.&lt;/p&gt;
 </description>
     </item>
     
