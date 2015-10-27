@@ -72,38 +72,6 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
     </item>
     
     <item>
-      <title>Battery Operation</title>
-      <link>http://ubiqio.com/doc/battery/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/battery/</guid>
-      <description>
-
-&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/ardhatbattside400.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; can use an optional single cell LiPo battery, and a custom 2200mAh battery that fits snugly between the shield headers is available in the &lt;a href=&#34;http://ubiqio.com/shop&#34;&gt;store&lt;/a&gt;&lt;/p&gt;
-
-&lt;div class=&#34;note warning&#34;&gt;
-  &lt;p&gt;
-Any cell with a standard JST-PH connector that physically fits your application may also be used, but make sure the polarity is correct before attachment.
-  &lt;/p&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&#34;battery-operation:dc4df0175cfa07cfdc9b78ac4adb3b60&#34;&gt;Battery Operation&lt;/h3&gt;
-
-&lt;p&gt;During battery operation, &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; generates the supplies required for the Raspberry Pi and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; peripherals from a boost converter. When the remaining battery capacity reaches 5%, the Raspberry Pi is gracefully shutdown (see below) by a power  management daemon, which is also able to schedule events, for example time-lapse image capture.  When the battery voltage reaches a critical level, all circuits are switched off to avoid damage to the battery due to over-discharging.&lt;/p&gt;
-
-&lt;h3 id=&#34;charge-control-system:dc4df0175cfa07cfdc9b78ac4adb3b60&#34;&gt;Charge Control System&lt;/h3&gt;
-
-&lt;p&gt;When connected to external power, the battery is charged using a constant-current /constant-voltage charge algorithm, with pre-conditioning and charge termination phases.&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; will charge and maintain any single 3.7V LiPo cell attached to the industry standard 2-pin JST-PH connector.&lt;/p&gt;
-
-&lt;p&gt;If external power is disconnected, Ardhat transitions seamlessly to battery operation, and sends a notification to the Raspberry Pi over the inter-processor communication channel.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Configuration</title>
       <link>http://ubiqio.com/doc/configuration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -158,6 +126,38 @@ Any cell with a standard JST-PH connector that physically fits your application 
     </item>
     
     <item>
+      <title>Battery Operation</title>
+      <link>http://ubiqio.com/doc/battery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/battery/</guid>
+      <description>
+
+&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/ardhatbattside400.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; can use an optional single cell LiPo battery, and a custom 2200mAh battery that fits snugly between the shield headers is available in the &lt;a href=&#34;http://ubiqio.com/shop&#34;&gt;store&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&#34;note warning&#34;&gt;
+  &lt;p&gt;
+Any cell with a standard JST-PH connector that physically fits your application may also be used, but make sure the polarity is correct before attachment.
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;battery-operation:dc4df0175cfa07cfdc9b78ac4adb3b60&#34;&gt;Battery Operation&lt;/h3&gt;
+
+&lt;p&gt;During battery operation, &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; generates the supplies required for the Raspberry Pi and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; peripherals from a boost converter. When the remaining battery capacity reaches 5%, the Raspberry Pi is gracefully shutdown (see below) by a power  management daemon, which is also able to schedule events, for example time-lapse image capture.  When the battery voltage reaches a critical level, all circuits are switched off to avoid damage to the battery due to over-discharging.&lt;/p&gt;
+
+&lt;h3 id=&#34;charge-control-system:dc4df0175cfa07cfdc9b78ac4adb3b60&#34;&gt;Charge Control System&lt;/h3&gt;
+
+&lt;p&gt;When connected to external power, the battery is charged using a constant-current /constant-voltage charge algorithm, with pre-conditioning and charge termination phases.&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; will charge and maintain any single 3.7V LiPo cell attached to the industry standard 2-pin JST-PH connector.&lt;/p&gt;
+
+&lt;p&gt;If external power is disconnected, Ardhat transitions seamlessly to battery operation, and sends a notification to the Raspberry Pi over the inter-processor communication channel.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Environment Sensor</title>
       <link>http://ubiqio.com/doc/env/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -182,15 +182,6 @@ Any cell with a standard JST-PH connector that physically fits your application 
     </item>
     
     <item>
-      <title>History</title>
-      <link>http://ubiqio.com/doc/history/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/history/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Expansion</title>
       <link>http://ubiqio.com/doc/expansion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -212,6 +203,15 @@ Any cell with a standard JST-PH connector that physically fits your application 
 
 &lt;p&gt;When the Raspberry Pi is active, it is the master on the  I2C bus, and is responsible for setup of the Ardhat  I2C peripherals (IMU, Altimeter, RTC).  When the Raspberry Pi is inactive, the Arduino can master the bus and interrogate the peripherals.  For example by watching the RTC, the Raspberry Pi can be started when the next crontab entry is about to come due.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>History</title>
+      <link>http://ubiqio.com/doc/history/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/history/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -260,6 +260,50 @@ Any cell with a standard JST-PH connector that physically fits your application 
     </item>
     
     <item>
+      <title>Welcome</title>
+      <link>http://ubiqio.com/doc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/</guid>
+      <description>
+
+&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/ArdhatSunrise400.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For makers, educators and experimenters worldwide, the &lt;a href=&#34;http://www.raspberrypi.org/help/what-is-a-raspberry-pi/&#34;&gt;Raspberry Pi&lt;/a&gt; has quickly become the compact computing platform of choice for those eager to create, learn and develop for the expanding universe of connected devices.&lt;/p&gt;
+
+&lt;p&gt;With analogue sensors and 5V PWM, UI controls and supply monitoring, LiPo and automotive voltage operation, the standard Ardhat is the missing link that connects the Raspberry Pi with the Real World.  If you need more, the Ardhat-I adds a 10-DOF IMU, and Ardhat-W adds a LoRa ISM wireless node with up to 10km range.&lt;/p&gt;
+
+&lt;p&gt;This repository is your goto resource for everything Ardhat, from pinouts to language bindings and everything in between.&lt;/p&gt;
+
+&lt;p&gt;Find an error, or want to add something? See &lt;a href=&#34;http://ubiqio.com/doc/contributing&#34;&gt;this article&lt;/a&gt; on how to contribute for more info.&lt;/p&gt;
+
+&lt;h2 id=&#34;helpful-hints:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Helpful Hints&lt;/h2&gt;
+
+&lt;p&gt;Throughout this guide there are a number of small-but-handy pieces of
+information that can make using Ardhat easier, more interesting, and less
+hazardous. Here’s what to look out for.&lt;/p&gt;
+
+&lt;div class=&#34;note info&#34;&gt;
+  &lt;h5&gt;Notes are handy pieces of information&lt;/h5&gt;
+  &lt;p&gt;Extra tidbits to help you understand Ardhat.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;note&#34;&gt;
+  &lt;h5&gt;ProTips™ help you get more from Ardhat&lt;/h5&gt;
+  &lt;p&gt;These are tips and tricks that will help you be an Ardhat wizard!&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;note warning&#34;&gt;
+  &lt;h5&gt;Warnings help you not to blow things up&lt;/h5&gt;
+  &lt;p&gt;Heed these messages if you wish to avoid certain death.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;If you come across anything along the way that we haven’t covered, or if you
+know of a tip you think others would find handy, &lt;a href=&#34;http://ubiqio.com/community&#34;&gt;head over to the forum&lt;/a&gt; and we’ll see about including it in this guide.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Interprocessor Comms</title>
       <link>http://ubiqio.com/doc/interprocessor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -281,23 +325,25 @@ Any cell with a standard JST-PH connector that physically fits your application 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://ubiqio.com/doc/io/</guid>
-      <description>&lt;table&gt;
+      <description>&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; has full Arduino Shield compatibility, as well as being Raspberry Pi HAT compliant. Some of pins have a special usage in the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; environment as detaild below:&lt;/p&gt;
+
+&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;&lt;strong&gt;Raspberry Pi GPIO&lt;/strong&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;Usage&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;strong&gt;GPIO 2&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;I2C-SDA –  I2C bus for communication with RTC, IMU and Arduino&lt;/td&gt;
+&lt;td&gt;I2C-SDA –  I2C bus for communication with RTC, IMU, ENV and Arduino&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
 &lt;td&gt;&lt;strong&gt;GPIO 3&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;I2C-SCL –  I2C bus for communication with RTC, IMU and Arduino&lt;/td&gt;
+&lt;td&gt;I2C-SCL –  I2C bus for communication with RTC, IMU, ENV and Arduino&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
@@ -311,17 +357,39 @@ Any cell with a standard JST-PH connector that physically fits your application 
 &lt;/tr&gt;
 
 &lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;GPIO 18&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;PiPWM – connected to a 3V-5V level shifter to drive e.g. WS2811 LED strips (see &lt;strong&gt;SPARE&lt;/strong&gt; below)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
 &lt;td&gt;&lt;strong&gt;GPIO 22&lt;/strong&gt;&lt;/td&gt;
 &lt;td&gt;Arduino ‘Reset’ line – used for programming with serial port&lt;/td&gt;
 &lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;ID_SC&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;HAT EEPROM Clock – used for read-writing the ArdHAT EEPROM&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;ID_SD&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;HAT EEPROM Data – used for read-writing the ArdHAT EEPROM&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;5V&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Connected to Ardhat 5V through a MOSFET switch controlled by Ardhat A3 (see below) NB even when the switch is off current can flow from the Raspberry Pi to Ardhat&lt;/td&gt;
+&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;&lt;strong&gt;Arduino I/O&lt;/strong&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;Usage&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 
@@ -337,12 +405,12 @@ Any cell with a standard JST-PH connector that physically fits your application 
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;D3&lt;/strong&gt;*&lt;/td&gt;
-&lt;td&gt;Radio node  Interrupt&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;D3&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Radio and peripheral Interrupt&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;D8&lt;/strong&gt;*&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;D10&lt;/strong&gt;*&lt;/td&gt;
 &lt;td&gt;Radio node SPI SS&lt;/td&gt;
 &lt;/tr&gt;
 
@@ -385,52 +453,56 @@ Any cell with a standard JST-PH connector that physically fits your application 
 &lt;td&gt;&lt;strong&gt;A7&lt;/strong&gt;&lt;/td&gt;
 &lt;td&gt;Power/Nav Switch and LiPo  voltage  monitor&lt;/td&gt;
 &lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Vin&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Connected to the 2.1mm DC Jack through polarity protection&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;5V&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Supplied either from the Ext-&amp;gt; 5V Buck converter, or the LiPo-&amp;gt;5V Boost converter or the Raspberry Pi MicroUSB 5V supply&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;3.3V&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Supplied through a 300mA linear regulator on Ardhat (NB if fitted, the radio module may consume 150mA peak during transmission bursts)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;SPARE&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;The unused shield pin next to IOREF is the 5V level shifted O/P from the GPIO18 (PiPWM) (see above)&lt;/td&gt;
+&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Welcome</title>
-      <link>http://ubiqio.com/doc/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/</guid>
-      <description>
 
-&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/ArdhatSunrise400.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;*The above marked pins are available for use if the radio module is not fitted.&lt;/p&gt;
 
-&lt;p&gt;For makers, educators and experimenters worldwide, the &lt;a href=&#34;http://www.raspberrypi.org/help/what-is-a-raspberry-pi/&#34;&gt;Raspberry Pi&lt;/a&gt; has quickly become the compact computing platform of choice for those eager to create, learn and develop for the expanding universe of connected devices.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;Additional&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;Usage&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
 
-&lt;p&gt;With analogue sensors and 5V PWM, UI controls and supply monitoring, LiPo and automotive voltage operation, the standard Ardhat is the missing link that connects the Raspberry Pi with the Real World.  If you need more, the Ardhat-I adds a 10-DOF IMU, and Ardhat-W adds a LoRa ISM wireless node with up to 10km range.&lt;/p&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;ICSP Header&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Standard Arduino programming header can be used e.g. for burning new bootloader&lt;/td&gt;
+&lt;/tr&gt;
 
-&lt;p&gt;This repository is your goto resource for everything Ardhat, from pinouts to language bindings and everything in between.&lt;/p&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Solar&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;0.1&amp;rdquo; header next to ICSP can be connected to a 6V solar panel to charge the LiPo cell while Raspberry Pi is turned off and Ardhat is on sleep mode&lt;/td&gt;
+&lt;/tr&gt;
 
-&lt;p&gt;Find an error, or want to add something? See &lt;a href=&#34;http://ubiqio.com/doc/contributing&#34;&gt;this article&lt;/a&gt; on how to contribute for more info.&lt;/p&gt;
-
-&lt;h2 id=&#34;helpful-hints:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Helpful Hints&lt;/h2&gt;
-
-&lt;p&gt;Throughout this guide there are a number of small-but-handy pieces of
-information that can make using Ardhat easier, more interesting, and less
-hazardous. Here’s what to look out for.&lt;/p&gt;
-
-&lt;div class=&#34;note info&#34;&gt;
-  &lt;h5&gt;Notes are handy pieces of information&lt;/h5&gt;
-  &lt;p&gt;Extra tidbits to help you understand Ardhat.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class=&#34;note&#34;&gt;
-  &lt;h5&gt;ProTips™ help you get more from Ardhat&lt;/h5&gt;
-  &lt;p&gt;These are tips and tricks that will help you be an Ardhat wizard!&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class=&#34;note warning&#34;&gt;
-  &lt;h5&gt;Warnings help you not to blow things up&lt;/h5&gt;
-  &lt;p&gt;Heed these messages if you wish to avoid certain death.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;If you come across anything along the way that we haven’t covered, or if you
-know of a tip you think others would find handy, &lt;a href=&#34;http://ubiqio.com/community&#34;&gt;head over to the forum&lt;/a&gt; and we’ll see about including it in this guide.&lt;/p&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;RTC Clock Out&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;PCF8643 RTC can be programmed to generate a Clock O/P on the test point next to Pi GPIO26&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 </description>
     </item>
     

@@ -223,23 +223,25 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://ubiqio.com/doc/io/</guid>
-      <description>&lt;table&gt;
+      <description>&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; has full Arduino Shield compatibility, as well as being Raspberry Pi HAT compliant. Some of pins have a special usage in the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; environment as detaild below:&lt;/p&gt;
+
+&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;&lt;strong&gt;Raspberry Pi GPIO&lt;/strong&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;Usage&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;strong&gt;GPIO 2&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;I2C-SDA –  I2C bus for communication with RTC, IMU and Arduino&lt;/td&gt;
+&lt;td&gt;I2C-SDA –  I2C bus for communication with RTC, IMU, ENV and Arduino&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
 &lt;td&gt;&lt;strong&gt;GPIO 3&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;I2C-SCL –  I2C bus for communication with RTC, IMU and Arduino&lt;/td&gt;
+&lt;td&gt;I2C-SCL –  I2C bus for communication with RTC, IMU, ENV and Arduino&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
@@ -253,17 +255,39 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;GPIO 18&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;PiPWM – connected to a 3V-5V level shifter to drive e.g. WS2811 LED strips (see &lt;strong&gt;SPARE&lt;/strong&gt; below)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
 &lt;td&gt;&lt;strong&gt;GPIO 22&lt;/strong&gt;&lt;/td&gt;
 &lt;td&gt;Arduino ‘Reset’ line – used for programming with serial port&lt;/td&gt;
 &lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;ID_SC&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;HAT EEPROM Clock – used for read-writing the ArdHAT EEPROM&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;ID_SD&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;HAT EEPROM Data – used for read-writing the ArdHAT EEPROM&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;5V&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Connected to Ardhat 5V through a MOSFET switch controlled by Ardhat A3 (see below) NB even when the switch is off current can flow from the Raspberry Pi to Ardhat&lt;/td&gt;
+&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;&lt;strong&gt;Arduino I/O&lt;/strong&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;Usage&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 
@@ -279,12 +303,12 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;D3&lt;/strong&gt;*&lt;/td&gt;
-&lt;td&gt;Radio node  Interrupt&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;D3&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Radio and peripheral Interrupt&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;D8&lt;/strong&gt;*&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;D10&lt;/strong&gt;*&lt;/td&gt;
 &lt;td&gt;Radio node SPI SS&lt;/td&gt;
 &lt;/tr&gt;
 
@@ -326,6 +350,54 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;strong&gt;A7&lt;/strong&gt;&lt;/td&gt;
 &lt;td&gt;Power/Nav Switch and LiPo  voltage  monitor&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Vin&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Connected to the 2.1mm DC Jack through polarity protection&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;5V&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Supplied either from the Ext-&amp;gt; 5V Buck converter, or the LiPo-&amp;gt;5V Boost converter or the Raspberry Pi MicroUSB 5V supply&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;3.3V&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Supplied through a 300mA linear regulator on Ardhat (NB if fitted, the radio module may consume 150mA peak during transmission bursts)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;SPARE&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;The unused shield pin next to IOREF is the 5V level shifted O/P from the GPIO18 (PiPWM) (see above)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;*The above marked pins are available for use if the radio module is not fitted.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;Additional&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;Usage&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;ICSP Header&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Standard Arduino programming header can be used e.g. for burning new bootloader&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Solar&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;0.1&amp;rdquo; header next to ICSP can be connected to a 6V solar panel to charge the LiPo cell while Raspberry Pi is turned off and Ardhat is on sleep mode&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;RTC Clock Out&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;PCF8643 RTC can be programmed to generate a Clock O/P on the test point next to Pi GPIO26&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
