@@ -123,7 +123,13 @@ Any cell with a standard JST-PH connector that physically fits your application 
 
 &lt;h4 id=&#34;radio-antenna:a66b35d20295cb764719ac8bd35837ec&#34;&gt;Radio antenna&lt;/h4&gt;
 
-&lt;p&gt;If you have a radio equipped &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;, you&amp;rsquo;ll need to attach an antenna to the board. The attach point is near the radio module, and is marked with an antenna symbol on the top side of the board. The antenna is best left straight but will also work coiled with little effect on RSS (Received Signal Strength). The length of wire needed depends on the radio module frequency you have selected, and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; is supplied with a &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;4&lt;/sub&gt; wave antenna of appropriate length. For reference, the required antenna lengths are:&lt;/p&gt;
+&lt;p&gt;If you have a radio equipped &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;, you&amp;rsquo;ll need to attach an antenna to the board.&lt;/p&gt;
+
+&lt;div class=&#34;note warning&#34;&gt;
+  &lt;p&gt;Do not load the radio driver without an antenna attached, as running the transmitter without an approriate load could cause permanent damage to the radio module&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The attach point is near the radio module, and is marked with an antenna symbol on the top side of the board. The antenna is best left straight but will also work coiled but with a small effect on RSS (Received Signal Strength). The length of wire needed depends on the radio module frequency you have selected, and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; is supplied with a &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;4&lt;/sub&gt; wave antenna of appropriate length. For reference, the required antenna lengths are:&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;433MHz:&lt;/strong&gt;&lt;/p&gt;
 
@@ -176,6 +182,15 @@ Any cell with a standard JST-PH connector that physically fits your application 
     </item>
     
     <item>
+      <title>History</title>
+      <link>http://ubiqio.com/doc/history/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/history/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Expansion</title>
       <link>http://ubiqio.com/doc/expansion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -217,15 +232,6 @@ Any cell with a standard JST-PH connector that physically fits your application 
     </item>
     
     <item>
-      <title>History</title>
-      <link>http://ubiqio.com/doc/history/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/history/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>IMU</title>
       <link>http://ubiqio.com/doc/imu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -250,50 +256,6 @@ Any cell with a standard JST-PH connector that physically fits your application 
 &lt;p&gt;During normal operation, these devices are monitored directly by the Raspberry Pi  but in sleep mode they can be monitored by the Arduino and used to wakeup the Raspberry Pi.&lt;/p&gt;
 
 &lt;p&gt;The MPU9250 is compatible with the popular &lt;a href=&#34;https://github.com/richards-tech/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Welcome</title>
-      <link>http://ubiqio.com/doc/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/</guid>
-      <description>
-
-&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/ArdhatSunrise400.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;For makers, educators and experimenters worldwide, the &lt;a href=&#34;http://www.raspberrypi.org/help/what-is-a-raspberry-pi/&#34;&gt;Raspberry Pi&lt;/a&gt; has quickly become the compact computing platform of choice for those eager to create, learn and develop for the expanding universe of connected devices.&lt;/p&gt;
-
-&lt;p&gt;With analogue sensors and 5V PWM, UI controls and supply monitoring, LiPo and automotive voltage operation, the standard Ardhat is the missing link that connects the Raspberry Pi with the Real World.  If you need more, the Ardhat-I adds a 10-DOF IMU, and Ardhat-W adds a LoRa ISM wireless node with up to 10km range.&lt;/p&gt;
-
-&lt;p&gt;This repository is your goto resource for everything Ardhat, from pinouts to language bindings and everything in between.&lt;/p&gt;
-
-&lt;p&gt;Find an error, or want to add something? See &lt;a href=&#34;http://ubiqio.com/doc/contributing&#34;&gt;this article&lt;/a&gt; on how to contribute for more info.&lt;/p&gt;
-
-&lt;h2 id=&#34;helpful-hints:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Helpful Hints&lt;/h2&gt;
-
-&lt;p&gt;Throughout this guide there are a number of small-but-handy pieces of
-information that can make using Ardhat easier, more interesting, and less
-hazardous. Here’s what to look out for.&lt;/p&gt;
-
-&lt;div class=&#34;note info&#34;&gt;
-  &lt;h5&gt;Notes are handy pieces of information&lt;/h5&gt;
-  &lt;p&gt;Extra tidbits to help you understand Ardhat.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class=&#34;note&#34;&gt;
-  &lt;h5&gt;ProTips™ help you get more from Ardhat&lt;/h5&gt;
-  &lt;p&gt;These are tips and tricks that will help you be an Ardhat wizard!&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class=&#34;note warning&#34;&gt;
-  &lt;h5&gt;Warnings help you not to blow things up&lt;/h5&gt;
-  &lt;p&gt;Heed these messages if you wish to avoid certain death.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;If you come across anything along the way that we haven’t covered, or if you
-know of a tip you think others would find handy, &lt;a href=&#34;http://ubiqio.com/community&#34;&gt;head over to the forum&lt;/a&gt; and we’ll see about including it in this guide.&lt;/p&gt;
 </description>
     </item>
     
@@ -425,6 +387,50 @@ know of a tip you think others would find handy, &lt;a href=&#34;http://ubiqio.c
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Welcome</title>
+      <link>http://ubiqio.com/doc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/</guid>
+      <description>
+
+&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/ArdhatSunrise400.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For makers, educators and experimenters worldwide, the &lt;a href=&#34;http://www.raspberrypi.org/help/what-is-a-raspberry-pi/&#34;&gt;Raspberry Pi&lt;/a&gt; has quickly become the compact computing platform of choice for those eager to create, learn and develop for the expanding universe of connected devices.&lt;/p&gt;
+
+&lt;p&gt;With analogue sensors and 5V PWM, UI controls and supply monitoring, LiPo and automotive voltage operation, the standard Ardhat is the missing link that connects the Raspberry Pi with the Real World.  If you need more, the Ardhat-I adds a 10-DOF IMU, and Ardhat-W adds a LoRa ISM wireless node with up to 10km range.&lt;/p&gt;
+
+&lt;p&gt;This repository is your goto resource for everything Ardhat, from pinouts to language bindings and everything in between.&lt;/p&gt;
+
+&lt;p&gt;Find an error, or want to add something? See &lt;a href=&#34;http://ubiqio.com/doc/contributing&#34;&gt;this article&lt;/a&gt; on how to contribute for more info.&lt;/p&gt;
+
+&lt;h2 id=&#34;helpful-hints:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Helpful Hints&lt;/h2&gt;
+
+&lt;p&gt;Throughout this guide there are a number of small-but-handy pieces of
+information that can make using Ardhat easier, more interesting, and less
+hazardous. Here’s what to look out for.&lt;/p&gt;
+
+&lt;div class=&#34;note info&#34;&gt;
+  &lt;h5&gt;Notes are handy pieces of information&lt;/h5&gt;
+  &lt;p&gt;Extra tidbits to help you understand Ardhat.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;note&#34;&gt;
+  &lt;h5&gt;ProTips™ help you get more from Ardhat&lt;/h5&gt;
+  &lt;p&gt;These are tips and tricks that will help you be an Ardhat wizard!&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;note warning&#34;&gt;
+  &lt;h5&gt;Warnings help you not to blow things up&lt;/h5&gt;
+  &lt;p&gt;Heed these messages if you wish to avoid certain death.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;If you come across anything along the way that we haven’t covered, or if you
+know of a tip you think others would find handy, &lt;a href=&#34;http://ubiqio.com/community&#34;&gt;head over to the forum&lt;/a&gt; and we’ll see about including it in this guide.&lt;/p&gt;
 </description>
     </item>
     

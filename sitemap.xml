@@ -32,6 +32,10 @@
   </url>
   
   <url>
+    <loc>http://ubiqio.com/doc/history/</loc>
+  </url>
+  
+  <url>
     <loc>http://ubiqio.com/doc/expansion/</loc>
   </url>
   
@@ -40,15 +44,7 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/history/</loc>
-  </url>
-  
-  <url>
     <loc>http://ubiqio.com/doc/imu/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ubiqio.com/doc/</loc>
   </url>
   
   <url>
@@ -57,6 +53,10 @@
   
   <url>
     <loc>http://ubiqio.com/doc/io/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ubiqio.com/doc/</loc>
   </url>
   
   <url>
@@ -112,11 +112,11 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/quickstart/</loc>
+    <loc>http://ubiqio.com/doc/power/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/power/</loc>
+    <loc>http://ubiqio.com/doc/quickstart/</loc>
   </url>
   
   <url>

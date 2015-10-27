@@ -207,10 +207,10 @@
            
             
            
-              
-                <option value="http://ubiqio.com/doc/quickstart/">Quick Start</option>
             
            
+              
+                <option value="http://ubiqio.com/doc/quickstart/">Quick Start</option>
             
            
             
@@ -382,10 +382,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/power/">Power</option>
+            
+           
             
            
             
@@ -472,10 +472,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/io/">I/O usage</option>
+            
+           
             
            
             
@@ -576,10 +576,10 @@
            
             
            
-              
-                <option value="http://ubiqio.com/doc/expansion/">Expansion</option>
             
            
+              
+                <option value="http://ubiqio.com/doc/expansion/">Expansion</option>
             
            
             
@@ -867,10 +867,10 @@
            
             
            
-              
-                <option value="http://ubiqio.com/doc/github/">GitHub</option>
             
            
+              
+                <option value="http://ubiqio.com/doc/github/">GitHub</option>
             
            
             
@@ -1337,28 +1337,32 @@
 
 <h3 id="long-range-wireless-node:1bd5eb89186ef6bf841b9646b5fe2314">Long-range wireless node</h3>
 
-<h3 id="long-range-wireless-node-1:1bd5eb89186ef6bf841b9646b5fe2314">Long-range wireless node</h3>
-
 <p><span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> includes an optional long-range wireless mesh network transceiver that operates on either 433, 868, or 915 MHz  license-free ISM (Industrial, Scientific and Medical) frequency bands. Using lower frequencies than those of the 2.4 or 5.8 GHz ISM bands enables much better coverage to be achieved especially when the nodes are within buildings.</p>
 
 <p><span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> is available with 2 radio transceiver options. The first is compatible with the <a href="http://jeelabs.org/">Jeelabs</a>, <a href="http://lowpowerlab.com/moteino/">Moteino</a> and <a href="http://emoncms.org/">EmonCMS</a> nodes and can thus enable the Raspberry Pi as a gateway or master controller.  Ardhat uses the high power verion of the HopeRF module, the RFM68HCW.</p>
 
-<p>The second uses the <a href="https://www.lora-alliance.org/">LoRaTM</a> RF physical layer, a form of spread spectrum modulation that significantly increases the available link budget. This version of Ardhat uses the HopeRF RFM95/96W.</p>
+<p>The second uses the <a href="https://www.lora-alliance.org/">LoRaTM</a> RF physical layer, a form of spread spectrum modulation that significantly increases the available link budget. This option uses the HopeRF RFM95/96W.</p>
 
 <p>With both options, the radio nodes are driven by the Arduino processor, so they can be maintained at very lower power, only waking up the Raspberry Pi when required.</p>
 
-<p>The recommended library is the the Radiohead library from Airspayce, as this supports both RFM69 and RFM95 modules. In addition, the radio manager also supports several different types of radio network configuration:</p>
+<p>The recommended library is the the Radiohead library from <a href="http://www.airspayce.com/">Airspayce</a>, as this supports both RFM69 and RFM95 modules. In addition, the radio manager also supports several different types of radio network configuration:</p>
 
 <ul>
 <li><strong>RHDatagram Addressed</strong>, unreliable variable length messages, with optional broadcast facilities.</li>
 <li><strong>RHReliableDatagram Addressed</strong>, reliable, retransmitted, acknowledged variable length messages.</li>
 <li><strong>RHRouter Multi-hop</strong> delivery from source node to destination node via 0 or more intermediate nodes, with manual routing.</li>
-<li><strong>RHMesh Multi-hop</strong> delivery with automatic route discovery and rediscovery.</li>
+<li><strong>RHMesh Multi-hop</strong>, delivery with automatic route discovery and rediscovery.</li>
 </ul>
 
 <p>Great documentation on the library is available <a href="http://www.airspayce.com/mikem/arduino/RadioHead/index.html">here</a></p>
 
-<p>You&rsquo;ll need 2 radios of course, preferably 2 <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span>s :), but you can also use <a href="http://www.digitalsmarties.net/products/jeelink">Jeelink</a>,  <a href="https://lowpowerlab.com/shop/moteino-r4">Moteino</a> or <a href="https://oshpark.com/shared_projects/RIumMBtN">Teensy</a> nodes.  Prepare the Ardhat board by attaching an antenna to the board. (The antenna is best left straight but will also work coiled). For reference, the required antenna lengths are:</p>
+<p>You&rsquo;ll need at least 2 radios of course, preferably <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span>s :), but you can also use <a href="http://www.digitalsmarties.net/products/jeelink">Jeelink</a>,  <a href="https://lowpowerlab.com/shop/moteino-r4">Moteino</a> or <a href="https://oshpark.com/shared_projects/RIumMBtN">Teensy</a> nodes.  Prepare the Ardhat board by <a href="https://ubiqio.com/doc/configuration/">attaching an antenna to the board</a>.</p>
+
+<div class="note warning">
+  <p>Do not load the driver without an antenna attached, as running the transmitter without an approriate load could cause permanent damage to the radio module</p>
+</div>
+
+<p>(The antenna is best left straight but will also work coiled). For reference, the required antenna lengths are:</p>
 
 <p><strong>433MHz:</strong></p>
 
@@ -1390,12 +1394,13 @@
 
 <p>In both cases, you&rsquo;ll need to make sure you&rsquo;ve set the frequency correctly, depending on the <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> radio module you have. Do this on the line</p>
 
-<pre><code class="language-c">if (!rf69.setFrequency(868.95)) 
+<pre><code class="language-c">if (!rf69.setFrequency(868)) 
 </code></pre>
 
 <p>Also, double check you have set the right SPI SS and Interrupt lines. In the case of Ardhat, SS is on pin D10, and the interrupt is on D3, so this means the RF69 constructor should look like</p>
 
-<pre><code class="language-c">RH_RF69 rf69(10, 3); // For RF69 on Ardhat
+<pre><code class="language-c">// Singleton instance of the radio driver
+RH_RF69 rf69(10, 3); // For RF69 on Ardhat
 </code></pre>
 
 <p>Then load up the <em>RF69server.pde</em> sketch on the &lsquo;gateway&rsquo; <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span>, and the <em>RF69server.pde</em> sketch on the &lsquo;node&rsquo;. On the client, you should get replies to sent messages with a RSSI (Received Signal Strength Indication), and the activity LED will flash.</p>
@@ -1604,13 +1609,13 @@
             
           
 
+            
+          
+
               
             <li class="" >
             <a href="/doc/quickstart/">Quick Start</a></li>
           
-          
-
-            
           
 
             
@@ -1861,13 +1866,13 @@
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/power/">Power</a></li>
           
+          
+
+            
           
 
             
@@ -1993,13 +1998,13 @@
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/io/">I/O usage</a></li>
           
+          
+
+            
           
 
             
@@ -2146,13 +2151,13 @@
             
           
 
+            
+          
+
               
             <li class="" >
             <a href="/doc/expansion/">Expansion</a></li>
           
-          
-
-            
           
 
             
@@ -2574,13 +2579,13 @@
             
           
 
+            
+          
+
               
             <li class="" >
             <a href="/doc/github/">GitHub</a></li>
           
-          
-
-            
           
 
             
