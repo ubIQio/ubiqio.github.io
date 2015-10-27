@@ -66,11 +66,39 @@ Any cell with a standard JST-PH connector that physically fits your application 
 
 &lt;h4 id=&#34;writing-to-hat-eeprom:a66b35d20295cb764719ac8bd35837ec&#34;&gt;Writing to HAT eeprom&lt;/h4&gt;
 
-&lt;p&gt;By default Ardhat this is enabled. To disable remove the solder jumper bridge from the CFG jumper next to the RTC output pin.&lt;/p&gt;
+&lt;p&gt;By default &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; this is enabled. To disable remove the solder jumper bridge from the CFG jumper next to the RTC output pin.&lt;/p&gt;
 
 &lt;h4 id=&#34;arduino-shield-headers:a66b35d20295cb764719ac8bd35837ec&#34;&gt;Arduino shield headers&lt;/h4&gt;
 
-&lt;p&gt;As shipped, Ardhat does not come with headers pre installed.&lt;/p&gt;
+&lt;p&gt;As shipped, &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; does not come with headers pre installed, which gives you the option of running as a pure lightweight HAT, or as an Arduino compatible module. If you want to populate the supplied Arduino headers, a good trick to make sure you get them straight is to fit a shield to the headers &lt;em&gt;before&lt;/em&gt; soldering. Use a fine tipped iron and fine core solder (1mm).&lt;/p&gt;
+
+&lt;h4 id=&#34;radio-antenna:a66b35d20295cb764719ac8bd35837ec&#34;&gt;Radio antenna&lt;/h4&gt;
+
+&lt;p&gt;If you have a radio equipped &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;, you&amp;rsquo;ll need to attach an antenna to the board. The attach point is near the radio module, and is marked with an antenna symbol on the top side of the board. The antenna is best left straight but will also work coiled with little effect on RSS (Received Signal Strength). The length of wire needed depends on the radio module frequency you have selected, and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; is supplied with a &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;4&lt;/sub&gt; wave antenna of appropriate length. For reference, the required antenna lengths are:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;433MHz:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;4&lt;/sub&gt; wave = 164.7mm&lt;/li&gt;
+&lt;li&gt;&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt; wave = 329.4mm&lt;/li&gt;
+&lt;li&gt;full wave = 692.7mm&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;868MHz:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;4&lt;/sub&gt; wave = 82.2mm&lt;/li&gt;
+&lt;li&gt;&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt; wave = 164.3mm&lt;/li&gt;
+&lt;li&gt;full wave = 345.5mm&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;915MHz:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;4&lt;/sub&gt; wave = 77.9mm&lt;/li&gt;
+&lt;li&gt;&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt; wave = 155.9mm&lt;/li&gt;
+&lt;li&gt;full wave = 327.8mm&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
@@ -378,7 +406,7 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 
 &lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; includes an optional long-range wireless mesh network transceiver that operates on either 433, 868, or 915 MHz  license-free ISM (Industrial, Scientific and Medical) frequency bands. Using lower frequencies than those of the 2.4 or 5.8 GHz ISM bands enables much better coverage to be achieved especially when the nodes are within buildings.&lt;/p&gt;
 
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; is available with 2 radio transceiver options. The first is compatible with the Jeelabs, Moteino and &lt;a href=&#34;http://emoncms.org/&#34;&gt;EmonCMS&lt;/a&gt; nodes and can thus enable the Raspberry Pi as a gateway or master controller.  Ardhat uses the high power verion of the HopeRF module, the RFM68HCW.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; is available with 2 radio transceiver options. The first is compatible with the &lt;a href=&#34;http://jeelabs.org/&#34;&gt;Jeelabs&lt;/a&gt;, &lt;a href=&#34;http://lowpowerlab.com/moteino/&#34;&gt;Moteino&lt;/a&gt; and &lt;a href=&#34;http://emoncms.org/&#34;&gt;EmonCMS&lt;/a&gt; nodes and can thus enable the Raspberry Pi as a gateway or master controller.  Ardhat uses the high power verion of the HopeRF module, the RFM68HCW.&lt;/p&gt;
 
 &lt;p&gt;The second uses the &lt;a href=&#34;https://www.lora-alliance.org/&#34;&gt;LoRaTM&lt;/a&gt; RF physical layer, a form of spread spectrum modulation that significantly increases the available link budget. This version of Ardhat uses the HopeRF RFM95/96W.&lt;/p&gt;
 
@@ -395,7 +423,7 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 
 &lt;p&gt;Great documentation on the library is available &lt;a href=&#34;http://www.airspayce.com/mikem/arduino/RadioHead/index.html&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;You&amp;rsquo;ll need 2 radios of course, preferably 2 &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;s :), but you can also use &lt;a href=&#34;http://www.digitalsmarties.net/products/jeelink&#34;&gt;Jeelink&lt;/a&gt;,  &lt;a href=&#34;http://lowpowerlab.com/moteino/&#34;&gt;Moteino&lt;/a&gt; or &lt;a href=&#34;https://oshpark.com/shared_projects/RIumMBtN&#34;&gt;Teensy&lt;/a&gt; nodes.  Prepare the Ardhat board by attaching an antenna to the board. (The antenna is best left straight but will also work coiled). For reference, the required antenna lengths are:&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;ll need 2 radios of course, preferably 2 &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;s :), but you can also use &lt;a href=&#34;http://www.digitalsmarties.net/products/jeelink&#34;&gt;Jeelink&lt;/a&gt;,  &lt;a href=&#34;https://lowpowerlab.com/shop/moteino-r4&#34;&gt;Moteino&lt;/a&gt; or &lt;a href=&#34;https://oshpark.com/shared_projects/RIumMBtN&#34;&gt;Teensy&lt;/a&gt; nodes.  Prepare the Ardhat board by attaching an antenna to the board. (The antenna is best left straight but will also work coiled). For reference, the required antenna lengths are:&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;433MHz:&lt;/strong&gt;&lt;/p&gt;
 
