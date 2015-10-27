@@ -260,10 +260,10 @@
            
             
            
-              
-                <option value="http://ubiqio.com/doc/overview/">Overview</option>
             
            
+              
+                <option value="http://ubiqio.com/doc/overview/">Overview</option>
             
            
             
@@ -279,12 +279,12 @@
            
             
            
+            
+           
+            
+           
               
                 <option value="http://ubiqio.com/doc/configuration/">Configuration</option>
-            
-           
-            
-           
             
            
             
@@ -417,10 +417,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/leds/">LEDs</option>
+            
+           
             
            
             
@@ -511,20 +511,20 @@
            
             
            
-            
-           
-            
-           
-            
-           
-            
-           
-            
-           
-            
-           
               
                 <option value="http://ubiqio.com/doc/battery/">Battery Operation</option>
+            
+           
+            
+           
+            
+           
+            
+           
+            
+           
+            
+           
             
            
             
@@ -574,10 +574,10 @@
            
             
            
-              
-                <option value="http://ubiqio.com/doc/expansion/">Expansion</option>
             
            
+              
+                <option value="http://ubiqio.com/doc/expansion/">Expansion</option>
             
            
             
@@ -667,10 +667,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/installation/">Installation</option>
+            
+           
             
            
             
@@ -683,8 +683,6 @@
           
           
           
-           
-            
            
             
            
@@ -735,11 +733,15 @@
             
            
             
+           
+            
           
         
           
           
           
+           
+            
            
             
            
@@ -790,8 +792,6 @@
             
            
             
-           
-            
           
         
           
@@ -834,10 +834,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/sleep/">Sleep Management</option>
+            
+           
             
            
             
@@ -938,10 +938,10 @@
            
             
            
-              
-                <option value="http://ubiqio.com/doc/navi/">Navigation Switch</option>
             
            
+              
+                <option value="http://ubiqio.com/doc/navi/">Navigation Switch</option>
             
            
             
@@ -1093,10 +1093,10 @@
            
             
            
-              
-                <option value="http://ubiqio.com/doc/env/">Environment Sensor</option>
             
            
+              
+                <option value="http://ubiqio.com/doc/env/">Environment Sensor</option>
             
            
             
@@ -1172,10 +1172,10 @@
            
             
            
-              
-                <option value="http://ubiqio.com/doc/radio/">Mesh Radio</option>
             
            
+              
+                <option value="http://ubiqio.com/doc/radio/">Mesh Radio</option>
             
            
             
@@ -1337,33 +1337,70 @@
 
 <h3 id="long-range-wireless-node:1bd5eb89186ef6bf841b9646b5fe2314">Long-range wireless node</h3>
 
+<h3 id="long-range-wireless-node-1:1bd5eb89186ef6bf841b9646b5fe2314">Long-range wireless node</h3>
+
 <p><span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> includes an optional long-range wireless mesh network transceiver that operates on either 433, 868, or 915 MHz  license-free ISM (Industrial, Scientific and Medical) frequency bands. Using lower frequencies than those of the 2.4 or 5.8 GHz ISM bands enables much better coverage to be achieved especially when the nodes are within buildings.</p>
 
-<p><span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> is available with 2 radio transceiver options. The first is compatible with the Jeelabs, Moteino and <a href="http://emoncms.org/">EmonCMS</a> nodes and can thus enable the Raspberry Pi as a gateway or master controller.  Ardhat uses the high power verion of the HopeRF module, the RFM68HCW.
-The second uses the LoRa RF physical layer, a form of spread spectrum modulation that significantly increases the available link budget.</p>
+<p><span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> is available with 2 radio transceiver options. The first is compatible with the Jeelabs, Moteino and <a href="http://emoncms.org/">EmonCMS</a> nodes and can thus enable the Raspberry Pi as a gateway or master controller.  Ardhat uses the high power verion of the HopeRF module, the RFM68HCW.</p>
+
+<p>The second uses the <a href="https://www.lora-alliance.org/">LoRaTM</a> RF physical layer, a form of spread spectrum modulation that significantly increases the available link budget. This version of Ardhat uses the HopeRF RFM95/96W.</p>
 
 <p>With both options, the radio nodes are driven by the Arduino processor, so they can be maintained at very lower power, only waking up the Raspberry Pi when required.</p>
 
-<p>The recommended library is the the Radiohead library from Airspayce, as this supports both RFM69 and RFM95 modules. In addition, the radio manager also supports sevaral different types of radio network configuration:</p>
+<p>The recommended library is the the Radiohead library from Airspayce, as this supports both RFM69 and RFM95 modules. In addition, the radio manager also supports several different types of radio network configuration:</p>
 
 <ul>
-<li>RHDatagram Addressed, unreliable variable length messages, with optional broadcast facilities.</li>
-<li>RHReliableDatagram Addressed, reliable, retransmitted, acknowledged variable length messages.</li>
-<li>RHRouter Multi-hop delivery from source node to destination node via 0 or more intermediate nodes, with manual routing.</li>
-<li>RHMesh Multi-hop delivery with automatic route discovery and rediscovery.</li>
+<li><strong>RHDatagram Addressed</strong>, unreliable variable length messages, with optional broadcast facilities.</li>
+<li><strong>RHReliableDatagram Addressed</strong>, reliable, retransmitted, acknowledged variable length messages.</li>
+<li><strong>RHRouter Multi-hop</strong> delivery from source node to destination node via 0 or more intermediate nodes, with manual routing.</li>
+<li><strong>RHMesh Multi-hop</strong> delivery with automatic route discovery and rediscovery.</li>
 </ul>
 
 <p>Great documentation on the library is available <a href="http://www.airspayce.com/mikem/arduino/RadioHead/index.html">here</a></p>
 
-<p>You&rsquo;ll need 2 radios of course, preferably 2 <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span>s :), but you can also use <a href="http://www.digitalsmarties.net/products/jeelink">Jeelink</a>,  <a href="http://lowpowerlab.com/moteino/">Moteino</a> or <a href="https://oshpark.com/shared_projects/RIumMBtN">Teensy</a> nodes.  Prepare the Ardhat board by attaching the antenna to the board. (The antenna is best left straight but will also work coiled).</p>
+<p>You&rsquo;ll need 2 radios of course, preferably 2 <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span>s :), but you can also use <a href="http://www.digitalsmarties.net/products/jeelink">Jeelink</a>,  <a href="http://lowpowerlab.com/moteino/">Moteino</a> or <a href="https://oshpark.com/shared_projects/RIumMBtN">Teensy</a> nodes.  Prepare the Ardhat board by attaching an antenna to the board. (The antenna is best left straight but will also work coiled). For reference, the required antenna lengths are:</p>
+
+<p><strong>433MHz:</strong></p>
+
+<ul>
+<li><sup>1</sup>&frasl;<sub>4</sub> wave = 164.7mm</li>
+<li><sup>1</sup>&frasl;<sub>2</sub> wave = 329.4mm</li>
+<li>full wave = 692.7mm</li>
+</ul>
+
+<p><strong>868MHz:</strong></p>
+
+<ul>
+<li><sup>1</sup>&frasl;<sub>4</sub> wave = 82.2mm</li>
+<li><sup>1</sup>&frasl;<sub>2</sub> wave = 164.3mm</li>
+<li>full wave = 345.5mm</li>
+</ul>
+
+<p><strong>915MHz:</strong></p>
+
+<ul>
+<li><sup>1</sup>&frasl;<sub>4</sub> wave = 77.9mm</li>
+<li><sup>1</sup>&frasl;<sub>2</sub> wave = 155.9mm</li>
+<li>full wave = 327.8mm</li>
+</ul>
 
 <p>Then install the Radiohead <a href="https://github.com/Ardhat/Radiohead">library</a> into the Arduino library folder, either from the Arduino GUI Library Manager or alternatively from the console using the excellent Platformio code builder, which natively supports both <a href="http://platformio.org/#!/lib/search?query=radiohead">Radiohead</a> and <a href="http://docs.platformio.org/en/latest/platforms/atmelavr.html#boards"><span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span></a> .</p>
 
-<p>There are a large number of examples provided with the library, but the RF69_client and RF_69_server are a great starting point.</p>
+<p>There are a large number of examples provided with the library, but the <em>RF69client</em> and <em>RF69server</em> sketches are a great starting point.</p>
 
-<p>You&rsquo;ll need to make sure you&rsquo;ve set the frequency correctly, in both sketches, depending on the <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> radio module you have.</p>
+<p>In both cases, you&rsquo;ll need to make sure you&rsquo;ve set the frequency correctly, depending on the <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> radio module you have. Do this on the line</p>
 
-<p>Then load up the server Sketch on the &lsquo;gateway&rsquo; <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span>, and the client on the node. On the client, you should get replies to sent message with a RSSI (Received Signal Strength Indication).</p>
+<pre><code class="language-c">if (!rf69.setFrequency(868.95)) 
+</code></pre>
+
+<p>Also, double check you have set the right SPI SS and Interrupt lines. In the case of Ardhat, SS is on pin D10, and the interrupt is on D3, so this means the RF69 constructor should look like</p>
+
+<pre><code class="language-c">RH_RF69 rf69(10, 3); // For RF69 on Ardhat
+</code></pre>
+
+<p>Then load up the <em>RF69server.pde</em> sketch on the &lsquo;gateway&rsquo; <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span>, and the <em>RF69server.pde</em> sketch on the &lsquo;node&rsquo;. On the client, you should get replies to sent messages with a RSSI (Received Signal Strength Indication), and the activity LED will flash.</p>
+
+<p>Once you have a basic radio link in place you can experiment with more advanced networking topologies, such as multinode mesh.</p>
 
               
 
@@ -1645,13 +1682,13 @@ The second uses the LoRa RF physical layer, a form of spread spectrum modulation
             
           
 
+            
+          
+
               
             <li class="" >
             <a href="/doc/overview/">Overview</a></li>
           
-          
-
-            
           
 
             
@@ -1672,16 +1709,16 @@ The second uses the LoRa RF physical layer, a form of spread spectrum modulation
             
           
 
+            
+          
+
+            
+          
+
               
             <li class="" >
             <a href="/doc/configuration/">Configuration</a></li>
           
-          
-
-            
-          
-
-            
           
 
             
@@ -1875,13 +1912,13 @@ The second uses the LoRa RF physical layer, a form of spread spectrum modulation
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/leds/">LEDs</a></li>
           
+          
+
+            
           
 
             
@@ -2013,28 +2050,28 @@ The second uses the LoRa RF physical layer, a form of spread spectrum modulation
             
           
 
-            
-          
-
-            
-          
-
-            
-          
-
-            
-          
-
-            
-          
-
-            
-          
-
               
             <li class="" >
             <a href="/doc/battery/">Battery Operation</a></li>
           
+          
+
+            
+          
+
+            
+          
+
+            
+          
+
+            
+          
+
+            
+          
+
+            
           
 
             
@@ -2106,13 +2143,13 @@ The second uses the LoRa RF physical layer, a form of spread spectrum modulation
             
           
 
+            
+          
+
               
             <li class="" >
             <a href="/doc/expansion/">Expansion</a></li>
           
-          
-
-            
           
 
             
@@ -2243,13 +2280,13 @@ The second uses the LoRa RF physical layer, a form of spread spectrum modulation
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/installation/">Installation</a></li>
           
+          
+
+            
           
 
             
@@ -2266,9 +2303,6 @@ The second uses the LoRa RF physical layer, a form of spread spectrum modulation
         
         
             
-
-            
-          
 
             
           
@@ -2343,6 +2377,9 @@ The second uses the LoRa RF physical layer, a form of spread spectrum modulation
           
 
             
+          
+
+            
         
       
 
@@ -2350,6 +2387,9 @@ The second uses the LoRa RF physical layer, a form of spread spectrum modulation
         
         
             
+
+            
+          
 
             
           
@@ -2424,9 +2464,6 @@ The second uses the LoRa RF physical layer, a form of spread spectrum modulation
           
 
             
-          
-
-            
         
       
 
@@ -2489,13 +2526,13 @@ The second uses the LoRa RF physical layer, a form of spread spectrum modulation
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/sleep/">Sleep Management</a></li>
           
+          
+
+            
           
 
             
@@ -2641,13 +2678,13 @@ The second uses the LoRa RF physical layer, a form of spread spectrum modulation
             
           
 
+            
+          
+
               
             <li class="" >
             <a href="/doc/navi/">Navigation Switch</a></li>
           
-          
-
-            
           
 
             
@@ -2869,13 +2906,13 @@ The second uses the LoRa RF physical layer, a form of spread spectrum modulation
             
           
 
+            
+          
+
               
             <li class="" >
             <a href="/doc/env/">Environment Sensor</a></li>
           
-          
-
-            
           
 
             
@@ -2986,15 +3023,15 @@ The second uses the LoRa RF physical layer, a form of spread spectrum modulation
             
           
 
+            
+          
+
               
             <li class=" 
             current 
             " >
             <a href="/doc/radio/">Mesh Radio</a></li>
           
-          
-
-            
           
 
             
