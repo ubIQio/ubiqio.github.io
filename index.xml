@@ -37,34 +37,37 @@
     </item>
     
     <item>
-      <title>Battery Operation</title>
-      <link>http://ubiqio.com/doc/battery/</link>
+      <title>Contributing</title>
+      <link>http://ubiqio.com/doc/contributing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://ubiqio.com/doc/battery/</guid>
+      <guid>http://ubiqio.com/doc/contributing/</guid>
       <description>
 
-&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/ardhatbattside400.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;So you&amp;rsquo;ve got an awesome idea to throw into Ardhat. Great! Head over to &lt;a href=&#34;http://ubiqio.com/community&#34;&gt;the forum&lt;/a&gt; and let us know!&lt;/p&gt;
 
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; can use an optional single cell LiPo battery, and a custom 2200mAh battery that fits snugly between the shield headers is available in the &lt;a href=&#34;http://ubiqio.com/shop&#34;&gt;store&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;updating-documentation:cc4aac3e9be04e0413c9520f223b493c&#34;&gt;Updating Documentation&lt;/h2&gt;
 
-&lt;div class=&#34;note warning&#34;&gt;
+&lt;p&gt;We want the Ardhat documentation to be the best it can be. We&amp;rsquo;ve
+open-sourced our docs and we welcome any pull requests if you find it
+lacking.&lt;/p&gt;
+
+&lt;p&gt;You can access the documentation for Ardhat just by clicking the pencil at the top of each document.&lt;/p&gt;
+
+&lt;p&gt;All documentation pull requests should be directed at &lt;code&gt;master&lt;/code&gt;. Pull
+requests directed at another branch will not be accepted.&lt;/p&gt;
+
+&lt;h2 id=&#34;finally:cc4aac3e9be04e0413c9520f223b493c&#34;&gt;Finally&amp;hellip;&lt;/h2&gt;
+
+&lt;div class=&#34;note&#34;&gt;
+  &lt;h5&gt;Let us know what could be better!&lt;/h5&gt;
   &lt;p&gt;
-Any cell with a standard JST-PH connector that physically fits your application may also be used, but make sure the polarity is correct before attachment.
+    Both using and hacking on Ardhat should be fun, simple, and easy, so if for
+    some reason you find it’s a pain, please &lt;a
+    href=&#34;http://ubiqio.com/community&#34;&gt;flag it&lt;/a&gt; on
+    the forum describing your experience so we can make it better.
   &lt;/p&gt;
 &lt;/div&gt;
-
-&lt;h3 id=&#34;battery-operation:dc4df0175cfa07cfdc9b78ac4adb3b60&#34;&gt;Battery Operation&lt;/h3&gt;
-
-&lt;p&gt;During battery operation, &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; generates the supplies required for the Raspberry Pi and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; peripherals from a boost converter. When the remaining battery capacity reaches 5%, the Raspberry Pi is gracefully shutdown (see below) by a power  management daemon, which is also able to schedule events, for example time-lapse image capture.  When the battery voltage reaches a critical level, all circuits are switched off to avoid damage to the battery due to over-discharging.&lt;/p&gt;
-
-&lt;h3 id=&#34;charge-control-system:dc4df0175cfa07cfdc9b78ac4adb3b60&#34;&gt;Charge Control System&lt;/h3&gt;
-
-&lt;p&gt;When connected to external power, the battery is charged using a constant-current /constant-voltage charge algorithm, with pre-conditioning and charge termination phases.&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; will charge and maintain any single 3.7V LiPo cell attached to the industry standard 2-pin JST-PH connector.&lt;/p&gt;
-
-&lt;p&gt;If external power is disconnected, Ardhat transitions seamlessly to battery operation, and sends a notification to the Raspberry Pi over the inter-processor communication channel.&lt;/p&gt;
 </description>
     </item>
     
@@ -123,61 +126,34 @@ Any cell with a standard JST-PH connector that physically fits your application 
     </item>
     
     <item>
-      <title>Contributing</title>
-      <link>http://ubiqio.com/doc/contributing/</link>
+      <title>Battery Operation</title>
+      <link>http://ubiqio.com/doc/battery/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://ubiqio.com/doc/contributing/</guid>
+      <guid>http://ubiqio.com/doc/battery/</guid>
       <description>
 
-&lt;p&gt;So you&amp;rsquo;ve got an awesome idea to throw into Ardhat. Great! Head over to &lt;a href=&#34;http://ubiqio.com/community&#34;&gt;the forum&lt;/a&gt; and let us know!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/ardhatbattside400.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;updating-documentation:cc4aac3e9be04e0413c9520f223b493c&#34;&gt;Updating Documentation&lt;/h2&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; can use an optional single cell LiPo battery, and a custom 2200mAh battery that fits snugly between the shield headers is available in the &lt;a href=&#34;http://ubiqio.com/shop&#34;&gt;store&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;We want the Ardhat documentation to be the best it can be. We&amp;rsquo;ve
-open-sourced our docs and we welcome any pull requests if you find it
-lacking.&lt;/p&gt;
-
-&lt;p&gt;You can access the documentation for Ardhat just by clicking the pencil at the top of each document.&lt;/p&gt;
-
-&lt;p&gt;All documentation pull requests should be directed at &lt;code&gt;master&lt;/code&gt;. Pull
-requests directed at another branch will not be accepted.&lt;/p&gt;
-
-&lt;h2 id=&#34;finally:cc4aac3e9be04e0413c9520f223b493c&#34;&gt;Finally&amp;hellip;&lt;/h2&gt;
-
-&lt;div class=&#34;note&#34;&gt;
-  &lt;h5&gt;Let us know what could be better!&lt;/h5&gt;
+&lt;div class=&#34;note warning&#34;&gt;
   &lt;p&gt;
-    Both using and hacking on Ardhat should be fun, simple, and easy, so if for
-    some reason you find it’s a pain, please &lt;a
-    href=&#34;http://ubiqio.com/community&#34;&gt;flag it&lt;/a&gt; on
-    the forum describing your experience so we can make it better.
+Any cell with a standard JST-PH connector that physically fits your application may also be used, but make sure the polarity is correct before attachment.
   &lt;/p&gt;
 &lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Environment Sensor</title>
-      <link>http://ubiqio.com/doc/env/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/env/</guid>
-      <description>&lt;p&gt;The Ardhat-E provides Environmental Sensing in addition to the basic functions of Arduino compatibility and power management. This is performed by a Bosch BME280 integrated sensor, which provides&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;humidity sensor&lt;/li&gt;
-&lt;li&gt;barometric pressure sensor&lt;/li&gt;
-&lt;li&gt;temperature sensor&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;battery-operation:dc4df0175cfa07cfdc9b78ac4adb3b60&#34;&gt;Battery Operation&lt;/h3&gt;
 
-&lt;p&gt;From the Bosch &lt;a href=&#34;http://www.bosch-sensortec.com/de/homepage/products_3/environmental_sensors_1/bme280/bme280_1&#34;&gt;website&lt;/a&gt;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;During battery operation, &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; generates the supplies required for the Raspberry Pi and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; peripherals from a boost converter. When the remaining battery capacity reaches 5%, the Raspberry Pi is gracefully shutdown (see below) by a power  management daemon, which is also able to schedule events, for example time-lapse image capture.  When the battery voltage reaches a critical level, all circuits are switched off to avoid damage to the battery due to over-discharging.&lt;/p&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;&amp;ldquo;The humidity sensor features an extremely fast response time which supports performance requirements for emerging applications such as context awareness, and high accuracy over a wide temperature range. The pressure sensor is an absolute barometric pressure sensor with features exceptionally high accuracy and resolution at very low noise. The integrated temperature sensor has been optimized for very low noise and high resolution. It is primarily used for temperature compensation of the pressure and humidity sensors, and can also be used for estimating ambient temperature.&amp;rdquo;&amp;rdquo;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;h3 id=&#34;charge-control-system:dc4df0175cfa07cfdc9b78ac4adb3b60&#34;&gt;Charge Control System&lt;/h3&gt;
 
-&lt;p&gt;The BMP180/280 is compatible with the popular &lt;a href=&#34;https://github.com/richards-tech/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;When connected to external power, the battery is charged using a constant-current /constant-voltage charge algorithm, with pre-conditioning and charge termination phases.&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; will charge and maintain any single 3.7V LiPo cell attached to the industry standard 2-pin JST-PH connector.&lt;/p&gt;
+
+&lt;p&gt;If external power is disconnected, Ardhat transitions seamlessly to battery operation, and sends a notification to the Raspberry Pi over the inter-processor communication channel.&lt;/p&gt;
 </description>
     </item>
     
@@ -206,6 +182,30 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Environment Sensor</title>
+      <link>http://ubiqio.com/doc/env/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/env/</guid>
+      <description>&lt;p&gt;The Ardhat-E provides Environmental Sensing in addition to the basic functions of Arduino compatibility and power management. This is performed by a Bosch BME280 integrated sensor, which provides&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;humidity sensor&lt;/li&gt;
+&lt;li&gt;barometric pressure sensor&lt;/li&gt;
+&lt;li&gt;temperature sensor&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;From the Bosch &lt;a href=&#34;http://www.bosch-sensortec.com/de/homepage/products_3/environmental_sensors_1/bme280/bme280_1&#34;&gt;website&lt;/a&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;The humidity sensor features an extremely fast response time which supports performance requirements for emerging applications such as context awareness, and high accuracy over a wide temperature range. The pressure sensor is an absolute barometric pressure sensor with features exceptionally high accuracy and resolution at very low noise. The integrated temperature sensor has been optimized for very low noise and high resolution. It is primarily used for temperature compensation of the pressure and humidity sensors, and can also be used for estimating ambient temperature.&amp;rdquo;&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The BMP180/280 is compatible with the popular &lt;a href=&#34;https://github.com/richards-tech/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>GitHub</title>
       <link>http://ubiqio.com/doc/github/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -220,15 +220,6 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 &lt;p&gt;In addition, all Ardhat software is available at the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; github repository
 &lt;a href=&#34;https://github.com/Ardhat&#34;&gt;https://github.com/Ardhat&lt;/a&gt;&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>History</title>
-      <link>http://ubiqio.com/doc/history/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/history/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -257,6 +248,15 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 
 &lt;p&gt;The MPU9250 is compatible with the popular &lt;a href=&#34;https://github.com/richards-tech/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>History</title>
+      <link>http://ubiqio.com/doc/history/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/history/</guid>
+      <description></description>
     </item>
     
     <item>

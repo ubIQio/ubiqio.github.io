@@ -258,10 +258,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/overview/">Overview</option>
+            
+           
             
            
             
@@ -372,10 +372,10 @@
            
             
            
-              
-                <option value="http://ubiqio.com/doc/power/">Power</option>
             
            
+              
+                <option value="http://ubiqio.com/doc/power/">Power</option>
             
            
             
@@ -497,12 +497,12 @@
            
             
            
+            
+           
+            
+           
               
                 <option value="http://ubiqio.com/doc/battery/">Battery Operation</option>
-            
-           
-            
-           
             
            
             
@@ -558,10 +558,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/expansion/">Expansion</option>
+            
+           
             
            
             
@@ -808,10 +808,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/sleep/">Sleep Management</option>
+            
+           
             
            
             
@@ -973,10 +973,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/rtc/">Real Time Clock</option>
+            
+           
             
            
             
@@ -997,8 +997,6 @@
           
           
           
-           
-            
            
             
            
@@ -1047,11 +1045,15 @@
             
            
             
+           
+            
           
         
           
           
           
+           
+            
            
             
            
@@ -1100,13 +1102,17 @@
             
            
             
-           
-            
           
         
           
           
           
+           
+            
+           
+            
+           
+            
            
             
            
@@ -1151,12 +1157,6 @@
             
            
             
-           
-            
-           
-            
-           
-            
           
         
      </optgroup>
@@ -1166,10 +1166,6 @@
           
           
           
-           
-            
-           
-            
            
             
            
@@ -1216,13 +1212,15 @@
             
            
             
+           
+            
+           
+            
           
         
           
           
           
-           
-            
            
             
            
@@ -1271,6 +1269,8 @@
             
            
             
+           
+            
           
         
      </optgroup>
@@ -1289,15 +1289,19 @@
               </div>
               <h1>Programming model</h1>
               <hr />
-              <p>Ardhat employs a future-proof programming environment ready for large distributed node networks.</p>
+              <p><span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span>&rsquo;s features can be accessed from a compatible host, such as Raspberry Pi, using the <a href="https://github.com/firmata/protocol">Firmata</a> protocol over serial.</p>
 
-<p>In principle, an application can be written in any language that can access the Raspberry Pi hardware (e.g. GPIOs, I2C, network etc). However, in an IoT environment, services are often distributed over a network whose availability cannot be guaranteed. A responsive system cannot  block while  waiting for these services to respond.</p>
+<p>Firmata provides a standardized mechanism to exchange information between a real-time processor such as <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> and a host, but easily extended to provide access to the wide range of features available.</p>
 
-<p>JavaScript’s support of callbacks, and the availability of non-blocking app frameworks such as <a href="http://nodejs.org/">node.js</a>, make it the natural choice for a web enabled system such as Ardhat.</p>
+<p>As an example, the factory <a href="https://github.com/Ardhat/ArdhatFirmata">image</a> that ships with <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> contains a modified version of standard <a href="https://www.arduino.cc/en/Reference/Firmata">Arduino Firmata</a> that adds several additional features, such as monitoring of the Navigation switch and Status LED control, using the Arduino <a href="http://playground.arduino.cc/Code/SMlib">SMlib</a>. This state machine library provides an extremely lightweight mechanism that allows primitive multitasking.</p>
 
-<p>The Ardhat programming framework uses javascript in a <a href="http://mean.io/#!/">MEAN</a> (MongoDB, Express, Angular, Node) environment, which is a set of technologies that work well together to allow the creation of distributed web-enabled applications.</p>
+<p>In principle, an <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> host application can be written in any language that has a Firmata library, including Processing, Python, C++ and <a href="http://firmata.org/wiki/Download">many more</a>. However, in a Robotics or IoT environment, services are often distributed over a network whose availability cannot be guaranteed. A responsive system cannot  block while  waiting for these services to respond.</p>
 
-<p>The main supported framework for local programming of Ardhat is <a href="http://nodejs.org/">Node.js</a>, which is built on top of Google’s V8 javascript runtime, and is widely extensible through the use of additional libraries.  The addition of Express and AngularJs allow applications to be exposed over the web if required. Some of the key libraries are shown below:</p>
+<p>JavaScript’s support of callbacks, and the availability of non-blocking app frameworks such as <a href="http://nodejs.org/">node.js</a>, make it the natural choice for a web enabled system, and so the main supported framework for local programming of Ardhat is <a href="http://nodejs.org/">Node.js</a>, which is built on top of Google’s V8 javascript runtime, and is widely extensible through the use of additional libraries.  The addition of Express and AngularJs allow applications to be exposed over the web if required.</p>
+
+<p><a href="http://johnny-five.io/">Johnny-Five</a> is a great node library that sits on top of Firmata but provides some higher level functions to make use with node even easier. For example, <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> is unit tested using <a href="https://mochajs.org/">Mocha</a> on Johnny-Five on Firmata.</p>
+
+<p>Some of the key libraries are shown below:</p>
 
 <table>
 <thead>
@@ -1308,6 +1312,16 @@
 </thead>
 
 <tbody>
+<tr>
+<td><a href="http://johnny-five.io/">Johnny-Five</a></td>
+<td>JavaScript Robotics programming framework, by Bocoup</td>
+</tr>
+
+<tr>
+<td><a href="https://mochajs.org/">Mocha</a></td>
+<td>is a JavaScript test framework running on Node.js, making asynchronous testing simple and fun.</td>
+</tr>
+
 <tr>
 <td><a href="http://www.mongodb.org/">Mongodb</a></td>
 <td><em>noSQL database , for example to keep track of authenticated users and nodes</em></td>
@@ -1661,13 +1675,13 @@
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/overview/">Overview</a></li>
           
+          
+
+            
           
 
             
@@ -1828,13 +1842,13 @@
             
           
 
+            
+          
+
               
             <li class="" >
             <a href="/doc/power/">Power</a></li>
           
-          
-
-            
           
 
             
@@ -2011,16 +2025,16 @@
             
           
 
+            
+          
+
+            
+          
+
               
             <li class="" >
             <a href="/doc/battery/">Battery Operation</a></li>
           
-          
-
-            
-          
-
-            
           
 
             
@@ -2101,13 +2115,13 @@
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/expansion/">Expansion</a></li>
           
+          
+
+            
           
 
             
@@ -2471,13 +2485,13 @@
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/sleep/">Sleep Management</a></li>
           
+          
+
+            
           
 
             
@@ -2713,13 +2727,13 @@
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/rtc/">Real Time Clock</a></li>
           
+          
+
+            
           
 
             
@@ -2748,9 +2762,6 @@
         
         
             
-
-            
-          
 
             
           
@@ -2822,6 +2833,9 @@
           
 
             
+          
+
+            
         
       
 
@@ -2829,6 +2843,9 @@
         
         
             
+
+            
+          
 
             
           
@@ -2900,9 +2917,6 @@
           
 
             
-          
-
-            
         
       
 
@@ -2910,6 +2924,15 @@
         
         
             
+
+            
+          
+
+            
+          
+
+            
+          
 
             
           
@@ -2975,15 +2998,6 @@
           
 
             
-          
-
-            
-          
-
-            
-          
-
-            
         
       
     </ul>
@@ -2996,12 +3010,6 @@
         
         
             
-
-            
-          
-
-            
-          
 
             
           
@@ -3070,6 +3078,12 @@
           
 
             
+          
+
+            
+          
+
+            
         
       
 
@@ -3126,13 +3140,13 @@
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/resources/">Resources</a></li>
           
+          
+
+            
           
 
             

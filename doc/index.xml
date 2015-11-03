@@ -502,7 +502,7 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 &lt;p&gt;You&amp;rsquo;ll need at least 2 radios of course, preferably &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;s :), but you can also use &lt;a href=&#34;http://www.digitalsmarties.net/products/jeelink&#34;&gt;Jeelink&lt;/a&gt;,  &lt;a href=&#34;https://lowpowerlab.com/shop/moteino-r4&#34;&gt;Moteino&lt;/a&gt; or &lt;a href=&#34;https://oshpark.com/shared_projects/RIumMBtN&#34;&gt;Teensy&lt;/a&gt; nodes.  Prepare the Ardhat board by &lt;a href=&#34;https://ubiqio.com/doc/configuration/&#34;&gt;attaching an antenna to the board&lt;/a&gt;.&lt;/p&gt;
 
 &lt;div class=&#34;note warning&#34;&gt;
-  &lt;p&gt;Do not load the driver without an antenna attached, as running the transmitter without an approriate load could cause permanent damage to the radio module&lt;/p&gt;
+  &lt;p&gt;Do not load the driver without an antenna attached, as running the transmitter without an appropriate load could cause permanent damage to the radio module&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;(The antenna is best left straight but will also work coiled). For reference, the required antenna lengths are:&lt;/p&gt;
@@ -601,15 +601,19 @@ RH_RF69 rf69(10, 3); // For RF69 on Ardhat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://ubiqio.com/doc/progmodel/</guid>
-      <description>&lt;p&gt;Ardhat employs a future-proof programming environment ready for large distributed node networks.&lt;/p&gt;
+      <description>&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&amp;rsquo;s features can be accessed from a compatible host, such as Raspberry Pi, using the &lt;a href=&#34;https://github.com/firmata/protocol&#34;&gt;Firmata&lt;/a&gt; protocol over serial.&lt;/p&gt;
 
-&lt;p&gt;In principle, an application can be written in any language that can access the Raspberry Pi hardware (e.g. GPIOs, I2C, network etc). However, in an IoT environment, services are often distributed over a network whose availability cannot be guaranteed. A responsive system cannot  block while  waiting for these services to respond.&lt;/p&gt;
+&lt;p&gt;Firmata provides a standardized mechanism to exchange information between a real-time processor such as &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; and a host, but easily extended to provide access to the wide range of features available.&lt;/p&gt;
 
-&lt;p&gt;JavaScript’s support of callbacks, and the availability of non-blocking app frameworks such as &lt;a href=&#34;http://nodejs.org/&#34;&gt;node.js&lt;/a&gt;, make it the natural choice for a web enabled system such as Ardhat.&lt;/p&gt;
+&lt;p&gt;As an example, the factory &lt;a href=&#34;https://github.com/Ardhat/ArdhatFirmata&#34;&gt;image&lt;/a&gt; that ships with &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; contains a modified version of standard &lt;a href=&#34;https://www.arduino.cc/en/Reference/Firmata&#34;&gt;Arduino Firmata&lt;/a&gt; that adds several additional features, such as monitoring of the Navigation switch and Status LED control, using the Arduino &lt;a href=&#34;http://playground.arduino.cc/Code/SMlib&#34;&gt;SMlib&lt;/a&gt;. This state machine library provides an extremely lightweight mechanism that allows primitive multitasking.&lt;/p&gt;
 
-&lt;p&gt;The Ardhat programming framework uses javascript in a &lt;a href=&#34;http://mean.io/#!/&#34;&gt;MEAN&lt;/a&gt; (MongoDB, Express, Angular, Node) environment, which is a set of technologies that work well together to allow the creation of distributed web-enabled applications.&lt;/p&gt;
+&lt;p&gt;In principle, an &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; host application can be written in any language that has a Firmata library, including Processing, Python, C++ and &lt;a href=&#34;http://firmata.org/wiki/Download&#34;&gt;many more&lt;/a&gt;. However, in a Robotics or IoT environment, services are often distributed over a network whose availability cannot be guaranteed. A responsive system cannot  block while  waiting for these services to respond.&lt;/p&gt;
 
-&lt;p&gt;The main supported framework for local programming of Ardhat is &lt;a href=&#34;http://nodejs.org/&#34;&gt;Node.js&lt;/a&gt;, which is built on top of Google’s V8 javascript runtime, and is widely extensible through the use of additional libraries.  The addition of Express and AngularJs allow applications to be exposed over the web if required. Some of the key libraries are shown below:&lt;/p&gt;
+&lt;p&gt;JavaScript’s support of callbacks, and the availability of non-blocking app frameworks such as &lt;a href=&#34;http://nodejs.org/&#34;&gt;node.js&lt;/a&gt;, make it the natural choice for a web enabled system, and so the main supported framework for local programming of Ardhat is &lt;a href=&#34;http://nodejs.org/&#34;&gt;Node.js&lt;/a&gt;, which is built on top of Google’s V8 javascript runtime, and is widely extensible through the use of additional libraries.  The addition of Express and AngularJs allow applications to be exposed over the web if required.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://johnny-five.io/&#34;&gt;Johnny-Five&lt;/a&gt; is a great node library that sits on top of Firmata but provides some higher level functions to make use with node even easier. For example, &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; is unit tested using &lt;a href=&#34;https://mochajs.org/&#34;&gt;Mocha&lt;/a&gt; on Johnny-Five on Firmata.&lt;/p&gt;
+
+&lt;p&gt;Some of the key libraries are shown below:&lt;/p&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -620,6 +624,16 @@ RH_RF69 rf69(10, 3); // For RF69 on Ardhat
 &lt;/thead&gt;
 
 &lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;http://johnny-five.io/&#34;&gt;Johnny-Five&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;JavaScript Robotics programming framework, by Bocoup&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://mochajs.org/&#34;&gt;Mocha&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;is a JavaScript test framework running on Node.js, making asynchronous testing simple and fun.&lt;/td&gt;
+&lt;/tr&gt;
+
 &lt;tr&gt;
 &lt;td&gt;&lt;a href=&#34;http://www.mongodb.org/&#34;&gt;Mongodb&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;&lt;em&gt;noSQL database , for example to keep track of authenticated users and nodes&lt;/em&gt;&lt;/td&gt;
