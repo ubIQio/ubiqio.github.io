@@ -275,10 +275,10 @@
            
             
            
-              
-                <option value="http://ubiqio.com/doc/configuration/">Configuration</option>
             
            
+              
+                <option value="http://ubiqio.com/doc/configuration/">Configuration</option>
             
            
             
@@ -464,10 +464,10 @@
            
             
            
-              
-                <option value="http://ubiqio.com/doc/io/">I/O usage</option>
             
            
+              
+                <option value="http://ubiqio.com/doc/io/">I/O usage</option>
             
            
             
@@ -494,10 +494,6 @@
           
           
           
-           
-            
-           
-            
            
             
            
@@ -544,6 +540,10 @@
             
            
             
+           
+            
+           
+            
           
         
           
@@ -558,10 +558,10 @@
            
             
            
-              
-                <option value="http://ubiqio.com/doc/expansion/">Expansion</option>
             
            
+              
+                <option value="http://ubiqio.com/doc/expansion/">Expansion</option>
             
            
             
@@ -808,10 +808,10 @@
            
             
            
-              
-                <option value="http://ubiqio.com/doc/sleep/">Sleep Management</option>
             
            
+              
+                <option value="http://ubiqio.com/doc/sleep/">Sleep Management</option>
             
            
             
@@ -912,10 +912,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/navi/">Navigation Switch</option>
+            
+           
             
            
             
@@ -942,6 +942,10 @@
           
           
           
+           
+            
+           
+            
            
             
            
@@ -988,15 +992,13 @@
             
            
             
-           
-            
-           
-            
           
         
           
           
           
+           
+            
            
             
            
@@ -1045,13 +1047,15 @@
             
            
             
-           
-            
           
         
           
           
           
+           
+            
+           
+            
            
             
            
@@ -1098,19 +1102,11 @@
             
            
             
-           
-            
-           
-            
           
         
           
           
           
-           
-            
-           
-            
            
             
            
@@ -1157,6 +1153,10 @@
             
            
             
+           
+            
+           
+            
           
         
      </optgroup>
@@ -1166,6 +1166,8 @@
           
           
           
+           
+            
            
             
            
@@ -1214,15 +1216,11 @@
             
            
             
-           
-            
           
         
           
           
           
-           
-            
            
             
            
@@ -1271,6 +1269,8 @@
             
            
             
+           
+            
           
         
      </optgroup>
@@ -1289,9 +1289,31 @@
               </div>
               <h1>Upgrading</h1>
               <hr />
-              <p>Before using Ardhat, make sure you have upgraded to the latest supported version of your host operating system and apps.</p>
+              
+
+<p>Before using Ardhat, make sure you have upgraded to the latest supported version of your host operating system and apps.</p>
 
 <p>If using Ardhat on a Raspberry Pi, see <a href="https://www.raspberrypi.org/documentation/raspbian/updating.md">this guide</a> on the foundation website.</p>
+
+<h2 id="updating-the-bootloader:104d6ec20d3c9fec84381edf43ec4f2f">Updating the bootloader</h2>
+
+<p>The bootloader used in <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> is a modified verion of Optiboot, and is loaded at the factory together with a default Sketch that runs Firmata and also manages the Navigation switch and LED.</p>
+
+<p>If required, this bootloader and app can be replaced using the following procedure:</p>
+
+<ol>
+<li>Download the ArdhatCloner Sketch from <a href="https://github.com/Ardhat/ArdhatCloner">here</a></li>
+<li>Using the instructions provided in the Sketch, connect an Arduino or compatible processor to the Ardhat ICSP (you can use some simple jumpers as hown in the image below)</li>
+</ol>
+
+<p><img align="center" src="/media/ArdhatProg.jpg"></p>
+
+<ol>
+<li>Install the ArdhatCloner sketch on the Arduino.</li>
+<li>Restart the Arduino, and the ArdhatCloner sketch will install the latest bootloader and factory default app</li>
+</ol>
+
+<p>If you want to load a custom app in place of the factory app, use JC wipplers hex2c.tcl to create the data.h file that ArdhatCloner uses.</p>
 
               
 
@@ -1594,13 +1616,13 @@
             
           
 
+            
+          
+
               
             <li class="" >
             <a href="/doc/configuration/">Configuration</a></li>
           
-          
-
-            
           
 
             
@@ -1872,13 +1894,13 @@
             
           
 
+            
+          
+
               
             <li class="" >
             <a href="/doc/io/">I/O usage</a></li>
           
-          
-
-            
           
 
             
@@ -1916,12 +1938,6 @@
         
         
             
-
-            
-          
-
-            
-          
 
             
           
@@ -1990,6 +2006,12 @@
           
 
             
+          
+
+            
+          
+
+            
         
       
 
@@ -2010,13 +2032,13 @@
             
           
 
+            
+          
+
               
             <li class="" >
             <a href="/doc/expansion/">Expansion</a></li>
           
-          
-
-            
           
 
             
@@ -2380,13 +2402,13 @@
             
           
 
+            
+          
+
               
             <li class="" >
             <a href="/doc/sleep/">Sleep Management</a></li>
           
-          
-
-            
           
 
             
@@ -2532,13 +2554,13 @@
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/navi/">Navigation Switch</a></li>
           
+          
+
+            
           
 
             
@@ -2576,6 +2598,12 @@
         
         
             
+
+            
+          
+
+            
+          
 
             
           
@@ -2644,12 +2672,6 @@
           
 
             
-          
-
-            
-          
-
-            
         
       
 
@@ -2657,6 +2679,9 @@
         
         
             
+
+            
+          
 
             
           
@@ -2728,9 +2753,6 @@
           
 
             
-          
-
-            
         
       
 
@@ -2738,6 +2760,12 @@
         
         
             
+
+            
+          
+
+            
+          
 
             
           
@@ -2806,12 +2834,6 @@
           
 
             
-          
-
-            
-          
-
-            
         
       
 
@@ -2819,12 +2841,6 @@
         
         
             
-
-            
-          
-
-            
-          
 
             
           
@@ -2893,6 +2909,12 @@
           
 
             
+          
+
+            
+          
+
+            
         
       
     </ul>
@@ -2905,6 +2927,9 @@
         
         
             
+
+            
+          
 
             
           
@@ -2976,9 +3001,6 @@
           
 
             
-          
-
-            
         
       
 
@@ -3032,13 +3054,13 @@
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/resources/">Resources</a></li>
           
+          
+
+            
           
 
             
