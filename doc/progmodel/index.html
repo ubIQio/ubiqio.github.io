@@ -273,10 +273,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/configuration/">Configuration</option>
+            
+           
             
            
             
@@ -409,10 +409,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/leds/">LEDs</option>
+            
+           
             
            
             
@@ -439,10 +439,6 @@
           
           
           
-           
-            
-           
-            
            
             
            
@@ -489,15 +485,15 @@
             
            
             
+           
+            
+           
+            
           
         
           
           
           
-           
-            
-           
-            
            
             
            
@@ -544,6 +540,10 @@
             
            
             
+           
+            
+           
+            
           
         
           
@@ -558,10 +558,10 @@
            
             
            
-              
-                <option value="http://ubiqio.com/doc/expansion/">Expansion</option>
             
            
+              
+                <option value="http://ubiqio.com/doc/expansion/">Expansion</option>
             
            
             
@@ -806,12 +806,12 @@
            
             
            
-            
-           
-            
-           
               
                 <option value="http://ubiqio.com/doc/sleep/">Sleep Management</option>
+            
+           
+            
+           
             
            
             
@@ -841,14 +841,14 @@
            
             
            
+            
+           
+            
+           
+            
+           
               
                 <option value="http://ubiqio.com/doc/github/">GitHub</option>
-            
-           
-            
-           
-            
-           
             
            
             
@@ -910,12 +910,12 @@
            
             
            
+            
+           
+            
+           
               
                 <option value="http://ubiqio.com/doc/navi/">Navigation Switch</option>
-            
-           
-            
-           
             
            
             
@@ -942,6 +942,8 @@
           
           
           
+           
+            
            
             
            
@@ -990,19 +992,11 @@
             
            
             
-           
-            
           
         
           
           
           
-           
-            
-           
-            
-           
-            
            
             
            
@@ -1047,6 +1041,12 @@
             
            
             
+           
+            
+           
+            
+           
+            
           
         
           
@@ -1059,10 +1059,10 @@
            
             
            
-              
-                <option value="http://ubiqio.com/doc/env/">Environment Sensor</option>
             
            
+              
+                <option value="http://ubiqio.com/doc/env/">Environment Sensor</option>
             
            
             
@@ -1169,10 +1169,10 @@
            
             
            
-              
-                <option value="http://ubiqio.com/doc/contributing/">Contributing</option>
             
            
+              
+                <option value="http://ubiqio.com/doc/contributing/">Contributing</option>
             
            
             
@@ -1221,6 +1221,8 @@
           
           
           
+           
+            
            
             
            
@@ -1269,8 +1271,6 @@
             
            
             
-           
-            
           
         
      </optgroup>
@@ -1291,15 +1291,17 @@
               <hr />
               <p><span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span>&rsquo;s features can be accessed from a compatible host, such as Raspberry Pi, using the <a href="https://github.com/firmata/protocol">Firmata</a> protocol over serial.</p>
 
-<p>Firmata provides a standardized mechanism to exchange information between a real-time processor such as <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> and a host, but easily extended to provide access to the wide range of features available.</p>
+<p>Firmata provides a standardized mechanism to exchange information between a real-time processor such as <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> and a host, but easily is extended to provide access to the wide range of features available.</p>
 
 <p>As an example, the factory <a href="https://github.com/Ardhat/ArdhatFirmata">image</a> that ships with <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> contains a modified version of standard <a href="https://www.arduino.cc/en/Reference/Firmata">Arduino Firmata</a> that adds several additional features, such as monitoring of the Navigation switch and Status LED control, using the Arduino <a href="http://playground.arduino.cc/Code/SMlib">SMlib</a>. This state machine library provides an extremely lightweight mechanism that allows primitive multitasking.</p>
 
 <p>In principle, an <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> host application can be written in any language that has a Firmata library, including Processing, Python, C++ and <a href="http://firmata.org/wiki/Download">many more</a>. However, in a Robotics or IoT environment, services are often distributed over a network whose availability cannot be guaranteed. A responsive system cannot  block while  waiting for these services to respond.</p>
 
-<p>JavaScript’s support of callbacks, and the availability of non-blocking app frameworks such as <a href="http://nodejs.org/">node.js</a>, make it the natural choice for a web enabled system, and so the main supported framework for local programming of Ardhat is <a href="http://nodejs.org/">Node.js</a>, which is built on top of Google’s V8 javascript runtime, and is widely extensible through the use of additional libraries.  The addition of Express and AngularJs allow applications to be exposed over the web if required.</p>
+<p>JavaScript’s support of callbacks, and the availability of non-blocking app frameworks such as <a href="http://nodejs.org/">node.js</a>, make it the natural choice for a web enabled system, and it is the main supported framework for local programming of <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span>. Node.js  is built on top of Google’s V8 javascript runtime, and is widely extensible through the use of additional libraries.  The addition of Express and AngularJS allow applications to be exposed over the web if required.</p>
 
 <p><a href="http://johnny-five.io/">Johnny-Five</a> is a great node library that sits on top of Firmata but provides some higher level functions to make use with node even easier. For example, <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> is unit tested using <a href="https://mochajs.org/">Mocha</a> on Johnny-Five on Firmata.</p>
+
+<p>Application-specific projects can also be created on top of Node using accessible app generators such as  <a href="http://nodered.org/">Node-Red</a>.</p>
 
 <p>Some of the key libraries are shown below:</p>
 
@@ -1343,7 +1345,7 @@
 </tr>
 
 <tr>
-<td><a href="https://github.com/jgautier/firmata">firmata</a></td>
+<td><a href="https://github.com/jgautier/firmata">Firmata</a></td>
 <td><em>node.js library to interact with  local Arduino running the firmata protocol (currently limited to serial port only (use of node-i2c TBD))</em></td>
 </tr>
 
@@ -1381,10 +1383,13 @@
 <td><a href="https://github.com/patchwork-toolkit/patchwork/wiki/Freeboard">freeboard</a></td>
 <td><em>local dashboard function</em></td>
 </tr>
+
+<tr>
+<td><a href="http://nodered.org/">Node-Red</a></td>
+<td><em>A visual tool for wiring the Internet of Things</em></td>
+</tr>
 </tbody>
 </table>
-
-<p>Application-specific user flows  can be written on top of this framework using accessible app generators such as  <a href="http://nodered.org/">Node-Red</a> or <a href="http://emoncms.org/">Emoncms</a>.</p>
 
 <div class="note unreleased">
   <h5>IoT System Model </h5>
@@ -1696,13 +1701,13 @@
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/configuration/">Configuration</a></li>
           
+          
+
+            
           
 
             
@@ -1896,13 +1901,13 @@
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/leds/">LEDs</a></li>
           
+          
+
+            
           
 
             
@@ -1940,12 +1945,6 @@
         
         
             
-
-            
-          
-
-            
-          
 
             
           
@@ -2014,6 +2013,12 @@
           
 
             
+          
+
+            
+          
+
+            
         
       
 
@@ -2021,12 +2026,6 @@
         
         
             
-
-            
-          
-
-            
-          
 
             
           
@@ -2095,6 +2094,12 @@
           
 
             
+          
+
+            
+          
+
+            
         
       
 
@@ -2115,13 +2120,13 @@
             
           
 
+            
+          
+
               
             <li class="" >
             <a href="/doc/expansion/">Expansion</a></li>
           
-          
-
-            
           
 
             
@@ -2482,16 +2487,16 @@
             
           
 
-            
-          
-
-            
-          
-
               
             <li class="" >
             <a href="/doc/sleep/">Sleep Management</a></li>
           
+          
+
+            
+          
+
+            
           
 
             
@@ -2533,19 +2538,19 @@
             
           
 
+            
+          
+
+            
+          
+
+            
+          
+
               
             <li class="" >
             <a href="/doc/github/">GitHub</a></li>
           
-          
-
-            
-          
-
-            
-          
-
-            
           
 
             
@@ -2634,16 +2639,16 @@
             
           
 
+            
+          
+
+            
+          
+
               
             <li class="" >
             <a href="/doc/navi/">Navigation Switch</a></li>
           
-          
-
-            
-          
-
-            
           
 
             
@@ -2681,6 +2686,9 @@
         
         
             
+
+            
+          
 
             
           
@@ -2752,9 +2760,6 @@
           
 
             
-          
-
-            
         
       
 
@@ -2762,15 +2767,6 @@
         
         
             
-
-            
-          
-
-            
-          
-
-            
-          
 
             
           
@@ -2836,6 +2832,15 @@
           
 
             
+          
+
+            
+          
+
+            
+          
+
+            
         
       
 
@@ -2853,13 +2858,13 @@
             
           
 
+            
+          
+
               
             <li class="" >
             <a href="/doc/env/">Environment Sensor</a></li>
           
-          
-
-            
           
 
             
@@ -3014,13 +3019,13 @@
             
           
 
+            
+          
+
               
             <li class="" >
             <a href="/doc/contributing/">Contributing</a></li>
           
-          
-
-            
           
 
             
@@ -3140,13 +3145,13 @@
             
           
 
+            
+          
+
               
             <li class="" >
             <a href="/doc/resources/">Resources</a></li>
           
-          
-
-            
           
 
             

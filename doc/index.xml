@@ -607,15 +607,17 @@ RH_RF69 rf69(10, 3); // For RF69 on Ardhat
       <guid>http://ubiqio.com/doc/progmodel/</guid>
       <description>&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&amp;rsquo;s features can be accessed from a compatible host, such as Raspberry Pi, using the &lt;a href=&#34;https://github.com/firmata/protocol&#34;&gt;Firmata&lt;/a&gt; protocol over serial.&lt;/p&gt;
 
-&lt;p&gt;Firmata provides a standardized mechanism to exchange information between a real-time processor such as &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; and a host, but easily extended to provide access to the wide range of features available.&lt;/p&gt;
+&lt;p&gt;Firmata provides a standardized mechanism to exchange information between a real-time processor such as &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; and a host, but easily is extended to provide access to the wide range of features available.&lt;/p&gt;
 
 &lt;p&gt;As an example, the factory &lt;a href=&#34;https://github.com/Ardhat/ArdhatFirmata&#34;&gt;image&lt;/a&gt; that ships with &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; contains a modified version of standard &lt;a href=&#34;https://www.arduino.cc/en/Reference/Firmata&#34;&gt;Arduino Firmata&lt;/a&gt; that adds several additional features, such as monitoring of the Navigation switch and Status LED control, using the Arduino &lt;a href=&#34;http://playground.arduino.cc/Code/SMlib&#34;&gt;SMlib&lt;/a&gt;. This state machine library provides an extremely lightweight mechanism that allows primitive multitasking.&lt;/p&gt;
 
 &lt;p&gt;In principle, an &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; host application can be written in any language that has a Firmata library, including Processing, Python, C++ and &lt;a href=&#34;http://firmata.org/wiki/Download&#34;&gt;many more&lt;/a&gt;. However, in a Robotics or IoT environment, services are often distributed over a network whose availability cannot be guaranteed. A responsive system cannot  block while  waiting for these services to respond.&lt;/p&gt;
 
-&lt;p&gt;JavaScript’s support of callbacks, and the availability of non-blocking app frameworks such as &lt;a href=&#34;http://nodejs.org/&#34;&gt;node.js&lt;/a&gt;, make it the natural choice for a web enabled system, and so the main supported framework for local programming of Ardhat is &lt;a href=&#34;http://nodejs.org/&#34;&gt;Node.js&lt;/a&gt;, which is built on top of Google’s V8 javascript runtime, and is widely extensible through the use of additional libraries.  The addition of Express and AngularJs allow applications to be exposed over the web if required.&lt;/p&gt;
+&lt;p&gt;JavaScript’s support of callbacks, and the availability of non-blocking app frameworks such as &lt;a href=&#34;http://nodejs.org/&#34;&gt;node.js&lt;/a&gt;, make it the natural choice for a web enabled system, and it is the main supported framework for local programming of &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;. Node.js  is built on top of Google’s V8 javascript runtime, and is widely extensible through the use of additional libraries.  The addition of Express and AngularJS allow applications to be exposed over the web if required.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://johnny-five.io/&#34;&gt;Johnny-Five&lt;/a&gt; is a great node library that sits on top of Firmata but provides some higher level functions to make use with node even easier. For example, &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; is unit tested using &lt;a href=&#34;https://mochajs.org/&#34;&gt;Mocha&lt;/a&gt; on Johnny-Five on Firmata.&lt;/p&gt;
+
+&lt;p&gt;Application-specific projects can also be created on top of Node using accessible app generators such as  &lt;a href=&#34;http://nodered.org/&#34;&gt;Node-Red&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Some of the key libraries are shown below:&lt;/p&gt;
 
@@ -659,7 +661,7 @@ RH_RF69 rf69(10, 3); // For RF69 on Ardhat
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://github.com/jgautier/firmata&#34;&gt;firmata&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/jgautier/firmata&#34;&gt;Firmata&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;&lt;em&gt;node.js library to interact with  local Arduino running the firmata protocol (currently limited to serial port only (use of node-i2c TBD))&lt;/em&gt;&lt;/td&gt;
 &lt;/tr&gt;
 
@@ -697,10 +699,13 @@ RH_RF69 rf69(10, 3); // For RF69 on Ardhat
 &lt;td&gt;&lt;a href=&#34;https://github.com/patchwork-toolkit/patchwork/wiki/Freeboard&#34;&gt;freeboard&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;&lt;em&gt;local dashboard function&lt;/em&gt;&lt;/td&gt;
 &lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;http://nodered.org/&#34;&gt;Node-Red&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;em&gt;A visual tool for wiring the Internet of Things&lt;/em&gt;&lt;/td&gt;
+&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
-&lt;p&gt;Application-specific user flows  can be written on top of this framework using accessible app generators such as  &lt;a href=&#34;http://nodered.org/&#34;&gt;Node-Red&lt;/a&gt; or &lt;a href=&#34;http://emoncms.org/&#34;&gt;Emoncms&lt;/a&gt;.&lt;/p&gt;
 
 &lt;div class=&#34;note unreleased&#34;&gt;
   &lt;h5&gt;IoT System Model &lt;/h5&gt;
