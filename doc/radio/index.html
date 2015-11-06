@@ -205,16 +205,18 @@
            
             
            
-              
-                <option value="http://ubiqio.com/doc/overview/">Overview</option>
             
            
+              
+                <option value="http://ubiqio.com/doc/overview/">Overview</option>
             
           
         
           
           
           
+           
+            
            
             
            
@@ -263,8 +265,6 @@
             
            
             
-           
-            
           
         
           
@@ -315,10 +315,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/quickstart/">Quick Start</option>
+            
+           
             
           
         
@@ -405,12 +405,12 @@
            
             
            
-            
-           
-            
-           
               
                 <option value="http://ubiqio.com/doc/leds/">LEDs</option>
+            
+           
+            
+           
             
            
             
@@ -560,10 +560,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/expansion/">Expansion</option>
+            
+           
             
            
             
@@ -755,10 +755,10 @@
            
             
            
-              
-                <option value="http://ubiqio.com/doc/upgrading/">Upgrading</option>
             
            
+              
+                <option value="http://ubiqio.com/doc/upgrading/">Upgrading</option>
             
            
             
@@ -810,10 +810,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/sleep/">Sleep Management</option>
+            
+           
             
            
             
@@ -1014,12 +1014,12 @@
            
             
            
-            
-           
-            
-           
               
                 <option value="http://ubiqio.com/doc/imu/">IMU</option>
+            
+           
+            
+           
             
            
             
@@ -1138,10 +1138,10 @@
            
             
            
-              
-                <option value="http://ubiqio.com/doc/radio/">Mesh Radio</option>
             
            
+              
+                <option value="http://ubiqio.com/doc/radio/">Mesh Radio</option>
             
            
             
@@ -1166,8 +1166,6 @@
           
           
           
-           
-            
            
             
            
@@ -1216,6 +1214,8 @@
             
            
             
+           
+            
           
         
           
@@ -1252,10 +1252,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/resources/">Resources</option>
+            
+           
             
            
             
@@ -1320,35 +1320,9 @@
   <p>Do not load the driver without an antenna attached, as running the transmitter without an appropriate load could cause permanent damage to the radio module</p>
 </div>
 
-<p>(The antenna is best left straight but will also work coiled). For reference, the required antenna lengths are:</p>
-
-<p><strong>433MHz:</strong></p>
-
-<ul>
-<li><sup>1</sup>&frasl;<sub>4</sub> wave = 164.7mm</li>
-<li><sup>1</sup>&frasl;<sub>2</sub> wave = 329.4mm</li>
-<li>full wave = 692.7mm</li>
-</ul>
-
-<p><strong>868MHz:</strong></p>
-
-<ul>
-<li><sup>1</sup>&frasl;<sub>4</sub> wave = 82.2mm</li>
-<li><sup>1</sup>&frasl;<sub>2</sub> wave = 164.3mm</li>
-<li>full wave = 345.5mm</li>
-</ul>
-
-<p><strong>915MHz:</strong></p>
-
-<ul>
-<li><sup>1</sup>&frasl;<sub>4</sub> wave = 77.9mm</li>
-<li><sup>1</sup>&frasl;<sub>2</sub> wave = 155.9mm</li>
-<li>full wave = 327.8mm</li>
-</ul>
-
 <p>Then install the Radiohead <a href="https://github.com/Ardhat/Radiohead">library</a> into the Arduino library folder, either from the Arduino GUI Library Manager or alternatively from the console using the excellent Platformio code builder, which natively supports both <a href="http://platformio.org/#!/lib/search?query=radiohead">Radiohead</a> and <a href="http://docs.platformio.org/en/latest/platforms/atmelavr.html#boards"><span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span></a> .</p>
 
-<p>There are a large number of examples provided with the library, but the <em>RF69client</em> and <em>RF69server</em> sketches are a great starting point.</p>
+<p>There are a large number of examples provided with the library, but the <code>RF69_client</code> and <code>RF69_server</code> sketches are a great starting point.</p>
 
 <p>In both cases, you&rsquo;ll need to make sure you&rsquo;ve set the frequency correctly, depending on the <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> radio module you have. Do this on the line</p>
 
@@ -1361,7 +1335,7 @@
 RH_RF69 rf69(10, 3); // For RF69 on Ardhat
 </code></pre>
 
-<p>Then load up the <em>RF69server.pde</em> sketch on the &lsquo;gateway&rsquo; <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span>, and the <em>RF69server.pde</em> sketch on the &lsquo;node&rsquo;. On the client, you should get replies to sent messages with a RSSI (Received Signal Strength Indication), and the activity LED will flash.</p>
+<p>Then load up the <code>RF69_server.pde</code> sketch on the &lsquo;gateway&rsquo; <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span>, and the <code>RF69_server.pde</code> sketch on the &lsquo;node&rsquo;. On the client, you should get replies to sent messages with a RSSI (Received Signal Strength Indication), and the activity LED will flash.</p>
 
 <p>Once you have a basic radio link in place you can experiment with more advanced networking topologies, such as multinode mesh.</p>
 
@@ -1564,13 +1538,13 @@ RH_RF69 rf69(10, 3); // For RF69 on Ardhat
             
           
 
+            
+          
+
               
             <li class="" >
             <a href="/doc/overview/">Overview</a></li>
           
-          
-
-            
         
       
 
@@ -1578,6 +1552,9 @@ RH_RF69 rf69(10, 3); // For RF69 on Ardhat
         
         
             
+
+            
+          
 
             
           
@@ -1649,9 +1626,6 @@ RH_RF69 rf69(10, 3); // For RF69 on Ardhat
           
 
             
-          
-
-            
         
       
 
@@ -1726,13 +1700,13 @@ RH_RF69 rf69(10, 3); // For RF69 on Ardhat
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/quickstart/">Quick Start</a></li>
           
+          
+
+            
         
       
     </ul>
@@ -1857,16 +1831,16 @@ RH_RF69 rf69(10, 3); // For RF69 on Ardhat
             
           
 
-            
-          
-
-            
-          
-
               
             <li class="" >
             <a href="/doc/leds/">LEDs</a></li>
           
+          
+
+            
+          
+
+            
           
 
             
@@ -2085,13 +2059,13 @@ RH_RF69 rf69(10, 3); // For RF69 on Ardhat
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/expansion/">Expansion</a></li>
           
+          
+
+            
           
 
             
@@ -2372,13 +2346,13 @@ RH_RF69 rf69(10, 3); // For RF69 on Ardhat
             
           
 
+            
+          
+
               
             <li class="" >
             <a href="/doc/upgrading/">Upgrading</a></li>
           
-          
-
-            
           
 
             
@@ -2453,13 +2427,13 @@ RH_RF69 rf69(10, 3); // For RF69 on Ardhat
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/sleep/">Sleep Management</a></li>
           
+          
+
+            
           
 
             
@@ -2752,16 +2726,16 @@ RH_RF69 rf69(10, 3); // For RF69 on Ardhat
             
           
 
-            
-          
-
-            
-          
-
               
             <li class="" >
             <a href="/doc/imu/">IMU</a></li>
           
+          
+
+            
+          
+
+            
           
 
             
@@ -2935,15 +2909,15 @@ RH_RF69 rf69(10, 3); // For RF69 on Ardhat
             
           
 
+            
+          
+
               
             <li class=" 
             current 
             " >
             <a href="/doc/radio/">Mesh Radio</a></li>
           
-          
-
-            
           
 
             
@@ -2977,9 +2951,6 @@ RH_RF69 rf69(10, 3); // For RF69 on Ardhat
         
         
             
-
-            
-          
 
             
           
@@ -3051,6 +3022,9 @@ RH_RF69 rf69(10, 3); // For RF69 on Ardhat
           
 
             
+          
+
+            
         
       
 
@@ -3104,13 +3078,13 @@ RH_RF69 rf69(10, 3); // For RF69 on Ardhat
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/resources/">Resources</a></li>
           
+          
+
+            
           
 
             

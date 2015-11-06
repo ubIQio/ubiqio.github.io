@@ -509,35 +509,9 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
   &lt;p&gt;Do not load the driver without an antenna attached, as running the transmitter without an appropriate load could cause permanent damage to the radio module&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;p&gt;(The antenna is best left straight but will also work coiled). For reference, the required antenna lengths are:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;433MHz:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;4&lt;/sub&gt; wave = 164.7mm&lt;/li&gt;
-&lt;li&gt;&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt; wave = 329.4mm&lt;/li&gt;
-&lt;li&gt;full wave = 692.7mm&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;868MHz:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;4&lt;/sub&gt; wave = 82.2mm&lt;/li&gt;
-&lt;li&gt;&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt; wave = 164.3mm&lt;/li&gt;
-&lt;li&gt;full wave = 345.5mm&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;915MHz:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;4&lt;/sub&gt; wave = 77.9mm&lt;/li&gt;
-&lt;li&gt;&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt; wave = 155.9mm&lt;/li&gt;
-&lt;li&gt;full wave = 327.8mm&lt;/li&gt;
-&lt;/ul&gt;
-
 &lt;p&gt;Then install the Radiohead &lt;a href=&#34;https://github.com/Ardhat/Radiohead&#34;&gt;library&lt;/a&gt; into the Arduino library folder, either from the Arduino GUI Library Manager or alternatively from the console using the excellent Platformio code builder, which natively supports both &lt;a href=&#34;http://platformio.org/#!/lib/search?query=radiohead&#34;&gt;Radiohead&lt;/a&gt; and &lt;a href=&#34;http://docs.platformio.org/en/latest/platforms/atmelavr.html#boards&#34;&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&lt;/a&gt; .&lt;/p&gt;
 
-&lt;p&gt;There are a large number of examples provided with the library, but the &lt;em&gt;RF69client&lt;/em&gt; and &lt;em&gt;RF69server&lt;/em&gt; sketches are a great starting point.&lt;/p&gt;
+&lt;p&gt;There are a large number of examples provided with the library, but the &lt;code&gt;RF69_client&lt;/code&gt; and &lt;code&gt;RF69_server&lt;/code&gt; sketches are a great starting point.&lt;/p&gt;
 
 &lt;p&gt;In both cases, you&amp;rsquo;ll need to make sure you&amp;rsquo;ve set the frequency correctly, depending on the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; radio module you have. Do this on the line&lt;/p&gt;
 
@@ -550,7 +524,7 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 RH_RF69 rf69(10, 3); // For RF69 on Ardhat
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Then load up the &lt;em&gt;RF69server.pde&lt;/em&gt; sketch on the &amp;lsquo;gateway&amp;rsquo; &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;, and the &lt;em&gt;RF69server.pde&lt;/em&gt; sketch on the &amp;lsquo;node&amp;rsquo;. On the client, you should get replies to sent messages with a RSSI (Received Signal Strength Indication), and the activity LED will flash.&lt;/p&gt;
+&lt;p&gt;Then load up the &lt;code&gt;RF69_server.pde&lt;/code&gt; sketch on the &amp;lsquo;gateway&amp;rsquo; &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;, and the &lt;code&gt;RF69_server.pde&lt;/code&gt; sketch on the &amp;lsquo;node&amp;rsquo;. On the client, you should get replies to sent messages with a RSSI (Received Signal Strength Indication), and the activity LED will flash.&lt;/p&gt;
 
 &lt;p&gt;Once you have a basic radio link in place you can experiment with more advanced networking topologies, such as multinode mesh.&lt;/p&gt;
 </description>
