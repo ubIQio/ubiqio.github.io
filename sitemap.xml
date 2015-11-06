@@ -28,11 +28,11 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/expansion/</loc>
+    <loc>http://ubiqio.com/doc/env/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/env/</loc>
+    <loc>http://ubiqio.com/doc/expansion/</loc>
   </url>
   
   <url>
@@ -52,7 +52,7 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/interprocessor/</loc>
+    <loc>http://ubiqio.com/doc/io/</loc>
   </url>
   
   <url>
@@ -60,7 +60,7 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/io/</loc>
+    <loc>http://ubiqio.com/doc/interprocessor/</loc>
   </url>
   
   <url>
@@ -68,19 +68,19 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/progmodel/</loc>
-  </url>
-  
-  <url>
     <loc>http://ubiqio.com/doc/radio/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/rtc/</loc>
+    <loc>http://ubiqio.com/doc/progmodel/</loc>
   </url>
   
   <url>
     <loc>http://ubiqio.com/doc/resources/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ubiqio.com/doc/rtc/</loc>
   </url>
   
   <url>
