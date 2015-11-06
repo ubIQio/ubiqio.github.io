@@ -81,7 +81,7 @@ Any cell with a standard JST-PH connector that physically fits your application 
 &lt;p&gt;If you have a radio equipped &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;, you&amp;rsquo;ll need to attach an antenna to the board.&lt;/p&gt;
 
 &lt;div class=&#34;note warning&#34;&gt;
-  &lt;p&gt;Do not load the radio driver without an antenna attached, as running the transmitter without an approriate load could cause permanent damage to the radio module&lt;/p&gt;
+  &lt;p&gt;Do not load the radio driver without an antenna attached, as running the transmitter without an appropriate load could cause permanent damage to the radio module&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;The attach point is near the radio module, and is marked with an antenna symbol on the top side of the board. The antenna is best left straight but will also work coiled but with a small effect on RSS (Received Signal Strength). The length of wire needed depends on the radio module frequency you have selected, and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; is supplied with a &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;4&lt;/sub&gt; wave antenna of appropriate length. For reference, the required antenna lengths are:&lt;/p&gt;
@@ -464,7 +464,7 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 
 &lt;p&gt;The other form of support is through the inclusion of a 3.3V to 5V converter on the output of the Pi PWM pin, which can be used to connect WS8212 LED strings directly to Ardhat.&lt;/p&gt;
 
-&lt;p&gt;The 5V rail can provide upto 2.5A which is sufficient to drive 4m light strings in normal use (ie not all illuminated at full brigtness)&lt;/p&gt;
+&lt;p&gt;The 5V rail can provide up to 2.5A which is sufficient to drive 4m light strings in normal use (ie not all illuminated at full brigtness)&lt;/p&gt;
 
 &lt;p&gt;See &lt;a href=&#34;https://github.com/Ardhat/spiralLED&#34;&gt;Spiralled&lt;/a&gt; for an example of this in use.&lt;/p&gt;
 

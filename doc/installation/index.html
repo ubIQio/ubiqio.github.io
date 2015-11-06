@@ -258,10 +258,10 @@
            
             
            
-              
-                <option value="http://ubiqio.com/doc/overview/">Overview</option>
             
            
+              
+                <option value="http://ubiqio.com/doc/overview/">Overview</option>
             
            
             
@@ -372,10 +372,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/power/">Power</option>
+            
+           
             
            
             
@@ -409,10 +409,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/leds/">LEDs</option>
+            
+           
             
            
             
@@ -497,10 +497,10 @@
            
             
            
-              
-                <option value="http://ubiqio.com/doc/battery/">Battery Operation</option>
             
            
+              
+                <option value="http://ubiqio.com/doc/battery/">Battery Operation</option>
             
            
             
@@ -690,10 +690,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/progmodel/">Programming model</option>
+            
+           
             
            
             
@@ -841,12 +841,12 @@
            
             
            
+            
+           
+            
+           
               
                 <option value="http://ubiqio.com/doc/github/">GitHub</option>
-            
-           
-            
-           
             
            
             
@@ -912,12 +912,12 @@
            
             
            
+            
+           
+            
+           
               
                 <option value="http://ubiqio.com/doc/navi/">Navigation Switch</option>
-            
-           
-            
-           
             
            
             
@@ -975,10 +975,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/rtc/">Real Time Clock</option>
+            
+           
             
            
             
@@ -1169,10 +1169,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/contributing/">Contributing</option>
+            
+           
             
            
             
@@ -1221,6 +1221,8 @@
           
           
           
+           
+            
            
             
            
@@ -1269,8 +1271,6 @@
             
            
             
-           
-            
           
         
      </optgroup>
@@ -1291,9 +1291,43 @@
               <hr />
               <p>Getting Ardhat installed and ready-to-go should only take a few minutes.</p>
 
-<p>The Optiboot bootloader is already installed on <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span>&rsquo;s processor, but avrdude needs to be modified to work with Raspberry Pi hardware.</p>
+<p>The Optiboot bootloader is already installed on <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span>&rsquo;s processor, but we need to make sure the Raspberry Pi is setup correctly, and has the necessary software in place.</p>
 
-<p>There are a few pre-requisites, which are best installed from the command line, and the best way to do that is to ssh into the Raspberry Pi Linux instance, so that you can copy and paste the commands below into your terminal</p>
+<p>By default, Raspberry Pi connects it&rsquo;s console ouput to the serial port. As we use this channel to communicate we need to disable it. This is most easily doen with the in-built utility raspi-config.</p>
+
+<section class="quickstart" >
+  <div class="grid">
+    <div class="unit .half code">
+      <p class="title">Setup Pi Hardware</p>
+      <div class="shell">
+        <p class="line">
+          <span class="path">~</span>
+          <span class="prompt">$</span>
+          <span class="command">sudo raspi-config</span>
+        </p>        
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</section>
+
+<p>From the menu, select <em>Advanced Options</em></p>
+
+<p><img src="/media/raspi-config.png" alt="image alt text" /></p>
+
+<p>Then select serial</p>
+
+<p><img src="/media/raspi-config-serial.png" alt="image alt text" /></p>
+
+<p>and disable shell and kernel messages on serial</p>
+
+<p><img src="/media/raspi-config-serial-no.png" alt="image alt text" /></p>
+
+<p>Back at the Advanced Option menu you&rsquo;ll also want to enable I2C, so that you can access the Ardhat peripeherals directly if required</p>
+
+<p><img src="/media/raspi-config-I2C.png" alt="image alt text" /></p>
+
+<p>Now we need to load a few software pre-requisites, which are best installed from the command line, and the best way to do that is to ssh into the Raspberry Pi Linux instance, so that you can copy and paste the commands below into your terminal</p>
 
 <p>First make sure you have up-to-date packages installed</p>
 
@@ -1318,7 +1352,7 @@
   </div>
 </section>
 
-<p>Then install some essential packages</p>
+<p>Then install some essential packages, including a modified version of avrdude.</p>
 
 <section class="quickstart" >
   <div class="grid">
@@ -1341,8 +1375,7 @@
   </div>
 </section>
 
-<p>Setup the Arduino IDE to work with Ardhat</p>
-
+<p>In order that the Arduino IDE works properly with Ardhat, it needs to Reset Ardhat during code upload. It does that using the modified avrdude we just cloned, so enter the following commands:
 <section class="quickstart" >
   <div class="grid">
     <div class="unit .half code">
@@ -1373,13 +1406,13 @@
           <span class="command">sudo ln -s /usr/bin/avrdude-autoreset /usr/bin/avrdude</span>
         </p>
         <p class="line">
-          <span class="output"># => Now open the Arduino IDE and start programming Ardhat!</span>
+          <span class="output"># =&gt; Now open the Arduino IDE and start programming Ardhat!</span>
         </p>
       </div>
     </div>
     <div class="clear"></div>
   </div>
-</section>
+</section></p>
 
 <p>Start the Arduino IDE</p>
 
@@ -1664,13 +1697,13 @@
             
           
 
+            
+          
+
               
             <li class="" >
             <a href="/doc/overview/">Overview</a></li>
           
-          
-
-            
           
 
             
@@ -1831,13 +1864,13 @@
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/power/">Power</a></li>
           
+          
+
+            
           
 
             
@@ -1885,13 +1918,13 @@
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/leds/">LEDs</a></li>
           
+          
+
+            
           
 
             
@@ -2014,13 +2047,13 @@
             
           
 
+            
+          
+
               
             <li class="" >
             <a href="/doc/battery/">Battery Operation</a></li>
           
-          
-
-            
           
 
             
@@ -2300,13 +2333,13 @@
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/progmodel/">Programming model</a></li>
           
+          
+
+            
           
 
             
@@ -2522,16 +2555,16 @@
             
           
 
+            
+          
+
+            
+          
+
               
             <li class="" >
             <a href="/doc/github/">GitHub</a></li>
           
-          
-
-            
-          
-
-            
           
 
             
@@ -2626,16 +2659,16 @@
             
           
 
+            
+          
+
+            
+          
+
               
             <li class="" >
             <a href="/doc/navi/">Navigation Switch</a></li>
           
-          
-
-            
-          
-
-            
           
 
             
@@ -2719,13 +2752,13 @@
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/rtc/">Real Time Clock</a></li>
           
+          
+
+            
           
 
             
@@ -3003,13 +3036,13 @@
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/contributing/">Contributing</a></li>
           
+          
+
+            
           
 
             
@@ -3129,13 +3162,13 @@
             
           
 
+            
+          
+
               
             <li class="" >
             <a href="/doc/resources/">Resources</a></li>
           
-          
-
-            
           
 
             
