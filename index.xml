@@ -37,41 +37,6 @@
     </item>
     
     <item>
-      <title>Contributing</title>
-      <link>http://ubiqio.com/doc/contributing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/contributing/</guid>
-      <description>
-
-&lt;p&gt;So you&amp;rsquo;ve got an awesome idea to throw into &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;. Great! Head over to &lt;a href=&#34;http://ubiqio.com/community&#34;&gt;the forum&lt;/a&gt; and let us know!&lt;/p&gt;
-
-&lt;h2 id=&#34;updating-documentation:cc4aac3e9be04e0413c9520f223b493c&#34;&gt;Updating Documentation&lt;/h2&gt;
-
-&lt;p&gt;We want the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; documentation to be the best it can be. We&amp;rsquo;ve
-open-sourced our docs and we welcome any pull requests if you find it
-lacking.&lt;/p&gt;
-
-&lt;p&gt;You can access the documentation for &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; just by clicking the pencil at the top of each document.&lt;/p&gt;
-
-&lt;p&gt;All documentation pull requests should be directed at &lt;code&gt;master&lt;/code&gt;. Pull
-requests directed at another branch will not be accepted.&lt;/p&gt;
-
-&lt;h2 id=&#34;finally:cc4aac3e9be04e0413c9520f223b493c&#34;&gt;Finally&amp;hellip;&lt;/h2&gt;
-
-&lt;div class=&#34;note&#34;&gt;
-  &lt;h5&gt;Let us know what could be better!&lt;/h5&gt;
-  &lt;p&gt;
-    Both using and hacking on &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; should be fun, simple, and easy, so if for
-    some reason you find it’s a pain, please &lt;a
-    href=&#34;http://ubiqio.com/community&#34;&gt;flag it&lt;/a&gt; on
-    the forum describing your experience so we can make it better.
-  &lt;/p&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Battery Operation</title>
       <link>http://ubiqio.com/doc/battery/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -104,30 +69,6 @@ Any cell with a standard JST-PH connector that physically fits your application 
     </item>
     
     <item>
-      <title>Environment Sensor</title>
-      <link>http://ubiqio.com/doc/env/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/env/</guid>
-      <description>&lt;p&gt;The &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;-E provides Environmental Sensing in addition to the basic functions of Arduino compatibility and power management. This is performed by a Bosch BME280 integrated sensor, which provides&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;humidity sensor&lt;/li&gt;
-&lt;li&gt;barometric pressure sensor&lt;/li&gt;
-&lt;li&gt;temperature sensor&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;From the Bosch &lt;a href=&#34;http://www.bosch-sensortec.com/de/homepage/products_3/environmental_sensors_1/bme280/bme280_1&#34;&gt;website&lt;/a&gt;&amp;hellip;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&amp;ldquo;The humidity sensor features an extremely fast response time which supports performance requirements for emerging applications such as context awareness, and high accuracy over a wide temperature range. The pressure sensor is an absolute barometric pressure sensor with features exceptionally high accuracy and resolution at very low noise. The integrated temperature sensor has been optimized for very low noise and high resolution. It is primarily used for temperature compensation of the pressure and humidity sensors, and can also be used for estimating ambient temperature.&amp;rdquo;&amp;rdquo;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The BMP180/280 is compatible with the popular &lt;a href=&#34;https://github.com/richards-tech/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Configuration</title>
       <link>http://ubiqio.com/doc/configuration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -138,7 +79,7 @@ Any cell with a standard JST-PH connector that physically fits your application 
 &lt;h4 id=&#34;protecting-shield-pins:a66b35d20295cb764719ac8bd35837ec&#34;&gt;Protecting shield pins&lt;/h4&gt;
 
 &lt;div class=&#34;note warning&#34;&gt;
-  &lt;p&gt;Before fitting &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; to a Raspberry Pi, be sure that you either fit spacers between the boards or place the insulating foam supplied on the Pi HDMI connect to prevent short-circuits on the shield connector which may cause damage to &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&lt;/p&gt;
+  &lt;p&gt;Before fitting &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; to a Raspberry Pi, be sure that you either fit spacers between the boards or place the insulating foam supplied on the Pi HDMI connector to prevent short-circuits on the shield connector which may cause damage to &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;h4 id=&#34;arduino-shield-headers:a66b35d20295cb764719ac8bd35837ec&#34;&gt;Arduino shield headers&lt;/h4&gt;
@@ -186,6 +127,74 @@ Any cell with a standard JST-PH connector that physically fits your application 
     </item>
     
     <item>
+      <title>Contributing</title>
+      <link>http://ubiqio.com/doc/contributing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/contributing/</guid>
+      <description>
+
+&lt;p&gt;So you&amp;rsquo;ve got an awesome idea to throw into &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;. Great! Head over to &lt;a href=&#34;http://ubiqio.com/community&#34;&gt;the forum&lt;/a&gt; and let us know!&lt;/p&gt;
+
+&lt;h2 id=&#34;updating-documentation:cc4aac3e9be04e0413c9520f223b493c&#34;&gt;Updating Documentation&lt;/h2&gt;
+
+&lt;p&gt;We want the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; documentation to be the best it can be. We&amp;rsquo;ve
+open-sourced our docs and we welcome any pull requests if you find it
+lacking.&lt;/p&gt;
+
+&lt;p&gt;You can access the documentation for &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; just by clicking the pencil at the top of each document.&lt;/p&gt;
+
+&lt;p&gt;All documentation pull requests should be directed at &lt;code&gt;master&lt;/code&gt;. Pull
+requests directed at another branch will not be accepted.&lt;/p&gt;
+
+&lt;h2 id=&#34;finally:cc4aac3e9be04e0413c9520f223b493c&#34;&gt;Finally&amp;hellip;&lt;/h2&gt;
+
+&lt;div class=&#34;note&#34;&gt;
+  &lt;h5&gt;Let us know what could be better!&lt;/h5&gt;
+  &lt;p&gt;
+    Both using and hacking on &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; should be fun, simple, and easy, so if for
+    some reason you find it’s a pain, please &lt;a
+    href=&#34;http://ubiqio.com/community&#34;&gt;flag it&lt;/a&gt; on
+    the forum describing your experience so we can make it better.
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Environment Sensor</title>
+      <link>http://ubiqio.com/doc/env/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/env/</guid>
+      <description>&lt;p&gt;The &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;-E provides Environmental Sensing in addition to the basic functions of Arduino compatibility and power management. This is performed by a Bosch BME280 integrated sensor, which provides&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;humidity sensor&lt;/li&gt;
+&lt;li&gt;barometric pressure sensor&lt;/li&gt;
+&lt;li&gt;temperature sensor&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;From the Bosch &lt;a href=&#34;http://www.bosch-sensortec.com/de/homepage/products_3/environmental_sensors_1/bme280/bme280_1&#34;&gt;website&lt;/a&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;The humidity sensor features an extremely fast response time which supports performance requirements for emerging applications such as context awareness, and high accuracy over a wide temperature range. The pressure sensor is an absolute barometric pressure sensor with features exceptionally high accuracy and resolution at very low noise. The integrated temperature sensor has been optimized for very low noise and high resolution. It is primarily used for temperature compensation of the pressure and humidity sensors, and can also be used for estimating ambient temperature.&amp;rdquo;&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The BMP180/280 is compatible with the popular &lt;a href=&#34;https://github.com/richards-tech/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>History</title>
+      <link>http://ubiqio.com/doc/history/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/history/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Expansion</title>
       <link>http://ubiqio.com/doc/expansion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -207,43 +216,6 @@ Any cell with a standard JST-PH connector that physically fits your application 
 
 &lt;p&gt;When the Raspberry Pi is active, it is the master on the  I2C bus, and is responsible for setup of the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;  I2C peripherals (e.g.IMU, Altimeter, RTC etc.).  When the Raspberry Pi is inactive, &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; can master the bus and interrogate the peripherals.  For example by watching the RTC, the Raspberry Pi can be started when the next crontab entry is about to come due.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>IMU</title>
-      <link>http://ubiqio.com/doc/imu/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/imu/</guid>
-      <description>
-
-&lt;h3 id=&#34;inertial-measurement-unit:53cfe453f14e91a110c18a8c31803e02&#34;&gt;(Inertial Measurement Unit)&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/mpu9250.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The IMU is connected to the I2C bus. It is mounted at &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&amp;rsquo;s  geographic center to avoid offset errors. It consists of an Invensense MPU9250, which provides&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;3-axis accelerometer&lt;/li&gt;
-&lt;li&gt;3-axis gyroscope&lt;/li&gt;
-&lt;li&gt;3-axis magnetometer (compass)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/balbot.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;During normal operation, these devices are monitored directly by the Raspberry Pi  but in sleep mode they can be monitored by &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; and used to wakeup the Raspberry Pi.&lt;/p&gt;
-
-&lt;p&gt;The MPU9250 is compatible with the popular &lt;a href=&#34;https://github.com/richards-tech/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>History</title>
-      <link>http://ubiqio.com/doc/history/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/history/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -324,65 +296,30 @@ know of a tip you think others would find handy, &lt;a href=&#34;http://ubiqio.c
     </item>
     
     <item>
-      <title>LEDs</title>
-      <link>http://ubiqio.com/doc/leds/</link>
+      <title>IMU</title>
+      <link>http://ubiqio.com/doc/imu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://ubiqio.com/doc/leds/</guid>
-      <description>&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; supports LEDs in two ways; the first is through an onboard LED that is connected to port D9. Note that this is different from the standard Arduino port, which is D13.&lt;/p&gt;
+      <guid>http://ubiqio.com/doc/imu/</guid>
+      <description>
 
-&lt;p&gt;This was done to avoid conflict with the use of D13 for SPI_SCK, and also so that the hardware PWM function can be used, for example for pulsating the LED in sleep mode.&lt;/p&gt;
+&lt;h3 id=&#34;inertial-measurement-unit:53cfe453f14e91a110c18a8c31803e02&#34;&gt;(Inertial Measurement Unit)&lt;/h3&gt;
 
-&lt;p&gt;The other form of support is through the inclusion of a 3.3V to 5V converter on the output of the Pi PWM pin, which can be used to connect WS8212 LED strings directly to Ardhat.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/mpu9250.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;The 5V rail can provide up to 2.5A which is sufficient to drive 4m light strings in normal use (ie not all illuminated at full brigtness)&lt;/p&gt;
+&lt;p&gt;The IMU is connected to the I2C bus. It is mounted at &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&amp;rsquo;s  geographic center to avoid offset errors. It consists of an Invensense MPU9250, which provides&lt;/p&gt;
 
-&lt;p&gt;See &lt;a href=&#34;https://github.com/Ardhat/spiralLED&#34;&gt;Spiralled&lt;/a&gt; for an example of this in use.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;3-axis accelerometer&lt;/li&gt;
+&lt;li&gt;3-axis gyroscope&lt;/li&gt;
+&lt;li&gt;3-axis magnetometer (compass)&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;&lt;img align=&#34;center&#34; src=&#34;http://ubiqio.com/media/SpiralLED.jpg&#34;&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Navigation Switch</title>
-      <link>http://ubiqio.com/doc/navi/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/navi/</guid>
-      <description>&lt;p&gt;The navigation switch is connected to the AVR analog port A7. This port is not present on a standard Arduino, so does not affect normal sketch operation.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/balbot.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;When operated, the switch forms a potential divider from the output of the LiPo charger, as shown in the following table:&lt;/p&gt;
+&lt;p&gt;During normal operation, these devices are monitored directly by the Raspberry Pi  but in sleep mode they can be monitored by &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; and used to wakeup the Raspberry Pi.&lt;/p&gt;
 
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;strong&gt;Navigation Switch&lt;/strong&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Open&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;5V (= 1024) or LiPo voltage when running on battery&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Left&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;&lt;sup&gt;2&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt; open circuit voltage&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Right&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt; open circuit voltage&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Pressed&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;0V&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;The MPU9250 is compatible with the popular &lt;a href=&#34;https://github.com/richards-tech/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -567,6 +504,69 @@ know of a tip you think others would find handy, &lt;a href=&#34;http://ubiqio.c
 &lt;tr&gt;
 &lt;td&gt;&lt;strong&gt;RTC Clock Out&lt;/strong&gt;&lt;/td&gt;
 &lt;td&gt;PCF8653 RTC can be programmed to generate a Clock O/P on the test point next to Pi GPIO26&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>LEDs</title>
+      <link>http://ubiqio.com/doc/leds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/leds/</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; supports LEDs in two ways; the first is through an onboard LED that is connected to port D9. Note that this is different from the standard Arduino port, which is D13.&lt;/p&gt;
+
+&lt;p&gt;This was done to avoid conflict with the use of D13 for SPI_SCK, and also so that the hardware PWM function can be used, for example for pulsating the LED in sleep mode.&lt;/p&gt;
+
+&lt;p&gt;The other form of support is through the inclusion of a 3.3V to 5V converter on the output of the Pi PWM pin, which can be used to connect WS8212 LED strings directly to Ardhat.&lt;/p&gt;
+
+&lt;p&gt;The 5V rail can provide up to 2.5A which is sufficient to drive 4m light strings in normal use (ie not all illuminated at full brigtness)&lt;/p&gt;
+
+&lt;p&gt;See &lt;a href=&#34;https://github.com/Ardhat/spiralLED&#34;&gt;Spiralled&lt;/a&gt; for an example of this in use.&lt;/p&gt;
+
+&lt;p&gt;&lt;img align=&#34;center&#34; src=&#34;http://ubiqio.com/media/SpiralLED.jpg&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Navigation Switch</title>
+      <link>http://ubiqio.com/doc/navi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/navi/</guid>
+      <description>&lt;p&gt;The navigation switch is connected to the AVR analog port A7. This port is not present on a standard Arduino, so does not affect normal sketch operation.&lt;/p&gt;
+
+&lt;p&gt;When operated, the switch forms a potential divider from the output of the LiPo charger, as shown in the following table:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;Navigation Switch&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Open&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;5V (= 1024) or LiPo voltage when running on battery&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Left&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;sup&gt;2&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt; open circuit voltage&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Right&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt; open circuit voltage&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Pressed&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;0V&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;

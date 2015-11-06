@@ -65,7 +65,7 @@ Any cell with a standard JST-PH connector that physically fits your application 
 &lt;h4 id=&#34;protecting-shield-pins:a66b35d20295cb764719ac8bd35837ec&#34;&gt;Protecting shield pins&lt;/h4&gt;
 
 &lt;div class=&#34;note warning&#34;&gt;
-  &lt;p&gt;Before fitting &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; to a Raspberry Pi, be sure that you either fit spacers between the boards or place the insulating foam supplied on the Pi HDMI connect to prevent short-circuits on the shield connector which may cause damage to &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&lt;/p&gt;
+  &lt;p&gt;Before fitting &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; to a Raspberry Pi, be sure that you either fit spacers between the boards or place the insulating foam supplied on the Pi HDMI connector to prevent short-circuits on the shield connector which may cause damage to &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;h4 id=&#34;arduino-shield-headers:a66b35d20295cb764719ac8bd35837ec&#34;&gt;Arduino shield headers&lt;/h4&gt;
