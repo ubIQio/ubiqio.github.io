@@ -722,7 +722,7 @@ footer {
 
 @media (min-width: 768px) {
   .quickstart .code {
-    font-size: 18px;
+    font-size: 15px;
     margin: -30px 0;
     float: right; }
   .quickstart h3 {
@@ -795,7 +795,7 @@ footer {
     -o-user-select: none;
     user-select: none; }
   .quickstart .code .command {
-    color: #f0e68c; }
+    color: #10ff30; }
   .quickstart .code .output {
     color: #888; }
 
