@@ -37,6 +37,41 @@
     </item>
     
     <item>
+      <title>Contributing</title>
+      <link>http://ubiqio.com/doc/contributing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/contributing/</guid>
+      <description>
+
+&lt;p&gt;So you&amp;rsquo;ve got an awesome idea to throw into &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;. Great! Head over to &lt;a href=&#34;http://ubiqio.com/community&#34;&gt;the forum&lt;/a&gt; and let us know!&lt;/p&gt;
+
+&lt;h2 id=&#34;updating-documentation:cc4aac3e9be04e0413c9520f223b493c&#34;&gt;Updating Documentation&lt;/h2&gt;
+
+&lt;p&gt;We want the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; documentation to be the best it can be. We&amp;rsquo;ve
+open-sourced our docs and we welcome any pull requests if you find it
+lacking.&lt;/p&gt;
+
+&lt;p&gt;You can access the documentation for &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; just by clicking the pencil at the top of each document.&lt;/p&gt;
+
+&lt;p&gt;All documentation pull requests should be directed at &lt;code&gt;master&lt;/code&gt;. Pull
+requests directed at another branch will not be accepted.&lt;/p&gt;
+
+&lt;h2 id=&#34;finally:cc4aac3e9be04e0413c9520f223b493c&#34;&gt;Finally&amp;hellip;&lt;/h2&gt;
+
+&lt;div class=&#34;note&#34;&gt;
+  &lt;h5&gt;Let us know what could be better!&lt;/h5&gt;
+  &lt;p&gt;
+    Both using and hacking on &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; should be fun, simple, and easy, so if for
+    some reason you find it’s a pain, please &lt;a
+    href=&#34;http://ubiqio.com/community&#34;&gt;flag it&lt;/a&gt; on
+    the forum describing your experience so we can make it better.
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Battery Operation</title>
       <link>http://ubiqio.com/doc/battery/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -127,41 +162,6 @@ Any cell with a standard JST-PH connector that physically fits your application 
     </item>
     
     <item>
-      <title>Contributing</title>
-      <link>http://ubiqio.com/doc/contributing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/contributing/</guid>
-      <description>
-
-&lt;p&gt;So you&amp;rsquo;ve got an awesome idea to throw into &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;. Great! Head over to &lt;a href=&#34;http://ubiqio.com/community&#34;&gt;the forum&lt;/a&gt; and let us know!&lt;/p&gt;
-
-&lt;h2 id=&#34;updating-documentation:cc4aac3e9be04e0413c9520f223b493c&#34;&gt;Updating Documentation&lt;/h2&gt;
-
-&lt;p&gt;We want the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; documentation to be the best it can be. We&amp;rsquo;ve
-open-sourced our docs and we welcome any pull requests if you find it
-lacking.&lt;/p&gt;
-
-&lt;p&gt;You can access the documentation for &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; just by clicking the pencil at the top of each document.&lt;/p&gt;
-
-&lt;p&gt;All documentation pull requests should be directed at &lt;code&gt;master&lt;/code&gt;. Pull
-requests directed at another branch will not be accepted.&lt;/p&gt;
-
-&lt;h2 id=&#34;finally:cc4aac3e9be04e0413c9520f223b493c&#34;&gt;Finally&amp;hellip;&lt;/h2&gt;
-
-&lt;div class=&#34;note&#34;&gt;
-  &lt;h5&gt;Let us know what could be better!&lt;/h5&gt;
-  &lt;p&gt;
-    Both using and hacking on &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; should be fun, simple, and easy, so if for
-    some reason you find it’s a pain, please &lt;a
-    href=&#34;http://ubiqio.com/community&#34;&gt;flag it&lt;/a&gt; on
-    the forum describing your experience so we can make it better.
-  &lt;/p&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Expansion</title>
       <link>http://ubiqio.com/doc/expansion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -182,6 +182,30 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 &lt;p&gt;The Raspberry Pi and Arduino can communicate over both Serial and I2C. Serial is used for the main inter-processor communication, and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; can be programmed using the Arduino IDE through the Raspberry Pi serial port. DTR emulation is provided using Raspberry Pi GPIO 22.&lt;/p&gt;
 
 &lt;p&gt;When the Raspberry Pi is active, it is the master on the  I2C bus, and is responsible for setup of the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;  I2C peripherals (e.g.IMU, Altimeter, RTC etc.).  When the Raspberry Pi is inactive, &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; can master the bus and interrogate the peripherals.  For example by watching the RTC, the Raspberry Pi can be started when the next crontab entry is about to come due.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Environment Sensor</title>
+      <link>http://ubiqio.com/doc/env/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/env/</guid>
+      <description>&lt;p&gt;The &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;-E provides Environmental Sensing in addition to the basic functions of Arduino compatibility and power management. This is performed by a Bosch BME280 integrated sensor, which provides&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;humidity sensor&lt;/li&gt;
+&lt;li&gt;barometric pressure sensor&lt;/li&gt;
+&lt;li&gt;temperature sensor&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;From the Bosch &lt;a href=&#34;http://www.bosch-sensortec.com/de/homepage/products_3/environmental_sensors_1/bme280/bme280_1&#34;&gt;website&lt;/a&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;The humidity sensor features an extremely fast response time which supports performance requirements for emerging applications such as context awareness, and high accuracy over a wide temperature range. The pressure sensor is an absolute barometric pressure sensor with features exceptionally high accuracy and resolution at very low noise. The integrated temperature sensor has been optimized for very low noise and high resolution. It is primarily used for temperature compensation of the pressure and humidity sensors, and can also be used for estimating ambient temperature.&amp;rdquo;&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The BMP180/280 is compatible with the popular &lt;a href=&#34;https://github.com/richards-tech/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -284,26 +308,18 @@ know of a tip you think others would find handy, &lt;a href=&#34;http://ubiqio.c
     </item>
     
     <item>
-      <title>Environment Sensor</title>
-      <link>http://ubiqio.com/doc/env/</link>
+      <title>Interprocessor Comms</title>
+      <link>http://ubiqio.com/doc/interprocessor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://ubiqio.com/doc/env/</guid>
-      <description>&lt;p&gt;The &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;-E provides Environmental Sensing in addition to the basic functions of Arduino compatibility and power management. This is performed by a Bosch BME280 integrated sensor, which provides&lt;/p&gt;
+      <guid>http://ubiqio.com/doc/interprocessor/</guid>
+      <description>
 
-&lt;ul&gt;
-&lt;li&gt;humidity sensor&lt;/li&gt;
-&lt;li&gt;barometric pressure sensor&lt;/li&gt;
-&lt;li&gt;temperature sensor&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&#34;raspberry-pi-arduino-communication:7b112374fed250db8d9da63a73b64a10&#34;&gt;Raspberry Pi &amp;lt;&amp;gt; Arduino communication&lt;/h2&gt;
 
-&lt;p&gt;From the Bosch &lt;a href=&#34;http://www.bosch-sensortec.com/de/homepage/products_3/environmental_sensors_1/bme280/bme280_1&#34;&gt;website&lt;/a&gt;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;The Raspberry Pi and Arduino can communicate over both Serial and I2C. Serial is used for the main inter-processor communication, and the Arduino can be programmed using the Arduino IDE through the Raspberry Pi serial port. DTR emulation is provided using Raspberry Pi GPIO 13.&lt;/p&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;&amp;ldquo;The humidity sensor features an extremely fast response time which supports performance requirements for emerging applications such as context awareness, and high accuracy over a wide temperature range. The pressure sensor is an absolute barometric pressure sensor with features exceptionally high accuracy and resolution at very low noise. The integrated temperature sensor has been optimized for very low noise and high resolution. It is primarily used for temperature compensation of the pressure and humidity sensors, and can also be used for estimating ambient temperature.&amp;rdquo;&amp;rdquo;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The BMP180/280 is compatible with the popular &lt;a href=&#34;https://github.com/richards-tech/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;When the Raspberry Pi is active, it is the master on the  I2C bus, and is responsible for setup of the Ardhat  I2C peripherals (IMU, Altimeter, RTC).  When the Raspberry Pi is inactive, the Arduino can master the bus and interrogate the peripherals.  For example by watching the RTC, the Raspberry Pi can be started when the next crontab entry is about to come due.&lt;/p&gt;
 </description>
     </item>
     
@@ -328,18 +344,189 @@ know of a tip you think others would find handy, &lt;a href=&#34;http://ubiqio.c
     </item>
     
     <item>
-      <title>Interprocessor Comms</title>
-      <link>http://ubiqio.com/doc/interprocessor/</link>
+      <title>I/O usage</title>
+      <link>http://ubiqio.com/doc/io/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://ubiqio.com/doc/interprocessor/</guid>
-      <description>
+      <guid>http://ubiqio.com/doc/io/</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; has full Arduino Shield compatibility, as well as being Raspberry Pi HAT compliant. Some of pins have a special usage in the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; environment as detailed below:&lt;/p&gt;
 
-&lt;h2 id=&#34;raspberry-pi-arduino-communication:7b112374fed250db8d9da63a73b64a10&#34;&gt;Raspberry Pi &amp;lt;&amp;gt; Arduino communication&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;Raspberry Pi GPIO&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;Usage&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
 
-&lt;p&gt;The Raspberry Pi and Arduino can communicate over both Serial and I2C. Serial is used for the main inter-processor communication, and the Arduino can be programmed using the Arduino IDE through the Raspberry Pi serial port. DTR emulation is provided using Raspberry Pi GPIO 13.&lt;/p&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;GPIO 2&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;I2C-SDA –  I2C bus for communication with RTC, IMU, ENV and Arduino&lt;/td&gt;
+&lt;/tr&gt;
 
-&lt;p&gt;When the Raspberry Pi is active, it is the master on the  I2C bus, and is responsible for setup of the Ardhat  I2C peripherals (IMU, Altimeter, RTC).  When the Raspberry Pi is inactive, the Arduino can master the bus and interrogate the peripherals.  For example by watching the RTC, the Raspberry Pi can be started when the next crontab entry is about to come due.&lt;/p&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;GPIO 3&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;I2C-SCL –  I2C bus for communication with RTC, IMU, ENV and Arduino&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;GPIO 14&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Serial RXD – used for programming the Arduino with GPIO 13&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;GPIO 15&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Serial TXD – used for programming the Arduino with GPIO 13&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;GPIO 18&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;PiPWM – connected to a 3V-5V level shifter to drive e.g. WS2811 LED strips (see &lt;strong&gt;SPARE&lt;/strong&gt; below)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;GPIO 22&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Arduino ‘Reset’ line – used for programming with serial port&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;ID_SC&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;HAT EEPROM Clock – used for read-writing the ArdHAT EEPROM&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;ID_SD&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;HAT EEPROM Data – used for read-writing the ArdHAT EEPROM&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;5V&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Connected to Ardhat 5V through a MOSFET switch controlled by Ardhat A3 (see below) NB even when the switch is off current can flow from the Raspberry Pi to Ardhat&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;Arduino I/O&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;Usage&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;D0&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;serial data from Raspberry Pi&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;D1&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;serial data to Raspberry Pi&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;D3&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Radio and peripheral Interrupt&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;D10&lt;/strong&gt;*&lt;/td&gt;
+&lt;td&gt;Radio node SPI SS&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;D11&lt;/strong&gt;*&lt;/td&gt;
+&lt;td&gt;Radio node SPI MOSI&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;D12&lt;/strong&gt;*&lt;/td&gt;
+&lt;td&gt;Radio node SPI MISO&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;D13&lt;/strong&gt;*&lt;/td&gt;
+&lt;td&gt;Radio node SPI SCK&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;A3&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;PowerOn/Off  to Raspberry Pi&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;A4&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;I2C SDA to Raspberry Pi and Peripherals&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;A5&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;I2C SCL to Raspberry Pi and Peripherals&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;A6&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;External supply voltage monitor&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;A7&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Power/Nav Switch and LiPo  voltage  monitor&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Vin&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Connected to the 2.1mm DC Jack through polarity protection&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;5V&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Supplied either from the Ext-&amp;gt; 5V Buck converter, or the LiPo-&amp;gt;5V Boost converter or the Raspberry Pi MicroUSB 5V supply&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;3.3V&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Supplied through a 300mA linear regulator on Ardhat (NB if fitted, the radio module may consume 150mA peak during transmission bursts)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;SPARE&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;The unused shield pin next to IOREF is the 5V level shifted O/P from GPIO18 (PiPWM) (see above)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;*The above marked pins are available for use if the radio module is not fitted.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;Additional&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;Usage&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;ICSP Header&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Standard Arduino programming header can be used e.g. for burning new bootloader&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Solar&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;0.1&amp;rdquo; header next to ICSP can be connected to a 6V solar panel to charge the LiPo cell while Raspberry Pi is turned off and Ardhat is on sleep mode&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;RTC Clock Out&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;PCF8653 RTC can be programmed to generate a Clock O/P on the test point next to Pi GPIO26&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 </description>
     </item>
     
@@ -383,128 +570,6 @@ know of a tip you think others would find handy, &lt;a href=&#34;http://ubiqio.c
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Programming model</title>
-      <link>http://ubiqio.com/doc/progmodel/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/progmodel/</guid>
-      <description>&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&amp;rsquo;s features can be accessed from a compatible host, such as Raspberry Pi, using the &lt;a href=&#34;https://github.com/firmata/protocol&#34;&gt;Firmata&lt;/a&gt; protocol over serial.&lt;/p&gt;
-
-&lt;p&gt;Firmata provides a standardized mechanism to exchange information between a real-time processor such as &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; and a host, but easily is extended to provide access to the wide range of features available.&lt;/p&gt;
-
-&lt;p&gt;As an example, the factory &lt;a href=&#34;https://github.com/Ardhat/ArdhatFirmata&#34;&gt;image&lt;/a&gt; that ships with &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; contains a modified version of standard &lt;a href=&#34;https://www.arduino.cc/en/Reference/Firmata&#34;&gt;Arduino Firmata&lt;/a&gt; that adds several additional features, such as monitoring of the Navigation switch and Status LED control, using the Arduino &lt;a href=&#34;http://playground.arduino.cc/Code/SMlib&#34;&gt;SMlib&lt;/a&gt;. This state machine library provides an extremely lightweight mechanism that allows primitive multitasking.&lt;/p&gt;
-
-&lt;p&gt;In principle, an &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; host application can be written in any language that has a Firmata library, including Processing, Python, C++ and &lt;a href=&#34;http://firmata.org/wiki/Download&#34;&gt;many more&lt;/a&gt;. However, in a Robotics or IoT environment, services are often distributed over a network whose availability cannot be guaranteed. A responsive system cannot  block while  waiting for these services to respond.&lt;/p&gt;
-
-&lt;p&gt;JavaScript’s support of callbacks, and the availability of non-blocking app frameworks such as &lt;a href=&#34;http://nodejs.org/&#34;&gt;node.js&lt;/a&gt;, make it the natural choice for a web enabled system, and it is the main supported framework for local programming of &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;. Node.js  is built on top of Google’s V8 javascript runtime, and is widely extensible through the use of additional libraries.  The addition of Express and AngularJS allow applications to be exposed over the web if required.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://johnny-five.io/&#34;&gt;Johnny-Five&lt;/a&gt; is a great node library that sits on top of Firmata but provides some higher level functions to make use with node even easier. For example, &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; is unit tested using &lt;a href=&#34;https://mochajs.org/&#34;&gt;Mocha&lt;/a&gt; on Johnny-Five on Firmata.&lt;/p&gt;
-
-&lt;p&gt;Application-specific projects can also be created on top of Node using accessible app generators such as  &lt;a href=&#34;http://nodered.org/&#34;&gt;Node-Red&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Some of the key libraries are shown below:&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;strong&gt;Library&lt;/strong&gt;&lt;/th&gt;
-&lt;th&gt;&lt;strong&gt;Function&lt;/strong&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;http://johnny-five.io/&#34;&gt;Johnny-Five&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;JavaScript Robotics programming framework, by Bocoup&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://mochajs.org/&#34;&gt;Mocha&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;is a JavaScript test framework running on Node.js, making asynchronous testing simple and fun.&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;http://www.mongodb.org/&#34;&gt;Mongodb&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;em&gt;noSQL database , for example to keep track of authenticated users and nodes&lt;/em&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;http://expressjs.com/&#34;&gt;Express&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;em&gt;minimal node.js web application framework that provides a robust set of features for web and mobile applications&lt;/em&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://angularjs.org/&#34;&gt;AngularJS&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;em&gt;front-end application framework toolset for Single Page Applications&lt;/em&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;http://nodejs.org/&#34;&gt;Node.js&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;em&gt;event-driven, non-blocking back-end javascript environment&lt;/em&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://github.com/jgautier/firmata&#34;&gt;Firmata&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;em&gt;node.js library to interact with  local Arduino running the firmata protocol (currently limited to serial port only (use of node-i2c TBD))&lt;/em&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://www.npmjs.com/package/pi-gpio&#34;&gt;pi-gpio&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;em&gt;node.js based library to access the GPIO of the Raspberry Pi&lt;/em&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;http://socket.io/&#34;&gt;socket.io&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;em&gt;real-time bidirectional event-based network communication&lt;/em&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;http://mqtt.org/&#34;&gt;mqtt&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;em&gt;machine-to-machine (M2M)/&amp;ldquo;Internet of Things&amp;rdquo; connectivity protocol&lt;/em&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;http://mosquitto.org/&#34;&gt;mosquitto&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;em&gt;message broker for mqtt, supports MQTT,MQTT-SN&lt;/em&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://eclipse.org/ponte/&#34;&gt;ponte&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;em&gt;node.js server bridges MQTT, CoAP&lt;/em&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://github.com/louischatriot/nedb&#34;&gt;NeDB&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;em&gt;lightweight MongoDB-like noSQL database for node.js&lt;/em&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://github.com/patchwork-toolkit/patchwork/wiki/Freeboard&#34;&gt;freeboard&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;em&gt;local dashboard function&lt;/em&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;http://nodered.org/&#34;&gt;Node-Red&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;em&gt;A visual tool for wiring the Internet of Things&lt;/em&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;div class=&#34;note unreleased&#34;&gt;
-  &lt;h5&gt;IoT System Model &lt;/h5&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The overall system model is as shown below.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/IOTmodel.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The Applications and Services may run on the Pi  (typically written in javascript), or may in part or whole be provided by a cloud service, subscribed to by the Ardhat software, eg &lt;a href=&#34;https://ifttt.com/&#34;&gt;IFTTT&lt;/a&gt;.  Sensor node topology and authentication info is stored in a &lt;a href=&#34;https://github.com/louischatriot/nedb&#34;&gt;NeDB&lt;/a&gt; a MongoDB-like noSQL database.&lt;/p&gt;
-
-&lt;p&gt;The Arduino RealTime code is responsible for monitoring and handling system power, realtime events,  and graceful sleep/shutdown/restart cycles of the Raspberry Pi.  It is also responsible for transmitting application information to the Wireless Sensor Nodes, for example using a simplified MQTT (MQTT-SN) over a link layer protocol such as &lt;a href=&#34;http://www.mike-stirling.com/redmine/projects/tinyhan/&#34;&gt;TinyHAN&lt;/a&gt; on top of  the relevant PHY (eg RFM96).&lt;/p&gt;
 </description>
     </item>
     

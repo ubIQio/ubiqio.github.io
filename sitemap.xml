@@ -16,6 +16,10 @@
   </url>
   
   <url>
+    <loc>http://ubiqio.com/doc/contributing/</loc>
+  </url>
+  
+  <url>
     <loc>http://ubiqio.com/doc/battery/</loc>
   </url>
   
@@ -24,11 +28,11 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/contributing/</loc>
+    <loc>http://ubiqio.com/doc/expansion/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/expansion/</loc>
+    <loc>http://ubiqio.com/doc/env/</loc>
   </url>
   
   <url>
@@ -48,7 +52,7 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/env/</loc>
+    <loc>http://ubiqio.com/doc/interprocessor/</loc>
   </url>
   
   <url>
@@ -56,7 +60,7 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/interprocessor/</loc>
+    <loc>http://ubiqio.com/doc/io/</loc>
   </url>
   
   <url>
@@ -68,19 +72,15 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/io/</loc>
-  </url>
-  
-  <url>
     <loc>http://ubiqio.com/doc/radio/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/resources/</loc>
+    <loc>http://ubiqio.com/doc/rtc/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/rtc/</loc>
+    <loc>http://ubiqio.com/doc/resources/</loc>
   </url>
   
   <url>
@@ -92,11 +92,11 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/news/Ardhat%20Preorder/</loc>
+    <loc>http://ubiqio.com/news/FlipboardMag/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/news/FlipboardMag/</loc>
+    <loc>http://ubiqio.com/news/Ardhat%20Preorder/</loc>
   </url>
   
   <url>
@@ -124,12 +124,12 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/test/</loc>
+    <loc>http://ubiqio.com/shop/</loc>
     <lastmod>2015-09-21T14:29:14+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/shop/</loc>
+    <loc>http://ubiqio.com/test/</loc>
     <lastmod>2015-09-21T14:29:14+01:00</lastmod>
   </url>
   
