@@ -258,10 +258,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/overview/">Overview</option>
+            
+           
             
            
             
@@ -275,10 +275,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/configuration/">Configuration</option>
+            
+           
             
            
             
@@ -372,10 +372,10 @@
            
             
            
-              
-                <option value="http://ubiqio.com/doc/power/">Power</option>
             
            
+              
+                <option value="http://ubiqio.com/doc/power/">Power</option>
             
            
             
@@ -384,6 +384,8 @@
           
           
           
+           
+            
            
             
            
@@ -432,13 +434,13 @@
             
            
             
-           
-            
           
         
           
           
           
+           
+            
            
             
            
@@ -487,13 +489,17 @@
             
            
             
-           
-            
           
         
           
           
           
+           
+            
+           
+            
+           
+            
            
             
            
@@ -538,12 +544,6 @@
             
            
             
-           
-            
-           
-            
-           
-            
           
         
           
@@ -558,10 +558,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/expansion/">Expansion</option>
+            
+           
             
            
             
@@ -690,10 +690,10 @@
            
             
            
-              
-                <option value="http://ubiqio.com/doc/progmodel/">Programming model</option>
             
            
+              
+                <option value="http://ubiqio.com/doc/progmodel/">Programming model</option>
             
            
             
@@ -841,12 +841,12 @@
            
             
            
-            
-           
-            
-           
               
                 <option value="http://ubiqio.com/doc/github/">GitHub</option>
+            
+           
+            
+           
             
            
             
@@ -910,14 +910,14 @@
            
             
            
-            
-           
-            
-           
-            
-           
               
                 <option value="http://ubiqio.com/doc/navi/">Navigation Switch</option>
+            
+           
+            
+           
+            
+           
             
            
             
@@ -942,6 +942,8 @@
           
           
           
+           
+            
            
             
            
@@ -990,15 +992,11 @@
             
            
             
-           
-            
           
         
           
           
           
-           
-            
            
             
            
@@ -1047,6 +1045,8 @@
             
            
             
+           
+            
           
         
           
@@ -1059,10 +1059,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/env/">Environment Sensor</option>
+            
+           
             
            
             
@@ -1254,10 +1254,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/resources/">Resources</option>
+            
+           
             
            
             
@@ -1289,11 +1289,13 @@
               </div>
               <h1>Installation</h1>
               <hr />
-              <p>Getting Ardhat installed and ready-to-go should only take a few minutes.</p>
+              <p>Getting <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> installed and ready-to-go should only take a few minutes.</p>
 
-<p>The Optiboot bootloader is already installed on <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span>&rsquo;s processor, but we need to make sure the Raspberry Pi is setup correctly, and has the necessary software in place.</p>
+<p>The <a href="/doc/upgrading">Optiboot</a> bootloader is already installed on <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span>&rsquo;s processor, but we need to make sure the Raspberry Pi is setup correctly, and has the necessary software in place.</p>
 
-<p>By default, Raspberry Pi connects it&rsquo;s console ouput to the serial port. As we use this channel to communicate we need to disable it. This is most easily doen with the in-built utility raspi-config.</p>
+<p>The easiest way to do this is from the command line, and the best way to do that, is to ssh into the Raspberry Pi so that you can copy and paste the commands below into your terminal (you can use <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">PuTTY</a> if you are not on a Unix based system like Linux or OS X).</p>
+
+<p>By default, Raspberry Pi copies its shell and kernel messages to the serial port. As <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> uses this channel to communicate with the host, we need to disable that. This is most easily done with the in-built utility <a href="https://www.raspberrypi.org/documentation/configuration/raspi-config.md">raspi-config</a>.</p>
 
 <section class="quickstart" >
   <div class="grid">
@@ -1323,11 +1325,11 @@
 
 <p><img src="/media/raspi-config-serial-no.png" alt="image alt text" /></p>
 
-<p>Back at the Advanced Option menu you&rsquo;ll also want to enable I2C, so that you can access the Ardhat peripeherals directly if required</p>
+<p>Back at the Advanced Option menu you&rsquo;ll also want to enable I2C, so that you can access the <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> peripherals directly if required</p>
 
 <p><img src="/media/raspi-config-I2C.png" alt="image alt text" /></p>
 
-<p>Now we need to load a few software pre-requisites, which are best installed from the command line, and the best way to do that is to ssh into the Raspberry Pi Linux instance, so that you can copy and paste the commands below into your terminal</p>
+<p>Now we need to load a few software pre-requisites&hellip;</p>
 
 <p>First make sure you have up-to-date packages installed</p>
 
@@ -1375,7 +1377,8 @@
   </div>
 </section>
 
-<p>In order that the Arduino IDE works properly with Ardhat, it needs to Reset Ardhat during code upload. It does that using the modified avrdude we just cloned, so enter the following commands:
+<p>In order that the Arduino IDE works properly with <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span>, it needs perform a reset during code upload. It does that using the modified avrdude we just cloned, so enter the following commands:</p>
+
 <section class="quickstart" >
   <div class="grid">
     <div class="unit .half code">
@@ -1406,13 +1409,13 @@
           <span class="command">sudo ln -s /usr/bin/avrdude-autoreset /usr/bin/avrdude</span>
         </p>
         <p class="line">
-          <span class="output"># =&gt; Now open the Arduino IDE and start programming Ardhat!</span>
+          <span class="output"># => Now open the Arduino IDE and start programming Ardhat!</span>
         </p>
       </div>
     </div>
     <div class="clear"></div>
   </div>
-</section></p>
+</section>
 
 <p>Start the Arduino IDE</p>
 
@@ -1697,13 +1700,13 @@
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/overview/">Overview</a></li>
           
+          
+
+            
           
 
             
@@ -1721,13 +1724,13 @@
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/configuration/">Configuration</a></li>
           
+          
+
+            
           
 
             
@@ -1864,13 +1867,13 @@
             
           
 
+            
+          
+
               
             <li class="" >
             <a href="/doc/power/">Power</a></li>
           
-          
-
-            
           
 
             
@@ -1881,6 +1884,9 @@
         
         
             
+
+            
+          
 
             
           
@@ -1952,9 +1958,6 @@
           
 
             
-          
-
-            
         
       
 
@@ -1962,6 +1965,9 @@
         
         
             
+
+            
+          
 
             
           
@@ -2033,9 +2039,6 @@
           
 
             
-          
-
-            
         
       
 
@@ -2043,6 +2046,15 @@
         
         
             
+
+            
+          
+
+            
+          
+
+            
+          
 
             
           
@@ -2108,15 +2120,6 @@
           
 
             
-          
-
-            
-          
-
-            
-          
-
-            
         
       
 
@@ -2137,13 +2140,13 @@
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/expansion/">Expansion</a></li>
           
+          
+
+            
           
 
             
@@ -2333,13 +2336,13 @@
             
           
 
+            
+          
+
               
             <li class="" >
             <a href="/doc/progmodel/">Programming model</a></li>
           
-          
-
-            
           
 
             
@@ -2555,16 +2558,16 @@
             
           
 
-            
-          
-
-            
-          
-
               
             <li class="" >
             <a href="/doc/github/">GitHub</a></li>
           
+          
+
+            
+          
+
+            
           
 
             
@@ -2656,19 +2659,19 @@
             
           
 
-            
-          
-
-            
-          
-
-            
-          
-
               
             <li class="" >
             <a href="/doc/navi/">Navigation Switch</a></li>
           
+          
+
+            
+          
+
+            
+          
+
+            
           
 
             
@@ -2703,6 +2706,9 @@
         
         
             
+
+            
+          
 
             
           
@@ -2774,9 +2780,6 @@
           
 
             
-          
-
-            
         
       
 
@@ -2784,9 +2787,6 @@
         
         
             
-
-            
-          
 
             
           
@@ -2858,6 +2858,9 @@
           
 
             
+          
+
+            
         
       
 
@@ -2875,13 +2878,13 @@
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/env/">Environment Sensor</a></li>
           
+          
+
+            
           
 
             
@@ -3162,13 +3165,13 @@
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/resources/">Resources</a></li>
           
+          
+
+            
           
 
             
