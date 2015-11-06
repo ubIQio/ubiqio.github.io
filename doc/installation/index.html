@@ -258,10 +258,10 @@
            
             
            
-              
-                <option value="http://ubiqio.com/doc/overview/">Overview</option>
             
            
+              
+                <option value="http://ubiqio.com/doc/overview/">Overview</option>
             
            
             
@@ -372,10 +372,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/power/">Power</option>
+            
+           
             
            
             
@@ -384,6 +384,8 @@
           
           
           
+           
+            
            
             
            
@@ -432,8 +434,6 @@
             
            
             
-           
-            
           
         
           
@@ -460,14 +460,14 @@
            
             
            
+            
+           
+            
+           
+            
+           
               
                 <option value="http://ubiqio.com/doc/io/">I/O usage</option>
-            
-           
-            
-           
-            
-           
             
            
             
@@ -692,10 +692,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/progmodel/">Programming model</option>
+            
+           
             
            
             
@@ -808,10 +808,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/sleep/">Sleep Management</option>
+            
+           
             
            
             
@@ -841,10 +841,10 @@
            
             
            
-              
-                <option value="http://ubiqio.com/doc/github/">GitHub</option>
             
            
+              
+                <option value="http://ubiqio.com/doc/github/">GitHub</option>
             
            
             
@@ -910,12 +910,12 @@
            
             
            
-            
-           
-            
-           
               
                 <option value="http://ubiqio.com/doc/navi/">Navigation Switch</option>
+            
+           
+            
+           
             
            
             
@@ -942,6 +942,8 @@
           
           
           
+           
+            
            
             
            
@@ -990,8 +992,6 @@
             
            
             
-           
-            
           
         
           
@@ -1014,10 +1014,10 @@
            
             
            
-              
-                <option value="http://ubiqio.com/doc/imu/">IMU</option>
             
            
+              
+                <option value="http://ubiqio.com/doc/imu/">IMU</option>
             
            
             
@@ -1136,10 +1136,10 @@
            
             
            
-              
-                <option value="http://ubiqio.com/doc/radio/">Mesh Radio</option>
             
            
+              
+                <option value="http://ubiqio.com/doc/radio/">Mesh Radio</option>
             
            
             
@@ -1167,10 +1167,10 @@
           
           
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/contributing/">Contributing</option>
+            
+           
             
            
             
@@ -1315,21 +1315,39 @@
 
 <p>From the menu, select <code>Advanced Options</code></p>
 
-<p><img src="/media/raspi-config.png" alt="image alt text" /></p>
+<p><br>
+<img src="/media/raspi-config.png" alt="image alt text" />
+<br><br />
+Then select <code>Serial</code></p>
 
-<p>Then select <code>Serial</code></p>
+<p><br>
+<img src="/media/raspi-config-serial.png" alt="image alt text" /></p>
 
-<p><img src="/media/raspi-config-serial.png" alt="image alt text" /></p>
+<p><br>
+and disable shell and kernel messages on serial</p>
 
-<p>and disable shell and kernel messages on serial</p>
+<p><br>
+<img src="/media/raspi-config-serial-no.png" alt="image alt text" /></p>
 
-<p><img src="/media/raspi-config-serial-no.png" alt="image alt text" /></p>
+<p><br>
+Back at the <code>Advanced Options</code> menu you&rsquo;ll also want to enable I2C, so that you can access the <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> peripherals directly if required</p>
 
-<p>Back at the <code>Advanced Options</code> menu you&rsquo;ll also want to enable I2C, so that you can access the <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> peripherals directly if required</p>
+<p><br>
+<img src="/media/raspi-config-I2C.png" alt="image alt text" /></p>
 
-<p><img src="/media/raspi-config-I2C.png" alt="image alt text" /></p>
+<p><br>
+Enable both the <code>ARM I2C interface</code> &hellip;<br />
+<br></p>
 
-<p>Now we need to load a few software pre-requisites&hellip;</p>
+<p><img src="/media/i2c-en.png" alt="image alt text" /></p>
+
+<p><br>
+&hellip;and the loading of kernel modules<br />
+<br></p>
+
+<p><img src="/media/i2c-kernel.png" alt="image alt text" /></p>
+
+<p><br>Now we need to load a few software pre-requisites&hellip;</p>
 
 <p>First make sure you have up-to-date packages installed</p>
 
@@ -1700,13 +1718,13 @@
             
           
 
+            
+          
+
               
             <li class="" >
             <a href="/doc/overview/">Overview</a></li>
           
-          
-
-            
           
 
             
@@ -1867,13 +1885,13 @@
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/power/">Power</a></li>
           
+          
+
+            
           
 
             
@@ -1884,6 +1902,9 @@
         
         
             
+
+            
+          
 
             
           
@@ -1955,9 +1976,6 @@
           
 
             
-          
-
-            
         
       
 
@@ -1996,19 +2014,19 @@
             
           
 
+            
+          
+
+            
+          
+
+            
+          
+
               
             <li class="" >
             <a href="/doc/io/">I/O usage</a></li>
           
-          
-
-            
-          
-
-            
-          
-
-            
           
 
             
@@ -2339,13 +2357,13 @@
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/progmodel/">Programming model</a></li>
           
+          
+
+            
           
 
             
@@ -2510,13 +2528,13 @@
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/sleep/">Sleep Management</a></li>
           
+          
+
+            
           
 
             
@@ -2558,13 +2576,13 @@
             
           
 
+            
+          
+
               
             <li class="" >
             <a href="/doc/github/">GitHub</a></li>
           
-          
-
-            
           
 
             
@@ -2659,16 +2677,16 @@
             
           
 
-            
-          
-
-            
-          
-
               
             <li class="" >
             <a href="/doc/navi/">Navigation Switch</a></li>
           
+          
+
+            
+          
+
+            
           
 
             
@@ -2706,6 +2724,9 @@
         
         
             
+
+            
+          
 
             
           
@@ -2777,9 +2798,6 @@
           
 
             
-          
-
-            
         
       
 
@@ -2812,13 +2830,13 @@
             
           
 
+            
+          
+
               
             <li class="" >
             <a href="/doc/imu/">IMU</a></li>
           
-          
-
-            
           
 
             
@@ -2992,13 +3010,13 @@
             
           
 
+            
+          
+
               
             <li class="" >
             <a href="/doc/radio/">Mesh Radio</a></li>
           
-          
-
-            
           
 
             
@@ -3036,13 +3054,13 @@
         
             
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/contributing/">Contributing</a></li>
           
+          
+
+            
           
 
             
