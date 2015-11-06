@@ -120,15 +120,15 @@ Any cell with a standard JST-PH connector that physically fits your application 
       <guid>http://ubiqio.com/doc/contributing/</guid>
       <description>
 
-&lt;p&gt;So you&amp;rsquo;ve got an awesome idea to throw into Ardhat. Great! Head over to &lt;a href=&#34;http://ubiqio.com/community&#34;&gt;the forum&lt;/a&gt; and let us know!&lt;/p&gt;
+&lt;p&gt;So you&amp;rsquo;ve got an awesome idea to throw into &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;. Great! Head over to &lt;a href=&#34;http://ubiqio.com/community&#34;&gt;the forum&lt;/a&gt; and let us know!&lt;/p&gt;
 
 &lt;h2 id=&#34;updating-documentation:cc4aac3e9be04e0413c9520f223b493c&#34;&gt;Updating Documentation&lt;/h2&gt;
 
-&lt;p&gt;We want the Ardhat documentation to be the best it can be. We&amp;rsquo;ve
+&lt;p&gt;We want the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; documentation to be the best it can be. We&amp;rsquo;ve
 open-sourced our docs and we welcome any pull requests if you find it
 lacking.&lt;/p&gt;
 
-&lt;p&gt;You can access the documentation for Ardhat just by clicking the pencil at the top of each document.&lt;/p&gt;
+&lt;p&gt;You can access the documentation for &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; just by clicking the pencil at the top of each document.&lt;/p&gt;
 
 &lt;p&gt;All documentation pull requests should be directed at &lt;code&gt;master&lt;/code&gt;. Pull
 requests directed at another branch will not be accepted.&lt;/p&gt;
@@ -138,7 +138,7 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 &lt;div class=&#34;note&#34;&gt;
   &lt;h5&gt;Let us know what could be better!&lt;/h5&gt;
   &lt;p&gt;
-    Both using and hacking on Ardhat should be fun, simple, and easy, so if for
+    Both using and hacking on &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; should be fun, simple, and easy, so if for
     some reason you find it’s a pain, please &lt;a
     href=&#34;http://ubiqio.com/community&#34;&gt;flag it&lt;/a&gt; on
     the forum describing your experience so we can make it better.
@@ -153,7 +153,7 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://ubiqio.com/doc/env/</guid>
-      <description>&lt;p&gt;The Ardhat-E provides Environmental Sensing in addition to the basic functions of Arduino compatibility and power management. This is performed by a Bosch BME280 integrated sensor, which provides&lt;/p&gt;
+      <description>&lt;p&gt;The &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;-E provides Environmental Sensing in addition to the basic functions of Arduino compatibility and power management. This is performed by a Bosch BME280 integrated sensor, which provides&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;humidity sensor&lt;/li&gt;
@@ -181,17 +181,17 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 
 &lt;h3 id=&#34;arduino-compatibility:636f077861fb676b2ad14870f3ad09aa&#34;&gt;Arduino Compatibility&lt;/h3&gt;
 
-&lt;p&gt;Ardhat contains a complete Arduino Uno R3 compatible subsystem clocked at 16MHz.  Most newer technologies, including the Raspberry Pi itself,  operate at 3.3V. This can be a problem when connecting to common real world systems like servos and Smart LEDs that operate at 5V.  Ardhat has the necessary interface circuitry to act as a bridge between the 5V and 3V worlds, allowing the Raspberry Pi to connect with either system type. The Ardhat board may also be operated independently of a Raspberry Pi by powering it from either an external supply or the built in LiPo.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; contains a complete Arduino Uno R3 compatible subsystem clocked at 16MHz.  Most newer technologies, including the Raspberry Pi itself,  operate at 3.3V. This can be a problem when connecting to common real world systems like servos and Smart LEDs that operate at 5V.  &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; has the necessary interface circuitry to act as a bridge between the 5V and 3V worlds, allowing the Raspberry Pi to connect with either system type. &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; may also be operated independently of a Raspberry Pi by powering it from either an external supply or the built in LiPo.&lt;/p&gt;
 
 &lt;h3 id=&#34;arduino-shield-support:636f077861fb676b2ad14870f3ad09aa&#34;&gt;Arduino Shield Support&lt;/h3&gt;
 
-&lt;p&gt;Ardhat supports all Uno compatible shields. AVR SPI is available on the ICSP header which is used by the majority of shields that require SPI.  The latest R3 features such as IOREF are included. For more information see the &lt;a href=&#34;http://ubiqio.com/doc/io/&#34;&gt;IO usage page&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; supports all Uno compatible shields. AVR SPI is available on the ICSP header which is used by the majority of shields that require SPI.  The latest R3 features such as IOREF are included. For more information see the &lt;a href=&#34;http://ubiqio.com/doc/io/&#34;&gt;IO usage page&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;raspberry-pi-arduino-communication:636f077861fb676b2ad14870f3ad09aa&#34;&gt;Raspberry Pi &amp;lt;&amp;gt; Arduino communication&lt;/h3&gt;
+&lt;h3 id=&#34;raspberry-pi-hugoshortcode-5-communication:636f077861fb676b2ad14870f3ad09aa&#34;&gt;Raspberry Pi &amp;lt;&amp;gt; &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; communication&lt;/h3&gt;
 
-&lt;p&gt;The Raspberry Pi and Arduino can communicate over both Serial and I2C. Serial is used for the main inter-processor communication, and the Arduino can be programmed using the Arduino IDE through the Raspberry Pi serial port. DTR emulation is provided using Raspberry Pi GPIO 22.&lt;/p&gt;
+&lt;p&gt;The Raspberry Pi and Arduino can communicate over both Serial and I2C. Serial is used for the main inter-processor communication, and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; can be programmed using the Arduino IDE through the Raspberry Pi serial port. DTR emulation is provided using Raspberry Pi GPIO 22.&lt;/p&gt;
 
-&lt;p&gt;When the Raspberry Pi is active, it is the master on the  I2C bus, and is responsible for setup of the Ardhat  I2C peripherals (e.g.IMU, Altimeter, RTC etc.).  When the Raspberry Pi is inactive, the Arduino can master the bus and interrogate the peripherals.  For example by watching the RTC, the Raspberry Pi can be started when the next crontab entry is about to come due.&lt;/p&gt;
+&lt;p&gt;When the Raspberry Pi is active, it is the master on the  I2C bus, and is responsible for setup of the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;  I2C peripherals (e.g.IMU, Altimeter, RTC etc.).  When the Raspberry Pi is inactive, &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; can master the bus and interrogate the peripherals.  For example by watching the RTC, the Raspberry Pi can be started when the next crontab entry is about to come due.&lt;/p&gt;
 </description>
     </item>
     
@@ -420,7 +420,7 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/mpu9250.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;The IMU is connected to the I2C bus. It is is mounted at &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&amp;rsquo;s  geographic center to avoid offset errors. It consists of an Invensense MPU9250, which provides&lt;/p&gt;
+&lt;p&gt;The IMU is connected to the I2C bus. It is mounted at &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&amp;rsquo;s  geographic center to avoid offset errors. It consists of an Invensense MPU9250, which provides&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;3-axis accelerometer&lt;/li&gt;
@@ -430,7 +430,7 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/balbot.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;During normal operation, these devices are monitored directly by the Raspberry Pi  but in sleep mode they can be monitored by the Arduino and used to wakeup the Raspberry Pi.&lt;/p&gt;
+&lt;p&gt;During normal operation, these devices are monitored directly by the Raspberry Pi  but in sleep mode they can be monitored by &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; and used to wakeup the Raspberry Pi.&lt;/p&gt;
 
 &lt;p&gt;The MPU9250 is compatible with the popular &lt;a href=&#34;https://github.com/richards-tech/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;&lt;/p&gt;
 </description>

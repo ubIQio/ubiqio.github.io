@@ -273,10 +273,10 @@
            
             
            
-              
-                <option value="http://ubiqio.com/doc/configuration/">Configuration</option>
             
            
+              
+                <option value="http://ubiqio.com/doc/configuration/">Configuration</option>
             
            
             
@@ -405,12 +405,12 @@
            
             
            
-            
-           
-            
-           
               
                 <option value="http://ubiqio.com/doc/leds/">LEDs</option>
+            
+           
+            
+           
             
            
             
@@ -439,6 +439,14 @@
           
           
           
+           
+            
+           
+            
+           
+            
+           
+            
            
             
            
@@ -481,23 +489,11 @@
             
            
             
-           
-            
-           
-            
-           
-            
-           
-            
           
         
           
           
           
-           
-            
-           
-            
            
             
            
@@ -544,6 +540,10 @@
             
            
             
+           
+            
+           
+            
           
         
           
@@ -558,10 +558,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/expansion/">Expansion</option>
+            
+           
             
            
             
@@ -690,10 +690,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/progmodel/">Programming model</option>
+            
+           
             
            
             
@@ -806,12 +806,12 @@
            
             
            
+            
+           
+            
+           
               
                 <option value="http://ubiqio.com/doc/sleep/">Sleep Management</option>
-            
-           
-            
-           
             
            
             
@@ -839,16 +839,16 @@
            
             
            
-            
-           
-            
-           
-            
-           
-            
-           
               
                 <option value="http://ubiqio.com/doc/github/">GitHub</option>
+            
+           
+            
+           
+            
+           
+            
+           
             
            
             
@@ -912,10 +912,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/navi/">Navigation Switch</option>
+            
+           
             
            
             
@@ -942,8 +942,6 @@
           
           
           
-           
-            
            
             
            
@@ -992,11 +990,15 @@
             
            
             
+           
+            
           
         
           
           
           
+           
+            
            
             
            
@@ -1045,8 +1047,6 @@
             
            
             
-           
-            
           
         
           
@@ -1061,18 +1061,18 @@
            
             
            
+            
+           
+            
+           
+            
+           
+            
+           
+            
+           
               
                 <option value="http://ubiqio.com/doc/env/">Environment Sensor</option>
-            
-           
-            
-           
-            
-           
-            
-           
-            
-           
             
            
             
@@ -1171,10 +1171,10 @@
            
             
            
-              
-                <option value="http://ubiqio.com/doc/contributing/">Contributing</option>
             
            
+              
+                <option value="http://ubiqio.com/doc/contributing/">Contributing</option>
             
            
             
@@ -1221,8 +1221,6 @@
           
           
           
-           
-            
            
             
            
@@ -1271,6 +1269,8 @@
             
            
             
+           
+            
           
         
      </optgroup>
@@ -1293,17 +1293,17 @@
 
 <h3 id="arduino-compatibility:636f077861fb676b2ad14870f3ad09aa">Arduino Compatibility</h3>
 
-<p>Ardhat contains a complete Arduino Uno R3 compatible subsystem clocked at 16MHz.  Most newer technologies, including the Raspberry Pi itself,  operate at 3.3V. This can be a problem when connecting to common real world systems like servos and Smart LEDs that operate at 5V.  Ardhat has the necessary interface circuitry to act as a bridge between the 5V and 3V worlds, allowing the Raspberry Pi to connect with either system type. The Ardhat board may also be operated independently of a Raspberry Pi by powering it from either an external supply or the built in LiPo.</p>
+<p><span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> contains a complete Arduino Uno R3 compatible subsystem clocked at 16MHz.  Most newer technologies, including the Raspberry Pi itself,  operate at 3.3V. This can be a problem when connecting to common real world systems like servos and Smart LEDs that operate at 5V.  <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> has the necessary interface circuitry to act as a bridge between the 5V and 3V worlds, allowing the Raspberry Pi to connect with either system type. <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> may also be operated independently of a Raspberry Pi by powering it from either an external supply or the built in LiPo.</p>
 
 <h3 id="arduino-shield-support:636f077861fb676b2ad14870f3ad09aa">Arduino Shield Support</h3>
 
-<p>Ardhat supports all Uno compatible shields. AVR SPI is available on the ICSP header which is used by the majority of shields that require SPI.  The latest R3 features such as IOREF are included. For more information see the <a href="/doc/io/">IO usage page</a></p>
+<p><span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> supports all Uno compatible shields. AVR SPI is available on the ICSP header which is used by the majority of shields that require SPI.  The latest R3 features such as IOREF are included. For more information see the <a href="/doc/io/">IO usage page</a></p>
 
-<h3 id="raspberry-pi-arduino-communication:636f077861fb676b2ad14870f3ad09aa">Raspberry Pi &lt;&gt; Arduino communication</h3>
+<h3 id="raspberry-pi-hugoshortcode-5-communication:636f077861fb676b2ad14870f3ad09aa">Raspberry Pi &lt;&gt; <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> communication</h3>
 
-<p>The Raspberry Pi and Arduino can communicate over both Serial and I2C. Serial is used for the main inter-processor communication, and the Arduino can be programmed using the Arduino IDE through the Raspberry Pi serial port. DTR emulation is provided using Raspberry Pi GPIO 22.</p>
+<p>The Raspberry Pi and Arduino can communicate over both Serial and I2C. Serial is used for the main inter-processor communication, and <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> can be programmed using the Arduino IDE through the Raspberry Pi serial port. DTR emulation is provided using Raspberry Pi GPIO 22.</p>
 
-<p>When the Raspberry Pi is active, it is the master on the  I2C bus, and is responsible for setup of the Ardhat  I2C peripherals (e.g.IMU, Altimeter, RTC etc.).  When the Raspberry Pi is inactive, the Arduino can master the bus and interrogate the peripherals.  For example by watching the RTC, the Raspberry Pi can be started when the next crontab entry is about to come due.</p>
+<p>When the Raspberry Pi is active, it is the master on the  I2C bus, and is responsible for setup of the <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span>  I2C peripherals (e.g.IMU, Altimeter, RTC etc.).  When the Raspberry Pi is inactive, <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> can master the bus and interrogate the peripherals.  For example by watching the RTC, the Raspberry Pi can be started when the next crontab entry is about to come due.</p>
 
               
 
@@ -1603,13 +1603,13 @@
             
           
 
+            
+          
+
               
             <li class="" >
             <a href="/doc/configuration/">Configuration</a></li>
           
-          
-
-            
           
 
             
@@ -1797,16 +1797,16 @@
             
           
 
-            
-          
-
-            
-          
-
               
             <li class="" >
             <a href="/doc/leds/">LEDs</a></li>
           
+          
+
+            
+          
+
+            
           
 
             
@@ -1847,6 +1847,18 @@
         
         
             
+
+            
+          
+
+            
+          
+
+            
+          
+
+            
+          
 
             
           
@@ -1909,18 +1921,6 @@
           
 
             
-          
-
-            
-          
-
-            
-          
-
-            
-          
-
-            
         
       
 
@@ -1928,12 +1928,6 @@
         
         
             
-
-            
-          
-
-            
-          
 
             
           
@@ -2002,6 +1996,12 @@
           
 
             
+          
+
+            
+          
+
+            
         
       
 
@@ -2022,15 +2022,15 @@
             
           
 
-            
-          
-
               
             <li class=" 
             current 
             " >
             <a href="/doc/expansion/">Expansion</a></li>
           
+          
+
+            
           
 
             
@@ -2218,13 +2218,13 @@
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/progmodel/">Programming model</a></li>
           
+          
+
+            
           
 
             
@@ -2389,16 +2389,16 @@
             
           
 
+            
+          
+
+            
+          
+
               
             <li class="" >
             <a href="/doc/sleep/">Sleep Management</a></li>
           
-          
-
-            
-          
-
-            
           
 
             
@@ -2437,22 +2437,22 @@
             
           
 
-            
-          
-
-            
-          
-
-            
-          
-
-            
-          
-
               
             <li class="" >
             <a href="/doc/github/">GitHub</a></li>
           
+          
+
+            
+          
+
+            
+          
+
+            
+          
+
+            
           
 
             
@@ -2544,13 +2544,13 @@
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/navi/">Navigation Switch</a></li>
           
+          
+
+            
           
 
             
@@ -2588,9 +2588,6 @@
         
         
             
-
-            
-          
 
             
           
@@ -2662,6 +2659,9 @@
           
 
             
+          
+
+            
         
       
 
@@ -2669,6 +2669,9 @@
         
         
             
+
+            
+          
 
             
           
@@ -2740,9 +2743,6 @@
           
 
             
-          
-
-            
         
       
 
@@ -2763,25 +2763,25 @@
             
           
 
+            
+          
+
+            
+          
+
+            
+          
+
+            
+          
+
+            
+          
+
               
             <li class="" >
             <a href="/doc/env/">Environment Sensor</a></li>
           
-          
-
-            
-          
-
-            
-          
-
-            
-          
-
-            
-          
-
-            
           
 
             
@@ -2924,13 +2924,13 @@
             
           
 
+            
+          
+
               
             <li class="" >
             <a href="/doc/contributing/">Contributing</a></li>
           
-          
-
-            
           
 
             
@@ -3047,13 +3047,13 @@
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/resources/">Resources</a></li>
           
+          
+
+            
           
 
             
