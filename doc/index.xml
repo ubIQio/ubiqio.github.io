@@ -428,11 +428,19 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 &lt;li&gt;3-axis magnetometer (compass)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/balbot.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
-
 &lt;p&gt;During normal operation, these devices are monitored directly by the Raspberry Pi  but in sleep mode they can be monitored by &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; and used to wakeup the Raspberry Pi.&lt;/p&gt;
 
-&lt;p&gt;The MPU9250 is compatible with the popular &lt;a href=&#34;https://github.com/richards-tech/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For &lt;strong&gt;much&lt;/strong&gt; more information on programming see &lt;a href=&#34;https://github.com/Ardhat/MPU-9250&#34;&gt;this Article&lt;/a&gt; from Kriswiner, with an accompanying sketch &lt;a href=&#34;https://github.com/Ardhat/MPU-9250&#34;&gt;here&lt;/a&gt; that you can use if you want to drive the IMU directly from &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;.&lt;/p&gt;
+
+&lt;p&gt;The MPU9250 is also compatible with the popular &lt;a href=&#34;https://github.com/richards-tech/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s a 3D Balance Bot, more commonly called a &lt;a href=&#34;https://en.wikipedia.org/wiki/Ballbot&#34;&gt;BallBot&lt;/a&gt;, created with Lego Mindstorms and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;,  a simple Arduino motor shield and a 3-cell LiPo.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/balbot.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;See this video for more info&lt;/p&gt;
+
+&lt;iframe width=&#34;640&#34; height=&#34;360&#34; src=&#34;https://www.youtube.com/embed/f8jxGsg3p0Y&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
 </description>
     </item>
     
