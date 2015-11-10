@@ -781,6 +781,8 @@ RH_RF69 rf69(10, 3); // For RF69 on Ardhat
     &lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/section&gt;
+
+&lt;p&gt;More info on using Python Firmata can be found &lt;a href=&#34;https://github.com/tino/pyFirmata&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
