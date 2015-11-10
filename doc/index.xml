@@ -706,7 +706,7 @@ RH_RF69 rf69(10, 3); // For RF69 on Ardhat
 &lt;section class=&#34;quickstart&#34; &gt;
   &lt;div class=&#34;grid&#34;&gt;
     &lt;div class=&#34;unit .half code&#34;&gt;
-      &lt;p class=&#34;title&#34;&gt;Python Firmata&lt;/p&gt;
+      &lt;p class=&#34;title&#34;&gt;Setting up Python Firmata&lt;/p&gt;
       &lt;div class=&#34;shell&#34;&gt;
         &lt;p class=&#34;line&#34;&gt;
           &lt;span class=&#34;path&#34;&gt;~&lt;/span&gt;
@@ -749,7 +749,7 @@ RH_RF69 rf69(10, 3); // For RF69 on Ardhat
 &lt;section class=&#34;quickstart&#34; &gt;
   &lt;div class=&#34;grid&#34;&gt;
     &lt;div class=&#34;unit .half code&#34;&gt;
-      &lt;p class=&#34;title&#34;&gt;Python Firmata&lt;/p&gt;
+      &lt;p class=&#34;title&#34;&gt;At the Python Prompt... &lt;/p&gt;
       &lt;div class=&#34;shell&#34;&gt;
         &lt;p class=&#34;line&#34;&gt;
           &lt;span class=&#34;prompt&#34;&gt;&gt;&gt;&gt;&lt;/span&gt;
