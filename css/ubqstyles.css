@@ -537,7 +537,7 @@ vertical-align: bottom;
 /* ======= Contact Section ======= */
 .contact {
   padding: 80px 0;
-  background: #17baef;
+  background: #2653CC;
   color: #fff;
 }
 .contact .contact-inner {
@@ -644,7 +644,7 @@ vertical-align: bottom;
 }
 .contact .social-icons a {
   display: inline-block;
-  background: #0c86ae;
+  background: rgba(105, 155, 181, 0.86);
   width: 48px;
   height: 48px;
   text-align: center;
