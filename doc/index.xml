@@ -440,7 +440,9 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 
 &lt;p&gt;See this video for more info&lt;/p&gt;
 
-&lt;iframe width=&#34;640&#34; height=&#34;360&#34; src=&#34;https://www.youtube.com/embed/f8jxGsg3p0Y&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;div class=video-container&gt;
+&lt;iframe height=&#34;0&#34; src=&#34;https://www.youtube.com/embed/f8jxGsg3p0Y&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 </description>
     </item>
     
