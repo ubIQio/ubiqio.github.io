@@ -23,6 +23,73 @@
     </item>
     
     <item>
+      <title>Contributing</title>
+      <link>http://ubiqio.com/doc/contributing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/contributing/</guid>
+      <description>
+
+&lt;p&gt;So you&amp;rsquo;ve got an awesome idea to throw into &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;. Great! Head over to &lt;a href=&#34;http://ubiqio.com/community&#34;&gt;the forum&lt;/a&gt; and let us know!&lt;/p&gt;
+
+&lt;h2 id=&#34;updating-documentation:cc4aac3e9be04e0413c9520f223b493c&#34;&gt;Updating Documentation&lt;/h2&gt;
+
+&lt;p&gt;We want the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; documentation to be the best it can be. We&amp;rsquo;ve
+open-sourced our docs and we welcome any pull requests if you find it
+lacking.&lt;/p&gt;
+
+&lt;p&gt;You can access the documentation for &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; just by clicking the pencil at the top of each document.&lt;/p&gt;
+
+&lt;p&gt;All documentation pull requests should be directed at &lt;code&gt;master&lt;/code&gt;. Pull
+requests directed at another branch will not be accepted.&lt;/p&gt;
+
+&lt;h2 id=&#34;finally:cc4aac3e9be04e0413c9520f223b493c&#34;&gt;Finally&amp;hellip;&lt;/h2&gt;
+
+&lt;div class=&#34;note&#34;&gt;
+  &lt;h5&gt;Let us know what could be better!&lt;/h5&gt;
+  &lt;p&gt;
+    Both using and hacking on &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; should be fun, simple, and easy, so if for
+    some reason you find it’s a pain, please &lt;a
+    href=&#34;http://ubiqio.com/community&#34;&gt;flag it&lt;/a&gt; on
+    the forum describing your experience so we can make it better.
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Battery Operation</title>
+      <link>http://ubiqio.com/doc/battery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/battery/</guid>
+      <description>
+
+&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/ardhatbattside400.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; can use an optional single cell LiPo battery, and a custom 2200mAh battery that fits snugly between the shield headers is available in the &lt;a href=&#34;http://ubiqio.com/shop&#34;&gt;store&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&#34;note warning&#34;&gt;
+  &lt;p&gt;
+Any cell with a standard JST-PH connector that physically fits your application may also be used, but make sure the polarity is correct before attachment.
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;battery-operation:dc4df0175cfa07cfdc9b78ac4adb3b60&#34;&gt;Battery Operation&lt;/h3&gt;
+
+&lt;p&gt;During battery operation, &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; generates the supplies required for the Raspberry Pi and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; peripherals from a boost converter. When the remaining battery capacity reaches 5%, the Raspberry Pi is gracefully shutdown (see below) by a power  management daemon, which is also able to schedule events, for example time-lapse image capture.  When the battery voltage reaches a critical level, all circuits are switched off to avoid damage to the battery due to over-discharging.&lt;/p&gt;
+
+&lt;h3 id=&#34;charge-control-system:dc4df0175cfa07cfdc9b78ac4adb3b60&#34;&gt;Charge Control System&lt;/h3&gt;
+
+&lt;p&gt;When connected to external power, the battery is charged using a constant-current /constant-voltage charge algorithm, with pre-conditioning and charge termination phases.&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; will charge and maintain any single 3.7V LiPo cell attached to the industry standard 2-pin JST-PH connector.&lt;/p&gt;
+
+&lt;p&gt;If external power is disconnected, Ardhat transitions seamlessly to battery operation, and sends a notification to the Raspberry Pi over the inter-processor communication channel.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Community</title>
       <link>http://ubiqio.com/community/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -119,41 +186,6 @@
     </item>
     
     <item>
-      <title>Contributing</title>
-      <link>http://ubiqio.com/doc/contributing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/contributing/</guid>
-      <description>
-
-&lt;p&gt;So you&amp;rsquo;ve got an awesome idea to throw into &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;. Great! Head over to &lt;a href=&#34;http://ubiqio.com/community&#34;&gt;the forum&lt;/a&gt; and let us know!&lt;/p&gt;
-
-&lt;h2 id=&#34;updating-documentation:cc4aac3e9be04e0413c9520f223b493c&#34;&gt;Updating Documentation&lt;/h2&gt;
-
-&lt;p&gt;We want the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; documentation to be the best it can be. We&amp;rsquo;ve
-open-sourced our docs and we welcome any pull requests if you find it
-lacking.&lt;/p&gt;
-
-&lt;p&gt;You can access the documentation for &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; just by clicking the pencil at the top of each document.&lt;/p&gt;
-
-&lt;p&gt;All documentation pull requests should be directed at &lt;code&gt;master&lt;/code&gt;. Pull
-requests directed at another branch will not be accepted.&lt;/p&gt;
-
-&lt;h2 id=&#34;finally:cc4aac3e9be04e0413c9520f223b493c&#34;&gt;Finally&amp;hellip;&lt;/h2&gt;
-
-&lt;div class=&#34;note&#34;&gt;
-  &lt;h5&gt;Let us know what could be better!&lt;/h5&gt;
-  &lt;p&gt;
-    Both using and hacking on &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; should be fun, simple, and easy, so if for
-    some reason you find it’s a pain, please &lt;a
-    href=&#34;http://ubiqio.com/community&#34;&gt;flag it&lt;/a&gt; on
-    the forum describing your experience so we can make it better.
-  &lt;/p&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Expansion</title>
       <link>http://ubiqio.com/doc/expansion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -174,38 +206,6 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 &lt;p&gt;The Raspberry Pi and Arduino can communicate over both Serial and I2C. Serial is used for the main inter-processor communication, and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; can be programmed using the Arduino IDE through the Raspberry Pi serial port. DTR emulation is provided using Raspberry Pi GPIO 22.&lt;/p&gt;
 
 &lt;p&gt;When the Raspberry Pi is active, it is the master on the  I2C bus, and is responsible for setup of the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;  I2C peripherals (e.g.IMU, Altimeter, RTC etc.).  When the Raspberry Pi is inactive, &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; can master the bus and interrogate the peripherals.  For example by watching the RTC, the Raspberry Pi can be started when the next crontab entry is about to come due.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Battery Operation</title>
-      <link>http://ubiqio.com/doc/battery/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/battery/</guid>
-      <description>
-
-&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/ardhatbattside400.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; can use an optional single cell LiPo battery, and a custom 2200mAh battery that fits snugly between the shield headers is available in the &lt;a href=&#34;http://ubiqio.com/shop&#34;&gt;store&lt;/a&gt;&lt;/p&gt;
-
-&lt;div class=&#34;note warning&#34;&gt;
-  &lt;p&gt;
-Any cell with a standard JST-PH connector that physically fits your application may also be used, but make sure the polarity is correct before attachment.
-  &lt;/p&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&#34;battery-operation:dc4df0175cfa07cfdc9b78ac4adb3b60&#34;&gt;Battery Operation&lt;/h3&gt;
-
-&lt;p&gt;During battery operation, &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; generates the supplies required for the Raspberry Pi and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; peripherals from a boost converter. When the remaining battery capacity reaches 5%, the Raspberry Pi is gracefully shutdown (see below) by a power  management daemon, which is also able to schedule events, for example time-lapse image capture.  When the battery voltage reaches a critical level, all circuits are switched off to avoid damage to the battery due to over-discharging.&lt;/p&gt;
-
-&lt;h3 id=&#34;charge-control-system:dc4df0175cfa07cfdc9b78ac4adb3b60&#34;&gt;Charge Control System&lt;/h3&gt;
-
-&lt;p&gt;When connected to external power, the battery is charged using a constant-current /constant-voltage charge algorithm, with pre-conditioning and charge termination phases.&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; will charge and maintain any single 3.7V LiPo cell attached to the industry standard 2-pin JST-PH connector.&lt;/p&gt;
-
-&lt;p&gt;If external power is disconnected, Ardhat transitions seamlessly to battery operation, and sends a notification to the Raspberry Pi over the inter-processor communication channel.&lt;/p&gt;
 </description>
     </item>
     
@@ -274,7 +274,7 @@ Any cell with a standard JST-PH connector that physically fits your application 
     </item>
     
     <item>
-      <title></title>
+      <title>Welcome</title>
       <link>http://ubiqio.com/doc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -505,6 +505,26 @@ know of a tip you think others would find handy, &lt;a href=&#34;http://ubiqio.c
     </item>
     
     <item>
+      <title>LEDs</title>
+      <link>http://ubiqio.com/doc/leds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/leds/</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; supports LEDs in two ways; the first is through an onboard LED that is connected to port D9. Note that this is different from the standard Arduino port, which is D13.&lt;/p&gt;
+
+&lt;p&gt;This was done to avoid conflict with the use of D13 for SPI_SCK, and also so that the hardware PWM function can be used, for example for pulsating the LED in sleep mode.&lt;/p&gt;
+
+&lt;p&gt;The other form of support is through the inclusion of a 3.3V to 5V converter on the output of the Pi PWM pin, which can be used to connect WS8212 LED strings directly to Ardhat.&lt;/p&gt;
+
+&lt;p&gt;The 5V rail can provide up to 2.5A which is sufficient to drive 4m light strings in normal use (ie not all illuminated at full brigtness)&lt;/p&gt;
+
+&lt;p&gt;See &lt;a href=&#34;https://github.com/Ardhat/spiralLED&#34;&gt;Spiralled&lt;/a&gt; for an example of this in use.&lt;/p&gt;
+
+&lt;p&gt;&lt;img align=&#34;center&#34; src=&#34;http://ubiqio.com/media/SpiralLED.jpg&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Navigation Switch</title>
       <link>http://ubiqio.com/doc/navi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -544,26 +564,6 @@ know of a tip you think others would find handy, &lt;a href=&#34;http://ubiqio.c
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>LEDs</title>
-      <link>http://ubiqio.com/doc/leds/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/leds/</guid>
-      <description>&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; supports LEDs in two ways; the first is through an onboard LED that is connected to port D9. Note that this is different from the standard Arduino port, which is D13.&lt;/p&gt;
-
-&lt;p&gt;This was done to avoid conflict with the use of D13 for SPI_SCK, and also so that the hardware PWM function can be used, for example for pulsating the LED in sleep mode.&lt;/p&gt;
-
-&lt;p&gt;The other form of support is through the inclusion of a 3.3V to 5V converter on the output of the Pi PWM pin, which can be used to connect WS8212 LED strings directly to Ardhat.&lt;/p&gt;
-
-&lt;p&gt;The 5V rail can provide up to 2.5A which is sufficient to drive 4m light strings in normal use (ie not all illuminated at full brigtness)&lt;/p&gt;
-
-&lt;p&gt;See &lt;a href=&#34;https://github.com/Ardhat/spiralLED&#34;&gt;Spiralled&lt;/a&gt; for an example of this in use.&lt;/p&gt;
-
-&lt;p&gt;&lt;img align=&#34;center&#34; src=&#34;http://ubiqio.com/media/SpiralLED.jpg&#34;&gt;&lt;/p&gt;
 </description>
     </item>
     

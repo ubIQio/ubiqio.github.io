@@ -23,50 +23,6 @@
     </item>
     
     <item>
-      <title></title>
-      <link>http://ubiqio.com/doc/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/</guid>
-      <description>
-
-&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/ArdhatSunrise400.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;For makers, educators and experimenters worldwide, the &lt;a href=&#34;http://www.raspberrypi.org/help/what-is-a-raspberry-pi/&#34;&gt;Raspberry Pi&lt;/a&gt; has quickly become the compact computing platform of choice for those eager to create, learn and develop for the expanding universe of connected devices.&lt;/p&gt;
-
-&lt;p&gt;With analogue sensors and 5V PWM, UI controls and supply monitoring, LiPo and automotive voltage operation, the standard Ardhat is the missing link that connects the Raspberry Pi with the Real World.  If you need more, the Ardhat-I adds a 10-DOF IMU, and Ardhat-W adds a LoRa ISM wireless node with up to 10km range.&lt;/p&gt;
-
-&lt;p&gt;This repository is your goto resource for everything Ardhat, from pinouts to language bindings and everything in between.&lt;/p&gt;
-
-&lt;p&gt;Find an error, or want to add something? See &lt;a href=&#34;http://ubiqio.com/doc/contributing&#34;&gt;this article&lt;/a&gt; on how to contribute for more info.&lt;/p&gt;
-
-&lt;h2 id=&#34;helpful-hints:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Helpful Hints&lt;/h2&gt;
-
-&lt;p&gt;Throughout this guide there are a number of small-but-handy pieces of
-information that can make using Ardhat easier, more interesting, and less
-hazardous. Here’s what to look out for.&lt;/p&gt;
-
-&lt;div class=&#34;note info&#34;&gt;
-  &lt;h5&gt;Notes are handy pieces of information&lt;/h5&gt;
-  &lt;p&gt;Extra tidbits to help you understand Ardhat.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class=&#34;note&#34;&gt;
-  &lt;h5&gt;ProTips™ help you get more from Ardhat&lt;/h5&gt;
-  &lt;p&gt;These are tips and tricks that will help you be an Ardhat wizard!&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class=&#34;note warning&#34;&gt;
-  &lt;h5&gt;Warnings help you not to blow things up&lt;/h5&gt;
-  &lt;p&gt;Heed these messages if you wish to avoid certain death.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;If you come across anything along the way that we haven’t covered, or if you
-know of a tip you think others would find handy, &lt;a href=&#34;http://ubiqio.com/community&#34;&gt;head over to the forum&lt;/a&gt; and we’ll see about including it in this guide.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Battery Operation</title>
       <link>http://ubiqio.com/doc/battery/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -730,6 +686,113 @@ RH_RF69 rf69(10, 3); // For RF69 on Ardhat
 &lt;p&gt;The Applications and Services may run on the Pi  (typically written in javascript), or may in part or whole be provided by a cloud service, subscribed to by the Ardhat software, eg &lt;a href=&#34;https://ifttt.com/&#34;&gt;IFTTT&lt;/a&gt;.  Sensor node topology and authentication info is stored in a &lt;a href=&#34;https://github.com/louischatriot/nedb&#34;&gt;NeDB&lt;/a&gt; a MongoDB-like noSQL database.&lt;/p&gt;
 
 &lt;p&gt;The Arduino RealTime code is responsible for monitoring and handling system power, realtime events,  and graceful sleep/shutdown/restart cycles of the Raspberry Pi.  It is also responsible for transmitting application information to the Wireless Sensor Nodes, for example using a simplified MQTT (MQTT-SN) over a link layer protocol such as &lt;a href=&#34;http://www.mike-stirling.com/redmine/projects/tinyhan/&#34;&gt;TinyHAN&lt;/a&gt; on top of  the relevant PHY (eg RFM96).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>http://ubiqio.com/doc/python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/python/</guid>
+      <description>
+
+&lt;h2 id=&#34;inter-processor-communication:c431704424a149541be05f7b70c63362&#34;&gt;Inter-processor communication&lt;/h2&gt;
+
+&lt;p&gt;The Raspberry Pi and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; can communicate over both Serial and I2C, but Serial is used for the main inter-processor communication.&lt;/p&gt;
+
+&lt;p&gt;When the Raspberry Pi is active, it is the master on the  I2C bus, and is responsible for setup of the Ardhat I2C peripherals (e.g. IMU, Altimeter, RTC).  When the Raspberry Pi is inactive, the Arduino can master the bus and interrogate the peripherals.  For example by watching the RTC, the Raspberry Pi can be started when the next crontab entry is about to come due.&lt;/p&gt;
+
+&lt;p&gt;However, access to regular Arduino-compatible ports such as Analog and PWM is performed over Serial using a standardised protocol layer, or Data Link layer in &lt;a href=&#34;https://en.wikipedia.org/wiki/OSI_model&#34;&gt;OSI parlance&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This protocol layer is called &lt;a href=&#34;https://www.arduino.cc/en/Reference/Firmata&#34;&gt;Firmata&lt;/a&gt;, and allows applications on the Pi to communicate with &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; provided they have a Firmata language binding. Although javascript is the recommended language (using the node.js Firmata library), other languages such as Python can easily be used instead.&lt;/p&gt;
+
+&lt;h3 id=&#34;using-python-firmata-with-ardhat:c431704424a149541be05f7b70c63362&#34;&gt;Using Python Firmata with Ardhat&lt;/h3&gt;
+
+&lt;p&gt;Ardhat ships from the factory with Firmata already installed, but follow the instructions in &lt;a href=&#34;http://ubiqio.com/doc/installation&#34;&gt;&lt;em&gt;Installation&lt;/em&gt;&lt;/a&gt; to make sure you have turned off kernel serial port use first.&lt;/p&gt;
+
+&lt;p&gt;To install Firmata on the host connect to the Pi using &lt;code&gt;ssh&lt;/code&gt;, so that you can copy and paste the following into the terminal:&lt;/p&gt;
+
+&lt;section class=&#34;quickstart&#34; &gt;
+  &lt;div class=&#34;grid&#34;&gt;
+    &lt;div class=&#34;unit .half code&#34;&gt;
+      &lt;p class=&#34;title&#34;&gt;Setting up Python Firmata&lt;/p&gt;
+      &lt;div class=&#34;shell&#34;&gt;
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;path&#34;&gt;~&lt;/span&gt;
+          &lt;span class=&#34;prompt&#34;&gt;$&lt;/span&gt;
+          &lt;span class=&#34;command&#34;&gt;sudo apt-get install python-pip python-serial&lt;/span&gt;
+        &lt;/p&gt;        
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;path&#34;&gt;~&lt;/span&gt;
+          &lt;span class=&#34;prompt&#34;&gt;$&lt;/span&gt;
+          &lt;span class=&#34;command&#34;&gt;sudo pip install pyfirmata&lt;/span&gt;
+        &lt;/p&gt;
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;path&#34;&gt;~&lt;/span&gt;
+          &lt;span class=&#34;prompt&#34;&gt;$&lt;/span&gt;
+          &lt;span class=&#34;command&#34;&gt;python&lt;/span&gt;
+        &lt;/p&gt;
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;output&#34;&gt;# =&gt; You should now have a python prompt &gt;&gt;&gt;&lt;/span&gt;
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;p&gt;At the Python prompt we can then instantiate a board, and set and get values on &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;.&lt;/p&gt;
+
+&lt;p&gt;To read the value on an analog pin, you have to first turn on the analog value reporting for that pin.&lt;/p&gt;
+
+&lt;p&gt;Note that&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Analogue reads and PWM writes are normalized to a 0 .. 1 range, and not the standard Arduino 0 .. 255 and 0 .. 1023.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;You should start a separate iterator thread to stop unread value reports clogging up the Firmata channel&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As an example, the following Python commands will get you up and running reading Analog port 0.&lt;/p&gt;
+
+&lt;section class=&#34;quickstart&#34; &gt;
+  &lt;div class=&#34;grid&#34;&gt;
+    &lt;div class=&#34;unit .half code&#34;&gt;
+      &lt;p class=&#34;title&#34;&gt;At the Python Prompt... &lt;/p&gt;
+      &lt;div class=&#34;shell&#34;&gt;
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;prompt&#34;&gt;&gt;&gt;&gt;&lt;/span&gt;
+          &lt;span class=&#34;command&#34;&gt;from pyfirmata import Arduino, util&lt;/span&gt;
+        &lt;/p&gt;        
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;prompt&#34;&gt;&gt;&gt;&gt;&lt;/span&gt;
+          &lt;span class=&#34;command&#34;&gt;board = Arduino(&#39;/dev/ttyS0&#39;)&lt;/span&gt;
+        &lt;/p&gt;
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;prompt&#34;&gt;&gt;&gt;&gt;&lt;/span&gt;
+          &lt;span class=&#34;command&#34;&gt;it = util.Iterator(board)&lt;/span&gt;
+        &lt;/p&gt;
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;prompt&#34;&gt;&gt;&gt;&gt;&lt;/span&gt;
+          &lt;span class=&#34;command&#34;&gt;it.start&lt;/span&gt;
+        &lt;/p&gt;
+          &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;prompt&#34;&gt;&gt;&gt;&gt;&lt;/span&gt;
+          &lt;span class=&#34;command&#34;&gt;board.analog[0].read()&lt;/span&gt;
+        &lt;/p&gt;
+        &lt;p class=&#34;line&#34;&gt;
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;output&#34;&gt;# =&gt; You can repeat the above command to show the current output of Analog Port 0&lt;/span&gt;
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;p&gt;More info on using Python Firmata can be found &lt;a href=&#34;https://github.com/tino/pyFirmata&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
