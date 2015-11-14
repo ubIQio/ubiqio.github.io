@@ -37,38 +37,6 @@
     </item>
     
     <item>
-      <title>Battery Operation</title>
-      <link>http://ubiqio.com/doc/battery/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/battery/</guid>
-      <description>
-
-&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/ardhatbattside400.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; can use an optional single cell LiPo battery, and a custom 2200mAh battery that fits snugly between the shield headers is available in the &lt;a href=&#34;http://ubiqio.com/shop&#34;&gt;store&lt;/a&gt;&lt;/p&gt;
-
-&lt;div class=&#34;note warning&#34;&gt;
-  &lt;p&gt;
-Any cell with a standard JST-PH connector that physically fits your application may also be used, but make sure the polarity is correct before attachment.
-  &lt;/p&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&#34;battery-operation:dc4df0175cfa07cfdc9b78ac4adb3b60&#34;&gt;Battery Operation&lt;/h3&gt;
-
-&lt;p&gt;During battery operation, &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; generates the supplies required for the Raspberry Pi and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; peripherals from a boost converter. When the remaining battery capacity reaches 5%, the Raspberry Pi is gracefully shutdown (see below) by a power  management daemon, which is also able to schedule events, for example time-lapse image capture.  When the battery voltage reaches a critical level, all circuits are switched off to avoid damage to the battery due to over-discharging.&lt;/p&gt;
-
-&lt;h3 id=&#34;charge-control-system:dc4df0175cfa07cfdc9b78ac4adb3b60&#34;&gt;Charge Control System&lt;/h3&gt;
-
-&lt;p&gt;When connected to external power, the battery is charged using a constant-current /constant-voltage charge algorithm, with pre-conditioning and charge termination phases.&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; will charge and maintain any single 3.7V LiPo cell attached to the industry standard 2-pin JST-PH connector.&lt;/p&gt;
-
-&lt;p&gt;If external power is disconnected, Ardhat transitions seamlessly to battery operation, and sends a notification to the Raspberry Pi over the inter-processor communication channel.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Contributing</title>
       <link>http://ubiqio.com/doc/contributing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -100,6 +68,36 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
     the forum describing your experience so we can make it better.
   &lt;/p&gt;
 &lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Battery Operation</title>
+      <link>http://ubiqio.com/doc/battery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/battery/</guid>
+      <description>
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; can perform full charge management of a single LiPo cell, and a custom 2200mAh battery that fits snugly between the shield headers is available in the &lt;a href=&#34;http://ubiqio.com/shop&#34;&gt;store&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img style=&#34;width:300px;height:300px&#34; src=&#34;http://ubiqio.com/media/005AB.jpg&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;Whilst operating on battery, &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; generates the supplies required for the Raspberry Pi and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; peripherals from a boost converter. When the remaining battery capacity reaches a predetermined level, the Raspberry Pi can be  gracefully shutdown over the Firmata communication channel. The same channel can be  used to schedule events, for example to have a host wake up and perform a time-lapse image capture.  When the battery voltage reaches a critical level, all circuits are switched off to avoid damage to the battery due to over-discharging.&lt;/p&gt;
+
+&lt;h3 id=&#34;charge-control-system:dc4df0175cfa07cfdc9b78ac4adb3b60&#34;&gt;Charge Control System&lt;/h3&gt;
+
+&lt;p&gt;When connected to external power, the battery is charged using a constant-current /constant-voltage charge algorithm, with pre-conditioning and charge termination phases.&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; will charge and maintain any single 3.7V LiPo cell attached to the industry standard 2-pin JST-PH connector.&lt;/p&gt;
+
+&lt;div class=&#34;note warning&#34;&gt;
+  &lt;p&gt;
+Any cell with a standard JST-PH connector that physically fits your application may also be used, but make sure the polarity is correct before attachment.
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;If external power is disconnected, Ardhat transitions seamlessly to battery operation, and sends a notification to the Raspberry Pi over the inter-processor communication channel.&lt;/p&gt;
 </description>
     </item>
     
@@ -186,15 +184,6 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
     </item>
     
     <item>
-      <title>History</title>
-      <link>http://ubiqio.com/doc/history/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/history/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Expansion</title>
       <link>http://ubiqio.com/doc/expansion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -219,6 +208,15 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
     </item>
     
     <item>
+      <title>History</title>
+      <link>http://ubiqio.com/doc/history/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/history/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>GitHub</title>
       <link>http://ubiqio.com/doc/github/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -232,44 +230,6 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 
 &lt;p&gt;In addition, all Ardhat software is available at the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; github repository
 &lt;a href=&#34;https://github.com/Ardhat&#34;&gt;https://github.com/Ardhat&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>IMU</title>
-      <link>http://ubiqio.com/doc/imu/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/imu/</guid>
-      <description>
-
-&lt;h3 id=&#34;inertial-measurement-unit:53cfe453f14e91a110c18a8c31803e02&#34;&gt;(Inertial Measurement Unit)&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/mpu9250.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The IMU is connected to the I2C bus. It is mounted at &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&amp;rsquo;s  geographic center to avoid offset errors. It consists of an Invensense MPU9250, which provides&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;3-axis accelerometer&lt;/li&gt;
-&lt;li&gt;3-axis gyroscope&lt;/li&gt;
-&lt;li&gt;3-axis magnetometer (compass)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;During normal operation, these devices are typically monitored directly by the Raspberry Pi  but in sleep mode they can be monitored by &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; and used to wakeup the Raspberry Pi.&lt;/p&gt;
-
-&lt;p&gt;For &lt;strong&gt;much&lt;/strong&gt; more information on programming see &lt;a href=&#34;https://github.com/Ardhat/MPU-9250&#34;&gt;this Article&lt;/a&gt; from Kris Winer, with an accompanying sketch &lt;a href=&#34;https://github.com/Ardhat/MPU-9250&#34;&gt;here&lt;/a&gt; that you can use if you want to drive the IMU directly from &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;.&lt;/p&gt;
-
-&lt;p&gt;The MPU9250 is also compatible with the popular &lt;a href=&#34;https://github.com/richards-tech/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Here&amp;rsquo;s a 3D Balance Bot, more commonly called a &lt;a href=&#34;https://en.wikipedia.org/wiki/Ballbot&#34;&gt;BallBot&lt;/a&gt;, created with Lego Mindstorms and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;,  an NXT motor shield and a 3-cell LiPo.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/balbot.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;See this video for more info&lt;/p&gt;
-
-&lt;div class=video-container&gt;
-&lt;iframe src=&#34;https://www.youtube.com/embed/f8jxGsg3p0Y&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
 </description>
     </item>
     
@@ -314,6 +274,48 @@ hazardous. Here’s what to look out for.&lt;/p&gt;
 
 &lt;p&gt;If you come across anything along the way that we haven’t covered, or if you
 know of a tip you think others would find handy, &lt;a href=&#34;http://ubiqio.com/community&#34;&gt;head over to the forum&lt;/a&gt; and we’ll see about including it in this guide.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>IMU</title>
+      <link>http://ubiqio.com/doc/imu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/imu/</guid>
+      <description>
+
+&lt;h3 id=&#34;inertial-measurement-unit:53cfe453f14e91a110c18a8c31803e02&#34;&gt;(Inertial Measurement Unit)&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/mpu9250.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The IMU is connected to the I2C bus. It is mounted at &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&amp;rsquo;s  geographic center to avoid offset errors. It consists of an Invensense MPU9250, which provides&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;3-axis accelerometer&lt;/li&gt;
+&lt;li&gt;3-axis gyroscope&lt;/li&gt;
+&lt;li&gt;3-axis magnetometer (compass)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;During normal operation, these devices are typically monitored directly by the Raspberry Pi  but in sleep mode they can be monitored by &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; and used to wakeup the Raspberry Pi.&lt;/p&gt;
+
+&lt;p&gt;For &lt;strong&gt;much&lt;/strong&gt; more information on programming see &lt;a href=&#34;https://github.com/Ardhat/MPU-9250&#34;&gt;this Article&lt;/a&gt; from Kris Winer, with an accompanying sketch &lt;a href=&#34;https://github.com/Ardhat/MPU-9250&#34;&gt;here&lt;/a&gt; that you can use if you want to drive the IMU directly from &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;.&lt;/p&gt;
+
+&lt;p&gt;The MPU9250 is also compatible with the popular &lt;a href=&#34;https://github.com/richards-tech/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&amp;rsquo;s  high performance IMU, together with Real-Time processing, PWM and analogue sensing , are essential requirements for the core of any robotics system. For those who like a challenge, one of the most interesting robot variants is the the 3D Balance Bot, more commonly called a &lt;a href=&#34;https://en.wikipedia.org/wiki/Ballbot&#34;&gt;BallBot&lt;/a&gt;.  This concept was originally rendered in Mindstorms by  &lt;a href=&#34;http://lejos-osek.sourceforge.net/&#34;&gt;Takashi Chikamasa&lt;/a&gt;,  using a Lejos, a custom Real-Time kernel for Mindstorms.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=video-container&gt;
+&lt;iframe src=&#34;https://www.youtube.com/embed/f8jxGsg3p0Y&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;We&amp;rsquo;ve updated the concept to Mindstorms EV3 using &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;, a motor shield and a 3-cell LiPo,&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/balbot.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;More details, including Lego Digital designer build instructions and code are in the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; Github repository.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/balbot.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -505,6 +507,26 @@ know of a tip you think others would find handy, &lt;a href=&#34;http://ubiqio.c
     </item>
     
     <item>
+      <title>LEDs</title>
+      <link>http://ubiqio.com/doc/leds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/leds/</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; supports LEDs in two ways; the first is through an onboard LED that is connected to port D9. Note that this is different from the standard Arduino port, which is D13.&lt;/p&gt;
+
+&lt;p&gt;This was done to avoid conflict with the use of D13 for SPI_SCK, and also so that the hardware PWM function can be used, for example for pulsating the LED in sleep mode.&lt;/p&gt;
+
+&lt;p&gt;The other form of support is through the inclusion of a 3.3V to 5V converter on the output of the Pi PWM pin, which can be used to connect WS8212 LED strings directly to Ardhat.&lt;/p&gt;
+
+&lt;p&gt;The 5V rail can provide up to 2.5A which is sufficient to drive 4m light strings in normal use (ie not all illuminated at full brigtness)&lt;/p&gt;
+
+&lt;p&gt;See &lt;a href=&#34;https://github.com/Ardhat/spiralLED&#34;&gt;Spiralled&lt;/a&gt; for an example of this in use.&lt;/p&gt;
+
+&lt;p&gt;&lt;img align=&#34;center&#34; src=&#34;http://ubiqio.com/media/SpiralLED.jpg&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Navigation Switch</title>
       <link>http://ubiqio.com/doc/navi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -544,26 +566,6 @@ know of a tip you think others would find handy, &lt;a href=&#34;http://ubiqio.c
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>LEDs</title>
-      <link>http://ubiqio.com/doc/leds/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/leds/</guid>
-      <description>&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; supports LEDs in two ways; the first is through an onboard LED that is connected to port D9. Note that this is different from the standard Arduino port, which is D13.&lt;/p&gt;
-
-&lt;p&gt;This was done to avoid conflict with the use of D13 for SPI_SCK, and also so that the hardware PWM function can be used, for example for pulsating the LED in sleep mode.&lt;/p&gt;
-
-&lt;p&gt;The other form of support is through the inclusion of a 3.3V to 5V converter on the output of the Pi PWM pin, which can be used to connect WS8212 LED strings directly to Ardhat.&lt;/p&gt;
-
-&lt;p&gt;The 5V rail can provide up to 2.5A which is sufficient to drive 4m light strings in normal use (ie not all illuminated at full brigtness)&lt;/p&gt;
-
-&lt;p&gt;See &lt;a href=&#34;https://github.com/Ardhat/spiralLED&#34;&gt;Spiralled&lt;/a&gt; for an example of this in use.&lt;/p&gt;
-
-&lt;p&gt;&lt;img align=&#34;center&#34; src=&#34;http://ubiqio.com/media/SpiralLED.jpg&#34;&gt;&lt;/p&gt;
 </description>
     </item>
     

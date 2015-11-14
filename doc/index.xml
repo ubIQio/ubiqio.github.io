@@ -30,25 +30,23 @@
       <guid>http://ubiqio.com/doc/battery/</guid>
       <description>
 
-&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/ardhatbattside400.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; can perform full charge management of a single LiPo cell, and a custom 2200mAh battery that fits snugly between the shield headers is available in the &lt;a href=&#34;http://ubiqio.com/shop&#34;&gt;store&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; can use an optional single cell LiPo battery, and a custom 2200mAh battery that fits snugly between the shield headers is available in the &lt;a href=&#34;http://ubiqio.com/shop&#34;&gt;store&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img style=&#34;width:300px;height:300px&#34; src=&#34;http://ubiqio.com/media/005AB.jpg&#34;&gt;&lt;/p&gt;
 
-&lt;div class=&#34;note warning&#34;&gt;
-  &lt;p&gt;
-Any cell with a standard JST-PH connector that physically fits your application may also be used, but make sure the polarity is correct before attachment.
-  &lt;/p&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&#34;battery-operation:dc4df0175cfa07cfdc9b78ac4adb3b60&#34;&gt;Battery Operation&lt;/h3&gt;
-
-&lt;p&gt;During battery operation, &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; generates the supplies required for the Raspberry Pi and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; peripherals from a boost converter. When the remaining battery capacity reaches 5%, the Raspberry Pi is gracefully shutdown (see below) by a power  management daemon, which is also able to schedule events, for example time-lapse image capture.  When the battery voltage reaches a critical level, all circuits are switched off to avoid damage to the battery due to over-discharging.&lt;/p&gt;
+&lt;p&gt;Whilst operating on battery, &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; generates the supplies required for the Raspberry Pi and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; peripherals from a boost converter. When the remaining battery capacity reaches a predetermined level, the Raspberry Pi can be  gracefully shutdown over the Firmata communication channel. The same channel can be  used to schedule events, for example to have a host wake up and perform a time-lapse image capture.  When the battery voltage reaches a critical level, all circuits are switched off to avoid damage to the battery due to over-discharging.&lt;/p&gt;
 
 &lt;h3 id=&#34;charge-control-system:dc4df0175cfa07cfdc9b78ac4adb3b60&#34;&gt;Charge Control System&lt;/h3&gt;
 
 &lt;p&gt;When connected to external power, the battery is charged using a constant-current /constant-voltage charge algorithm, with pre-conditioning and charge termination phases.&lt;/p&gt;
 
 &lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; will charge and maintain any single 3.7V LiPo cell attached to the industry standard 2-pin JST-PH connector.&lt;/p&gt;
+
+&lt;div class=&#34;note warning&#34;&gt;
+  &lt;p&gt;
+Any cell with a standard JST-PH connector that physically fits your application may also be used, but make sure the polarity is correct before attachment.
+  &lt;/p&gt;
+&lt;/div&gt;
 
 &lt;p&gt;If external power is disconnected, Ardhat transitions seamlessly to battery operation, and sends a notification to the Raspberry Pi over the inter-processor communication channel.&lt;/p&gt;
 </description>
@@ -434,15 +432,19 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 
 &lt;p&gt;The MPU9250 is also compatible with the popular &lt;a href=&#34;https://github.com/richards-tech/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Here&amp;rsquo;s a 3D Balance Bot, more commonly called a &lt;a href=&#34;https://en.wikipedia.org/wiki/Ballbot&#34;&gt;BallBot&lt;/a&gt;, created with Lego Mindstorms and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;,  an NXT motor shield and a 3-cell LiPo.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&amp;rsquo;s  high performance IMU, together with Real-Time processing, PWM and analogue sensing , are essential requirements for the core of any robotics system. For those who like a challenge, one of the most interesting robot variants is the the 3D Balance Bot, more commonly called a &lt;a href=&#34;https://en.wikipedia.org/wiki/Ballbot&#34;&gt;BallBot&lt;/a&gt;.  This concept was originally rendered in Mindstorms by  &lt;a href=&#34;http://lejos-osek.sourceforge.net/&#34;&gt;Takashi Chikamasa&lt;/a&gt;,  using a Lejos, a custom Real-Time kernel for Mindstorms.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=video-container&gt;
+&lt;iframe src=&#34;https://www.youtube.com/embed/f8jxGsg3p0Y&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;We&amp;rsquo;ve updated the concept to Mindstorms EV3 using &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;, a motor shield and a 3-cell LiPo,&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/balbot.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;See this video for more info&lt;/p&gt;
+&lt;p&gt;More details, including Lego Digital designer build instructions and code are in the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; Github repository.&lt;/p&gt;
 
-&lt;div class=video-container&gt;
-&lt;iframe src=&#34;https://www.youtube.com/embed/f8jxGsg3p0Y&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
+&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/balbot.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     

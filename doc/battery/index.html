@@ -81,8 +81,9 @@
                 <div class="navbar-collapse collapse" id="navbar-collapse">
                     <ul class="nav navbar-nav">
                         <li class="nav-item"><a href="/news/">News</a></li>
-                        <li class="nav-item"><a href="/community/">Community</a></li>
-                        <li class="nav-item"><a href="/doc/">Docs</a></li>                      <li class="nav-item"><a href="/shop/">Shop</a></li>
+                        <li class="nav-item"><a href="/doc/">Learn</a></li> 
+                        <li class="nav-item"><a href="/community/">Forum</a></li>
+                     <li class="nav-item"><a href="/shop/">Shop</a></li>
                     </ul>
                 </div>
             </nav>
@@ -403,10 +404,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/leds/">LEDs</option>
+            
+           
             
            
             
@@ -493,10 +494,10 @@
            
             
            
-              
-                <option value="http://ubiqio.com/doc/battery/">Battery Operation</option>
             
            
+              
+                <option value="http://ubiqio.com/doc/battery/">Battery Operation</option>
             
            
             
@@ -556,10 +557,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/expansion/">Expansion</option>
+            
+           
             
            
             
@@ -961,10 +962,10 @@
            
             
            
-              
-                <option value="http://ubiqio.com/doc/navi/">Navigation Switch</option>
             
            
+              
+                <option value="http://ubiqio.com/doc/navi/">Navigation Switch</option>
             
            
             
@@ -1065,10 +1066,10 @@
            
             
            
-              
-                <option value="http://ubiqio.com/doc/imu/">IMU</option>
             
            
+              
+                <option value="http://ubiqio.com/doc/imu/">IMU</option>
             
            
             
@@ -1220,10 +1221,10 @@
            
             
            
-            
-           
               
                 <option value="http://ubiqio.com/doc/contributing/">Contributing</option>
+            
+           
             
            
             
@@ -1342,25 +1343,23 @@
               <hr />
               
 
-<p><img src="/media/ardhatbattside400.jpg" alt="image alt text" /></p>
+<p><span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> can perform full charge management of a single LiPo cell, and a custom 2200mAh battery that fits snugly between the shield headers is available in the <a href="/shop">store</a></p>
 
-<p><span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> can use an optional single cell LiPo battery, and a custom 2200mAh battery that fits snugly between the shield headers is available in the <a href="/shop">store</a></p>
+<p><img style="width:300px;height:300px" src="/media/005AB.jpg"></p>
 
-<div class="note warning">
-  <p>
-Any cell with a standard JST-PH connector that physically fits your application may also be used, but make sure the polarity is correct before attachment.
-  </p>
-</div>
-
-<h3 id="battery-operation:dc4df0175cfa07cfdc9b78ac4adb3b60">Battery Operation</h3>
-
-<p>During battery operation, <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> generates the supplies required for the Raspberry Pi and <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> peripherals from a boost converter. When the remaining battery capacity reaches 5%, the Raspberry Pi is gracefully shutdown (see below) by a power  management daemon, which is also able to schedule events, for example time-lapse image capture.  When the battery voltage reaches a critical level, all circuits are switched off to avoid damage to the battery due to over-discharging.</p>
+<p>Whilst operating on battery, <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> generates the supplies required for the Raspberry Pi and <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> peripherals from a boost converter. When the remaining battery capacity reaches a predetermined level, the Raspberry Pi can be  gracefully shutdown over the Firmata communication channel. The same channel can be  used to schedule events, for example to have a host wake up and perform a time-lapse image capture.  When the battery voltage reaches a critical level, all circuits are switched off to avoid damage to the battery due to over-discharging.</p>
 
 <h3 id="charge-control-system:dc4df0175cfa07cfdc9b78ac4adb3b60">Charge Control System</h3>
 
 <p>When connected to external power, the battery is charged using a constant-current /constant-voltage charge algorithm, with pre-conditioning and charge termination phases.</p>
 
 <p><span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> will charge and maintain any single 3.7V LiPo cell attached to the industry standard 2-pin JST-PH connector.</p>
+
+<div class="note warning">
+  <p>
+Any cell with a standard JST-PH connector that physically fits your application may also be used, but make sure the polarity is correct before attachment.
+  </p>
+</div>
 
 <p>If external power is disconnected, Ardhat transitions seamlessly to battery operation, and sends a notification to the Raspberry Pi over the inter-processor communication channel.</p>
 
@@ -1859,13 +1858,13 @@ Any cell with a standard JST-PH connector that physically fits your application 
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/leds/">LEDs</a></li>
           
+          
+
+            
           
 
             
@@ -1991,15 +1990,15 @@ Any cell with a standard JST-PH connector that physically fits your application 
             
           
 
+            
+          
+
               
             <li class=" 
             current 
             " >
             <a href="/doc/battery/">Battery Operation</a></li>
           
-          
-
-            
           
 
             
@@ -2086,13 +2085,13 @@ Any cell with a standard JST-PH connector that physically fits your application 
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/expansion/">Expansion</a></li>
           
+          
+
+            
           
 
             
@@ -2681,13 +2680,13 @@ Any cell with a standard JST-PH connector that physically fits your application 
             
           
 
+            
+          
+
               
             <li class="" >
             <a href="/doc/navi/">Navigation Switch</a></li>
           
-          
-
-            
           
 
             
@@ -2834,13 +2833,13 @@ Any cell with a standard JST-PH connector that physically fits your application 
             
           
 
+            
+          
+
               
             <li class="" >
             <a href="/doc/imu/">IMU</a></li>
           
-          
-
-            
           
 
             
@@ -3061,13 +3060,13 @@ Any cell with a standard JST-PH connector that physically fits your application 
             
           
 
-            
-          
-
               
             <li class="" >
             <a href="/doc/contributing/">Contributing</a></li>
           
+          
+
+            
           
 
             
