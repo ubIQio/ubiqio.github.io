@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>News on ubIQio</title>
-    <link>http://ubiqio.com/news/</link>
+    <link>http://localhost:1313/news/</link>
     <description>Recent content in News on ubIQio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://ubiqio.com/news/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/news/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>All Screwed Up</title>
-      <link>http://ubiqio.com/news/Screwy/</link>
+      <link>http://localhost:1313/news/Screwy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://ubiqio.com/news/Screwy/</guid>
-      <description>&lt;p&gt;&lt;img align=&#34;right&#34; style=&#34;width:200px;height:200px&#34; src=&#34;http://ubiqio.com/media/005AX.jpg&#34;&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/news/Screwy/</guid>
+      <description>&lt;p&gt;&lt;img align=&#34;right&#34; style=&#34;width:200px;height:200px&#34; src=&#34;http://localhost:1313/media/005AX.jpg&#34;&gt;&lt;/p&gt;
 
-&lt;p&gt;Ardhat is perfect for automotive use, and we now have DC jack to screw terminals adapters in the &lt;a href=&#34;http://ubiqio.com/shop&#34;&gt;store&lt;/a&gt; so you can easily hook up an Ardhat to a car or RV system.&lt;/p&gt;
+&lt;p&gt;Ardhat is perfect for automotive use, and we now have DC jack to screw terminals adapters in the &lt;a href=&#34;http://localhost:1313/shop&#34;&gt;store&lt;/a&gt; so you can easily hook up an Ardhat to a car or RV system.&lt;/p&gt;
 
 &lt;p&gt;Ardhat is protected against reverse connections, and its high efficiency switching regulator  will run happily at up to 28V.&lt;/p&gt;
 
@@ -26,13 +26,13 @@
     
     <item>
       <title>Ardhat Pre-Order</title>
-      <link>http://ubiqio.com/news/Ardhat%20Preorder/</link>
+      <link>http://localhost:1313/news/Ardhat%20Preorder/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://ubiqio.com/news/Ardhat%20Preorder/</guid>
+      <guid>http://localhost:1313/news/Ardhat%20Preorder/</guid>
       <description>
 
-&lt;p&gt;&lt;img align=&#34;left&#34; src=&#34;http://ubiqio.com/media/fizzy.jpeg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img align=&#34;left&#34; src=&#34;http://localhost:1313/media/fizzy.jpeg&#34;&gt;&lt;/p&gt;
 
 &lt;h5 id=&#34;huzzah:1615f1ebc7df664cb753fc189f24a8d9&#34;&gt;Huzzah!&lt;/h5&gt;
 
@@ -47,10 +47,10 @@ to announce that Ardhat is now available to pre-order!&lt;/p&gt;
     
     <item>
       <title>PlatformIO</title>
-      <link>http://ubiqio.com/news/PlatformIO/</link>
+      <link>http://localhost:1313/news/PlatformIO/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://ubiqio.com/news/PlatformIO/</guid>
+      <guid>http://localhost:1313/news/PlatformIO/</guid>
       <description>
 
 &lt;h3 id=&#34;platformio:9dad33f838b72eab7a3137aa7ef76be2&#34;&gt;Platformio&lt;/h3&gt;
@@ -63,10 +63,10 @@ to announce that Ardhat is now available to pre-order!&lt;/p&gt;
     
     <item>
       <title>ubIQio Magazine now on Flipboard!</title>
-      <link>http://ubiqio.com/news/FlipboardMag/</link>
+      <link>http://localhost:1313/news/FlipboardMag/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://ubiqio.com/news/FlipboardMag/</guid>
+      <guid>http://localhost:1313/news/FlipboardMag/</guid>
       <description>&lt;p&gt;The ubIQio magazine &lt;strong&gt;Maker Planet&lt;/strong&gt; is full of awesome projects and news related to Ardhat.&lt;/p&gt;
 
 &lt;p&gt;Hit the link below  for inspiration!&lt;/p&gt;
