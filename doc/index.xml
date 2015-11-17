@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docs on ubIQio</title>
-    <link>http://localhost:1313/doc/</link>
+    <link>http://ubiqio.com/doc/</link>
     <description>Recent content in Docs on ubIQio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/doc/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://ubiqio.com/doc/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title></title>
-      <link>http://localhost:1313/doc/README/</link>
+      <link>http://ubiqio.com/doc/README/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/doc/README/</guid>
+      <guid>http://ubiqio.com/doc/README/</guid>
       <description>
 
 &lt;h1 id=&#34;docs:04c6e90faac2675aa89e2176d2eec7d8&#34;&gt;docs&lt;/h1&gt;
@@ -24,15 +24,15 @@
     
     <item>
       <title>Battery Operation</title>
-      <link>http://localhost:1313/doc/battery/</link>
+      <link>http://ubiqio.com/doc/battery/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/doc/battery/</guid>
+      <guid>http://ubiqio.com/doc/battery/</guid>
       <description>
 
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; can perform full charge management of a single LiPo cell, and a custom 2200mAh battery that fits snugly between the shield headers is available in the &lt;a href=&#34;http://localhost:1313/shop&#34;&gt;store&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; can perform full charge management of a single LiPo cell, and a custom 2200mAh battery that fits snugly between the shield headers is available in the &lt;a href=&#34;http://ubiqio.com/shop&#34;&gt;store&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img style=&#34;width:300px;height:300px&#34; src=&#34;http://localhost:1313/media/005AB.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img style=&#34;width:300px;height:300px&#34; src=&#34;http://ubiqio.com/media/005AB.jpg&#34;&gt;&lt;/p&gt;
 
 &lt;p&gt;Whilst operating on battery, &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; generates the supplies required for the Raspberry Pi and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; peripherals from a boost converter. When the remaining battery capacity reaches a predetermined level, the Raspberry Pi can be  gracefully shutdown over the Firmata communication channel. The same channel can be  used to schedule events, for example to have a host wake up and perform a time-lapse image capture.  When the battery voltage reaches a critical level, all circuits are switched off to avoid damage to the battery due to over-discharging.&lt;/p&gt;
 
@@ -54,10 +54,10 @@ Any cell with a standard JST-PH connector that physically fits your application 
     
     <item>
       <title>Configuration</title>
-      <link>http://localhost:1313/doc/configuration/</link>
+      <link>http://ubiqio.com/doc/configuration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/doc/configuration/</guid>
+      <guid>http://ubiqio.com/doc/configuration/</guid>
       <description>
 
 &lt;h4 id=&#34;protecting-shield-pins:a66b35d20295cb764719ac8bd35837ec&#34;&gt;Protecting shield pins&lt;/h4&gt;
@@ -112,13 +112,13 @@ Any cell with a standard JST-PH connector that physically fits your application 
     
     <item>
       <title>Contributing</title>
-      <link>http://localhost:1313/doc/contributing/</link>
+      <link>http://ubiqio.com/doc/contributing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/doc/contributing/</guid>
+      <guid>http://ubiqio.com/doc/contributing/</guid>
       <description>
 
-&lt;p&gt;So you&amp;rsquo;ve got an awesome idea to throw into &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;. Great! Head over to &lt;a href=&#34;http://localhost:1313/community&#34;&gt;the forum&lt;/a&gt; and let us know!&lt;/p&gt;
+&lt;p&gt;So you&amp;rsquo;ve got an awesome idea to throw into &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;. Great! Head over to &lt;a href=&#34;http://ubiqio.com/community&#34;&gt;the forum&lt;/a&gt; and let us know!&lt;/p&gt;
 
 &lt;h2 id=&#34;updating-documentation:cc4aac3e9be04e0413c9520f223b493c&#34;&gt;Updating Documentation&lt;/h2&gt;
 
@@ -138,7 +138,7 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
   &lt;p&gt;
     Both using and hacking on &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; should be fun, simple, and easy, so if for
     some reason you find it’s a pain, please &lt;a
-    href=&#34;http://localhost:1313/community&#34;&gt;flag it&lt;/a&gt; on
+    href=&#34;http://ubiqio.com/community&#34;&gt;flag it&lt;/a&gt; on
     the forum describing your experience so we can make it better.
   &lt;/p&gt;
 &lt;/div&gt;
@@ -147,10 +147,10 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
     
     <item>
       <title>Environment Sensor</title>
-      <link>http://localhost:1313/doc/env/</link>
+      <link>http://ubiqio.com/doc/env/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/doc/env/</guid>
+      <guid>http://ubiqio.com/doc/env/</guid>
       <description>&lt;p&gt;The &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;-E provides Environmental Sensing in addition to the basic functions of Arduino compatibility and power management. This is performed by a Bosch BME280 integrated sensor, which provides&lt;/p&gt;
 
 &lt;ul&gt;
@@ -171,10 +171,10 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
     
     <item>
       <title>Expansion</title>
-      <link>http://localhost:1313/doc/expansion/</link>
+      <link>http://ubiqio.com/doc/expansion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/doc/expansion/</guid>
+      <guid>http://ubiqio.com/doc/expansion/</guid>
       <description>
 
 &lt;h3 id=&#34;arduino-compatibility:636f077861fb676b2ad14870f3ad09aa&#34;&gt;Arduino Compatibility&lt;/h3&gt;
@@ -183,7 +183,7 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 
 &lt;h3 id=&#34;arduino-shield-support:636f077861fb676b2ad14870f3ad09aa&#34;&gt;Arduino Shield Support&lt;/h3&gt;
 
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; supports all Uno compatible shields. AVR SPI is available on the ICSP header which is used by the majority of shields that require SPI.  The latest R3 features such as IOREF are included. For more information see the &lt;a href=&#34;http://localhost:1313/doc/io/&#34;&gt;IO usage page&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; supports all Uno compatible shields. AVR SPI is available on the ICSP header which is used by the majority of shields that require SPI.  The latest R3 features such as IOREF are included. For more information see the &lt;a href=&#34;http://ubiqio.com/doc/io/&#34;&gt;IO usage page&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;raspberry-pi-hugoshortcode-5-communication:636f077861fb676b2ad14870f3ad09aa&#34;&gt;Raspberry Pi &amp;lt;&amp;gt; &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; communication&lt;/h3&gt;
 
@@ -195,10 +195,10 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
     
     <item>
       <title>GitHub</title>
-      <link>http://localhost:1313/doc/github/</link>
+      <link>http://ubiqio.com/doc/github/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/doc/github/</guid>
+      <guid>http://ubiqio.com/doc/github/</guid>
       <description>&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&amp;rsquo;s documentation is kept on github and you can help improve it.&lt;/p&gt;
 
 &lt;p&gt;Just click the pencil link  at the top right of any of the docs to go straight there.&lt;/p&gt;
@@ -212,19 +212,19 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
     
     <item>
       <title>History</title>
-      <link>http://localhost:1313/doc/history/</link>
+      <link>http://ubiqio.com/doc/history/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/doc/history/</guid>
+      <guid>http://ubiqio.com/doc/history/</guid>
       <description></description>
     </item>
     
     <item>
       <title>I/O usage</title>
-      <link>http://localhost:1313/doc/io/</link>
+      <link>http://ubiqio.com/doc/io/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/doc/io/</guid>
+      <guid>http://ubiqio.com/doc/io/</guid>
       <description>&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; has full Arduino Shield compatibility, as well as being Raspberry Pi HAT compliant. Some of pins have a special usage in the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; environment as detailed below:&lt;/p&gt;
 
 &lt;table&gt;
@@ -408,21 +408,21 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
     
     <item>
       <title>IMU</title>
-      <link>http://localhost:1313/doc/imu/</link>
+      <link>http://ubiqio.com/doc/imu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/doc/imu/</guid>
+      <guid>http://ubiqio.com/doc/imu/</guid>
       <description>
 
-&lt;h3 id=&#34;inertial-measurement-unit:53cfe453f14e91a110c18a8c31803e02&#34;&gt;(Inertial Measurement Unit)&lt;/h3&gt;
+&lt;h3 id=&#34;inertial-measurement-unit:53cfe453f14e91a110c18a8c31803e02&#34;&gt;Inertial Measurement Unit&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/media/mpu9250.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/mpu9250.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The IMU is connected to the I2C bus. It is mounted at &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&amp;rsquo;s  geographic center to avoid offset errors. It consists of an Invensense MPU9250, which provides&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;3-axis accelerometer&lt;/li&gt;
 &lt;li&gt;3-axis gyroscope&lt;/li&gt;
+&lt;li&gt;3-axis accelerometer&lt;/li&gt;
 &lt;li&gt;3-axis magnetometer (compass)&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -432,6 +432,16 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 
 &lt;p&gt;The MPU9250 is also compatible with the popular &lt;a href=&#34;https://github.com/richards-tech/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;.&lt;/p&gt;
 
+&lt;h4 id=&#34;imu-and-drones:53cfe453f14e91a110c18a8c31803e02&#34;&gt;IMU and Drones&lt;/h4&gt;
+
+&lt;p&gt;The MPU9250 together with the BMP180 are the perfect combination to offload the RealTime processing from a Raspberry Pi , as the basis of machine vision based drones.&lt;/p&gt;
+
+&lt;p&gt;The  &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; Github repo has a version of the MultiWii library extended with &lt;a href=&#34;https://github.com/Ardhat/multiwii-firmware&#34;&gt;support for the MPU9250&lt;/a&gt;. This allows you to use  apps such as &lt;a href=&#34;http://ez-gui.com/&#34;&gt;EZGUI&lt;/a&gt; to monitor and control your drone&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/ezgui.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;imu-and-robotics:53cfe453f14e91a110c18a8c31803e02&#34;&gt;IMU and Robotics&lt;/h4&gt;
+
 &lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&amp;rsquo;s  high performance IMU, together with Real-Time processing, PWM and analogue sensing , are essential requirements for the core of any robotics system. For those who like a challenge, one of the most interesting robot variants is the the 3D Balance Bot, more commonly called a &lt;a href=&#34;https://en.wikipedia.org/wiki/Ballbot&#34;&gt;BallBot&lt;/a&gt;.  This concept was originally rendered in Mindstorms by  &lt;a href=&#34;http://lejos-osek.sourceforge.net/&#34;&gt;Takashi Chikamasa&lt;/a&gt;,  using a Lejos, a custom Real-Time kernel for Mindstorms.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=video-container&gt;
@@ -440,20 +450,18 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 
 &lt;p&gt;We&amp;rsquo;ve updated the concept to Mindstorms EV3 using &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;, a motor shield and a 3-cell LiPo,&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/media/balbot.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/balbot.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;More details, including Lego Digital designer build instructions and code are in the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; Github repository.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/media/balbot.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>LEDs</title>
-      <link>http://localhost:1313/doc/leds/</link>
+      <link>http://ubiqio.com/doc/leds/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/doc/leds/</guid>
+      <guid>http://ubiqio.com/doc/leds/</guid>
       <description>&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; supports LEDs in two ways; the first is through an onboard LED that is connected to port D9. Note that this is different from the standard Arduino port, which is D13.&lt;/p&gt;
 
 &lt;p&gt;This was done to avoid conflict with the use of D13 for SPI_SCK, and also so that the hardware PWM function can be used, for example for pulsating the LED in sleep mode.&lt;/p&gt;
@@ -464,19 +472,19 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 
 &lt;p&gt;See &lt;a href=&#34;https://github.com/Ardhat/spiralLED&#34;&gt;Spiralled&lt;/a&gt; for an example of this in use.&lt;/p&gt;
 
-&lt;p&gt;&lt;img align=&#34;center&#34; src=&#34;http://localhost:1313/media/SpiralLED.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img align=&#34;center&#34; src=&#34;http://ubiqio.com/media/SpiralLED.jpg&#34;&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Mesh Radio</title>
-      <link>http://localhost:1313/doc/radio/</link>
+      <link>http://ubiqio.com/doc/radio/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/doc/radio/</guid>
+      <guid>http://ubiqio.com/doc/radio/</guid>
       <description>
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/media/ardhatradio400.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/ardhatradio400.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;long-range-wireless-node:1bd5eb89186ef6bf841b9646b5fe2314&#34;&gt;Long-range wireless node&lt;/h3&gt;
 
@@ -528,10 +536,10 @@ RH_RF69 rf69(10, 3); // For RF69 on Ardhat
     
     <item>
       <title>Navigation Switch</title>
-      <link>http://localhost:1313/doc/navi/</link>
+      <link>http://ubiqio.com/doc/navi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/doc/navi/</guid>
+      <guid>http://ubiqio.com/doc/navi/</guid>
       <description>&lt;p&gt;The navigation switch is connected to the AVR analog port A7. This port is not present on a standard Arduino, so does not affect normal sketch operation.&lt;/p&gt;
 
 &lt;p&gt;When operated, the switch forms a potential divider from the output of the LiPo charger, as shown in the following table:&lt;/p&gt;
@@ -571,10 +579,10 @@ RH_RF69 rf69(10, 3); // For RF69 on Ardhat
     
     <item>
       <title>Programming Model</title>
-      <link>http://localhost:1313/doc/progmodel/</link>
+      <link>http://ubiqio.com/doc/progmodel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/doc/progmodel/</guid>
+      <guid>http://ubiqio.com/doc/progmodel/</guid>
       <description>&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&amp;rsquo;s features can be accessed from a compatible host, such as Raspberry Pi, using the &lt;a href=&#34;https://github.com/firmata/protocol&#34;&gt;Firmata&lt;/a&gt; protocol over serial.&lt;/p&gt;
 
 &lt;p&gt;Firmata provides a standardized mechanism to exchange information between a real-time processor such as &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; and a host, but easily is extended to provide access to the wide range of features available.&lt;/p&gt;
@@ -683,7 +691,7 @@ RH_RF69 rf69(10, 3); // For RF69 on Ardhat
 
 &lt;p&gt;The overall system model is as shown below.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/media/IOTmodel.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/IOTmodel.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The Applications and Services may run on the Pi  (typically written in javascript), or may in part or whole be provided by a cloud service, subscribed to by the Ardhat software, eg &lt;a href=&#34;https://ifttt.com/&#34;&gt;IFTTT&lt;/a&gt;.  Sensor node topology and authentication info is stored in a &lt;a href=&#34;https://github.com/louischatriot/nedb&#34;&gt;NeDB&lt;/a&gt; a MongoDB-like noSQL database.&lt;/p&gt;
 
@@ -693,10 +701,10 @@ RH_RF69 rf69(10, 3); // For RF69 on Ardhat
     
     <item>
       <title>Python</title>
-      <link>http://localhost:1313/doc/python/</link>
+      <link>http://ubiqio.com/doc/python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/doc/python/</guid>
+      <guid>http://ubiqio.com/doc/python/</guid>
       <description>
 
 &lt;h2 id=&#34;inter-processor-communication:c431704424a149541be05f7b70c63362&#34;&gt;Inter-processor communication&lt;/h2&gt;
@@ -711,7 +719,7 @@ RH_RF69 rf69(10, 3); // For RF69 on Ardhat
 
 &lt;h3 id=&#34;using-python-firmata-with-ardhat:c431704424a149541be05f7b70c63362&#34;&gt;Using Python Firmata with Ardhat&lt;/h3&gt;
 
-&lt;p&gt;Ardhat ships from the factory with Firmata already installed, but follow the instructions in &lt;a href=&#34;http://localhost:1313/doc/installation&#34;&gt;&lt;em&gt;Installation&lt;/em&gt;&lt;/a&gt; to make sure you have turned off kernel serial port use first.&lt;/p&gt;
+&lt;p&gt;Ardhat ships from the factory with Firmata already installed, but follow the instructions in &lt;a href=&#34;http://ubiqio.com/doc/installation&#34;&gt;&lt;em&gt;Installation&lt;/em&gt;&lt;/a&gt; to make sure you have turned off kernel serial port use first.&lt;/p&gt;
 
 &lt;p&gt;To install Firmata on the host connect to the Pi using &lt;code&gt;ssh&lt;/code&gt;, so that you can copy and paste the following into the terminal:&lt;/p&gt;
 
