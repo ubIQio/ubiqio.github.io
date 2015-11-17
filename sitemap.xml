@@ -20,15 +20,15 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/battery/</loc>
-  </url>
-  
-  <url>
     <loc>http://ubiqio.com/doc/configuration/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/expansion/</loc>
+    <loc>http://ubiqio.com/doc/battery/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ubiqio.com/doc/history/</loc>
   </url>
   
   <url>
@@ -40,11 +40,11 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/imu/</loc>
+    <loc>http://ubiqio.com/doc/expansion/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/history/</loc>
+    <loc>http://ubiqio.com/doc/imu/</loc>
   </url>
   
   <url>
@@ -52,11 +52,11 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/io/</loc>
+    <loc>http://ubiqio.com/doc/leds/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/leds/</loc>
+    <loc>http://ubiqio.com/doc/io/</loc>
   </url>
   
   <url>
@@ -64,15 +64,11 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/progmodel/</loc>
-  </url>
-  
-  <url>
     <loc>http://ubiqio.com/doc/python/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/radio/</loc>
+    <loc>http://ubiqio.com/doc/progmodel/</loc>
   </url>
   
   <url>
@@ -80,7 +76,7 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/rtc/</loc>
+    <loc>http://ubiqio.com/doc/radio/</loc>
   </url>
   
   <url>
@@ -88,7 +84,7 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/upgrading/</loc>
+    <loc>http://ubiqio.com/doc/rtc/</loc>
   </url>
   
   <url>
@@ -96,11 +92,15 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/news/PlatformIO/</loc>
+    <loc>http://ubiqio.com/doc/upgrading/</loc>
   </url>
   
   <url>
     <loc>http://ubiqio.com/news/FlipboardMag/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ubiqio.com/news/PlatformIO/</loc>
   </url>
   
   <url>
@@ -112,11 +112,11 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/power/</loc>
+    <loc>http://ubiqio.com/doc/overview/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/overview/</loc>
+    <loc>http://ubiqio.com/doc/power/</loc>
   </url>
   
   <url>

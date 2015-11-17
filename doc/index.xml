@@ -434,7 +434,7 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 
 &lt;h4 id=&#34;imu-and-drones:53cfe453f14e91a110c18a8c31803e02&#34;&gt;IMU and Drones&lt;/h4&gt;
 
-&lt;p&gt;The MPU9250 together with, the BMP280 altimeter, are the perfect combination to offload the Flight Control RealTime processing from a Raspberry Pi, as the basis of machine vision based drones.&lt;/p&gt;
+&lt;p&gt;The MPU9250, together with the BMP280 altimeter, are the perfect combination to offload the Flight Control RealTime processing from a Raspberry Pi, as the basis of machine vision based drones.&lt;/p&gt;
 
 &lt;p&gt;The  &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; Github repo has a version of the MultiWii library extended with &lt;a href=&#34;https://github.com/Ardhat/multiwii-firmware&#34;&gt;support for the MPU9250&lt;/a&gt;. This allows you to use  apps such as &lt;a href=&#34;http://ez-gui.com/&#34;&gt;EZGUI&lt;/a&gt; to monitor and control your drone&lt;/p&gt;
 
