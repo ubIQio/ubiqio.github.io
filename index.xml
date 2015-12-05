@@ -72,6 +72,36 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Battery Operation</title>
+      <link>http://ubiqio.com/doc/battery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/battery/</guid>
+      <description>
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; can perform full charge management of a single LiPo cell, and a custom 2200mAh battery that fits snugly between the shield headers is available in the &lt;a href=&#34;http://ubiqio.com/shop&#34;&gt;store&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img style=&#34;width:300px;height:300px&#34; src=&#34;http://ubiqio.com/media/005AB.jpg&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;Whilst operating on battery, &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; generates the supplies required for the Raspberry Pi and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; peripherals from a boost converter. When the remaining battery capacity reaches a predetermined level, the Raspberry Pi can be  gracefully shutdown over the Firmata communication channel. The same channel can be  used to schedule events, for example to have a host wake up and perform a time-lapse image capture.  When the battery voltage reaches a critical level, all circuits are switched off to avoid damage to the battery due to over-discharging.&lt;/p&gt;
+
+&lt;h3 id=&#34;charge-control-system:dc4df0175cfa07cfdc9b78ac4adb3b60&#34;&gt;Charge Control System&lt;/h3&gt;
+
+&lt;p&gt;When connected to external power, the battery is charged using a constant-current /constant-voltage charge algorithm, with pre-conditioning and charge termination phases.&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; will charge and maintain any single 3.7V LiPo cell attached to the industry standard 2-pin JST-PH connector.&lt;/p&gt;
+
+&lt;div class=&#34;note warning&#34;&gt;
+  &lt;p&gt;
+Any cell with a standard JST-PH connector that physically fits your application may also be used, but make sure the polarity is correct before attachment.
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;If external power is disconnected, Ardhat transitions seamlessly to battery operation, and sends a notification to the Raspberry Pi over the inter-processor communication channel.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Configuration</title>
       <link>http://ubiqio.com/doc/configuration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -130,32 +160,50 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
     </item>
     
     <item>
-      <title>Battery Operation</title>
-      <link>http://ubiqio.com/doc/battery/</link>
+      <title>Expansion</title>
+      <link>http://ubiqio.com/doc/expansion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://ubiqio.com/doc/battery/</guid>
+      <guid>http://ubiqio.com/doc/expansion/</guid>
       <description>
 
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; can perform full charge management of a single LiPo cell, and a custom 2200mAh battery that fits snugly between the shield headers is available in the &lt;a href=&#34;http://ubiqio.com/shop&#34;&gt;store&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;arduino-compatibility:636f077861fb676b2ad14870f3ad09aa&#34;&gt;Arduino Compatibility&lt;/h3&gt;
 
-&lt;p&gt;&lt;img style=&#34;width:300px;height:300px&#34; src=&#34;http://ubiqio.com/media/005AB.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; contains a complete Arduino Uno R3 compatible subsystem clocked at 16MHz.  Most newer technologies, including the Raspberry Pi itself,  operate at 3.3V. This can be a problem when connecting to common real world systems like servos and Smart LEDs that operate at 5V.  &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; has the necessary interface circuitry to act as a bridge between the 5V and 3V worlds, allowing the Raspberry Pi to connect with either system type. &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; may also be operated independently of a Raspberry Pi by powering it from either an external supply or the built in LiPo.&lt;/p&gt;
 
-&lt;p&gt;Whilst operating on battery, &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; generates the supplies required for the Raspberry Pi and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; peripherals from a boost converter. When the remaining battery capacity reaches a predetermined level, the Raspberry Pi can be  gracefully shutdown over the Firmata communication channel. The same channel can be  used to schedule events, for example to have a host wake up and perform a time-lapse image capture.  When the battery voltage reaches a critical level, all circuits are switched off to avoid damage to the battery due to over-discharging.&lt;/p&gt;
+&lt;h3 id=&#34;arduino-shield-support:636f077861fb676b2ad14870f3ad09aa&#34;&gt;Arduino Shield Support&lt;/h3&gt;
 
-&lt;h3 id=&#34;charge-control-system:dc4df0175cfa07cfdc9b78ac4adb3b60&#34;&gt;Charge Control System&lt;/h3&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; supports all Uno compatible shields. AVR SPI is available on the ICSP header which is used by the majority of shields that require SPI.  The latest R3 features such as IOREF are included. For more information see the &lt;a href=&#34;http://ubiqio.com/doc/io/&#34;&gt;IO usage page&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;When connected to external power, the battery is charged using a constant-current /constant-voltage charge algorithm, with pre-conditioning and charge termination phases.&lt;/p&gt;
+&lt;h3 id=&#34;raspberry-pi-hugoshortcode-5-communication:636f077861fb676b2ad14870f3ad09aa&#34;&gt;Raspberry Pi &amp;lt;&amp;gt; &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; communication&lt;/h3&gt;
 
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; will charge and maintain any single 3.7V LiPo cell attached to the industry standard 2-pin JST-PH connector.&lt;/p&gt;
+&lt;p&gt;The Raspberry Pi and Arduino can communicate over both Serial and I2C. Serial is used for the main inter-processor communication, and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; can be programmed using the Arduino IDE through the Raspberry Pi serial port. DTR emulation is provided using Raspberry Pi GPIO 22.&lt;/p&gt;
 
-&lt;div class=&#34;note warning&#34;&gt;
-  &lt;p&gt;
-Any cell with a standard JST-PH connector that physically fits your application may also be used, but make sure the polarity is correct before attachment.
-  &lt;/p&gt;
-&lt;/div&gt;
+&lt;p&gt;When the Raspberry Pi is active, it is the master on the  I2C bus, and is responsible for setup of the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;  I2C peripherals (e.g.IMU, Altimeter, RTC etc.).  When the Raspberry Pi is inactive, &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; can master the bus and interrogate the peripherals.  For example by watching the RTC, the Raspberry Pi can be started when the next crontab entry is about to come due.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Environment Sensor</title>
+      <link>http://ubiqio.com/doc/env/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/env/</guid>
+      <description>&lt;p&gt;The &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;-E provides Environmental Sensing in addition to the basic functions of Arduino compatibility and power management. This is performed by a Bosch BME280 integrated sensor, which provides&lt;/p&gt;
 
-&lt;p&gt;If external power is disconnected, Ardhat transitions seamlessly to battery operation, and sends a notification to the Raspberry Pi over the inter-processor communication channel.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;humidity sensor&lt;/li&gt;
+&lt;li&gt;barometric pressure sensor&lt;/li&gt;
+&lt;li&gt;temperature sensor&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;From the Bosch &lt;a href=&#34;http://www.bosch-sensortec.com/de/homepage/products_3/environmental_sensors_1/bme280/bme280_1&#34;&gt;website&lt;/a&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;The humidity sensor features an extremely fast response time which supports performance requirements for emerging applications such as context awareness, and high accuracy over a wide temperature range. The pressure sensor is an absolute barometric pressure sensor with features exceptionally high accuracy and resolution at very low noise. The integrated temperature sensor has been optimized for very low noise and high resolution. It is primarily used for temperature compensation of the pressure and humidity sensors, and can also be used for estimating ambient temperature.&amp;rdquo;&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The BMP180/280 is compatible with the popular &lt;a href=&#34;https://github.com/richards-tech/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -186,54 +234,6 @@ Any cell with a standard JST-PH connector that physically fits your application 
     </item>
     
     <item>
-      <title>Environment Sensor</title>
-      <link>http://ubiqio.com/doc/env/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/env/</guid>
-      <description>&lt;p&gt;The &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;-E provides Environmental Sensing in addition to the basic functions of Arduino compatibility and power management. This is performed by a Bosch BME280 integrated sensor, which provides&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;humidity sensor&lt;/li&gt;
-&lt;li&gt;barometric pressure sensor&lt;/li&gt;
-&lt;li&gt;temperature sensor&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;From the Bosch &lt;a href=&#34;http://www.bosch-sensortec.com/de/homepage/products_3/environmental_sensors_1/bme280/bme280_1&#34;&gt;website&lt;/a&gt;&amp;hellip;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&amp;ldquo;The humidity sensor features an extremely fast response time which supports performance requirements for emerging applications such as context awareness, and high accuracy over a wide temperature range. The pressure sensor is an absolute barometric pressure sensor with features exceptionally high accuracy and resolution at very low noise. The integrated temperature sensor has been optimized for very low noise and high resolution. It is primarily used for temperature compensation of the pressure and humidity sensors, and can also be used for estimating ambient temperature.&amp;rdquo;&amp;rdquo;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The BMP180/280 is compatible with the popular &lt;a href=&#34;https://github.com/richards-tech/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Expansion</title>
-      <link>http://ubiqio.com/doc/expansion/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/expansion/</guid>
-      <description>
-
-&lt;h3 id=&#34;arduino-compatibility:636f077861fb676b2ad14870f3ad09aa&#34;&gt;Arduino Compatibility&lt;/h3&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; contains a complete Arduino Uno R3 compatible subsystem clocked at 16MHz.  Most newer technologies, including the Raspberry Pi itself,  operate at 3.3V. This can be a problem when connecting to common real world systems like servos and Smart LEDs that operate at 5V.  &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; has the necessary interface circuitry to act as a bridge between the 5V and 3V worlds, allowing the Raspberry Pi to connect with either system type. &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; may also be operated independently of a Raspberry Pi by powering it from either an external supply or the built in LiPo.&lt;/p&gt;
-
-&lt;h3 id=&#34;arduino-shield-support:636f077861fb676b2ad14870f3ad09aa&#34;&gt;Arduino Shield Support&lt;/h3&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; supports all Uno compatible shields. AVR SPI is available on the ICSP header which is used by the majority of shields that require SPI.  The latest R3 features such as IOREF are included. For more information see the &lt;a href=&#34;http://ubiqio.com/doc/io/&#34;&gt;IO usage page&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;raspberry-pi-hugoshortcode-5-communication:636f077861fb676b2ad14870f3ad09aa&#34;&gt;Raspberry Pi &amp;lt;&amp;gt; &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; communication&lt;/h3&gt;
-
-&lt;p&gt;The Raspberry Pi and Arduino can communicate over both Serial and I2C. Serial is used for the main inter-processor communication, and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; can be programmed using the Arduino IDE through the Raspberry Pi serial port. DTR emulation is provided using Raspberry Pi GPIO 22.&lt;/p&gt;
-
-&lt;p&gt;When the Raspberry Pi is active, it is the master on the  I2C bus, and is responsible for setup of the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;  I2C peripherals (e.g.IMU, Altimeter, RTC etc.).  When the Raspberry Pi is inactive, &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; can master the bus and interrogate the peripherals.  For example by watching the RTC, the Raspberry Pi can be started when the next crontab entry is about to come due.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>IMU</title>
       <link>http://ubiqio.com/doc/imu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -253,19 +253,21 @@ Any cell with a standard JST-PH connector that physically fits your application 
 &lt;li&gt;3-axis magnetometer (compass)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;During normal operation, these devices are typically monitored directly by the Raspberry Pi  but in sleep mode they can be monitored by &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; and used to wakeup the Raspberry Pi.&lt;/p&gt;
-
-&lt;p&gt;For &lt;strong&gt;much&lt;/strong&gt; more information on programming see &lt;a href=&#34;https://github.com/Ardhat/MPU-9250&#34;&gt;this Article&lt;/a&gt; from Kris Winer, with an accompanying sketch &lt;a href=&#34;https://github.com/Ardhat/MPU-9250&#34;&gt;here&lt;/a&gt; that you can use if you want to drive the IMU directly from &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;.&lt;/p&gt;
-
-&lt;p&gt;The MPU9250 is also compatible with the popular &lt;a href=&#34;https://github.com/richards-tech/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;During normal operation, these devices may be monitored directly by either processor, but in sleep mode they can be monitored by &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; and used to wakeup the Raspberry Pi.&lt;/p&gt;
 
 &lt;h4 id=&#34;imu-and-drones:53cfe453f14e91a110c18a8c31803e02&#34;&gt;IMU and Drones&lt;/h4&gt;
 
-&lt;p&gt;The MPU9250, together with the BMP280 altimeter, are the perfect combination to offload the Flight Control RealTime processing from a Raspberry Pi, as the basis of machine vision based drones.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&amp;rsquo;s MPU9250, together with the BMP280 altimeter, are the perfect combination to offload the Flight Control RealTime processing from a Raspberry Pi.  This allows you to use the full processing power of a Linux machine for machine vision and other processor intensive tasks, whilst maintaining an ultra reliable flight controller.&lt;/p&gt;
 
-&lt;p&gt;The  &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; Github repo has a version of the MultiWii library extended with &lt;a href=&#34;https://github.com/Ardhat/multiwii-firmware&#34;&gt;support for the MPU9250&lt;/a&gt;. This allows you to use  apps such as &lt;a href=&#34;http://ez-gui.com/&#34;&gt;EZGUI&lt;/a&gt; to monitor and control your drone&lt;/p&gt;
+&lt;p&gt;The  &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; Github repo has an &lt;a href=&#34;https://github.com/Ardhat/ArdhatMFC&#34;&gt;updated version of the MultiWii Flight Controller&lt;/a&gt; library, extended with support for both the MPU9250, and the excellent Chrome  based &lt;a href=&#34;https://chrome.google.com/webstore/detail/cleanflight-configurator/enacoimjcgeinfnnnpajinjgmkahmfgb?hl=en&#34;&gt;Cleanflight Configurator&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/ArdhatCleanflight.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can also use apps such as &lt;a href=&#34;http://ez-gui.com/&#34;&gt;EZGUI&lt;/a&gt; to monitor and control your Ardhat based drone.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/ezgui.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s much more information on setting up MultWii  on the &lt;a href=&#34;http://www.multiwii.com/wiki/index.php?title=FAQ&#34;&gt;project Wiki&lt;/a&gt;&lt;/p&gt;
 
 &lt;h4 id=&#34;imu-and-robotics:53cfe453f14e91a110c18a8c31803e02&#34;&gt;IMU and Robotics&lt;/h4&gt;
 
@@ -280,6 +282,10 @@ Any cell with a standard JST-PH connector that physically fits your application 
 &lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/balbot.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;More details, including Lego Digital designer build instructions and code are in the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; Github repository.&lt;/p&gt;
+
+&lt;p&gt;For &lt;strong&gt;much&lt;/strong&gt; more information on IMU programming see &lt;a href=&#34;https://github.com/Ardhat/MPU-9250&#34;&gt;this Article&lt;/a&gt; from Kris Winer, with an accompanying sketch &lt;a href=&#34;https://github.com/Ardhat/MPU-9250&#34;&gt;here&lt;/a&gt; that you can use if you want to drive the IMU directly from &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;.&lt;/p&gt;
+
+&lt;p&gt;The MPU9250 is also compatible with the popular &lt;a href=&#34;https://github.com/richards-tech/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -324,26 +330,6 @@ hazardous. Here’s what to look out for.&lt;/p&gt;
 
 &lt;p&gt;If you come across anything along the way that we haven’t covered, or if you
 know of a tip you think others would find handy, &lt;a href=&#34;http://ubiqio.com/community&#34;&gt;head over to the forum&lt;/a&gt; and we’ll see about including it in this guide.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>LEDs</title>
-      <link>http://ubiqio.com/doc/leds/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/leds/</guid>
-      <description>&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; supports LEDs in two ways; the first is through an onboard LED that is connected to port D9. Note that this is different from the standard Arduino port, which is D13.&lt;/p&gt;
-
-&lt;p&gt;This was done to avoid conflict with the use of D13 for SPI_SCK, and also so that the hardware PWM function can be used, for example for pulsating the LED in sleep mode.&lt;/p&gt;
-
-&lt;p&gt;The other form of support is through the inclusion of a 3.3V to 5V converter on the output of the Pi PWM pin, which can be used to connect WS8212 LED strings directly to Ardhat.&lt;/p&gt;
-
-&lt;p&gt;The 5V rail can provide up to 2.5A which is sufficient to drive 4m light strings in normal use (ie not all illuminated at full brigtness)&lt;/p&gt;
-
-&lt;p&gt;See &lt;a href=&#34;https://github.com/Ardhat/spiralLED&#34;&gt;Spiralled&lt;/a&gt; for an example of this in use.&lt;/p&gt;
-
-&lt;p&gt;&lt;img align=&#34;center&#34; src=&#34;http://ubiqio.com/media/SpiralLED.jpg&#34;&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -578,109 +564,144 @@ know of a tip you think others would find handy, &lt;a href=&#34;http://ubiqio.c
     </item>
     
     <item>
-      <title>Python</title>
-      <link>http://ubiqio.com/doc/python/</link>
+      <title>LEDs</title>
+      <link>http://ubiqio.com/doc/leds/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://ubiqio.com/doc/python/</guid>
-      <description>
+      <guid>http://ubiqio.com/doc/leds/</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; supports LEDs in two ways; the first is through an onboard LED that is connected to port D9. Note that this is different from the standard Arduino port, which is D13.&lt;/p&gt;
 
-&lt;h2 id=&#34;inter-processor-communication:c431704424a149541be05f7b70c63362&#34;&gt;Inter-processor communication&lt;/h2&gt;
+&lt;p&gt;This was done to avoid conflict with the use of D13 for SPI_SCK, and also so that the hardware PWM function can be used, for example for pulsating the LED in sleep mode.&lt;/p&gt;
 
-&lt;p&gt;The Raspberry Pi and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; can communicate over both Serial and I2C, but Serial is used for the main inter-processor communication.&lt;/p&gt;
+&lt;p&gt;The other form of support is through the inclusion of a 3.3V to 5V converter on the output of the Pi PWM pin, which can be used to connect WS8212 LED strings directly to Ardhat.&lt;/p&gt;
 
-&lt;p&gt;When the Raspberry Pi is active, it is the master on the  I2C bus, and is responsible for setup of the Ardhat I2C peripherals (e.g. IMU, Altimeter, RTC).  When the Raspberry Pi is inactive, the Arduino can master the bus and interrogate the peripherals.  For example by watching the RTC, the Raspberry Pi can be started when the next crontab entry is about to come due.&lt;/p&gt;
+&lt;p&gt;The 5V rail can provide up to 2.5A which is sufficient to drive 4m light strings in normal use (ie not all illuminated at full brigtness)&lt;/p&gt;
 
-&lt;p&gt;However, access to regular Arduino-compatible ports such as Analog and PWM is performed over Serial using a standardised protocol layer, or Data Link layer in &lt;a href=&#34;https://en.wikipedia.org/wiki/OSI_model&#34;&gt;OSI parlance&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://github.com/Ardhat/spiralLED&#34;&gt;Spiralled&lt;/a&gt; for an example of this in use.&lt;/p&gt;
 
-&lt;p&gt;This protocol layer is called &lt;a href=&#34;https://www.arduino.cc/en/Reference/Firmata&#34;&gt;Firmata&lt;/a&gt;, and allows applications on the Pi to communicate with &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; provided they have a Firmata language binding. Although javascript is the recommended language (using the node.js Firmata library), other languages such as Python can easily be used instead.&lt;/p&gt;
+&lt;p&gt;&lt;img align=&#34;center&#34; src=&#34;http://ubiqio.com/media/SpiralLED.jpg&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Programming Model</title>
+      <link>http://ubiqio.com/doc/progmodel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/progmodel/</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&amp;rsquo;s features can be accessed from a compatible host, such as Raspberry Pi, using the &lt;a href=&#34;https://github.com/firmata/protocol&#34;&gt;Firmata&lt;/a&gt; protocol over serial.&lt;/p&gt;
 
-&lt;h3 id=&#34;using-python-firmata-with-ardhat:c431704424a149541be05f7b70c63362&#34;&gt;Using Python Firmata with Ardhat&lt;/h3&gt;
+&lt;p&gt;Firmata provides a standardized mechanism to exchange information between a real-time processor such as &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; and a host, but easily is extended to provide access to the wide range of features available.&lt;/p&gt;
 
-&lt;p&gt;Ardhat ships from the factory with Firmata already installed, but follow the instructions in &lt;a href=&#34;http://ubiqio.com/doc/installation&#34;&gt;&lt;em&gt;Installation&lt;/em&gt;&lt;/a&gt; to make sure you have turned off kernel serial port use first.&lt;/p&gt;
+&lt;p&gt;As an example, the factory &lt;a href=&#34;https://github.com/Ardhat/ArdhatFirmata&#34;&gt;image&lt;/a&gt; that ships with &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; contains a modified version of standard &lt;a href=&#34;https://www.arduino.cc/en/Reference/Firmata&#34;&gt;Arduino Firmata&lt;/a&gt; that adds several additional features, such as monitoring of the Navigation switch and Status LED control, using the Arduino &lt;a href=&#34;http://playground.arduino.cc/Code/SMlib&#34;&gt;SMlib&lt;/a&gt;. This state machine library provides an extremely lightweight mechanism that allows primitive multitasking.&lt;/p&gt;
 
-&lt;p&gt;To install Firmata on the host connect to the Pi using &lt;code&gt;ssh&lt;/code&gt;, so that you can copy and paste the following into the terminal:&lt;/p&gt;
+&lt;p&gt;In principle, an &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; host application can be written in any language that has a Firmata library, including Processing, Python, C++ and &lt;a href=&#34;http://firmata.org/wiki/Download&#34;&gt;many more&lt;/a&gt;. However, in a Robotics or IoT environment, services are often distributed over a network whose availability cannot be guaranteed. A responsive system cannot  block while  waiting for these services to respond.&lt;/p&gt;
 
-&lt;section class=&#34;quickstart&#34; &gt;
-  &lt;div class=&#34;grid&#34;&gt;
-    &lt;div class=&#34;unit .half code&#34;&gt;
-      &lt;p class=&#34;title&#34;&gt;Setting up Python Firmata&lt;/p&gt;
-      &lt;div class=&#34;shell&#34;&gt;
-        &lt;p class=&#34;line&#34;&gt;
-          &lt;span class=&#34;path&#34;&gt;~&lt;/span&gt;
-          &lt;span class=&#34;prompt&#34;&gt;$&lt;/span&gt;
-          &lt;span class=&#34;command&#34;&gt;sudo apt-get install python-pip python-serial&lt;/span&gt;
-        &lt;/p&gt;        
-        &lt;p class=&#34;line&#34;&gt;
-          &lt;span class=&#34;path&#34;&gt;~&lt;/span&gt;
-          &lt;span class=&#34;prompt&#34;&gt;$&lt;/span&gt;
-          &lt;span class=&#34;command&#34;&gt;sudo pip install pyfirmata&lt;/span&gt;
-        &lt;/p&gt;
-        &lt;p class=&#34;line&#34;&gt;
-          &lt;span class=&#34;path&#34;&gt;~&lt;/span&gt;
-          &lt;span class=&#34;prompt&#34;&gt;$&lt;/span&gt;
-          &lt;span class=&#34;command&#34;&gt;python&lt;/span&gt;
-        &lt;/p&gt;
-        &lt;p class=&#34;line&#34;&gt;
-          &lt;span class=&#34;output&#34;&gt;# =&gt; You should now have a python prompt &gt;&gt;&gt;&lt;/span&gt;
-        &lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;
-  &lt;/div&gt;
-&lt;/section&gt;
+&lt;p&gt;JavaScript’s support of callbacks, and the availability of non-blocking app frameworks such as &lt;a href=&#34;http://nodejs.org/&#34;&gt;node.js&lt;/a&gt;, make it the natural choice for a web enabled system, and it is the main supported framework for local programming of &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;. Node.js  is built on top of Google’s V8 javascript runtime, and is widely extensible through the use of additional libraries.  The addition of Express and AngularJS allow applications to be exposed over the web if required.&lt;/p&gt;
 
-&lt;p&gt;At the Python prompt we can then instantiate a board, and set and get values on &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://johnny-five.io/&#34;&gt;Johnny-Five&lt;/a&gt; is a great node library that sits on top of Firmata but provides some higher level functions to make use with node even easier. For example, &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; is unit tested using &lt;a href=&#34;https://mochajs.org/&#34;&gt;Mocha&lt;/a&gt; on Johnny-Five on Firmata.&lt;/p&gt;
 
-&lt;p&gt;To read the value on an analog pin, you have to first turn on the analog value reporting for that pin.&lt;/p&gt;
+&lt;p&gt;Application-specific projects can also be created on top of Node using accessible app generators such as  &lt;a href=&#34;http://nodered.org/&#34;&gt;Node-Red&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Note that&lt;/p&gt;
+&lt;p&gt;Some of the key libraries are shown below:&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Analogue reads and PWM writes are normalized to a 0 .. 1 range, and not the standard Arduino 0 .. 255 and 0 .. 1023.&lt;/p&gt;&lt;/li&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;Library&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;Function&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
 
-&lt;li&gt;&lt;p&gt;You should start a separate iterator thread to stop unread value reports clogging up the Firmata channel&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;http://johnny-five.io/&#34;&gt;Johnny-Five&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;JavaScript Robotics programming framework, by Bocoup&lt;/td&gt;
+&lt;/tr&gt;
 
-&lt;p&gt;As an example, the following Python commands will get you up and running reading Analog port 0.&lt;/p&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://mochajs.org/&#34;&gt;Mocha&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;is a JavaScript test framework running on Node.js, making asynchronous testing simple and fun.&lt;/td&gt;
+&lt;/tr&gt;
 
-&lt;section class=&#34;quickstart&#34; &gt;
-  &lt;div class=&#34;grid&#34;&gt;
-    &lt;div class=&#34;unit .half code&#34;&gt;
-      &lt;p class=&#34;title&#34;&gt;At the Python Prompt... &lt;/p&gt;
-      &lt;div class=&#34;shell&#34;&gt;
-        &lt;p class=&#34;line&#34;&gt;
-          &lt;span class=&#34;prompt&#34;&gt;&gt;&gt;&gt;&lt;/span&gt;
-          &lt;span class=&#34;command&#34;&gt;from pyfirmata import Arduino, util&lt;/span&gt;
-        &lt;/p&gt;        
-        &lt;p class=&#34;line&#34;&gt;
-          &lt;span class=&#34;prompt&#34;&gt;&gt;&gt;&gt;&lt;/span&gt;
-          &lt;span class=&#34;command&#34;&gt;board = Arduino(&#39;/dev/ttyS0&#39;)&lt;/span&gt;
-        &lt;/p&gt;
-        &lt;p class=&#34;line&#34;&gt;
-          &lt;span class=&#34;prompt&#34;&gt;&gt;&gt;&gt;&lt;/span&gt;
-          &lt;span class=&#34;command&#34;&gt;it = util.Iterator(board)&lt;/span&gt;
-        &lt;/p&gt;
-        &lt;p class=&#34;line&#34;&gt;
-          &lt;p class=&#34;line&#34;&gt;
-          &lt;span class=&#34;prompt&#34;&gt;&gt;&gt;&gt;&lt;/span&gt;
-          &lt;span class=&#34;command&#34;&gt;it.start&lt;/span&gt;
-        &lt;/p&gt;
-          &lt;p class=&#34;line&#34;&gt;
-          &lt;span class=&#34;prompt&#34;&gt;&gt;&gt;&gt;&lt;/span&gt;
-          &lt;span class=&#34;command&#34;&gt;board.analog[0].read()&lt;/span&gt;
-        &lt;/p&gt;
-        &lt;p class=&#34;line&#34;&gt;
-        &lt;p class=&#34;line&#34;&gt;
-          &lt;span class=&#34;output&#34;&gt;# =&gt; You can repeat the above command to show the current output of Analog Port 0&lt;/span&gt;
-        &lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;
-  &lt;/div&gt;
-&lt;/section&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;http://www.mongodb.org/&#34;&gt;Mongodb&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;em&gt;noSQL database , for example to keep track of authenticated users and nodes&lt;/em&gt;&lt;/td&gt;
+&lt;/tr&gt;
 
-&lt;p&gt;More info on using Python Firmata can be found &lt;a href=&#34;https://github.com/tino/pyFirmata&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;http://expressjs.com/&#34;&gt;Express&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;em&gt;minimal node.js web application framework that provides a robust set of features for web and mobile applications&lt;/em&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://angularjs.org/&#34;&gt;AngularJS&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;em&gt;front-end application framework toolset for Single Page Applications&lt;/em&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;http://nodejs.org/&#34;&gt;Node.js&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;em&gt;event-driven, non-blocking back-end javascript environment&lt;/em&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/jgautier/firmata&#34;&gt;Firmata&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;em&gt;node.js library to interact with  local Arduino running the firmata protocol (currently limited to serial port only (use of node-i2c TBD))&lt;/em&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.npmjs.com/package/pi-gpio&#34;&gt;pi-gpio&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;em&gt;node.js based library to access the GPIO of the Raspberry Pi&lt;/em&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;http://socket.io/&#34;&gt;socket.io&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;em&gt;real-time bidirectional event-based network communication&lt;/em&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;http://mqtt.org/&#34;&gt;mqtt&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;em&gt;machine-to-machine (M2M)/&amp;ldquo;Internet of Things&amp;rdquo; connectivity protocol&lt;/em&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;http://mosquitto.org/&#34;&gt;mosquitto&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;em&gt;message broker for mqtt, supports MQTT,MQTT-SN&lt;/em&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://eclipse.org/ponte/&#34;&gt;ponte&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;em&gt;node.js server bridges MQTT, CoAP&lt;/em&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/louischatriot/nedb&#34;&gt;NeDB&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;em&gt;lightweight MongoDB-like noSQL database for node.js&lt;/em&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/patchwork-toolkit/patchwork/wiki/Freeboard&#34;&gt;freeboard&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;em&gt;local dashboard function&lt;/em&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;http://nodered.org/&#34;&gt;Node-Red&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;em&gt;A visual tool for wiring the Internet of Things&lt;/em&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div class=&#34;note unreleased&#34;&gt;
+  &lt;h5&gt;IoT System Model &lt;/h5&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The overall system model is as shown below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/IOTmodel.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The Applications and Services may run on the Pi  (typically written in javascript), or may in part or whole be provided by a cloud service, subscribed to by the Ardhat software, eg &lt;a href=&#34;https://ifttt.com/&#34;&gt;IFTTT&lt;/a&gt;.  Sensor node topology and authentication info is stored in a &lt;a href=&#34;https://github.com/louischatriot/nedb&#34;&gt;NeDB&lt;/a&gt; a MongoDB-like noSQL database.&lt;/p&gt;
+
+&lt;p&gt;The Arduino RealTime code is responsible for monitoring and handling system power, realtime events,  and graceful sleep/shutdown/restart cycles of the Raspberry Pi.  It is also responsible for transmitting application information to the Wireless Sensor Nodes, for example using a simplified MQTT (MQTT-SN) over a link layer protocol such as &lt;a href=&#34;http://www.mike-stirling.com/redmine/projects/tinyhan/&#34;&gt;TinyHAN&lt;/a&gt; on top of  the relevant PHY (eg RFM96).&lt;/p&gt;
 </description>
     </item>
     

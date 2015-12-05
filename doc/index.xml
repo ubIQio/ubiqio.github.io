@@ -426,19 +426,21 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 &lt;li&gt;3-axis magnetometer (compass)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;During normal operation, these devices are typically monitored directly by the Raspberry Pi  but in sleep mode they can be monitored by &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; and used to wakeup the Raspberry Pi.&lt;/p&gt;
-
-&lt;p&gt;For &lt;strong&gt;much&lt;/strong&gt; more information on programming see &lt;a href=&#34;https://github.com/Ardhat/MPU-9250&#34;&gt;this Article&lt;/a&gt; from Kris Winer, with an accompanying sketch &lt;a href=&#34;https://github.com/Ardhat/MPU-9250&#34;&gt;here&lt;/a&gt; that you can use if you want to drive the IMU directly from &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;.&lt;/p&gt;
-
-&lt;p&gt;The MPU9250 is also compatible with the popular &lt;a href=&#34;https://github.com/richards-tech/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;During normal operation, these devices may be monitored directly by either processor, but in sleep mode they can be monitored by &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; and used to wakeup the Raspberry Pi.&lt;/p&gt;
 
 &lt;h4 id=&#34;imu-and-drones:53cfe453f14e91a110c18a8c31803e02&#34;&gt;IMU and Drones&lt;/h4&gt;
 
-&lt;p&gt;The MPU9250, together with the BMP280 altimeter, are the perfect combination to offload the Flight Control RealTime processing from a Raspberry Pi, as the basis of machine vision based drones.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&amp;rsquo;s MPU9250, together with the BMP280 altimeter, are the perfect combination to offload the Flight Control RealTime processing from a Raspberry Pi.  This allows you to use the full processing power of a Linux machine for machine vision and other processor intensive tasks, whilst maintaining an ultra reliable flight controller.&lt;/p&gt;
 
-&lt;p&gt;The  &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; Github repo has a version of the MultiWii library extended with &lt;a href=&#34;https://github.com/Ardhat/multiwii-firmware&#34;&gt;support for the MPU9250&lt;/a&gt;. This allows you to use  apps such as &lt;a href=&#34;http://ez-gui.com/&#34;&gt;EZGUI&lt;/a&gt; to monitor and control your drone&lt;/p&gt;
+&lt;p&gt;The  &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; Github repo has an &lt;a href=&#34;https://github.com/Ardhat/ArdhatMFC&#34;&gt;updated version of the MultiWii Flight Controller&lt;/a&gt; library, extended with support for both the MPU9250, and the excellent Chrome  based &lt;a href=&#34;https://chrome.google.com/webstore/detail/cleanflight-configurator/enacoimjcgeinfnnnpajinjgmkahmfgb?hl=en&#34;&gt;Cleanflight Configurator&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/ArdhatCleanflight.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can also use apps such as &lt;a href=&#34;http://ez-gui.com/&#34;&gt;EZGUI&lt;/a&gt; to monitor and control your Ardhat based drone.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/ezgui.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s much more information on setting up MultWii  on the &lt;a href=&#34;http://www.multiwii.com/wiki/index.php?title=FAQ&#34;&gt;project Wiki&lt;/a&gt;&lt;/p&gt;
 
 &lt;h4 id=&#34;imu-and-robotics:53cfe453f14e91a110c18a8c31803e02&#34;&gt;IMU and Robotics&lt;/h4&gt;
 
@@ -453,6 +455,10 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/balbot.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;More details, including Lego Digital designer build instructions and code are in the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; Github repository.&lt;/p&gt;
+
+&lt;p&gt;For &lt;strong&gt;much&lt;/strong&gt; more information on IMU programming see &lt;a href=&#34;https://github.com/Ardhat/MPU-9250&#34;&gt;this Article&lt;/a&gt; from Kris Winer, with an accompanying sketch &lt;a href=&#34;https://github.com/Ardhat/MPU-9250&#34;&gt;here&lt;/a&gt; that you can use if you want to drive the IMU directly from &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;.&lt;/p&gt;
+
+&lt;p&gt;The MPU9250 is also compatible with the popular &lt;a href=&#34;https://github.com/richards-tech/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -528,7 +534,7 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 RH_RF69 rf69(10, 3); // For RF69 on Ardhat
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Then load up the &lt;code&gt;RF69_server.pde&lt;/code&gt; sketch on the &amp;lsquo;gateway&amp;rsquo; &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;, and the &lt;code&gt;RF69_server.pde&lt;/code&gt; sketch on the &amp;lsquo;node&amp;rsquo;. On the client, you should get replies to sent messages with a RSSI (Received Signal Strength Indication), and the activity LED will flash.&lt;/p&gt;
+&lt;p&gt;Then load up the &lt;code&gt;RF69_server.pde&lt;/code&gt; sketch on the &amp;lsquo;gateway&amp;rsquo; &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;, and the &lt;code&gt;RF69_client.pde&lt;/code&gt; sketch on the &amp;lsquo;node&amp;rsquo;. On the client, you should get replies to sent messages with a RSSI (Received Signal Strength Indication), and the activity LED will flash.&lt;/p&gt;
 
 &lt;p&gt;Once you have a basic radio link in place you can experiment with more advanced networking topologies, such as multinode mesh.&lt;/p&gt;
 </description>
@@ -721,7 +727,7 @@ RH_RF69 rf69(10, 3); // For RF69 on Ardhat
 
 &lt;p&gt;Ardhat ships from the factory with Firmata already installed, but follow the instructions in &lt;a href=&#34;http://ubiqio.com/doc/installation&#34;&gt;&lt;em&gt;Installation&lt;/em&gt;&lt;/a&gt; to make sure you have turned off kernel serial port use first.&lt;/p&gt;
 
-&lt;p&gt;To install Firmata on the host connect to the Pi using &lt;code&gt;ssh&lt;/code&gt;, so that you can copy and paste the following into the terminal:&lt;/p&gt;
+&lt;p&gt;To install Firmata on the host, connect to the Pi using &lt;code&gt;ssh&lt;/code&gt;, so that you can copy and paste the following into the terminal:&lt;/p&gt;
 
 &lt;section class=&#34;quickstart&#34; &gt;
   &lt;div class=&#34;grid&#34;&gt;
