@@ -128,7 +128,7 @@ Any cell with a standard JST-PH connector that physically fits your application 
 
 &lt;h4 id=&#34;writing-to-hat-eeprom:a66b35d20295cb764719ac8bd35837ec&#34;&gt;Writing to HAT eeprom&lt;/h4&gt;
 
-&lt;p&gt;By default &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; this is enabled. To disable remove the solder jumper bridge from the CFG jumper next to the RTC output pin.&lt;/p&gt;
+&lt;p&gt;By default on the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; this is enabled. To disable remove the solder jumper bridge from the CFG jumper next to the RTC output pin.&lt;/p&gt;
 
 &lt;h4 id=&#34;radio-antenna:a66b35d20295cb764719ac8bd35837ec&#34;&gt;Radio antenna&lt;/h4&gt;
 
