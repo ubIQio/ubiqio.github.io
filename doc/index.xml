@@ -225,7 +225,7 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://ubiqio.com/doc/io/</guid>
-      <description>&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; has full Arduino Shield compatibility, as well as being Raspberry Pi HAT compliant. Some of pins have a special usage in the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; environment as detailed below:&lt;/p&gt;
+      <description>&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; has full Arduino Shield compatibility, as well as being Raspberry Pi HAT compliant. Some of the pins have a special usage in the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; environment as detailed below:&lt;/p&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -474,7 +474,7 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 
 &lt;p&gt;The other form of support is through the inclusion of a 3.3V to 5V converter on the output of the Pi PWM pin, which can be used to connect WS8212 LED strings directly to Ardhat.&lt;/p&gt;
 
-&lt;p&gt;The 5V rail can provide up to 2.5A which is sufficient to drive 4m light strings in normal use (ie not all illuminated at full brigtness)&lt;/p&gt;
+&lt;p&gt;The 5V rail can provide up to 2.5A which is sufficient to drive 4m light strings in normal use (ie not all illuminated at full brightness)&lt;/p&gt;
 
 &lt;p&gt;See &lt;a href=&#34;https://github.com/Ardhat/spiralLED&#34;&gt;Spiralled&lt;/a&gt; for an example of this in use.&lt;/p&gt;
 

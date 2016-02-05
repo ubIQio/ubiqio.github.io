@@ -6,7 +6,33 @@
     <description>Recent content on ubIQio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Mon, 21 Sep 2015 14:29:14 +0100</lastBuildDate>
     <atom:link href="http://ubiqio.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Test</title>
+      <link>http://ubiqio.com/test/</link>
+      <pubDate>Mon, 21 Sep 2015 14:29:14 +0100</pubDate>
+      
+      <guid>http://ubiqio.com/test/</guid>
+      <description>
+
+&lt;h2 id=&#34;just-a-test:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Just a test&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>shop</title>
+      <link>http://ubiqio.com/shop/</link>
+      <pubDate>Mon, 21 Sep 2015 14:29:14 +0100</pubDate>
+      
+      <guid>http://ubiqio.com/shop/</guid>
+      <description>&lt;p&gt;&lt;img align=&#34;left&#34; width=&#34;100px&#34; style=&#34;padding-left:10px; padding-right:20px; padding-top:5px;padding-bottom:5px&#34; src=&#34;http://ubiqio.com/img/snipcart150.png&#34;&gt;
+The &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;  store uses &lt;a href=&#34;https://snipcart.com/&#34;&gt;Snipcart&lt;/a&gt; to provide you with a secure and easy way to buy.&lt;/p&gt;
+
+&lt;p&gt;Before ordering, read store terms here. For shipping terms and countries, see here.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title></title>
@@ -23,37 +49,18 @@
     </item>
     
     <item>
-      <title>Contributing</title>
-      <link>http://ubiqio.com/doc/contributing/</link>
+      <title>All Screwed Up</title>
+      <link>http://ubiqio.com/news/Screwy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://ubiqio.com/doc/contributing/</guid>
-      <description>
+      <guid>http://ubiqio.com/news/Screwy/</guid>
+      <description>&lt;p&gt;&lt;img align=&#34;right&#34; style=&#34;width:200px;height:200px&#34; src=&#34;http://ubiqio.com/media/005AX.jpg&#34;&gt;&lt;/p&gt;
 
-&lt;p&gt;So you&amp;rsquo;ve got an awesome idea to throw into &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;. Great! Head over to &lt;a href=&#34;http://ubiqio.com/community&#34;&gt;the forum&lt;/a&gt; and let us know!&lt;/p&gt;
+&lt;p&gt;Ardhat is perfect for automotive use, and we now have DC jack to screw terminals adapters in the &lt;a href=&#34;http://ubiqio.com/shop&#34;&gt;store&lt;/a&gt; so you can easily hook up an Ardhat to a car or RV system.&lt;/p&gt;
 
-&lt;h2 id=&#34;updating-documentation:cc4aac3e9be04e0413c9520f223b493c&#34;&gt;Updating Documentation&lt;/h2&gt;
+&lt;p&gt;Ardhat is protected against reverse connections, and its high efficiency switching regulator  will run happily at up to 28V.&lt;/p&gt;
 
-&lt;p&gt;We want the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; documentation to be the best it can be. We&amp;rsquo;ve
-open-sourced our docs and we welcome any pull requests if you find it
-lacking.&lt;/p&gt;
-
-&lt;p&gt;You can access the documentation for &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; just by clicking the pencil at the top of each document.&lt;/p&gt;
-
-&lt;p&gt;All documentation pull requests should be directed at &lt;code&gt;master&lt;/code&gt;. Pull
-requests directed at another branch will not be accepted.&lt;/p&gt;
-
-&lt;h2 id=&#34;finally:cc4aac3e9be04e0413c9520f223b493c&#34;&gt;Finally&amp;hellip;&lt;/h2&gt;
-
-&lt;div class=&#34;note&#34;&gt;
-  &lt;h5&gt;Let us know what could be better!&lt;/h5&gt;
-  &lt;p&gt;
-    Both using and hacking on &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; should be fun, simple, and easy, so if for
-    some reason you find it’s a pain, please &lt;a
-    href=&#34;http://ubiqio.com/community&#34;&gt;flag it&lt;/a&gt; on
-    the forum describing your experience so we can make it better.
-  &lt;/p&gt;
-&lt;/div&gt;
+&lt;p&gt;And there&amp;rsquo;s plenty of current in hand to drive things like 5V led strips, so go pimp your ride!&lt;/p&gt;
 </description>
     </item>
     
@@ -84,6 +91,20 @@ Any cell with a standard JST-PH connector that physically fits your application 
 &lt;/div&gt;
 
 &lt;p&gt;If external power is disconnected, Ardhat transitions seamlessly to battery operation, and sends a notification to the Raspberry Pi over the inter-processor communication channel.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Community</title>
+      <link>http://ubiqio.com/community/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/community/</guid>
+      <description>
+
+&lt;h2 id=&#34;a-community-headline:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;A Community headline&lt;/h2&gt;
+
+&lt;p&gt;Some Content&lt;/p&gt;
 </description>
     </item>
     
@@ -146,16 +167,53 @@ Any cell with a standard JST-PH connector that physically fits your application 
     </item>
     
     <item>
-      <title>Community</title>
-      <link>http://ubiqio.com/community/</link>
+      <title>Contributing</title>
+      <link>http://ubiqio.com/doc/contributing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://ubiqio.com/community/</guid>
+      <guid>http://ubiqio.com/doc/contributing/</guid>
       <description>
 
-&lt;h2 id=&#34;a-community-headline:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;A Community headline&lt;/h2&gt;
+&lt;p&gt;So you&amp;rsquo;ve got an awesome idea to throw into &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;. Great! Head over to &lt;a href=&#34;http://ubiqio.com/community&#34;&gt;the forum&lt;/a&gt; and let us know!&lt;/p&gt;
 
-&lt;p&gt;Some Content&lt;/p&gt;
+&lt;h2 id=&#34;updating-documentation:cc4aac3e9be04e0413c9520f223b493c&#34;&gt;Updating Documentation&lt;/h2&gt;
+
+&lt;p&gt;We want the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; documentation to be the best it can be. We&amp;rsquo;ve
+open-sourced our docs and we welcome any pull requests if you find it
+lacking.&lt;/p&gt;
+
+&lt;p&gt;You can access the documentation for &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; just by clicking the pencil at the top of each document.&lt;/p&gt;
+
+&lt;p&gt;All documentation pull requests should be directed at &lt;code&gt;master&lt;/code&gt;. Pull
+requests directed at another branch will not be accepted.&lt;/p&gt;
+
+&lt;h2 id=&#34;finally:cc4aac3e9be04e0413c9520f223b493c&#34;&gt;Finally&amp;hellip;&lt;/h2&gt;
+
+&lt;div class=&#34;note&#34;&gt;
+  &lt;h5&gt;Let us know what could be better!&lt;/h5&gt;
+  &lt;p&gt;
+    Both using and hacking on &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; should be fun, simple, and easy, so if for
+    some reason you find it’s a pain, please &lt;a
+    href=&#34;http://ubiqio.com/community&#34;&gt;flag it&lt;/a&gt; on
+    the forum describing your experience so we can make it better.
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Decoding LoRa</title>
+      <link>http://ubiqio.com/news/lora/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/news/lora/</guid>
+      <description>&lt;p&gt;&lt;img align=&#34;right&#34; style=&#34;width:200px;height:200px&#34; src=&#34;http://ubiqio.com/media/DecodingLora_Project.jpg&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;From &lt;a href=&#34;http://hackaday.com/2016/01/31/hacking-the-internet-of-things-decoding-lora/#comment-2906254&#34;&gt;Hackaday&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Getting software-defined radio (SDR) tools into the hands of the community has been great for the development and decoding of previously-cryptic, if not encrypted, radio signals the world over. As soon as there’s a new protocol or modulation method, it’s in everyone’s sights. A lot of people have been working on LoRa, and &lt;a href=&#34;https://revspace.nl/Bertrik&#34;&gt;bertrik&lt;/a&gt; at &lt;a href=&#34;https://revspace.nl/DecodingLora&#34;&gt;RevSpace in The Hague&lt;/a&gt; has done some work of his own, and put together an amazing summary of the state of the art, including an &lt;a href=&#34;https://github.com/bertrik/loratest&#34;&gt;Arduino library&lt;/a&gt; for using it, based on the RadioHead libraries.&lt;/p&gt;
+
+&lt;p&gt;You can  get a LoRa equipped  &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; in the &lt;a href=&#34;http://ubiqio.com/shop&#34;&gt;store&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -208,15 +266,6 @@ Any cell with a standard JST-PH connector that physically fits your application 
     </item>
     
     <item>
-      <title>History</title>
-      <link>http://ubiqio.com/doc/history/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/history/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>GitHub</title>
       <link>http://ubiqio.com/doc/github/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -234,47 +283,12 @@ Any cell with a standard JST-PH connector that physically fits your application 
     </item>
     
     <item>
-      <title>Welcome</title>
-      <link>http://ubiqio.com/doc/</link>
+      <title>History</title>
+      <link>http://ubiqio.com/doc/history/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://ubiqio.com/doc/</guid>
-      <description>
-
-&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/ArdhatSunrise400.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;For makers, educators and experimenters worldwide, the &lt;a href=&#34;http://www.raspberrypi.org/help/what-is-a-raspberry-pi/&#34;&gt;Raspberry Pi&lt;/a&gt; has quickly become the compact computing platform of choice for those eager to create, learn and develop for the expanding universe of connected devices.&lt;/p&gt;
-
-&lt;p&gt;With analogue sensors and 5V PWM, UI controls and supply monitoring, LiPo and automotive voltage operation, the standard Ardhat is the missing link that connects the Raspberry Pi with the Real World.  If you need more, the Ardhat-I adds a 10-DOF IMU, and Ardhat-W adds a LoRa ISM wireless node with up to 10km range.&lt;/p&gt;
-
-&lt;p&gt;This repository is your goto resource for everything Ardhat, from pinouts to language bindings and everything in between.&lt;/p&gt;
-
-&lt;p&gt;Find an error, or want to add something? See &lt;a href=&#34;http://ubiqio.com/doc/contributing&#34;&gt;this article&lt;/a&gt; on how to contribute for more info.&lt;/p&gt;
-
-&lt;h2 id=&#34;helpful-hints:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Helpful Hints&lt;/h2&gt;
-
-&lt;p&gt;Throughout this guide there are a number of small-but-handy pieces of
-information that can make using Ardhat easier, more interesting, and less
-hazardous. Here’s what to look out for.&lt;/p&gt;
-
-&lt;div class=&#34;note info&#34;&gt;
-  &lt;h5&gt;Notes are handy pieces of information&lt;/h5&gt;
-  &lt;p&gt;Extra tidbits to help you understand Ardhat.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class=&#34;note&#34;&gt;
-  &lt;h5&gt;ProTips™ help you get more from Ardhat&lt;/h5&gt;
-  &lt;p&gt;These are tips and tricks that will help you be an Ardhat wizard!&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class=&#34;note warning&#34;&gt;
-  &lt;h5&gt;Warnings help you not to blow things up&lt;/h5&gt;
-  &lt;p&gt;Heed these messages if you wish to avoid certain death.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;If you come across anything along the way that we haven’t covered, or if you
-know of a tip you think others would find handy, &lt;a href=&#34;http://ubiqio.com/community&#34;&gt;head over to the forum&lt;/a&gt; and we’ll see about including it in this guide.&lt;/p&gt;
-</description>
+      <guid>http://ubiqio.com/doc/history/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -283,7 +297,7 @@ know of a tip you think others would find handy, &lt;a href=&#34;http://ubiqio.c
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://ubiqio.com/doc/io/</guid>
-      <description>&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; has full Arduino Shield compatibility, as well as being Raspberry Pi HAT compliant. Some of pins have a special usage in the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; environment as detailed below:&lt;/p&gt;
+      <description>&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; has full Arduino Shield compatibility, as well as being Raspberry Pi HAT compliant. Some of the pins have a special usage in the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; environment as detailed below:&lt;/p&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -517,191 +531,6 @@ know of a tip you think others would find handy, &lt;a href=&#34;http://ubiqio.c
 &lt;p&gt;For &lt;strong&gt;much&lt;/strong&gt; more information on IMU programming see &lt;a href=&#34;https://github.com/Ardhat/MPU-9250&#34;&gt;this Article&lt;/a&gt; from Kris Winer, with an accompanying sketch &lt;a href=&#34;https://github.com/Ardhat/MPU-9250&#34;&gt;here&lt;/a&gt; that you can use if you want to drive the IMU directly from &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;.&lt;/p&gt;
 
 &lt;p&gt;The MPU9250 is also compatible with the popular &lt;a href=&#34;https://github.com/richards-tech/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>LEDs</title>
-      <link>http://ubiqio.com/doc/leds/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/leds/</guid>
-      <description>&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; supports LEDs in two ways; the first is through an onboard LED that is connected to port D9. Note that this is different from the standard Arduino port, which is D13.&lt;/p&gt;
-
-&lt;p&gt;This was done to avoid conflict with the use of D13 for SPI_SCK, and also so that the hardware PWM function can be used, for example for pulsating the LED in sleep mode.&lt;/p&gt;
-
-&lt;p&gt;The other form of support is through the inclusion of a 3.3V to 5V converter on the output of the Pi PWM pin, which can be used to connect WS8212 LED strings directly to Ardhat.&lt;/p&gt;
-
-&lt;p&gt;The 5V rail can provide up to 2.5A which is sufficient to drive 4m light strings in normal use (ie not all illuminated at full brigtness)&lt;/p&gt;
-
-&lt;p&gt;See &lt;a href=&#34;https://github.com/Ardhat/spiralLED&#34;&gt;Spiralled&lt;/a&gt; for an example of this in use.&lt;/p&gt;
-
-&lt;p&gt;&lt;img align=&#34;center&#34; src=&#34;http://ubiqio.com/media/SpiralLED.jpg&#34;&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Navigation Switch</title>
-      <link>http://ubiqio.com/doc/navi/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/navi/</guid>
-      <description>&lt;p&gt;The navigation switch is connected to the AVR analog port A7. This port is not present on a standard Arduino, so does not affect normal sketch operation.&lt;/p&gt;
-
-&lt;p&gt;When operated, the switch forms a potential divider from the output of the LiPo charger, as shown in the following table:&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;strong&gt;Navigation Switch&lt;/strong&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Open&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;5V (= 1024) or LiPo voltage when running on battery&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Left&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;&lt;sup&gt;2&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt; open circuit voltage&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Right&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt; open circuit voltage&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Pressed&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;0V&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Programming Model</title>
-      <link>http://ubiqio.com/doc/progmodel/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/progmodel/</guid>
-      <description>&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&amp;rsquo;s features can be accessed from a compatible host, such as Raspberry Pi, using the &lt;a href=&#34;https://github.com/firmata/protocol&#34;&gt;Firmata&lt;/a&gt; protocol over serial.&lt;/p&gt;
-
-&lt;p&gt;Firmata provides a standardized mechanism to exchange information between a real-time processor such as &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; and a host, but easily is extended to provide access to the wide range of features available.&lt;/p&gt;
-
-&lt;p&gt;As an example, the factory &lt;a href=&#34;https://github.com/Ardhat/ArdhatFirmata&#34;&gt;image&lt;/a&gt; that ships with &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; contains a modified version of standard &lt;a href=&#34;https://www.arduino.cc/en/Reference/Firmata&#34;&gt;Arduino Firmata&lt;/a&gt; that adds several additional features, such as monitoring of the Navigation switch and Status LED control, using the Arduino &lt;a href=&#34;http://playground.arduino.cc/Code/SMlib&#34;&gt;SMlib&lt;/a&gt;. This state machine library provides an extremely lightweight mechanism that allows primitive multitasking.&lt;/p&gt;
-
-&lt;p&gt;In principle, an &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; host application can be written in any language that has a Firmata library, including Processing, Python, C++ and &lt;a href=&#34;http://firmata.org/wiki/Download&#34;&gt;many more&lt;/a&gt;. However, in a Robotics or IoT environment, services are often distributed over a network whose availability cannot be guaranteed. A responsive system cannot  block while  waiting for these services to respond.&lt;/p&gt;
-
-&lt;p&gt;JavaScript’s support of callbacks, and the availability of non-blocking app frameworks such as &lt;a href=&#34;http://nodejs.org/&#34;&gt;node.js&lt;/a&gt;, make it the natural choice for a web enabled system, and it is the main supported framework for local programming of &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;. Node.js  is built on top of Google’s V8 javascript runtime, and is widely extensible through the use of additional libraries.  The addition of Express and AngularJS allow applications to be exposed over the web if required.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://johnny-five.io/&#34;&gt;Johnny-Five&lt;/a&gt; is a great node library that sits on top of Firmata but provides some higher level functions to make use with node even easier. For example, &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; is unit tested using &lt;a href=&#34;https://mochajs.org/&#34;&gt;Mocha&lt;/a&gt; on Johnny-Five on Firmata.&lt;/p&gt;
-
-&lt;p&gt;Application-specific projects can also be created on top of Node using accessible app generators such as  &lt;a href=&#34;http://nodered.org/&#34;&gt;Node-Red&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Some of the key libraries are shown below:&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;strong&gt;Library&lt;/strong&gt;&lt;/th&gt;
-&lt;th&gt;&lt;strong&gt;Function&lt;/strong&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;http://johnny-five.io/&#34;&gt;Johnny-Five&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;JavaScript Robotics programming framework, by Bocoup&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://mochajs.org/&#34;&gt;Mocha&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;is a JavaScript test framework running on Node.js, making asynchronous testing simple and fun.&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;http://www.mongodb.org/&#34;&gt;Mongodb&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;em&gt;noSQL database , for example to keep track of authenticated users and nodes&lt;/em&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;http://expressjs.com/&#34;&gt;Express&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;em&gt;minimal node.js web application framework that provides a robust set of features for web and mobile applications&lt;/em&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://angularjs.org/&#34;&gt;AngularJS&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;em&gt;front-end application framework toolset for Single Page Applications&lt;/em&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;http://nodejs.org/&#34;&gt;Node.js&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;em&gt;event-driven, non-blocking back-end javascript environment&lt;/em&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://github.com/jgautier/firmata&#34;&gt;Firmata&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;em&gt;node.js library to interact with  local Arduino running the firmata protocol (currently limited to serial port only (use of node-i2c TBD))&lt;/em&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://www.npmjs.com/package/pi-gpio&#34;&gt;pi-gpio&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;em&gt;node.js based library to access the GPIO of the Raspberry Pi&lt;/em&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;http://socket.io/&#34;&gt;socket.io&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;em&gt;real-time bidirectional event-based network communication&lt;/em&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;http://mqtt.org/&#34;&gt;mqtt&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;em&gt;machine-to-machine (M2M)/&amp;ldquo;Internet of Things&amp;rdquo; connectivity protocol&lt;/em&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;http://mosquitto.org/&#34;&gt;mosquitto&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;em&gt;message broker for mqtt, supports MQTT,MQTT-SN&lt;/em&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://eclipse.org/ponte/&#34;&gt;ponte&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;em&gt;node.js server bridges MQTT, CoAP&lt;/em&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://github.com/louischatriot/nedb&#34;&gt;NeDB&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;em&gt;lightweight MongoDB-like noSQL database for node.js&lt;/em&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://github.com/patchwork-toolkit/patchwork/wiki/Freeboard&#34;&gt;freeboard&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;em&gt;local dashboard function&lt;/em&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;http://nodered.org/&#34;&gt;Node-Red&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;em&gt;A visual tool for wiring the Internet of Things&lt;/em&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;div class=&#34;note unreleased&#34;&gt;
-  &lt;h5&gt;IoT System Model &lt;/h5&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The overall system model is as shown below.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/IOTmodel.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The Applications and Services may run on the Pi  (typically written in javascript), or may in part or whole be provided by a cloud service, subscribed to by the Ardhat software, eg &lt;a href=&#34;https://ifttt.com/&#34;&gt;IFTTT&lt;/a&gt;.  Sensor node topology and authentication info is stored in a &lt;a href=&#34;https://github.com/louischatriot/nedb&#34;&gt;NeDB&lt;/a&gt; a MongoDB-like noSQL database.&lt;/p&gt;
-
-&lt;p&gt;The Arduino RealTime code is responsible for monitoring and handling system power, realtime events,  and graceful sleep/shutdown/restart cycles of the Raspberry Pi.  It is also responsible for transmitting application information to the Wireless Sensor Nodes, for example using a simplified MQTT (MQTT-SN) over a link layer protocol such as &lt;a href=&#34;http://www.mike-stirling.com/redmine/projects/tinyhan/&#34;&gt;TinyHAN&lt;/a&gt; on top of  the relevant PHY (eg RFM96).&lt;/p&gt;
 </description>
     </item>
     

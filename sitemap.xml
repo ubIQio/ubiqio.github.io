@@ -8,11 +8,21 @@
   </url>
   
   <url>
+    <loc>http://ubiqio.com/test/</loc>
+    <lastmod>2015-09-21T14:29:14+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://ubiqio.com/shop/</loc>
+    <lastmod>2015-09-21T14:29:14+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://ubiqio.com/doc/README/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/contributing/</loc>
+    <loc>http://ubiqio.com/news/Screwy/</loc>
   </url>
   
   <url>
@@ -20,11 +30,19 @@
   </url>
   
   <url>
+    <loc>http://ubiqio.com/community/</loc>
+  </url>
+  
+  <url>
     <loc>http://ubiqio.com/doc/configuration/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/community/</loc>
+    <loc>http://ubiqio.com/doc/contributing/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ubiqio.com/news/lora/</loc>
   </url>
   
   <url>
@@ -36,15 +54,11 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/history/</loc>
-  </url>
-  
-  <url>
     <loc>http://ubiqio.com/doc/github/</loc>
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/</loc>
+    <loc>http://ubiqio.com/doc/history/</loc>
   </url>
   
   <url>
@@ -60,7 +74,15 @@
   </url>
   
   <url>
+    <loc>http://ubiqio.com/doc/radio/</loc>
+  </url>
+  
+  <url>
     <loc>http://ubiqio.com/doc/navi/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ubiqio.com/news/PlatformIO/</loc>
   </url>
   
   <url>
@@ -72,15 +94,11 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/radio/</loc>
+    <loc>http://ubiqio.com/doc/rtc/</loc>
   </url>
   
   <url>
     <loc>http://ubiqio.com/doc/resources/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ubiqio.com/doc/rtc/</loc>
   </url>
   
   <url>
@@ -92,19 +110,11 @@
   </url>
   
   <url>
+    <loc>http://ubiqio.com/doc/</loc>
+  </url>
+  
+  <url>
     <loc>http://ubiqio.com/news/FlipboardMag/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ubiqio.com/news/PlatformIO/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ubiqio.com/news/Screwy/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ubiqio.com/news/lora/</loc>
   </url>
   
   <url>
@@ -112,25 +122,15 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/doc/power/</loc>
-  </url>
-  
-  <url>
     <loc>http://ubiqio.com/doc/overview/</loc>
   </url>
   
   <url>
+    <loc>http://ubiqio.com/doc/power/</loc>
+  </url>
+  
+  <url>
     <loc>http://ubiqio.com/doc/quickstart/</loc>
-  </url>
-  
-  <url>
-    <loc>http://ubiqio.com/shop/</loc>
-    <lastmod>2015-09-21T14:29:14+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ubiqio.com/test/</loc>
-    <lastmod>2015-09-21T14:29:14+01:00</lastmod>
   </url>
   
 </urlset>
