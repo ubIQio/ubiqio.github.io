@@ -1345,17 +1345,43 @@
 
 <p>When operated, the switch forms a potential divider from the output of the LiPo charger, as shown in the following table:</p>
 
-<p><strong>Navigation Switch</strong> |
-&mdash; | &mdash;
-<strong>Open</strong> | 5V (= 1024) or LiPo voltage when running on battery
-<strong>Left</strong> | <sup>2</sup>&frasl;<sub>3</sub> open circuit voltage
-<strong>Right</strong> | <sup>1</sup>&frasl;<sub>3</sub> open circuit voltage
-<strong>Pressed</strong> | 0V</p>
+<table>
+<thead>
+<tr>
+<th><strong>Navigation Switch</strong></th>
+<th><strong>Ardhat Port A7</strong></th>
+</tr>
+</thead>
 
-<p>As an example, the default factory firmware uses the Nav switch to toggle power to the host, eg Raspberry Pi. You can this use as a starting point for your own applications using the source code on <a href="https://github.com/Ardhat/ArdhatFirmata">the Ardhat Hithub repo</a>.</p>
+<tbody>
+<tr>
+<td><strong>Open</strong></td>
+<td>5V (= 1024) or LiPo voltage when running on battery</td>
+</tr>
+
+<tr>
+<td><strong>Left</strong></td>
+<td><sup>2</sup>&frasl;<sub>3</sub> open circuit voltage</td>
+</tr>
+
+<tr>
+<td><strong>Right</strong></td>
+<td><sup>1</sup>&frasl;<sub>3</sub> open circuit voltage</td>
+</tr>
+
+<tr>
+<td><strong>Pressed</strong></td>
+<td>0V</td>
+</tr>
+</tbody>
+</table>
+
+<p><br></p>
+
+<p>As an example, the default factory firmware uses the Nav switch to toggle power to the host, eg Raspberry Pi. You can this use as a starting point for your own applications using the source code on the Ardhat Hithub repo.</p>
 
 <div class="note info">
-  <p>It can easily be expanded to include additional functions, for example sending message to the Pi over the Firmata interface.</p>
+  <p>The factory firmware image can easily be expanded to include additional functions, for example sending message to the Pi over the Firmata interface. </p>
 </div>
 
               

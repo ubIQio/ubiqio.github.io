@@ -558,17 +558,43 @@ RH_RF69 rf69(10, 3); // For RF69 on Ardhat
 
 &lt;p&gt;When operated, the switch forms a potential divider from the output of the LiPo charger, as shown in the following table:&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Navigation Switch&lt;/strong&gt; |
-&amp;mdash; | &amp;mdash;
-&lt;strong&gt;Open&lt;/strong&gt; | 5V (= 1024) or LiPo voltage when running on battery
-&lt;strong&gt;Left&lt;/strong&gt; | &lt;sup&gt;2&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt; open circuit voltage
-&lt;strong&gt;Right&lt;/strong&gt; | &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt; open circuit voltage
-&lt;strong&gt;Pressed&lt;/strong&gt; | 0V&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;Navigation Switch&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;Ardhat Port A7&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
 
-&lt;p&gt;As an example, the default factory firmware uses the Nav switch to toggle power to the host, eg Raspberry Pi. You can this use as a starting point for your own applications using the source code on &lt;a href=&#34;https://github.com/Ardhat/ArdhatFirmata&#34;&gt;the Ardhat Hithub repo&lt;/a&gt;.&lt;/p&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Open&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;5V (= 1024) or LiPo voltage when running on battery&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Left&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;sup&gt;2&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt; open circuit voltage&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Right&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt; open circuit voltage&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Pressed&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;0V&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;As an example, the default factory firmware uses the Nav switch to toggle power to the host, eg Raspberry Pi. You can this use as a starting point for your own applications using the source code on the Ardhat Hithub repo.&lt;/p&gt;
 
 &lt;div class=&#34;note info&#34;&gt;
-  &lt;p&gt;It can easily be expanded to include additional functions, for example sending message to the Pi over the Firmata interface.&lt;/p&gt;
+  &lt;p&gt;The factory firmware image can easily be expanded to include additional functions, for example sending message to the Pi over the Firmata interface. &lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>
