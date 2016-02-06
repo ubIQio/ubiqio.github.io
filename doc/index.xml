@@ -211,15 +211,6 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
     </item>
     
     <item>
-      <title>History</title>
-      <link>http://ubiqio.com/doc/history/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/history/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>I/O usage</title>
       <link>http://ubiqio.com/doc/io/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -825,6 +816,95 @@ RH_RF69 rf69(10, 3); // For RF69 on Ardhat
 &lt;/section&gt;
 
 &lt;p&gt;More info on using Python Firmata can be found &lt;a href=&#34;https://github.com/tino/pyFirmata&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Real Time Clock</title>
+      <link>http://ubiqio.com/doc/rtc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/rtc/</guid>
+      <description>&lt;p&gt;The realtime clock is provided by an NXP PCF8563, which is supported directly by the Raspberry Pi Linux distribution for use as a hardware clock. This is battery backed by the on board LiPo cell. The RTC time can be set manually or automatically updated  from an NTP server  when this is available. When the Raspberry Pi is halted, &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; can access the RTC to in order to wake up the Raspberry Pi at a predetermined time.&lt;/p&gt;
+
+&lt;p&gt;The PCF8563 features, taken from the &lt;a href=&#34;http://www.nxp.com/documents/data_sheet/PCF8563.pdf&#34;&gt;product datasheet&lt;/a&gt;, are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Provides year, month, day, weekday, hours, minutes, and seconds based on a 32.768kHz quartz crystal&lt;/li&gt;
+&lt;li&gt;Century flag&lt;/li&gt;
+&lt;li&gt;Clock operating voltage: 1.0V to 5.5V at room temperature&lt;/li&gt;
+&lt;li&gt;Low backup current; typical 0.25uA at VDD = 3.0V and Tamb = 25°C&lt;/li&gt;
+&lt;li&gt;400kHz two-wire I2C-bus interface (at VDD = 1.8V to 5.5V)&lt;/li&gt;
+&lt;li&gt;Programmable clock output for peripheral devices (32.768kHz, 1.024kHz, 32Hz, and 1Hz)&lt;/li&gt;
+&lt;li&gt;Alarm and timer functions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In order to use the PCF8563 as a hardware system clock for Raspberry Pi we need to make sure the kernel modules are loaded at boot time&amp;hellip;&lt;/p&gt;
+
+&lt;section class=&#34;quickstart&#34; &gt;
+  &lt;div class=&#34;grid&#34;&gt;
+    &lt;div class=&#34;unit .half code&#34;&gt;
+      &lt;p class=&#34;title&#34;&gt;Edit /etc/modules to include pcf8563 &lt;/p&gt;
+      &lt;div class=&#34;shell&#34;&gt;
+         &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;path&#34;&gt;~&lt;/span&gt;
+          &lt;span class=&#34;prompt&#34;&gt;$&lt;/span&gt;
+          &lt;span class=&#34;command&#34;&gt;sudo nano /etc/modules&lt;/span&gt;
+        &lt;/p&gt;
+                 &lt;p class=&#34;line&#34;&gt;
+ &lt;br&gt;# /etc/modules: kernel modules to load at boot time.&lt;br&gt;
+ #&lt;br&gt;
+ # This file contains the names of kernel modules that should be loaded&lt;br&gt;
+ # at boot time, one per line. Lines beginning with &#34;#&#34; are ignored.&lt;br&gt;
+ # Parameters can be specified after the module name.&lt;br&gt;
+&lt;br&gt;
+snd-bcm2835&lt;br&gt;
+i2c-bcm2708&lt;br&gt;
+i2c-dev&lt;br&gt;
+rtc-pcf8563&lt;br&gt;
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;p&gt;&amp;hellip;and that the hwclock is loaded at startup&lt;/p&gt;
+
+&lt;section class=&#34;quickstart&#34; &gt;
+  &lt;div class=&#34;grid&#34;&gt;
+    &lt;div class=&#34;unit .half code&#34;&gt;
+      &lt;p class=&#34;title&#34;&gt;Edit /etc/rc.local to end as shown...&lt;/p&gt;
+      &lt;div class=&#34;shell&#34;&gt;
+         &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;path&#34;&gt;~&lt;/span&gt;
+          &lt;span class=&#34;prompt&#34;&gt;$&lt;/span&gt;
+          &lt;span class=&#34;command&#34;&gt;sudo nano /etc/rc.local&lt;/span&gt;
+        &lt;/p&gt;
+                 &lt;p class=&#34;line&#34;&gt;
+&lt;br&gt;                 
+modprobe i2c-bcm2708&lt;br&gt;
+echo pcf8563 0x51 &gt; /sys/class/i2c-adapter/i2c-1/new_device&lt;br&gt;
+modprobe rtc-pcf8563&lt;br&gt;
+hwclock -s&lt;br&gt;
+&lt;br&gt;
+exit 0&lt;br&gt;
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;p&gt;Save, then reboot with &lt;code&gt;sudo reboot&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Now you can check the results, first with &lt;code&gt;i2detect -y 1&lt;/code&gt;, which shows that the i2c driver loaded (and that in this case we have 3 i2c devices present)&lt;/p&gt;
+
+&lt;p&gt;&lt;img align=&#34;center&#34; src=&#34;http://ubiqio.com/media/i2cdetect.png&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;Then with &lt;code&gt;sudo hwclock --rtc /dev/rtc0 -r --debug&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img align=&#34;center&#34; src=&#34;http://ubiqio.com/media/rtc-check.png&#34;&gt;&lt;/p&gt;
 </description>
     </item>
     
