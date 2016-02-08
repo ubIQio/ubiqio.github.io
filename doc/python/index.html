@@ -1366,7 +1366,43 @@
 <li><p>You should start a separate iterator thread to stop unread value reports clogging up the Firmata channel</p></li>
 </ul>
 
-<p>As an example, the following Python commands will get you up and running reading Analog port 0.</p>
+<p>As an example, the following Python commands let you perform a simple test of port D2.</p>
+
+<section class="quickstart" >
+  <div class="grid">
+    <div class="unit .half code">
+      <p class="title">At the Python Prompt... </p>
+      <div class="shell">
+        <p class="line">
+          <span class="prompt">>>></span>
+          <span class="command">from pyfirmata import Arduino, util</span>
+        </p>        
+        <p class="line">
+          <span class="prompt">>>></span>
+          <span class="command">board = Arduino('/dev/ttyS0')</span>
+        </p>
+        <p class="line">
+          <span class="prompt">>>></span>
+          <span class="command">board.digital[2].write(1)</span>
+        </p>
+        <p class="line">
+          <p class="line">
+          <span class="prompt">>>></span>
+          <span class="command">board.digital[2].read()</span>
+        </p>
+        <p class="line">
+          <span class="command">1</span>
+        </p>
+        <p class="line">
+        <p class="line">
+        </p>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</section>
+
+<p>&hellip; or use this example for reading Analog port 0.</p>
 
 <section class="quickstart" >
   <div class="grid">
@@ -1390,9 +1426,16 @@
           <span class="prompt">>>></span>
           <span class="command">it.start</span>
         </p>
-          <p class="line">
+        <p class="line">
+          <span class="prompt">>>></span>
+          <span class="command"> board.analog[0].enable_reporting()</span>
+        </p>
+        <p class="line">
           <span class="prompt">>>></span>
           <span class="command">board.analog[0].read()</span>
+        </p>
+        <p class="line">
+          <span class="command">0.2727</span>
         </p>
         <p class="line">
         <p class="line">

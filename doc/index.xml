@@ -777,7 +777,43 @@ RH_RF69 rf69(10, 3); // For RF69 on Ardhat
 &lt;li&gt;&lt;p&gt;You should start a separate iterator thread to stop unread value reports clogging up the Firmata channel&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;As an example, the following Python commands will get you up and running reading Analog port 0.&lt;/p&gt;
+&lt;p&gt;As an example, the following Python commands let you perform a simple test of port D2.&lt;/p&gt;
+
+&lt;section class=&#34;quickstart&#34; &gt;
+  &lt;div class=&#34;grid&#34;&gt;
+    &lt;div class=&#34;unit .half code&#34;&gt;
+      &lt;p class=&#34;title&#34;&gt;At the Python Prompt... &lt;/p&gt;
+      &lt;div class=&#34;shell&#34;&gt;
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;prompt&#34;&gt;&gt;&gt;&gt;&lt;/span&gt;
+          &lt;span class=&#34;command&#34;&gt;from pyfirmata import Arduino, util&lt;/span&gt;
+        &lt;/p&gt;        
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;prompt&#34;&gt;&gt;&gt;&gt;&lt;/span&gt;
+          &lt;span class=&#34;command&#34;&gt;board = Arduino(&#39;/dev/ttyS0&#39;)&lt;/span&gt;
+        &lt;/p&gt;
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;prompt&#34;&gt;&gt;&gt;&gt;&lt;/span&gt;
+          &lt;span class=&#34;command&#34;&gt;board.digital[2].write(1)&lt;/span&gt;
+        &lt;/p&gt;
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;prompt&#34;&gt;&gt;&gt;&gt;&lt;/span&gt;
+          &lt;span class=&#34;command&#34;&gt;board.digital[2].read()&lt;/span&gt;
+        &lt;/p&gt;
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;command&#34;&gt;1&lt;/span&gt;
+        &lt;/p&gt;
+        &lt;p class=&#34;line&#34;&gt;
+        &lt;p class=&#34;line&#34;&gt;
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;p&gt;&amp;hellip; or use this example for reading Analog port 0.&lt;/p&gt;
 
 &lt;section class=&#34;quickstart&#34; &gt;
   &lt;div class=&#34;grid&#34;&gt;
@@ -801,9 +837,16 @@ RH_RF69 rf69(10, 3); // For RF69 on Ardhat
           &lt;span class=&#34;prompt&#34;&gt;&gt;&gt;&gt;&lt;/span&gt;
           &lt;span class=&#34;command&#34;&gt;it.start&lt;/span&gt;
         &lt;/p&gt;
-          &lt;p class=&#34;line&#34;&gt;
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;prompt&#34;&gt;&gt;&gt;&gt;&lt;/span&gt;
+          &lt;span class=&#34;command&#34;&gt; board.analog[0].enable_reporting()&lt;/span&gt;
+        &lt;/p&gt;
+        &lt;p class=&#34;line&#34;&gt;
           &lt;span class=&#34;prompt&#34;&gt;&gt;&gt;&gt;&lt;/span&gt;
           &lt;span class=&#34;command&#34;&gt;board.analog[0].read()&lt;/span&gt;
+        &lt;/p&gt;
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;command&#34;&gt;0.2727&lt;/span&gt;
         &lt;/p&gt;
         &lt;p class=&#34;line&#34;&gt;
         &lt;p class=&#34;line&#34;&gt;
