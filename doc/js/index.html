@@ -1402,15 +1402,175 @@
           <div class="unit four-fifths">
             <article>
               <div class="improve right hide-on-mobiles">
-                <a href="https://github.com/Ardhat/docs/edit/master/.md "><i class="fa fa-pencil"></i> &nbsp;Improve this page</a>
+                <a href="https://github.com/Ardhat/docs/edit/master/js.md "><i class="fa fa-pencil"></i> &nbsp;Improve this page</a>
               </div>
-              <h1></h1>
+              <h1>Javascript &amp; Node.js®</h1>
               <hr />
               
 
-<h1 id="docs:04c6e90faac2675aa89e2176d2eec7d8">docs</h1>
+<p>Javascript is an interpreted language like Python, and therefore relies on an interpreter to be running to execute it&rsquo;s functions. The most common javascript interpreter is the web browser, and one of the fastest is the one built into Google&rsquo;s Chrome browser.</p>
 
-<p>Markdown docs for Ardhat website</p>
+<p>Node.js® is a JavaScript runtime built on Chrome&rsquo;s V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js&rsquo; package ecosystem, npm, is the largest ecosystem of open source libraries in the world.</p>
+
+<p>One of those many libraries includes firmata, which means that once node.js is installed, we can communicate easily between it and <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span>, allowing the easy creation of web-based sensor systems, for example using <a href="http://nodered.org/">Node-Red</a> or <a href="http://johnny-five.io/">Johnny-Five</a>.</p>
+
+<h3 id="installing-node-js:615e3f22fa9cd8f45adc27486278fdbb">Installing node.js</h3>
+
+<p>Raspian Jessie comes with a version of Node.js installed; unfortunately it is an older version (0.10.29 at the time of writing) that does not play well with many newer libraries, so we need to remove it and reinstall a newer version of Node.js such as v0.12.x or v4.2.x together with npm.</p>
+
+<p>To do this we must uninstall the built-in version and re-install using the instructions below.
+To uninstall:</p>
+
+<section class="quickstart" >
+  <div class="grid">
+    <div class="unit .half code">
+      <p class="title">Uninstall legacy node</p>
+      <div class="shell">
+        <p class="line">
+          <span class="path">~</span>
+          <span class="prompt">$</span>
+          <span class="command">sudo apt-get remove nodered</span>
+        </p>        
+        <p class="line">
+          <span class="path">~</span>
+          <span class="prompt">$</span>
+          <span class="command">sudo apt-get remove nodejs nodejs-legacy</span>
+        </p>
+        <p class="line">
+          <span class="path">~</span>
+          <span class="prompt">$</span>
+          <span class="command">sudo apt-get remove npm  </span>
+        </p>
+        <p class="line">
+          <span class="output"> # if you installed npm</span>
+        </p>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</section>
+
+<p>This will remove all the built in packages but leave your workspace - by default at ~/.node-red .</p>
+
+<p>Now we can proceed to re-install Node.js following the instructions below depending on your processor type. (As the Pi 2 uses a different processor (Arm v7) compared with the original Pi (Arm v6) the method of installing node.js is slightly different).</p>
+
+<section class="quickstart" >
+  <div class="grid">
+    <div class="unit .half code">
+      <p class="title"> Install Node.js on Raspberry Pi 2 - and other Arm7 processor based boards</p>
+      <div class="shell">
+        <p class="line">
+          <span class="path">~</span>
+          <span class="prompt">$</span>
+          <span class="command">curl -sL https://deb.nodesource.com/setup_4.x | sudo bash -</span>
+        </p>        
+        <p class="line">
+          <span class="path">~</span>
+          <span class="prompt">$</span>
+          <span class="command">sudo apt-get install -y build-essential python-dev python-rpi.gpio nodejs</span>
+        </p>
+        <p class="line">
+          <span class="output">This also installs some additional dependencies.</span>
+        </p>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</section>
+
+<section class="quickstart" >
+  <div class="grid">
+    <div class="unit .half code">
+      <p class="title">Install Node.js on Pi (version 1), Pi Zero, Pi A+/B+</p>
+      <div class="shell">
+        <p class="line">
+          <span class="path">~</span>
+          <span class="prompt">$</span>
+          <span class="command">wget http://node-arm.herokuapp.com/node_archive_armhf.deb</span>
+        </p>        
+        <p class="line">
+          <span class="path">~</span>
+          <span class="prompt">$</span>
+          <span class="command">sudo npm cache clean</span>
+        </p>
+        <p class="line">
+          <span class="path">~</span>
+          <span class="prompt">$</span>
+          <span class="command">sudo dpkg -i node_archive_armhf.deb</span>
+        </p>
+        <p class="line">
+          <span class="path">~</span>
+          <span class="prompt">$</span>
+          <span class="command">sudo apt-get install build-essential python-dev python-rpi.gpio</span>
+        </p>
+        <p class="line">
+          <span class="output">This also installs some additional dependencies.</span>
+        </p>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</section>
+
+<section class="quickstart" >
+  <div class="grid">
+    <div class="unit .half code">
+      <p class="title"> Install the latest stable version of Node-RED and Johnny-Five</p>
+      <div class="shell">
+        <p class="line">
+          <span class="path">~</span>
+          <span class="prompt">$</span>
+          <span class="command">sudo npm install -g --unsafe-perm  node-red </span>
+        </p>
+        <p class="line">
+          <span class="path">~</span>
+          <span class="prompt">$</span>
+          <span class="command">npm install johnny-five </span>
+        </p>       
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</section>
+
+<p>Now we are ready to run our javascript program on node.js driving Ardhat.</p>
+
+<p>Create a file with the following contents:</p>
+
+<pre><code class="language-c">var five = require(&quot;johnny-five&quot;),
+    board = new five.Board({ port: &quot;/dev/ttyS0&quot; });
+
+board.on(&quot;ready&quot;, function() {
+  // Create an Led on pin 9
+  var led = new five.Led(9);
+
+  // Strobe the pin on/off, defaults to 100ms phases
+  led.strobe();
+});
+
+</code></pre>
+
+<p>Save it as test.js, and run it with</p>
+
+<section class="quickstart" >
+  <div class="grid">
+    <div class="unit .half code">
+      <p class="title"> Run the test Javascript program</p>
+      <div class="shell">
+        <p class="line">
+          <span class="path">~</span>
+          <span class="prompt">$</span>
+          <span class="command">node test.js</span>
+        </p>        
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</section>
+
+<p>Ardhat&rsquo;s activity LED will blink quickly.</p>
+
+<p>Lots more awesome examples to get you going can be found on the <a href="http://johnny-five.io/">Johnny-Five</a> site.</p>
 
               
 
@@ -1434,13 +1594,13 @@
 
 
 
-        <a href="/doc/" class="prev">Prev</a>
+        <a href="/doc/python" class="prev">Prev</a>
 
   </div>
   <div class="right align-left">
 
 
-        <a href="/doc/" class="next">Next</a>
+        <a href="/doc/upgrading" class="next">Next</a>
 
   </div>
 </div>
@@ -2476,7 +2636,9 @@
         
 
             
-            <li class="" >
+            <li class="
+            current
+            " >
             <a href="/doc/js/">Javascript &amp; Node.js®</a></li>
           
         

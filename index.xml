@@ -526,30 +526,176 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
     </item>
     
     <item>
-      <title>LEDs</title>
-      <link>http://ubiqio.com/doc/leds/</link>
+      <title>Javascript &amp; Node.js®</title>
+      <link>http://ubiqio.com/doc/js/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://ubiqio.com/doc/leds/</guid>
-      <description>&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; supports LEDs in two ways; the first is through onboard LEDs.&lt;/p&gt;
+      <guid>http://ubiqio.com/doc/js/</guid>
+      <description>
 
-&lt;p&gt;The orange on-board &lt;strong&gt;User LED&lt;/strong&gt; on the side opposite the 40-pin header is connected to port D9 of the Ardhat processor, and can be programmed using an Arduino  Sketch in the usual way.&lt;/p&gt;
+&lt;p&gt;Javascript is an interpreted language like Python, and therefore relies on an interpreter to be running to execute it&amp;rsquo;s functions. The most common javascript interpreter is the web browser, and one of the fastest is the one built into Google&amp;rsquo;s Chrome browser.&lt;/p&gt;
 
-&lt;div class=&#34;note info&#34;&gt;
-  &lt;p&gt;Note that this is different from the standard Arduino port, which is D13. This was done to avoid conflict with the use of D13 for SPI_SCK, and also to allow hardware PWM function can be used, for example for pulsating the LED in sleep mode.&lt;/p&gt;
-&lt;/div&gt;
+&lt;p&gt;Node.js® is a JavaScript runtime built on Chrome&amp;rsquo;s V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js&amp;rsquo; package ecosystem, npm, is the largest ecosystem of open source libraries in the world.&lt;/p&gt;
 
-&lt;p&gt;By way of example, the default factory program, which is available &lt;a href=&#34;https://github.com/Ardhat/ArdhatFirmata&#34;&gt;here&lt;/a&gt;, uses hardware PWM to pulse the User LED when the Pi power is switched off. Pressing the Nav switch toggles  the LED to full, and enables power to the Host.&lt;/p&gt;
+&lt;p&gt;One of those many libraries includes firmata, which means that once node.js is installed, we can communicate easily between it and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;, allowing the easy creation of web-based sensor systems, for example using &lt;a href=&#34;http://nodered.org/&#34;&gt;Node-Red&lt;/a&gt; or &lt;a href=&#34;http://johnny-five.io/&#34;&gt;Johnny-Five&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;The other onboard LEDs indicate charge state; Red means charging or running on battery, Green means charged.&lt;/p&gt;
+&lt;h3 id=&#34;installing-node-js:615e3f22fa9cd8f45adc27486278fdbb&#34;&gt;Installing node.js&lt;/h3&gt;
 
-&lt;p&gt;The other form of LED support is through the inclusion of a 3.3V to 5V converter on the output of the Pi PWM pin, which can be used to connect WS8212 LED strings directly to Ardhat.&lt;/p&gt;
+&lt;p&gt;Raspian Jessie comes with a version of Node.js installed; unfortunately it is an older version (0.10.29 at the time of writing) that does not play well with many newer libraries, so we need to remove it and reinstall a newer version of Node.js such as v0.12.x or v4.2.x together with npm.&lt;/p&gt;
 
-&lt;p&gt;The 5V rail can provide up to 2.5A which is sufficient to drive 4m light strings in normal use (ie not all illuminated at full brightness)&lt;/p&gt;
+&lt;p&gt;To do this we must uninstall the built-in version and re-install using the instructions below.
+To uninstall:&lt;/p&gt;
 
-&lt;p&gt;See &lt;a href=&#34;https://github.com/Ardhat/spiralLED&#34;&gt;Spiralled&lt;/a&gt; for an example of this in use.&lt;/p&gt;
+&lt;section class=&#34;quickstart&#34; &gt;
+  &lt;div class=&#34;grid&#34;&gt;
+    &lt;div class=&#34;unit .half code&#34;&gt;
+      &lt;p class=&#34;title&#34;&gt;Uninstall legacy node&lt;/p&gt;
+      &lt;div class=&#34;shell&#34;&gt;
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;path&#34;&gt;~&lt;/span&gt;
+          &lt;span class=&#34;prompt&#34;&gt;$&lt;/span&gt;
+          &lt;span class=&#34;command&#34;&gt;sudo apt-get remove nodered&lt;/span&gt;
+        &lt;/p&gt;        
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;path&#34;&gt;~&lt;/span&gt;
+          &lt;span class=&#34;prompt&#34;&gt;$&lt;/span&gt;
+          &lt;span class=&#34;command&#34;&gt;sudo apt-get remove nodejs nodejs-legacy&lt;/span&gt;
+        &lt;/p&gt;
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;path&#34;&gt;~&lt;/span&gt;
+          &lt;span class=&#34;prompt&#34;&gt;$&lt;/span&gt;
+          &lt;span class=&#34;command&#34;&gt;sudo apt-get remove npm  &lt;/span&gt;
+        &lt;/p&gt;
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;output&#34;&gt; # if you installed npm&lt;/span&gt;
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
-&lt;p&gt;&lt;img align=&#34;center&#34; src=&#34;http://ubiqio.com/media/SpiralLED.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This will remove all the built in packages but leave your workspace - by default at ~/.node-red .&lt;/p&gt;
+
+&lt;p&gt;Now we can proceed to re-install Node.js following the instructions below depending on your processor type. (As the Pi 2 uses a different processor (Arm v7) compared with the original Pi (Arm v6) the method of installing node.js is slightly different).&lt;/p&gt;
+
+&lt;section class=&#34;quickstart&#34; &gt;
+  &lt;div class=&#34;grid&#34;&gt;
+    &lt;div class=&#34;unit .half code&#34;&gt;
+      &lt;p class=&#34;title&#34;&gt; Install Node.js on Raspberry Pi 2 - and other Arm7 processor based boards&lt;/p&gt;
+      &lt;div class=&#34;shell&#34;&gt;
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;path&#34;&gt;~&lt;/span&gt;
+          &lt;span class=&#34;prompt&#34;&gt;$&lt;/span&gt;
+          &lt;span class=&#34;command&#34;&gt;curl -sL https://deb.nodesource.com/setup_4.x | sudo bash -&lt;/span&gt;
+        &lt;/p&gt;        
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;path&#34;&gt;~&lt;/span&gt;
+          &lt;span class=&#34;prompt&#34;&gt;$&lt;/span&gt;
+          &lt;span class=&#34;command&#34;&gt;sudo apt-get install -y build-essential python-dev python-rpi.gpio nodejs&lt;/span&gt;
+        &lt;/p&gt;
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;output&#34;&gt;This also installs some additional dependencies.&lt;/span&gt;
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section class=&#34;quickstart&#34; &gt;
+  &lt;div class=&#34;grid&#34;&gt;
+    &lt;div class=&#34;unit .half code&#34;&gt;
+      &lt;p class=&#34;title&#34;&gt;Install Node.js on Pi (version 1), Pi Zero, Pi A+/B+&lt;/p&gt;
+      &lt;div class=&#34;shell&#34;&gt;
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;path&#34;&gt;~&lt;/span&gt;
+          &lt;span class=&#34;prompt&#34;&gt;$&lt;/span&gt;
+          &lt;span class=&#34;command&#34;&gt;wget http://node-arm.herokuapp.com/node_archive_armhf.deb&lt;/span&gt;
+        &lt;/p&gt;        
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;path&#34;&gt;~&lt;/span&gt;
+          &lt;span class=&#34;prompt&#34;&gt;$&lt;/span&gt;
+          &lt;span class=&#34;command&#34;&gt;sudo npm cache clean&lt;/span&gt;
+        &lt;/p&gt;
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;path&#34;&gt;~&lt;/span&gt;
+          &lt;span class=&#34;prompt&#34;&gt;$&lt;/span&gt;
+          &lt;span class=&#34;command&#34;&gt;sudo dpkg -i node_archive_armhf.deb&lt;/span&gt;
+        &lt;/p&gt;
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;path&#34;&gt;~&lt;/span&gt;
+          &lt;span class=&#34;prompt&#34;&gt;$&lt;/span&gt;
+          &lt;span class=&#34;command&#34;&gt;sudo apt-get install build-essential python-dev python-rpi.gpio&lt;/span&gt;
+        &lt;/p&gt;
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;output&#34;&gt;This also installs some additional dependencies.&lt;/span&gt;
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section class=&#34;quickstart&#34; &gt;
+  &lt;div class=&#34;grid&#34;&gt;
+    &lt;div class=&#34;unit .half code&#34;&gt;
+      &lt;p class=&#34;title&#34;&gt; Install the latest stable version of Node-RED and Johnny-Five&lt;/p&gt;
+      &lt;div class=&#34;shell&#34;&gt;
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;path&#34;&gt;~&lt;/span&gt;
+          &lt;span class=&#34;prompt&#34;&gt;$&lt;/span&gt;
+          &lt;span class=&#34;command&#34;&gt;sudo npm install -g --unsafe-perm  node-red &lt;/span&gt;
+        &lt;/p&gt;
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;path&#34;&gt;~&lt;/span&gt;
+          &lt;span class=&#34;prompt&#34;&gt;$&lt;/span&gt;
+          &lt;span class=&#34;command&#34;&gt;npm install johnny-five &lt;/span&gt;
+        &lt;/p&gt;       
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;p&gt;Now we are ready to run our javascript program on node.js driving Ardhat.&lt;/p&gt;
+
+&lt;p&gt;Create a file with the following contents:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;var five = require(&amp;quot;johnny-five&amp;quot;),
+    board = new five.Board({ port: &amp;quot;/dev/ttyS0&amp;quot; });
+
+board.on(&amp;quot;ready&amp;quot;, function() {
+  // Create an Led on pin 9
+  var led = new five.Led(9);
+
+  // Strobe the pin on/off, defaults to 100ms phases
+  led.strobe();
+});
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Save it as test.js, and run it with&lt;/p&gt;
+
+&lt;section class=&#34;quickstart&#34; &gt;
+  &lt;div class=&#34;grid&#34;&gt;
+    &lt;div class=&#34;unit .half code&#34;&gt;
+      &lt;p class=&#34;title&#34;&gt; Run the test Javascript program&lt;/p&gt;
+      &lt;div class=&#34;shell&#34;&gt;
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;path&#34;&gt;~&lt;/span&gt;
+          &lt;span class=&#34;prompt&#34;&gt;$&lt;/span&gt;
+          &lt;span class=&#34;command&#34;&gt;node test.js&lt;/span&gt;
+        &lt;/p&gt;        
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;p&gt;Ardhat&amp;rsquo;s activity LED will blink quickly.&lt;/p&gt;
+
+&lt;p&gt;Lots more awesome examples to get you going can be found on the &lt;a href=&#34;http://johnny-five.io/&#34;&gt;Johnny-Five&lt;/a&gt; site.&lt;/p&gt;
 </description>
     </item>
     

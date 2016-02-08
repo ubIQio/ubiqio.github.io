@@ -454,6 +454,180 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Javascript &amp; Node.js®</title>
+      <link>http://ubiqio.com/doc/js/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/doc/js/</guid>
+      <description>
+
+&lt;p&gt;Javascript is an interpreted language like Python, and therefore relies on an interpreter to be running to execute it&amp;rsquo;s functions. The most common javascript interpreter is the web browser, and one of the fastest is the one built into Google&amp;rsquo;s Chrome browser.&lt;/p&gt;
+
+&lt;p&gt;Node.js® is a JavaScript runtime built on Chrome&amp;rsquo;s V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js&amp;rsquo; package ecosystem, npm, is the largest ecosystem of open source libraries in the world.&lt;/p&gt;
+
+&lt;p&gt;One of those many libraries includes firmata, which means that once node.js is installed, we can communicate easily between it and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;, allowing the easy creation of web-based sensor systems, for example using &lt;a href=&#34;http://nodered.org/&#34;&gt;Node-Red&lt;/a&gt; or &lt;a href=&#34;http://johnny-five.io/&#34;&gt;Johnny-Five&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;installing-node-js:615e3f22fa9cd8f45adc27486278fdbb&#34;&gt;Installing node.js&lt;/h3&gt;
+
+&lt;p&gt;Raspian Jessie comes with a version of Node.js installed; unfortunately it is an older version (0.10.29 at the time of writing) that does not play well with many newer libraries, so we need to remove it and reinstall a newer version of Node.js such as v0.12.x or v4.2.x together with npm.&lt;/p&gt;
+
+&lt;p&gt;To do this we must uninstall the built-in version and re-install using the instructions below.
+To uninstall:&lt;/p&gt;
+
+&lt;section class=&#34;quickstart&#34; &gt;
+  &lt;div class=&#34;grid&#34;&gt;
+    &lt;div class=&#34;unit .half code&#34;&gt;
+      &lt;p class=&#34;title&#34;&gt;Uninstall legacy node&lt;/p&gt;
+      &lt;div class=&#34;shell&#34;&gt;
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;path&#34;&gt;~&lt;/span&gt;
+          &lt;span class=&#34;prompt&#34;&gt;$&lt;/span&gt;
+          &lt;span class=&#34;command&#34;&gt;sudo apt-get remove nodered&lt;/span&gt;
+        &lt;/p&gt;        
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;path&#34;&gt;~&lt;/span&gt;
+          &lt;span class=&#34;prompt&#34;&gt;$&lt;/span&gt;
+          &lt;span class=&#34;command&#34;&gt;sudo apt-get remove nodejs nodejs-legacy&lt;/span&gt;
+        &lt;/p&gt;
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;path&#34;&gt;~&lt;/span&gt;
+          &lt;span class=&#34;prompt&#34;&gt;$&lt;/span&gt;
+          &lt;span class=&#34;command&#34;&gt;sudo apt-get remove npm  &lt;/span&gt;
+        &lt;/p&gt;
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;output&#34;&gt; # if you installed npm&lt;/span&gt;
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;p&gt;This will remove all the built in packages but leave your workspace - by default at ~/.node-red .&lt;/p&gt;
+
+&lt;p&gt;Now we can proceed to re-install Node.js following the instructions below depending on your processor type. (As the Pi 2 uses a different processor (Arm v7) compared with the original Pi (Arm v6) the method of installing node.js is slightly different).&lt;/p&gt;
+
+&lt;section class=&#34;quickstart&#34; &gt;
+  &lt;div class=&#34;grid&#34;&gt;
+    &lt;div class=&#34;unit .half code&#34;&gt;
+      &lt;p class=&#34;title&#34;&gt; Install Node.js on Raspberry Pi 2 - and other Arm7 processor based boards&lt;/p&gt;
+      &lt;div class=&#34;shell&#34;&gt;
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;path&#34;&gt;~&lt;/span&gt;
+          &lt;span class=&#34;prompt&#34;&gt;$&lt;/span&gt;
+          &lt;span class=&#34;command&#34;&gt;curl -sL https://deb.nodesource.com/setup_4.x | sudo bash -&lt;/span&gt;
+        &lt;/p&gt;        
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;path&#34;&gt;~&lt;/span&gt;
+          &lt;span class=&#34;prompt&#34;&gt;$&lt;/span&gt;
+          &lt;span class=&#34;command&#34;&gt;sudo apt-get install -y build-essential python-dev python-rpi.gpio nodejs&lt;/span&gt;
+        &lt;/p&gt;
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;output&#34;&gt;This also installs some additional dependencies.&lt;/span&gt;
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section class=&#34;quickstart&#34; &gt;
+  &lt;div class=&#34;grid&#34;&gt;
+    &lt;div class=&#34;unit .half code&#34;&gt;
+      &lt;p class=&#34;title&#34;&gt;Install Node.js on Pi (version 1), Pi Zero, Pi A+/B+&lt;/p&gt;
+      &lt;div class=&#34;shell&#34;&gt;
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;path&#34;&gt;~&lt;/span&gt;
+          &lt;span class=&#34;prompt&#34;&gt;$&lt;/span&gt;
+          &lt;span class=&#34;command&#34;&gt;wget http://node-arm.herokuapp.com/node_archive_armhf.deb&lt;/span&gt;
+        &lt;/p&gt;        
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;path&#34;&gt;~&lt;/span&gt;
+          &lt;span class=&#34;prompt&#34;&gt;$&lt;/span&gt;
+          &lt;span class=&#34;command&#34;&gt;sudo npm cache clean&lt;/span&gt;
+        &lt;/p&gt;
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;path&#34;&gt;~&lt;/span&gt;
+          &lt;span class=&#34;prompt&#34;&gt;$&lt;/span&gt;
+          &lt;span class=&#34;command&#34;&gt;sudo dpkg -i node_archive_armhf.deb&lt;/span&gt;
+        &lt;/p&gt;
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;path&#34;&gt;~&lt;/span&gt;
+          &lt;span class=&#34;prompt&#34;&gt;$&lt;/span&gt;
+          &lt;span class=&#34;command&#34;&gt;sudo apt-get install build-essential python-dev python-rpi.gpio&lt;/span&gt;
+        &lt;/p&gt;
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;output&#34;&gt;This also installs some additional dependencies.&lt;/span&gt;
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section class=&#34;quickstart&#34; &gt;
+  &lt;div class=&#34;grid&#34;&gt;
+    &lt;div class=&#34;unit .half code&#34;&gt;
+      &lt;p class=&#34;title&#34;&gt; Install the latest stable version of Node-RED and Johnny-Five&lt;/p&gt;
+      &lt;div class=&#34;shell&#34;&gt;
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;path&#34;&gt;~&lt;/span&gt;
+          &lt;span class=&#34;prompt&#34;&gt;$&lt;/span&gt;
+          &lt;span class=&#34;command&#34;&gt;sudo npm install -g --unsafe-perm  node-red &lt;/span&gt;
+        &lt;/p&gt;
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;path&#34;&gt;~&lt;/span&gt;
+          &lt;span class=&#34;prompt&#34;&gt;$&lt;/span&gt;
+          &lt;span class=&#34;command&#34;&gt;npm install johnny-five &lt;/span&gt;
+        &lt;/p&gt;       
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;p&gt;Now we are ready to run our javascript program on node.js driving Ardhat.&lt;/p&gt;
+
+&lt;p&gt;Create a file with the following contents:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;var five = require(&amp;quot;johnny-five&amp;quot;),
+    board = new five.Board({ port: &amp;quot;/dev/ttyS0&amp;quot; });
+
+board.on(&amp;quot;ready&amp;quot;, function() {
+  // Create an Led on pin 9
+  var led = new five.Led(9);
+
+  // Strobe the pin on/off, defaults to 100ms phases
+  led.strobe();
+});
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Save it as test.js, and run it with&lt;/p&gt;
+
+&lt;section class=&#34;quickstart&#34; &gt;
+  &lt;div class=&#34;grid&#34;&gt;
+    &lt;div class=&#34;unit .half code&#34;&gt;
+      &lt;p class=&#34;title&#34;&gt; Run the test Javascript program&lt;/p&gt;
+      &lt;div class=&#34;shell&#34;&gt;
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;path&#34;&gt;~&lt;/span&gt;
+          &lt;span class=&#34;prompt&#34;&gt;$&lt;/span&gt;
+          &lt;span class=&#34;command&#34;&gt;node test.js&lt;/span&gt;
+        &lt;/p&gt;        
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;p&gt;Ardhat&amp;rsquo;s activity LED will blink quickly.&lt;/p&gt;
+
+&lt;p&gt;Lots more awesome examples to get you going can be found on the &lt;a href=&#34;http://johnny-five.io/&#34;&gt;Johnny-Five&lt;/a&gt; site.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>LEDs</title>
       <link>http://ubiqio.com/doc/leds/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -859,95 +1033,6 @@ RH_RF69 rf69(10, 3); // For RF69 on Ardhat
 &lt;/section&gt;
 
 &lt;p&gt;More info on using Python Firmata can be found &lt;a href=&#34;https://github.com/tino/pyFirmata&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Real Time Clock</title>
-      <link>http://ubiqio.com/doc/rtc/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/doc/rtc/</guid>
-      <description>&lt;p&gt;The realtime clock is provided by an NXP PCF8563, which is supported directly by the Raspberry Pi Linux distribution for use as a hardware clock. This is battery backed by the on board LiPo cell. The RTC time can be set manually or automatically updated  from an NTP server  when this is available. When the Raspberry Pi is halted, &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; can access the RTC to in order to wake up the Raspberry Pi at a predetermined time.&lt;/p&gt;
-
-&lt;p&gt;The PCF8563 features, taken from the &lt;a href=&#34;http://www.nxp.com/documents/data_sheet/PCF8563.pdf&#34;&gt;product datasheet&lt;/a&gt;, are:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Provides year, month, day, weekday, hours, minutes, and seconds based on a 32.768kHz quartz crystal&lt;/li&gt;
-&lt;li&gt;Century flag&lt;/li&gt;
-&lt;li&gt;Clock operating voltage: 1.0V to 5.5V at room temperature&lt;/li&gt;
-&lt;li&gt;Low backup current; typical 0.25uA at VDD = 3.0V and Tamb = 25°C&lt;/li&gt;
-&lt;li&gt;400kHz two-wire I2C-bus interface (at VDD = 1.8V to 5.5V)&lt;/li&gt;
-&lt;li&gt;Programmable clock output for peripheral devices (32.768kHz, 1.024kHz, 32Hz, and 1Hz)&lt;/li&gt;
-&lt;li&gt;Alarm and timer functions&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;In order to use the PCF8563 as a hardware system clock for Raspberry Pi we need to make sure the kernel modules are loaded at boot time&amp;hellip;&lt;/p&gt;
-
-&lt;section class=&#34;quickstart&#34; &gt;
-  &lt;div class=&#34;grid&#34;&gt;
-    &lt;div class=&#34;unit .half code&#34;&gt;
-      &lt;p class=&#34;title&#34;&gt;Edit /etc/modules to include pcf8563 &lt;/p&gt;
-      &lt;div class=&#34;shell&#34;&gt;
-         &lt;p class=&#34;line&#34;&gt;
-          &lt;span class=&#34;path&#34;&gt;~&lt;/span&gt;
-          &lt;span class=&#34;prompt&#34;&gt;$&lt;/span&gt;
-          &lt;span class=&#34;command&#34;&gt;sudo nano /etc/modules&lt;/span&gt;
-        &lt;/p&gt;
-                 &lt;p class=&#34;line&#34;&gt;
- &lt;br&gt;# /etc/modules: kernel modules to load at boot time.&lt;br&gt;
- #&lt;br&gt;
- # This file contains the names of kernel modules that should be loaded&lt;br&gt;
- # at boot time, one per line. Lines beginning with &#34;#&#34; are ignored.&lt;br&gt;
- # Parameters can be specified after the module name.&lt;br&gt;
-&lt;br&gt;
-snd-bcm2835&lt;br&gt;
-i2c-bcm2708&lt;br&gt;
-i2c-dev&lt;br&gt;
-rtc-pcf8563&lt;br&gt;
-        &lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;
-  &lt;/div&gt;
-&lt;/section&gt;
-
-&lt;p&gt;&amp;hellip;and that the hwclock is loaded at startup&lt;/p&gt;
-
-&lt;section class=&#34;quickstart&#34; &gt;
-  &lt;div class=&#34;grid&#34;&gt;
-    &lt;div class=&#34;unit .half code&#34;&gt;
-      &lt;p class=&#34;title&#34;&gt;Edit /etc/rc.local to end as shown...&lt;/p&gt;
-      &lt;div class=&#34;shell&#34;&gt;
-         &lt;p class=&#34;line&#34;&gt;
-          &lt;span class=&#34;path&#34;&gt;~&lt;/span&gt;
-          &lt;span class=&#34;prompt&#34;&gt;$&lt;/span&gt;
-          &lt;span class=&#34;command&#34;&gt;sudo nano /etc/rc.local&lt;/span&gt;
-        &lt;/p&gt;
-                 &lt;p class=&#34;line&#34;&gt;
-&lt;br&gt;                 
-modprobe i2c-bcm2708&lt;br&gt;
-echo pcf8563 0x51 &gt; /sys/class/i2c-adapter/i2c-1/new_device&lt;br&gt;
-modprobe rtc-pcf8563&lt;br&gt;
-hwclock -s&lt;br&gt;
-&lt;br&gt;
-exit 0&lt;br&gt;
-        &lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;
-  &lt;/div&gt;
-&lt;/section&gt;
-
-&lt;p&gt;Save, then reboot with &lt;code&gt;sudo reboot&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Now you can check the results, first with &lt;code&gt;i2detect -y 1&lt;/code&gt;, which shows that the i2c driver loaded (and that in this case we have 3 i2c devices present)&lt;/p&gt;
-
-&lt;p&gt;&lt;img align=&#34;center&#34; src=&#34;http://ubiqio.com/media/i2cdetect.png&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;Then with &lt;code&gt;sudo hwclock --rtc /dev/rtc0 -r --debug&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img align=&#34;center&#34; src=&#34;http://ubiqio.com/media/rtc-check.png&#34;&gt;&lt;/p&gt;
 </description>
     </item>
     
