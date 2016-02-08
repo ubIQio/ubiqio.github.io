@@ -1465,15 +1465,12 @@ Enable both the <code>ARM I2C interface</code> &hellip;<br />
         <p class="line">
           <span class="path">~</span>
           <span class="prompt">#</span>
-          <span class="command">echo KERNEL==”ttyAMA0″,SYMLINK+=”ttyS0″ GROUP=”dialout”,MODE:=0666 > /etc/udev/rules.d/80-ardhat.rules</span>
-        </p>
-        <p class="line">
-          <span class="output"> => Note this requires a reboot to take effect, so do that now</span>
+          <span class="command">echo 'KERNEL=="ttyAMA0", SYMLINK+="ttyS0",GROUP="dialout",MODE:=0666' >  /etc/udev/rules.d/80-ardhat.rules</span>
         </p>
         <p class="line">
           <span class="path">~</span>
           <span class="prompt">#</span>
-          <span class="command">reboot</span>
+          <span class="command">udevadm trigger</span>
         </p>
       </div>
     </div>
@@ -1481,7 +1478,7 @@ Enable both the <code>ARM I2C interface</code> &hellip;<br />
   </div>
 </section>
 
-<p>After a reboot, start the Arduino IDE&hellip;</p>
+<p>Start the Arduino IDE&hellip;</p>
 
 <p><img src="/media/ArdhatIDE.jpg" alt="image alt text" /></p>
 
