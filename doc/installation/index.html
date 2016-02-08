@@ -1453,7 +1453,30 @@ Enable both the <code>ARM I2C interface</code> &hellip;<br />
   </div>
 </section>
 
-<p>Start the Arduino IDE&hellip;</p>
+<p>Finally, so that the Arduino IDE can &lsquo;see&rsquo; the <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> serial port, we need to create a symlink between the Raspberry Pi ttyAMA0 port and ttyS0.</p>
+
+<section class="quickstart" >
+  <div class="grid">
+    <div class="unit .half code">
+      <p class="title">Create a link to ttyS0  </p>
+      <div class="shell">
+        <p class="line">
+          <span class="path">~</span>
+          <span class="prompt">$</span>
+          <span class="command">sudo -i</span>
+        </p>        
+        <p class="line">
+          <span class="path">~</span>
+          <span class="prompt">$</span>
+          <span class="command">echo KERNEL==”ttyAMA0″,SYMLINK+=”ttyS0″ GROUP=”dialout”,MODE:=0666 > /etc/udev/rules.d/ 80-ardhat.rules</span>
+        </p>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</section>
+
+<p>After a reboot, start the Arduino IDE&hellip;</p>
 
 <p><img src="/media/ArdhatIDE.jpg" alt="image alt text" /></p>
 
