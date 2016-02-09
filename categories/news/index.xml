@@ -9,20 +9,6 @@
     <atom:link href="http://ubiqio.com/categories/news/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>DIYnest</title>
-      <link>http://ubiqio.com/news/DIYnest/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/news/DIYnest/</guid>
-      <description>&lt;p&gt;Checkout the &lt;a href=&#34;https://ubiqio.com/doc/js/&#34;&gt;howto&lt;/a&gt; on using Javascript with &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;.&lt;/p&gt;
-
-&lt;p&gt;For a more in-depth example, see this &lt;a href=&#34;https://www.smashingmagazine.com/2016/02/hardware-hacking-with-javascript-internet-of-things/&#34;&gt;article&lt;/a&gt; which shows how to build a simple &lt;a href=&#34;https://www.smashingmagazine.com/2016/02/hardware-hacking-with-javascript-internet-of-things/#home-monitoring&#34;&gt;home-monitoring system&lt;/a&gt;, similar to commercial products like Nest and Hive.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.smashingmagazine.com/2016/02/hardware-hacking-with-javascript-internet-of-things/#home-monitoring&#34;&gt;&lt;img  style=&#34;height:200px&#34; src=&#34;http://ubiqio.com/media/diynest.jpg&#34; alt=&#34;DIYnest&#34; title=&#34;DIYnest&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>PlatformIO</title>
       <link>http://ubiqio.com/news/PlatformIO/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
