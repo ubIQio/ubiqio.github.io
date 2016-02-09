@@ -662,7 +662,7 @@ board.on(&amp;quot;ready&amp;quot;, function() {
 &lt;p&gt;&lt;a href=&#34;http://nodered.org/&#34;&gt;&lt;img align=&#34;right&#34; style=&#34;height:200px; padding-left: 10px; padding-top: 5px&#34; src=&#34;http://ubiqio.com/media/node-red-screenshot-sm.png&#34; alt=&#34;NodeRED&#34; title=&#34;NodeRED&#34;&gt;&lt;/a&gt;
 An alternative to programming in javascript directly is to use the visual programming approach offered by Node-RED.&lt;/p&gt;
 
-&lt;p&gt;Node-RED provides a browser-based flow editor that makes it easy to wire together flows using the wide of range nodes in a &amp;lsquo;palette&amp;rsquo; of node modules. Flows can then be deployed in a single-click. For more info see the &lt;a href=&#34;http://nodered.org/&#34;&gt;Node-Red website&lt;/a&gt; .&lt;/p&gt;
+&lt;p&gt;Node-RED provides a browser-based flow editor that makes it easy to wire together flows using a collection of &amp;lsquo;Nodes&amp;rsquo; in a &amp;lsquo;palette&amp;rsquo;. Flows can then be deployed in a single-click. For more info see the &lt;a href=&#34;http://nodered.org/&#34;&gt;Node-Red website&lt;/a&gt; , or this excellent tutorial on &lt;a href=&#34;https://learn.adafruit.com/raspberry-pi-hosting-node-red/what-is-node-red&#34;&gt;Adafruit&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
