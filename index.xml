@@ -207,11 +207,12 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://ubiqio.com/news/lora/</guid>
-      <description>&lt;p&gt;&lt;img align=&#34;right&#34; style=&#34;width:200px;height:200px&#34; src=&#34;http://ubiqio.com/media/DecodingLora_Project.jpg&#34;&gt;&lt;/p&gt;
+      <description>&lt;p&gt;From &lt;a href=&#34;http://hackaday.com/2016/01/31/hacking-the-internet-of-things-decoding-lora/#comment-2906254&#34;&gt;Hackaday&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;From &lt;a href=&#34;http://hackaday.com/2016/01/31/hacking-the-internet-of-things-decoding-lora/#comment-2906254&#34;&gt;Hackaday&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img align=&#34;right&#34; style=&#34;width:200px;height:200px; padding-left: 10px; padding-top: 5px&#34; src=&#34;http://ubiqio.com/media/DecodingLora_Project.jpg&#34;&gt;&lt;/p&gt;
 
-&lt;p&gt;Getting software-defined radio (SDR) tools into the hands of the community has been great for the development and decoding of previously-cryptic, if not encrypted, radio signals the world over. As soon as there’s a new protocol or modulation method, it’s in everyone’s sights. A lot of people have been working on LoRa, and &lt;a href=&#34;https://revspace.nl/Bertrik&#34;&gt;bertrik&lt;/a&gt; at &lt;a href=&#34;https://revspace.nl/DecodingLora&#34;&gt;RevSpace in The Hague&lt;/a&gt; has done some work of his own, and put together an amazing summary of the state of the art, including an &lt;a href=&#34;https://github.com/bertrik/loratest&#34;&gt;Arduino library&lt;/a&gt; for using it, based on the RadioHead libraries.&lt;/p&gt;
+&lt;p&gt;Getting software-defined radio (SDR) tools into the hands of the community has been great for the development and decoding of previously-cryptic, if not encrypted, radio signals the world over.&lt;br /&gt;
+As soon as there’s a new protocol or modulation method, it’s in everyone’s sights. A lot of people have been working on LoRa, and &lt;a href=&#34;https://revspace.nl/Bertrik&#34;&gt;bertrik&lt;/a&gt; at &lt;a href=&#34;https://revspace.nl/DecodingLora&#34;&gt;RevSpace in The Hague&lt;/a&gt; has done some work of his own, and put together an amazing summary of the state of the art, including an &lt;a href=&#34;https://github.com/bertrik/loratest&#34;&gt;Arduino library&lt;/a&gt; for using it, based on the RadioHead libraries.&lt;/p&gt;
 
 &lt;p&gt;You can  get a LoRa equipped  &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; in the &lt;a href=&#34;http://ubiqio.com/shop&#34;&gt;store&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -533,22 +534,30 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
       <guid>http://ubiqio.com/doc/js/</guid>
       <description>
 
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&amp;rsquo;s features can be accessed from a compatible host, such as Raspberry Pi, using the &lt;a href=&#34;https://github.com/firmata/protocol&#34;&gt;Firmata&lt;/a&gt; protocol over serial (for more information see &lt;a href=&#34;http://ubiqio.com/doc/progmodel/&#34;&gt;Programming Model&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Firmata provides a standardized mechanism to exchange information between a real-time processor such as &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; and a host, useable by many programming languages.&lt;/p&gt;
+
 &lt;p&gt;Javascript is an interpreted language like Python, and therefore relies on an interpreter to be running to execute its functions. The most common javascript interpreter is the web browser, and one of the fastest is the one built into Google&amp;rsquo;s Chrome browser.&lt;/p&gt;
 
 &lt;p&gt;Node.js® is a JavaScript runtime built on Chrome&amp;rsquo;s V8 JavaScript engine, and uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. The Node.js 200,000+ package ecosystem, npm, is the &lt;a href=&#34;http://www.modulecounts.com/&#34;&gt;largest ecosystem&lt;/a&gt; of open source libraries in the world.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://johnny-five.io/&#34;&gt;&lt;img align=&#34;right&#34; style=&#34;height:200px&#34; src=&#34;http://ubiqio.com/media/johnnyfive.png&#34; alt=&#34;Johnny Five&#34; title=&#34;Johnny Five&#34;&gt;&lt;/a&gt; One of those many libraries includes &lt;a href=&#34;https://github.com/jgautier/firmata&#34;&gt;node firmata&lt;/a&gt;, which means that once node.js is installed, we can use the wide range of node packages directly with &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&amp;rsquo;s hardware, allowing the rapid creation of web-based sensor systems.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://johnny-five.io/&#34;&gt;&lt;img align=&#34;right&#34; style=&#34;height:200px; padding-left: 10px; padding-top: 5px&#34; src=&#34;http://ubiqio.com/media/johnnyfive.png&#34; alt=&#34;Johnny Five&#34; title=&#34;Johnny Five&#34;&gt;&lt;/a&gt; One of those many libraries includes &lt;a href=&#34;https://github.com/jgautier/firmata&#34;&gt;node firmata&lt;/a&gt;, which means that once node.js is installed, we can use the wide range of node packages directly with &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&amp;rsquo;s hardware, allowing the rapid creation of web-based sensor systems.&lt;/p&gt;
 
 &lt;p&gt;In this example we are going to use
 &lt;a href=&#34;http://johnny-five.io/&#34;&gt;Johnny-Five&lt;/a&gt;, which uses node firmata, and is an excellent programming framework which abstracts the hardware and makes cloud connected device programming much easier.&lt;/p&gt;
 
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
-&lt;h3 id=&#34;installing-node-js:615e3f22fa9cd8f45adc27486278fdbb&#34;&gt;Installing node.js&lt;/h3&gt;
+&lt;h3 id=&#34;using-node-firmata-with-ardhat:615e3f22fa9cd8f45adc27486278fdbb&#34;&gt;Using Node Firmata with Ardhat&lt;/h3&gt;
 
 &lt;p&gt;Raspian Jessie comes with a version of Node.js installed; unfortunately it is an older version (0.10.29 at the time of writing) that does not play well with many newer libraries, so we need to remove it and reinstall a newer version of Node.js such as v0.12.x or v4.2.x together with npm.&lt;/p&gt;
 
 &lt;p&gt;To do this we must uninstall the built-in version and re-install using the instructions below.&lt;/p&gt;
+
+&lt;div class=&#34;note info&#34;&gt;
+  &lt;p&gt;To enter these commands more easily, connect to the Pi using `ssh`, so that you can copy and paste them into the terminal.&lt;/p&gt;
+&lt;/div&gt;
 
 &lt;p&gt;First we remove all the built in packages (but leave your current workspace if any, which by default is at ~/.node-red) .&lt;/p&gt;
 
@@ -723,7 +732,7 @@ board.on(&amp;quot;ready&amp;quot;, function() {
 
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://nodered.org/&#34;&gt;&lt;img align=&#34;right&#34; style=&#34;height:200px&#34; src=&#34;http://ubiqio.com/media/node-red-screenshot-sm.png&#34; alt=&#34;NodeRED&#34; title=&#34;NodeRED&#34;&gt;&lt;/a&gt;
+&lt;p&gt;&lt;a href=&#34;http://nodered.org/&#34;&gt;&lt;img align=&#34;right&#34; style=&#34;height:200px; padding-left: 10px; padding-top: 5px&#34; src=&#34;http://ubiqio.com/media/node-red-screenshot-sm.png&#34; alt=&#34;NodeRED&#34; title=&#34;NodeRED&#34;&gt;&lt;/a&gt;
 An alternative to programming in javascript directly is to use the visual programming approach offered by Node-RED.&lt;/p&gt;
 
 &lt;p&gt;Node-RED provides a browser-based flow editor that makes it easy to wire together flows using the wide of range nodes in a &amp;lsquo;palette&amp;rsquo; of node modules. Flows can then be deployed in a single-click. For more info see the &lt;a href=&#34;http://nodered.org/&#34;&gt;Node-Red website&lt;/a&gt; .&lt;/p&gt;

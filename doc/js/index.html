@@ -1408,22 +1408,30 @@
               <hr />
               
 
+<p><span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span>&rsquo;s features can be accessed from a compatible host, such as Raspberry Pi, using the <a href="https://github.com/firmata/protocol">Firmata</a> protocol over serial (for more information see <a href="/doc/progmodel/">Programming Model</a>).</p>
+
+<p>Firmata provides a standardized mechanism to exchange information between a real-time processor such as <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> and a host, useable by many programming languages.</p>
+
 <p>Javascript is an interpreted language like Python, and therefore relies on an interpreter to be running to execute its functions. The most common javascript interpreter is the web browser, and one of the fastest is the one built into Google&rsquo;s Chrome browser.</p>
 
 <p>Node.js® is a JavaScript runtime built on Chrome&rsquo;s V8 JavaScript engine, and uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. The Node.js 200,000+ package ecosystem, npm, is the <a href="http://www.modulecounts.com/">largest ecosystem</a> of open source libraries in the world.</p>
 
-<p><a href="http://johnny-five.io/"><img align="right" style="height:200px" src="/media/johnnyfive.png" alt="Johnny Five" title="Johnny Five"></a> One of those many libraries includes <a href="https://github.com/jgautier/firmata">node firmata</a>, which means that once node.js is installed, we can use the wide range of node packages directly with <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span>&rsquo;s hardware, allowing the rapid creation of web-based sensor systems.</p>
+<p><a href="http://johnny-five.io/"><img align="right" style="height:200px; padding-left: 10px; padding-top: 5px" src="/media/johnnyfive.png" alt="Johnny Five" title="Johnny Five"></a> One of those many libraries includes <a href="https://github.com/jgautier/firmata">node firmata</a>, which means that once node.js is installed, we can use the wide range of node packages directly with <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span>&rsquo;s hardware, allowing the rapid creation of web-based sensor systems.</p>
 
 <p>In this example we are going to use
 <a href="http://johnny-five.io/">Johnny-Five</a>, which uses node firmata, and is an excellent programming framework which abstracts the hardware and makes cloud connected device programming much easier.</p>
 
 <p>&nbsp;</p>
 
-<h3 id="installing-node-js:615e3f22fa9cd8f45adc27486278fdbb">Installing node.js</h3>
+<h3 id="using-node-firmata-with-ardhat:615e3f22fa9cd8f45adc27486278fdbb">Using Node Firmata with Ardhat</h3>
 
 <p>Raspian Jessie comes with a version of Node.js installed; unfortunately it is an older version (0.10.29 at the time of writing) that does not play well with many newer libraries, so we need to remove it and reinstall a newer version of Node.js such as v0.12.x or v4.2.x together with npm.</p>
 
 <p>To do this we must uninstall the built-in version and re-install using the instructions below.</p>
+
+<div class="note info">
+  <p>To enter these commands more easily, connect to the Pi using `ssh`, so that you can copy and paste them into the terminal.</p>
+</div>
 
 <p>First we remove all the built in packages (but leave your current workspace if any, which by default is at ~/.node-red) .</p>
 
@@ -1598,7 +1606,7 @@ board.on(&quot;ready&quot;, function() {
 
 <p>&nbsp;</p>
 
-<p><a href="http://nodered.org/"><img align="right" style="height:200px" src="/media/node-red-screenshot-sm.png" alt="NodeRED" title="NodeRED"></a>
+<p><a href="http://nodered.org/"><img align="right" style="height:200px; padding-left: 10px; padding-top: 5px" src="/media/node-red-screenshot-sm.png" alt="NodeRED" title="NodeRED"></a>
 An alternative to programming in javascript directly is to use the visual programming approach offered by Node-RED.</p>
 
 <p>Node-RED provides a browser-based flow editor that makes it easy to wire together flows using the wide of range nodes in a &lsquo;palette&rsquo; of node modules. Flows can then be deployed in a single-click. For more info see the <a href="http://nodered.org/">Node-Red website</a> .</p>

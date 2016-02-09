@@ -1406,9 +1406,17 @@
               </div>
               <h1>Programming Model</h1>
               <hr />
-              <p><span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span>&rsquo;s features can be accessed from a compatible host, such as Raspberry Pi, using the <a href="https://github.com/firmata/protocol">Firmata</a> protocol over serial.</p>
+              
 
-<p>Firmata provides a standardized mechanism to exchange information between a real-time processor such as <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> and a host, but easily is extended to provide access to the wide range of features available.</p>
+<h2 id="inter-processor-communication:3e351769dc76254edaec0e63755feac0">Inter-processor communication</h2>
+
+<p>The Raspberry Pi and <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> can communicate over both Serial and I2C, but Serial is used for the main inter-processor communication.</p>
+
+<p>When the Raspberry Pi is active, it is the master on the  I2C bus, and is responsible for setup of the Ardhat I2C peripherals (e.g. IMU, Altimeter, RTC).  When the Raspberry Pi is inactive, the Arduino can master the bus and interrogate the peripherals.  For example by watching the RTC, the Raspberry Pi can be started when the next crontab entry is about to come due.</p>
+
+<p>However, access to regular Arduino-compatible ports such as Analog and PWM is performed over Serial using a standardised protocol layer, or Data Link layer in <a href="https://en.wikipedia.org/wiki/OSI_model">OSI parlance</a>.</p>
+
+<p>This protocol layer is called <a href="https://www.arduino.cc/en/Reference/Firmata">Firmata</a>, and allows applications on the Pi to communicate with <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> provided they have a Firmata language binding. Although javascript is the recommended language (using the node.js Firmata library), other languages such as Python can easily be used instead.</p>
 
 <p>As an example, the factory <a href="https://github.com/Ardhat/ArdhatFirmata">image</a> that ships with <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> contains a modified version of standard <a href="https://www.arduino.cc/en/Reference/Firmata">Arduino Firmata</a> that adds several additional features, such as monitoring of the Navigation switch and Status LED control, using the Arduino <a href="http://playground.arduino.cc/Code/SMlib">SMlib</a>. This state machine library provides an extremely lightweight mechanism that allows primitive multitasking.</p>
 

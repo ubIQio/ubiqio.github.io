@@ -1408,21 +1408,17 @@
               <hr />
               
 
-<h2 id="inter-processor-communication:c431704424a149541be05f7b70c63362">Inter-processor communication</h2>
+<p><span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span>&rsquo;s features can be accessed from a compatible host, such as Raspberry Pi, using the <a href="https://github.com/firmata/protocol">Firmata</a> protocol over serial (for more information see <a href="/doc/progmodel/">Programming Model</a>).</p>
 
-<p>The Raspberry Pi and <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> can communicate over both Serial and I2C, but Serial is used for the main inter-processor communication.</p>
-
-<p>When the Raspberry Pi is active, it is the master on the  I2C bus, and is responsible for setup of the Ardhat I2C peripherals (e.g. IMU, Altimeter, RTC).  When the Raspberry Pi is inactive, the Arduino can master the bus and interrogate the peripherals.  For example by watching the RTC, the Raspberry Pi can be started when the next crontab entry is about to come due.</p>
-
-<p>However, access to regular Arduino-compatible ports such as Analog and PWM is performed over Serial using a standardised protocol layer, or Data Link layer in <a href="https://en.wikipedia.org/wiki/OSI_model">OSI parlance</a>.</p>
-
-<p>This protocol layer is called <a href="https://www.arduino.cc/en/Reference/Firmata">Firmata</a>, and allows applications on the Pi to communicate with <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> provided they have a Firmata language binding. Although javascript is the recommended language (using the node.js Firmata library), other languages such as Python can easily be used instead.</p>
+<p>Firmata provides a standardized mechanism to exchange information between a real-time processor such as <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> and a host, useable by many programming languages.</p>
 
 <h3 id="using-python-firmata-with-ardhat:c431704424a149541be05f7b70c63362">Using Python Firmata with Ardhat</h3>
 
-<p>Ardhat ships from the factory with Firmata already installed, but follow the instructions in <a href="/doc/installation"><em>Installation</em></a> to make sure you have turned off kernel serial port use first.</p>
+<p><span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> ships from the factory with Firmata already installed (but follow the instructions in <a href="/doc/installation"><em>Installation</em></a> to make sure you have turned off kernel serial port use before proceeding). We need to install a couple of extra packages to allow the host to communicate over Firmata using Python.</p>
 
-<p>To install Firmata on the host, connect to the Pi using <code>ssh</code>, so that you can copy and paste the following into the terminal:</p>
+<div class="note info">
+  <p>To enter these commands more easily, connect to the Pi using `ssh`, so that you can copy and paste them into the terminal.</p>
+</div>
 
 <section class="quickstart" >
   <div class="grid">
