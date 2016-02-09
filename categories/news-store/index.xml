@@ -9,22 +9,6 @@
     <atom:link href="http://ubiqio.com/categories/news-store/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>All Screwed Up</title>
-      <link>http://ubiqio.com/news/Screwy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/news/Screwy/</guid>
-      <description>&lt;p&gt;&lt;img align=&#34;right&#34; style=&#34;width:200px;height:200px&#34; src=&#34;http://ubiqio.com/media/005AX.jpg&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;Ardhat is perfect for automotive use, and we now have DC jack to screw terminals adapters in the &lt;a href=&#34;http://ubiqio.com/shop&#34;&gt;store&lt;/a&gt; so you can easily hook up an Ardhat to a car or RV system.&lt;/p&gt;
-
-&lt;p&gt;Ardhat is protected against reverse connections, and its high efficiency switching regulator  will run happily at up to 28V.&lt;/p&gt;
-
-&lt;p&gt;And there&amp;rsquo;s plenty of current in hand to drive things like 5V led strips, so go pimp your ride!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Decoding LoRa</title>
       <link>http://ubiqio.com/news/lora/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -37,6 +21,36 @@
 &lt;p&gt;Getting software-defined radio (SDR) tools into the hands of the community has been great for the development and decoding of previously-cryptic, if not encrypted, radio signals the world over. As soon as there’s a new protocol or modulation method, it’s in everyone’s sights. A lot of people have been working on LoRa, and &lt;a href=&#34;https://revspace.nl/Bertrik&#34;&gt;bertrik&lt;/a&gt; at &lt;a href=&#34;https://revspace.nl/DecodingLora&#34;&gt;RevSpace in The Hague&lt;/a&gt; has done some work of his own, and put together an amazing summary of the state of the art, including an &lt;a href=&#34;https://github.com/bertrik/loratest&#34;&gt;Arduino library&lt;/a&gt; for using it, based on the RadioHead libraries.&lt;/p&gt;
 
 &lt;p&gt;You can  get a LoRa equipped  &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; in the &lt;a href=&#34;http://ubiqio.com/shop&#34;&gt;store&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mellow Yellow</title>
+      <link>http://ubiqio.com/news/yelloproto/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/news/yelloproto/</guid>
+      <description>&lt;p&gt;&lt;img align=&#34;right&#34; style=&#34;height:150px&#34; src=&#34;http://ubiqio.com/media/007AX.jpg&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;The space between the Ardhat shield headers is great for a battery, but if you are not using that in your application, don&amp;rsquo;t waste the space!&lt;/p&gt;
+
+&lt;p&gt;You can use it for prototyping , using our colour-co-ordinated solderless protoyping board available in the store.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Screwed Up</title>
+      <link>http://ubiqio.com/news/screwy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/news/screwy/</guid>
+      <description>&lt;p&gt;&lt;img align=&#34;right&#34; style=&#34;width:200px;height:200px&#34; src=&#34;http://ubiqio.com/media/005AX.jpg&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;Ardhat is perfect for automotive use, and we now have DC jack to screw terminals adapters in the &lt;a href=&#34;http://ubiqio.com/shop&#34;&gt;store&lt;/a&gt; so you can easily hook up an Ardhat to a car or RV system.&lt;/p&gt;
+
+&lt;p&gt;Ardhat is protected against reverse connections, and its high efficiency switching regulator  will run happily at up to 28V.&lt;/p&gt;
+
+&lt;p&gt;And there&amp;rsquo;s plenty of current in hand to drive things like 5V led strips, so go pimp your ride!&lt;/p&gt;
 </description>
     </item>
     

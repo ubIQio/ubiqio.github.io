@@ -9,18 +9,16 @@
     <atom:link href="http://ubiqio.com/news/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>All Screwed Up</title>
-      <link>http://ubiqio.com/news/Screwy/</link>
+      <title>DIYnest</title>
+      <link>http://ubiqio.com/news/DIYnest/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://ubiqio.com/news/Screwy/</guid>
-      <description>&lt;p&gt;&lt;img align=&#34;right&#34; style=&#34;width:200px;height:200px&#34; src=&#34;http://ubiqio.com/media/005AX.jpg&#34;&gt;&lt;/p&gt;
+      <guid>http://ubiqio.com/news/DIYnest/</guid>
+      <description>&lt;p&gt;Checkout the &lt;a href=&#34;https://ubiqio.com/doc/js/&#34;&gt;howto&lt;/a&gt; on using Javascript with &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;.&lt;/p&gt;
 
-&lt;p&gt;Ardhat is perfect for automotive use, and we now have DC jack to screw terminals adapters in the &lt;a href=&#34;http://ubiqio.com/shop&#34;&gt;store&lt;/a&gt; so you can easily hook up an Ardhat to a car or RV system.&lt;/p&gt;
+&lt;p&gt;For a more in-depth example, see this &lt;a href=&#34;https://www.smashingmagazine.com/2016/02/hardware-hacking-with-javascript-internet-of-things/&#34;&gt;article&lt;/a&gt; which shows how to build a simple &lt;a href=&#34;https://www.smashingmagazine.com/2016/02/hardware-hacking-with-javascript-internet-of-things/#home-monitoring&#34;&gt;home-monitoring system&lt;/a&gt;, similar to commercial products like Nest and Hive.&lt;/p&gt;
 
-&lt;p&gt;Ardhat is protected against reverse connections, and its high efficiency switching regulator  will run happily at up to 28V.&lt;/p&gt;
-
-&lt;p&gt;And there&amp;rsquo;s plenty of current in hand to drive things like 5V led strips, so go pimp your ride!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.smashingmagazine.com/2016/02/hardware-hacking-with-javascript-internet-of-things/#home-monitoring&#34;&gt;&lt;img  style=&#34;height:200px&#34; src=&#34;http://ubiqio.com/media/diynest.jpg&#34; alt=&#34;DIYnest&#34; title=&#34;DIYnest&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -41,6 +39,20 @@
     </item>
     
     <item>
+      <title>Mellow Yellow</title>
+      <link>http://ubiqio.com/news/yelloproto/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/news/yelloproto/</guid>
+      <description>&lt;p&gt;&lt;img align=&#34;right&#34; style=&#34;height:150px&#34; src=&#34;http://ubiqio.com/media/007AX.jpg&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;The space between the Ardhat shield headers is great for a battery, but if you are not using that in your application, don&amp;rsquo;t waste the space!&lt;/p&gt;
+
+&lt;p&gt;You can use it for prototyping , using our colour-co-ordinated solderless protoyping board available in the store.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>PlatformIO</title>
       <link>http://ubiqio.com/news/PlatformIO/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -53,12 +65,28 @@
     </item>
     
     <item>
+      <title>Screwed Up</title>
+      <link>http://ubiqio.com/news/screwy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/news/screwy/</guid>
+      <description>&lt;p&gt;&lt;img align=&#34;right&#34; style=&#34;width:200px;height:200px&#34; src=&#34;http://ubiqio.com/media/005AX.jpg&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;Ardhat is perfect for automotive use, and we now have DC jack to screw terminals adapters in the &lt;a href=&#34;http://ubiqio.com/shop&#34;&gt;store&lt;/a&gt; so you can easily hook up an Ardhat to a car or RV system.&lt;/p&gt;
+
+&lt;p&gt;Ardhat is protected against reverse connections, and its high efficiency switching regulator  will run happily at up to 28V.&lt;/p&gt;
+
+&lt;p&gt;And there&amp;rsquo;s plenty of current in hand to drive things like 5V led strips, so go pimp your ride!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>ubIQio Magazine now on Flipboard!</title>
       <link>http://ubiqio.com/news/FlipboardMag/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://ubiqio.com/news/FlipboardMag/</guid>
-      <description>&lt;p&gt;The ubIQio magazine &lt;strong&gt;Maker Planet&lt;/strong&gt; is full of awesome projects and news related to Ardhat.&lt;/p&gt;
+      <description>&lt;p&gt;The ubIQio magazine &lt;strong&gt;Maker Planet&lt;/strong&gt; is full of awesome projects and news related to &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;.&lt;/p&gt;
 
 &lt;p&gt;Hit the link below  for inspiration!&lt;/p&gt;
 

@@ -465,7 +465,7 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 
 &lt;p&gt;Node.js® is a JavaScript runtime built on Chrome&amp;rsquo;s V8 JavaScript engine, and uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. The Node.js 200,000+ package ecosystem, npm, is the &lt;a href=&#34;http://www.modulecounts.com/&#34;&gt;largest ecosystem&lt;/a&gt; of open source libraries in the world.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://johnny-five.io/&#34;&gt;&lt;img align=&#34;right&#34; style=&#34;height:200px&#34; src=&#34;http://ubiqio.com/media/johnnyfive.png&#34; alt=&#34;Johnny Five&#34; title=&#34;Johnny Five&#34;&gt;&lt;/a&gt; One of those many libraries includes &lt;a href=&#34;https://github.com/jgautier/firmata&#34;&gt;node firmata&lt;/a&gt;, which means that once node.js is installed, we can communicate easily between it and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;, allowing the easy creation of web-based sensor systems.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://johnny-five.io/&#34;&gt;&lt;img align=&#34;right&#34; style=&#34;height:200px&#34; src=&#34;http://ubiqio.com/media/johnnyfive.png&#34; alt=&#34;Johnny Five&#34; title=&#34;Johnny Five&#34;&gt;&lt;/a&gt; One of those many libraries includes &lt;a href=&#34;https://github.com/jgautier/firmata&#34;&gt;node firmata&lt;/a&gt;, which means that once node.js is installed, we can use the wide range of node packages directly with &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&amp;rsquo;s hardware, allowing the rapid creation of web-based sensor systems.&lt;/p&gt;
 
 &lt;p&gt;In this example we are going to use
 &lt;a href=&#34;http://johnny-five.io/&#34;&gt;Johnny-Five&lt;/a&gt;, which uses node firmata, and is an excellent programming framework which abstracts the hardware and makes cloud connected device programming much easier.&lt;/p&gt;
@@ -645,7 +645,9 @@ board.on(&amp;quot;ready&amp;quot;, function() {
 
 &lt;p&gt;&amp;ldquo;Repl Initialized&amp;rdquo; means that the Johnny-Five &amp;ldquo;Read Evaluate Print Loop&amp;rdquo; is running, which means that you have a node prompt at which you can enter &lt;a href=&#34;http://johnny-five.io/examples/repl/&#34;&gt;node commands&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Lots more awesome examples to get you going can be found on the &lt;a href=&#34;http://johnny-five.io/&#34;&gt;Johnny-Five&lt;/a&gt; site.&lt;/p&gt;
+&lt;p&gt;For a more in-depth example, see this &lt;a href=&#34;https://www.smashingmagazine.com/2016/02/hardware-hacking-with-javascript-internet-of-things/&#34;&gt;article&lt;/a&gt; which shows how to build a simple &lt;a href=&#34;https://www.smashingmagazine.com/2016/02/hardware-hacking-with-javascript-internet-of-things/#home-monitoring&#34;&gt;home-monitoring system&lt;/a&gt;, similar to commercial products like Nest and Hive.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.smashingmagazine.com/2016/02/hardware-hacking-with-javascript-internet-of-things/#home-monitoring&#34;&gt;&lt;img  style=&#34;height:200px&#34; src=&#34;http://ubiqio.com/media/diynest.jpg&#34; alt=&#34;DIYnest&#34; title=&#34;DITnest&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 

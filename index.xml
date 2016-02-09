@@ -49,22 +49,6 @@ The &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size
     </item>
     
     <item>
-      <title>All Screwed Up</title>
-      <link>http://ubiqio.com/news/Screwy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ubiqio.com/news/Screwy/</guid>
-      <description>&lt;p&gt;&lt;img align=&#34;right&#34; style=&#34;width:200px;height:200px&#34; src=&#34;http://ubiqio.com/media/005AX.jpg&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;Ardhat is perfect for automotive use, and we now have DC jack to screw terminals adapters in the &lt;a href=&#34;http://ubiqio.com/shop&#34;&gt;store&lt;/a&gt; so you can easily hook up an Ardhat to a car or RV system.&lt;/p&gt;
-
-&lt;p&gt;Ardhat is protected against reverse connections, and its high efficiency switching regulator  will run happily at up to 28V.&lt;/p&gt;
-
-&lt;p&gt;And there&amp;rsquo;s plenty of current in hand to drive things like 5V led strips, so go pimp your ride!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Battery Operation</title>
       <link>http://ubiqio.com/doc/battery/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -198,6 +182,20 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
     the forum describing your experience so we can make it better.
   &lt;/p&gt;
 &lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>DIYnest</title>
+      <link>http://ubiqio.com/news/DIYnest/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ubiqio.com/news/DIYnest/</guid>
+      <description>&lt;p&gt;Checkout the &lt;a href=&#34;https://ubiqio.com/doc/js/&#34;&gt;howto&lt;/a&gt; on using Javascript with &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;.&lt;/p&gt;
+
+&lt;p&gt;For a more in-depth example, see this &lt;a href=&#34;https://www.smashingmagazine.com/2016/02/hardware-hacking-with-javascript-internet-of-things/&#34;&gt;article&lt;/a&gt; which shows how to build a simple &lt;a href=&#34;https://www.smashingmagazine.com/2016/02/hardware-hacking-with-javascript-internet-of-things/#home-monitoring&#34;&gt;home-monitoring system&lt;/a&gt;, similar to commercial products like Nest and Hive.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.smashingmagazine.com/2016/02/hardware-hacking-with-javascript-internet-of-things/#home-monitoring&#34;&gt;&lt;img  style=&#34;height:200px&#34; src=&#34;http://ubiqio.com/media/diynest.jpg&#34; alt=&#34;DIYnest&#34; title=&#34;DIYnest&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -537,7 +535,7 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 
 &lt;p&gt;Node.js® is a JavaScript runtime built on Chrome&amp;rsquo;s V8 JavaScript engine, and uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. The Node.js 200,000+ package ecosystem, npm, is the &lt;a href=&#34;http://www.modulecounts.com/&#34;&gt;largest ecosystem&lt;/a&gt; of open source libraries in the world.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://johnny-five.io/&#34;&gt;&lt;img align=&#34;right&#34; style=&#34;height:200px&#34; src=&#34;http://ubiqio.com/media/johnnyfive.png&#34; alt=&#34;Johnny Five&#34; title=&#34;Johnny Five&#34;&gt;&lt;/a&gt; One of those many libraries includes &lt;a href=&#34;https://github.com/jgautier/firmata&#34;&gt;node firmata&lt;/a&gt;, which means that once node.js is installed, we can communicate easily between it and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;, allowing the easy creation of web-based sensor systems.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://johnny-five.io/&#34;&gt;&lt;img align=&#34;right&#34; style=&#34;height:200px&#34; src=&#34;http://ubiqio.com/media/johnnyfive.png&#34; alt=&#34;Johnny Five&#34; title=&#34;Johnny Five&#34;&gt;&lt;/a&gt; One of those many libraries includes &lt;a href=&#34;https://github.com/jgautier/firmata&#34;&gt;node firmata&lt;/a&gt;, which means that once node.js is installed, we can use the wide range of node packages directly with &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&amp;rsquo;s hardware, allowing the rapid creation of web-based sensor systems.&lt;/p&gt;
 
 &lt;p&gt;In this example we are going to use
 &lt;a href=&#34;http://johnny-five.io/&#34;&gt;Johnny-Five&lt;/a&gt;, which uses node firmata, and is an excellent programming framework which abstracts the hardware and makes cloud connected device programming much easier.&lt;/p&gt;
@@ -717,7 +715,9 @@ board.on(&amp;quot;ready&amp;quot;, function() {
 
 &lt;p&gt;&amp;ldquo;Repl Initialized&amp;rdquo; means that the Johnny-Five &amp;ldquo;Read Evaluate Print Loop&amp;rdquo; is running, which means that you have a node prompt at which you can enter &lt;a href=&#34;http://johnny-five.io/examples/repl/&#34;&gt;node commands&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Lots more awesome examples to get you going can be found on the &lt;a href=&#34;http://johnny-five.io/&#34;&gt;Johnny-Five&lt;/a&gt; site.&lt;/p&gt;
+&lt;p&gt;For a more in-depth example, see this &lt;a href=&#34;https://www.smashingmagazine.com/2016/02/hardware-hacking-with-javascript-internet-of-things/&#34;&gt;article&lt;/a&gt; which shows how to build a simple &lt;a href=&#34;https://www.smashingmagazine.com/2016/02/hardware-hacking-with-javascript-internet-of-things/#home-monitoring&#34;&gt;home-monitoring system&lt;/a&gt;, similar to commercial products like Nest and Hive.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.smashingmagazine.com/2016/02/hardware-hacking-with-javascript-internet-of-things/#home-monitoring&#34;&gt;&lt;img  style=&#34;height:200px&#34; src=&#34;http://ubiqio.com/media/diynest.jpg&#34; alt=&#34;DIYnest&#34; title=&#34;DITnest&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 

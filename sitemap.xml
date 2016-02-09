@@ -22,10 +22,6 @@
   </url>
   
   <url>
-    <loc>http://ubiqio.com/news/Screwy/</loc>
-  </url>
-  
-  <url>
     <loc>http://ubiqio.com/doc/battery/</loc>
   </url>
   
@@ -39,6 +35,10 @@
   
   <url>
     <loc>http://ubiqio.com/doc/contributing/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ubiqio.com/news/DIYnest/</loc>
   </url>
   
   <url>
@@ -74,6 +74,10 @@
   </url>
   
   <url>
+    <loc>http://ubiqio.com/news/yelloproto/</loc>
+  </url>
+  
+  <url>
     <loc>http://ubiqio.com/doc/radio/</loc>
   </url>
   
@@ -99,6 +103,10 @@
   
   <url>
     <loc>http://ubiqio.com/doc/resources/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ubiqio.com/news/screwy/</loc>
   </url>
   
   <url>
