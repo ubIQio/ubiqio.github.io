@@ -465,14 +465,20 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 
 &lt;p&gt;Node.js® is a JavaScript runtime built on Chrome&amp;rsquo;s V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js&amp;rsquo; package ecosystem, npm, is the largest ecosystem of open source libraries in the world.&lt;/p&gt;
 
-&lt;p&gt;One of those many libraries includes firmata, which means that once node.js is installed, we can communicate easily between it and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;, allowing the easy creation of web-based sensor systems, for example using &lt;a href=&#34;http://nodered.org/&#34;&gt;Node-Red&lt;/a&gt; or &lt;a href=&#34;http://johnny-five.io/&#34;&gt;Johnny-Five&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://johnny-five.io/&#34;&gt;&lt;img align=&#34;right&#34; style=&#34;height:200px&#34; src=&#34;http://ubiqio.com/media/johnnyfive.png&#34; alt=&#34;Johnny Five&#34; title=&#34;Johnny Five&#34;&gt;&lt;/a&gt; One of those many libraries includes node-firmata, which means that once node.js is installed, we can communicate easily between it and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;, allowing the easy creation of web-based sensor systems.&lt;/p&gt;
+
+&lt;p&gt;In this example we are going to use
+&lt;a href=&#34;http://johnny-five.io/&#34;&gt;Johnny-Five&lt;/a&gt;, which is an excellent programming framework which abstracts the hardware and makes cloud connected device programming much easier.&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
 &lt;h3 id=&#34;installing-node-js:615e3f22fa9cd8f45adc27486278fdbb&#34;&gt;Installing node.js&lt;/h3&gt;
 
 &lt;p&gt;Raspian Jessie comes with a version of Node.js installed; unfortunately it is an older version (0.10.29 at the time of writing) that does not play well with many newer libraries, so we need to remove it and reinstall a newer version of Node.js such as v0.12.x or v4.2.x together with npm.&lt;/p&gt;
 
-&lt;p&gt;To do this we must uninstall the built-in version and re-install using the instructions below.
-To uninstall:&lt;/p&gt;
+&lt;p&gt;To do this we must uninstall the built-in version and re-install using the instructions below.&lt;/p&gt;
+
+&lt;p&gt;First we remove all the built in packages (but leave your current workspace if any, which by default is at ~/.node-red) .&lt;/p&gt;
 
 &lt;section class=&#34;quickstart&#34; &gt;
   &lt;div class=&#34;grid&#34;&gt;
@@ -503,10 +509,11 @@ To uninstall:&lt;/p&gt;
   &lt;/div&gt;
 &lt;/section&gt;
 
-&lt;p&gt;This will remove all the built in packages but leave your workspace - by default at ~/.node-red .&lt;/p&gt;
-
 &lt;p&gt;Now we can proceed to re-install Node.js following the instructions below depending on your processor type. (As the Pi 2 uses a different processor (Arm v7) compared with the original Pi (Arm v6) the method of installing node.js is slightly different).&lt;/p&gt;
 
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Raspberry Pi 2&lt;/strong&gt;
 &lt;section class=&#34;quickstart&#34; &gt;
   &lt;div class=&#34;grid&#34;&gt;
     &lt;div class=&#34;unit .half code&#34;&gt;
@@ -515,8 +522,8 @@ To uninstall:&lt;/p&gt;
         &lt;p class=&#34;line&#34;&gt;
           &lt;span class=&#34;path&#34;&gt;~&lt;/span&gt;
           &lt;span class=&#34;prompt&#34;&gt;$&lt;/span&gt;
-          &lt;span class=&#34;command&#34;&gt;curl -sL https://deb.nodesource.com/setup_4.x | sudo bash -&lt;/span&gt;
-        &lt;/p&gt;        
+          &lt;span class=&#34;command&#34;&gt;curl -sL &lt;a href=&#34;https://deb.nodesource.com/setup_4.x&#34;&gt;https://deb.nodesource.com/setup_4.x&lt;/a&gt; | sudo bash -&lt;/span&gt;
+        &lt;/p&gt;&lt;br /&gt;
         &lt;p class=&#34;line&#34;&gt;
           &lt;span class=&#34;path&#34;&gt;~&lt;/span&gt;
           &lt;span class=&#34;prompt&#34;&gt;$&lt;/span&gt;
@@ -529,7 +536,11 @@ To uninstall:&lt;/p&gt;
     &lt;/div&gt;
     &lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;
   &lt;/div&gt;
-&lt;/section&gt;
+&lt;/section&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Pi (version 1), Pi Zero, Pi A+/B+&lt;/strong&gt;&lt;/p&gt;
 
 &lt;section class=&#34;quickstart&#34; &gt;
   &lt;div class=&#34;grid&#34;&gt;
@@ -614,7 +625,16 @@ board.on(&amp;quot;ready&amp;quot;, function() {
           &lt;span class=&#34;path&#34;&gt;~&lt;/span&gt;
           &lt;span class=&#34;prompt&#34;&gt;$&lt;/span&gt;
           &lt;span class=&#34;command&#34;&gt;node test.js&lt;/span&gt;
-        &lt;/p&gt;        
+        &lt;/p&gt;   
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;output&#34;&gt;1455005904950 Connected /dev/ttyS0&lt;/span&gt;
+        &lt;/p&gt;
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;output&#34;&gt;1455005910077 Repl Initialized &lt;/span&gt;
+        &lt;/p&gt;
+        &lt;p class=&#34;line&#34;&gt;
+          &lt;span class=&#34;output&#34;&gt;&gt;&gt;&lt;/span&gt;
+        &lt;/p&gt;
       &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;
@@ -623,7 +643,16 @@ board.on(&amp;quot;ready&amp;quot;, function() {
 
 &lt;p&gt;Ardhat&amp;rsquo;s activity LED will blink quickly.&lt;/p&gt;
 
+&lt;p&gt;&amp;ldquo;Repl Initialized&amp;rdquo; means that the Johnny-Five &amp;ldquo;Read Evaluate Print Loop&amp;rdquo; is running, which means that you have a node prompt at which you can enter &lt;a href=&#34;http://johnny-five.io/examples/repl/&#34;&gt;node commands&lt;/a&gt;.&lt;/p&gt;
+
 &lt;p&gt;Lots more awesome examples to get you going can be found on the &lt;a href=&#34;http://johnny-five.io/&#34;&gt;Johnny-Five&lt;/a&gt; site.&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://nodered.org/&#34;&gt;&lt;img align=&#34;right&#34; style=&#34;height:200px&#34; src=&#34;http://ubiqio.com/media/node-red-screenshot-sm.png&#34; alt=&#34;NodeRED&#34; title=&#34;NodeRED&#34;&gt;&lt;/a&gt;
+An alternative to programming in javascript directly is to use the visual programming approach offered by Node-RED.&lt;/p&gt;
+
+&lt;p&gt;Node-RED provides a browser-based flow editor that makes it easy to wire together flows using the wide of range nodes in a &amp;lsquo;palette&amp;rsquo; of node modules. Flows can then be deployed in a single-click. For more info see the &lt;a href=&#34;http://nodered.org/&#34;&gt;Node-Red website&lt;/a&gt; .&lt;/p&gt;
 </description>
     </item>
     

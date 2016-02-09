@@ -1412,14 +1412,20 @@
 
 <p>Node.js® is a JavaScript runtime built on Chrome&rsquo;s V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js&rsquo; package ecosystem, npm, is the largest ecosystem of open source libraries in the world.</p>
 
-<p>One of those many libraries includes firmata, which means that once node.js is installed, we can communicate easily between it and <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span>, allowing the easy creation of web-based sensor systems, for example using <a href="http://nodered.org/">Node-Red</a> or <a href="http://johnny-five.io/">Johnny-Five</a>.</p>
+<p><a href="http://johnny-five.io/"><img align="right" style="height:200px" src="/media/johnnyfive.png" alt="Johnny Five" title="Johnny Five"></a> One of those many libraries includes node-firmata, which means that once node.js is installed, we can communicate easily between it and <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span>, allowing the easy creation of web-based sensor systems.</p>
+
+<p>In this example we are going to use
+<a href="http://johnny-five.io/">Johnny-Five</a>, which is an excellent programming framework which abstracts the hardware and makes cloud connected device programming much easier.</p>
+
+<p>&nbsp;</p>
 
 <h3 id="installing-node-js:615e3f22fa9cd8f45adc27486278fdbb">Installing node.js</h3>
 
 <p>Raspian Jessie comes with a version of Node.js installed; unfortunately it is an older version (0.10.29 at the time of writing) that does not play well with many newer libraries, so we need to remove it and reinstall a newer version of Node.js such as v0.12.x or v4.2.x together with npm.</p>
 
-<p>To do this we must uninstall the built-in version and re-install using the instructions below.
-To uninstall:</p>
+<p>To do this we must uninstall the built-in version and re-install using the instructions below.</p>
+
+<p>First we remove all the built in packages (but leave your current workspace if any, which by default is at ~/.node-red) .</p>
 
 <section class="quickstart" >
   <div class="grid">
@@ -1450,10 +1456,11 @@ To uninstall:</p>
   </div>
 </section>
 
-<p>This will remove all the built in packages but leave your workspace - by default at ~/.node-red .</p>
-
 <p>Now we can proceed to re-install Node.js following the instructions below depending on your processor type. (As the Pi 2 uses a different processor (Arm v7) compared with the original Pi (Arm v6) the method of installing node.js is slightly different).</p>
 
+<p>&nbsp;</p>
+
+<p><strong>Raspberry Pi 2</strong>
 <section class="quickstart" >
   <div class="grid">
     <div class="unit .half code">
@@ -1462,8 +1469,8 @@ To uninstall:</p>
         <p class="line">
           <span class="path">~</span>
           <span class="prompt">$</span>
-          <span class="command">curl -sL https://deb.nodesource.com/setup_4.x | sudo bash -</span>
-        </p>        
+          <span class="command">curl -sL <a href="https://deb.nodesource.com/setup_4.x">https://deb.nodesource.com/setup_4.x</a> | sudo bash -</span>
+        </p><br />
         <p class="line">
           <span class="path">~</span>
           <span class="prompt">$</span>
@@ -1476,7 +1483,11 @@ To uninstall:</p>
     </div>
     <div class="clear"></div>
   </div>
-</section>
+</section></p>
+
+<p>&nbsp;</p>
+
+<p><strong>Pi (version 1), Pi Zero, Pi A+/B+</strong></p>
 
 <section class="quickstart" >
   <div class="grid">
@@ -1561,7 +1572,16 @@ board.on(&quot;ready&quot;, function() {
           <span class="path">~</span>
           <span class="prompt">$</span>
           <span class="command">node test.js</span>
-        </p>        
+        </p>   
+        <p class="line">
+          <span class="output">1455005904950 Connected /dev/ttyS0</span>
+        </p>
+        <p class="line">
+          <span class="output">1455005910077 Repl Initialized </span>
+        </p>
+        <p class="line">
+          <span class="output">>></span>
+        </p>
       </div>
     </div>
     <div class="clear"></div>
@@ -1570,7 +1590,16 @@ board.on(&quot;ready&quot;, function() {
 
 <p>Ardhat&rsquo;s activity LED will blink quickly.</p>
 
+<p>&ldquo;Repl Initialized&rdquo; means that the Johnny-Five &ldquo;Read Evaluate Print Loop&rdquo; is running, which means that you have a node prompt at which you can enter <a href="http://johnny-five.io/examples/repl/">node commands</a>.</p>
+
 <p>Lots more awesome examples to get you going can be found on the <a href="http://johnny-five.io/">Johnny-Five</a> site.</p>
+
+<p>&nbsp;</p>
+
+<p><a href="http://nodered.org/"><img align="right" style="height:200px" src="/media/node-red-screenshot-sm.png" alt="NodeRED" title="NodeRED"></a>
+An alternative to programming in javascript directly is to use the visual programming approach offered by Node-RED.</p>
+
+<p>Node-RED provides a browser-based flow editor that makes it easy to wire together flows using the wide of range nodes in a &lsquo;palette&rsquo; of node modules. Flows can then be deployed in a single-click. For more info see the <a href="http://nodered.org/">Node-Red website</a> .</p>
 
               
 
