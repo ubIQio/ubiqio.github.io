@@ -1425,7 +1425,7 @@
 
 <h3 id="using-node-firmata-with-ardhat:615e3f22fa9cd8f45adc27486278fdbb">Using Node Firmata with Ardhat</h3>
 
-<p>Raspian Jessie comes with a version of Node.js installed; unfortunately it is an older version (0.10.29 at the time of writing) that does not play well with many newer libraries, so we need to remove it and reinstall a newer version of Node.js such as v0.12.x or v4.2.x together with npm.</p>
+<p>Raspian Jessie comes with a version of Node.js installed; unfortunately it is an older version that does not play well with many newer libraries, so we need to remove it and reinstall a newer version of Node.js (v4.x) together with npm.</p>
 
 <p>To do this we must uninstall the built-in version and re-install using the instructions below.</p>
 
@@ -1554,7 +1554,8 @@
 
 <p>Now we are ready to run our javascript program on node.js driving Ardhat.</p>
 
-<p>Create a file with the following contents:</p>
+<p>Create a file with the following contents:<br />
+&nbsp;</p>
 
 <pre><code class="language-c">var five = require(&quot;johnny-five&quot;),
     board = new five.Board({ port: &quot;/dev/ttyS0&quot; });
@@ -1568,6 +1569,8 @@ board.on(&quot;ready&quot;, function() {
 });
 
 </code></pre>
+
+<p>&nbsp;</p>
 
 <p>Save it as test.js, and run it with</p>
 
@@ -1598,7 +1601,7 @@ board.on(&quot;ready&quot;, function() {
 
 <p>Ardhat&rsquo;s activity LED will blink quickly.</p>
 
-<p>&ldquo;Repl Initialized&rdquo; means that the Johnny-Five &ldquo;Read Evaluate Print Loop&rdquo; is running, which means that you have a node prompt at which you can enter <a href="http://johnny-five.io/examples/repl/">node commands</a>.</p>
+<p>&ldquo;Repl Initialized&rdquo; indicates that the Johnny-Five &ldquo;Read Evaluate Print Loop&rdquo; is running, which means that you have a node prompt at which you can enter <a href="http://johnny-five.io/examples/repl/">node commands</a>.</p>
 
 <p>For a more in-depth example, see this <a href="https://www.smashingmagazine.com/2016/02/hardware-hacking-with-javascript-internet-of-things/">article</a> which shows how to build a simple <a href="https://www.smashingmagazine.com/2016/02/hardware-hacking-with-javascript-internet-of-things/#home-monitoring">home-monitoring system</a>, similar to commercial products like Nest and Hive.</p>
 
@@ -1609,7 +1612,7 @@ board.on(&quot;ready&quot;, function() {
 <p><a href="http://nodered.org/"><img align="right" style="height:200px; padding-left: 10px; padding-top: 5px" src="/media/node-red-screenshot-sm.png" alt="NodeRED" title="NodeRED"></a>
 An alternative to programming in javascript directly is to use the visual programming approach offered by Node-RED.</p>
 
-<p>Node-RED provides a browser-based flow editor that makes it easy to wire together flows using a collection of &lsquo;Nodes&rsquo; in a &lsquo;palette&rsquo;. Flows can then be deployed in a single-click. For more info see the <a href="http://nodered.org/">Node-Red website</a> , or this excellent tutorial on <a href="https://learn.adafruit.com/raspberry-pi-hosting-node-red/what-is-node-red">Adafruit</a>.</p>
+<p>Node-RED provides a browser-based flow editor that makes it easy to wire together flows using a collection of &lsquo;Nodes&rsquo; in a &lsquo;palette&rsquo;. Flows can then be deployed in a single-click. For more info see the <a href="http://nodered.org/">Node-Red website</a> , or <a href="https://learn.adafruit.com/raspberry-pi-hosting-node-red/what-is-node-red">this excellent tutorial</a> on Adafruit.</p>
 
               
 

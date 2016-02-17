@@ -478,7 +478,7 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 
 &lt;h3 id=&#34;using-node-firmata-with-ardhat:615e3f22fa9cd8f45adc27486278fdbb&#34;&gt;Using Node Firmata with Ardhat&lt;/h3&gt;
 
-&lt;p&gt;Raspian Jessie comes with a version of Node.js installed; unfortunately it is an older version (0.10.29 at the time of writing) that does not play well with many newer libraries, so we need to remove it and reinstall a newer version of Node.js such as v0.12.x or v4.2.x together with npm.&lt;/p&gt;
+&lt;p&gt;Raspian Jessie comes with a version of Node.js installed; unfortunately it is an older version that does not play well with many newer libraries, so we need to remove it and reinstall a newer version of Node.js (v4.x) together with npm.&lt;/p&gt;
 
 &lt;p&gt;To do this we must uninstall the built-in version and re-install using the instructions below.&lt;/p&gt;
 
@@ -607,7 +607,8 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 
 &lt;p&gt;Now we are ready to run our javascript program on node.js driving Ardhat.&lt;/p&gt;
 
-&lt;p&gt;Create a file with the following contents:&lt;/p&gt;
+&lt;p&gt;Create a file with the following contents:&lt;br /&gt;
+&amp;nbsp;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;var five = require(&amp;quot;johnny-five&amp;quot;),
     board = new five.Board({ port: &amp;quot;/dev/ttyS0&amp;quot; });
@@ -621,6 +622,8 @@ board.on(&amp;quot;ready&amp;quot;, function() {
 });
 
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
 &lt;p&gt;Save it as test.js, and run it with&lt;/p&gt;
 
@@ -651,7 +654,7 @@ board.on(&amp;quot;ready&amp;quot;, function() {
 
 &lt;p&gt;Ardhat&amp;rsquo;s activity LED will blink quickly.&lt;/p&gt;
 
-&lt;p&gt;&amp;ldquo;Repl Initialized&amp;rdquo; means that the Johnny-Five &amp;ldquo;Read Evaluate Print Loop&amp;rdquo; is running, which means that you have a node prompt at which you can enter &lt;a href=&#34;http://johnny-five.io/examples/repl/&#34;&gt;node commands&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Repl Initialized&amp;rdquo; indicates that the Johnny-Five &amp;ldquo;Read Evaluate Print Loop&amp;rdquo; is running, which means that you have a node prompt at which you can enter &lt;a href=&#34;http://johnny-five.io/examples/repl/&#34;&gt;node commands&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;For a more in-depth example, see this &lt;a href=&#34;https://www.smashingmagazine.com/2016/02/hardware-hacking-with-javascript-internet-of-things/&#34;&gt;article&lt;/a&gt; which shows how to build a simple &lt;a href=&#34;https://www.smashingmagazine.com/2016/02/hardware-hacking-with-javascript-internet-of-things/#home-monitoring&#34;&gt;home-monitoring system&lt;/a&gt;, similar to commercial products like Nest and Hive.&lt;/p&gt;
 
@@ -662,7 +665,7 @@ board.on(&amp;quot;ready&amp;quot;, function() {
 &lt;p&gt;&lt;a href=&#34;http://nodered.org/&#34;&gt;&lt;img align=&#34;right&#34; style=&#34;height:200px; padding-left: 10px; padding-top: 5px&#34; src=&#34;http://ubiqio.com/media/node-red-screenshot-sm.png&#34; alt=&#34;NodeRED&#34; title=&#34;NodeRED&#34;&gt;&lt;/a&gt;
 An alternative to programming in javascript directly is to use the visual programming approach offered by Node-RED.&lt;/p&gt;
 
-&lt;p&gt;Node-RED provides a browser-based flow editor that makes it easy to wire together flows using a collection of &amp;lsquo;Nodes&amp;rsquo; in a &amp;lsquo;palette&amp;rsquo;. Flows can then be deployed in a single-click. For more info see the &lt;a href=&#34;http://nodered.org/&#34;&gt;Node-Red website&lt;/a&gt; , or this excellent tutorial on &lt;a href=&#34;https://learn.adafruit.com/raspberry-pi-hosting-node-red/what-is-node-red&#34;&gt;Adafruit&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Node-RED provides a browser-based flow editor that makes it easy to wire together flows using a collection of &amp;lsquo;Nodes&amp;rsquo; in a &amp;lsquo;palette&amp;rsquo;. Flows can then be deployed in a single-click. For more info see the &lt;a href=&#34;http://nodered.org/&#34;&gt;Node-Red website&lt;/a&gt; , or &lt;a href=&#34;https://learn.adafruit.com/raspberry-pi-hosting-node-red/what-is-node-red&#34;&gt;this excellent tutorial&lt;/a&gt; on Adafruit.&lt;/p&gt;
 </description>
     </item>
     

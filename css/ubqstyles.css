@@ -1014,7 +1014,7 @@ ul.rig li {
 }
 
 ul.rig li a {
-    background: #7b0;
+    background: #fff;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -1027,7 +1027,7 @@ ul.rig li a {
 
 }
 ul.rig li a:hover {
-    background: #7b0;
+    background: #ddd;
 }
 ul.rig li a.active {
     background: #333;
