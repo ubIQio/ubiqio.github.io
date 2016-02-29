@@ -224,10 +224,10 @@ As soon as there’s a new protocol or modulation method, it’s in everyone’s
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://ubiqio.com/doc/env/</guid>
-      <description>&lt;p&gt;The &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;-E provides Environmental Sensing in addition to the basic functions of Arduino compatibility and power management. This is performed by a Bosch BME280 integrated sensor, which provides&lt;/p&gt;
+      <description>&lt;p&gt;The &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;-E provides Environmental Sensing in addition to the basic functions of Arduino compatibility and power management. This is performed by a Bosch BMP/E280 integrated sensor, which provides&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;humidity sensor&lt;/li&gt;
+&lt;li&gt;humidity sensor (optional)&lt;/li&gt;
 &lt;li&gt;barometric pressure sensor&lt;/li&gt;
 &lt;li&gt;temperature sensor&lt;/li&gt;
 &lt;/ul&gt;
@@ -238,7 +238,9 @@ As soon as there’s a new protocol or modulation method, it’s in everyone’s
 &lt;p&gt;&amp;ldquo;The humidity sensor features an extremely fast response time which supports performance requirements for emerging applications such as context awareness, and high accuracy over a wide temperature range. The pressure sensor is an absolute barometric pressure sensor with features exceptionally high accuracy and resolution at very low noise. The integrated temperature sensor has been optimized for very low noise and high resolution. It is primarily used for temperature compensation of the pressure and humidity sensors, and can also be used for estimating ambient temperature.&amp;rdquo;&amp;rdquo;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;The BMP180/280 is compatible with the popular &lt;a href=&#34;https://github.com/richards-tech/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The BMP280 is largely compatible with the popular &lt;a href=&#34;https://github.com/richards-tech/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt; with some register changes.&lt;/p&gt;
+
+&lt;p&gt;Another BMP280 library from Adafruit is available on the &lt;a href=&#34;https://github.com/Ardhat/Adafruit_BMP280_Library&#34;&gt;Ardhat Github repo&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
