@@ -241,6 +241,10 @@ As soon as there’s a new protocol or modulation method, it’s in everyone’s
 &lt;p&gt;The BMP280 is largely compatible with the popular &lt;a href=&#34;https://github.com/Ardhat/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;, but requires some register changes as it was created for the BMP180, the predecessor of the BMP280.&lt;/p&gt;
 
 &lt;p&gt;There&amp;rsquo;s a native BMP280 library written by Limor Fried and Kevin Townsend, of Adafruit fame, on the &lt;a href=&#34;https://github.com/Ardhat/Adafruit_BMP280_Library&#34;&gt;Ardhat Github repo&lt;/a&gt;, and a BME280 version with humidity functions also &lt;a href=&#34;https://github.com/Ardhat/Adafruit_BME280_Library/blob/master/Adafruit_BME280.cpp&#34;&gt;available&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The official Bosch driver for BMP280 is on the Bosch SensorTech &lt;a href=&#34;https://github.com/BoschSensortec/BMP280_driver&#34;&gt;BMP280 Github repo&lt;/a&gt;, and also for the BME280 &lt;a href=&#34;https://github.com/BoschSensortec/BME280_driver&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;For more in-depth info on the devices, refer to the &lt;a href=&#34;https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMP280-DS001-12.pdf&#34;&gt;BMP280&lt;/a&gt; and &lt;a href=&#34;https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280_DS001-11.pdf&#34;&gt;BME280&lt;/a&gt; datasheets.&lt;/p&gt;
 </description>
     </item>
     
