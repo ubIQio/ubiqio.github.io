@@ -238,7 +238,7 @@ As soon as there’s a new protocol or modulation method, it’s in everyone’s
 &lt;p&gt;&amp;ldquo;The humidity sensor features an extremely fast response time which supports performance requirements for emerging applications such as context awareness, and high accuracy over a wide temperature range. The pressure sensor is an absolute barometric pressure sensor with features exceptionally high accuracy and resolution at very low noise. The integrated temperature sensor has been optimized for very low noise and high resolution. It is primarily used for temperature compensation of the pressure and humidity sensors, and can also be used for estimating ambient temperature.&amp;rdquo;&amp;rdquo;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;The BMP280 is largely compatible with the popular &lt;a href=&#34;https://github.com/richards-tech/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt; with some register changes.&lt;/p&gt;
+&lt;p&gt;The BMP280 is largely compatible with the popular &lt;a href=&#34;https://github.com/Ardhat/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;, with some register changes.&lt;/p&gt;
 
 &lt;p&gt;Another BMP280 library from Adafruit is available on the &lt;a href=&#34;https://github.com/Ardhat/Adafruit_BMP280_Library&#34;&gt;Ardhat Github repo&lt;/a&gt;&lt;/p&gt;
 </description>
