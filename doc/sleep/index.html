@@ -1410,17 +1410,24 @@
 
 <h2 id="power-sleep-management:cbf62320f95c22c9b02a3e586422b992">Power/Sleep Management</h2>
 
-<p><span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> performs a handshake with the Raspberry Pi to perform a graceful shutdown. This can be triggered by external events, such as operation of the power/sleep switch, or internal events such as crontab entries.</p>
+<p><span style="font-family: 'Black Ops One', cursive; font-size:115%">&nbsp;Ardh@t</span>
+ performs a handshake with the Raspberry Pi to perform a graceful shutdown. This can be triggered by external events, such as operation of the power/sleep switch, or internal events such as crontab entries.</p>
 
-<p>When a shutdown is required, an exchange takes place between the Power Monitor daemon on the Raspberry Pi, and the <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> Realtime, using the Firmata communication channel (this can be over serial or  I2C, see below). The Raspberry Pi can schedule wakeup requests by adding entries in the crontab; during this exchange the next entry in the crontab before shutdown is transferred to the <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> for wakeup calls.</p>
+<p>When a shutdown is required, an exchange takes place between the Power Monitor daemon on the Raspberry Pi, and the <span style="font-family: 'Black Ops One', cursive; font-size:115%">&nbsp;Ardh@t</span>
+ Realtime, using the Firmata communication channel (this can be over serial or  I2C, see below). The Raspberry Pi can schedule wakeup requests by adding entries in the crontab; during this exchange the next entry in the crontab before shutdown is transferred to the <span style="font-family: 'Black Ops One', cursive; font-size:115%">&nbsp;Ardh@t</span>
+ for wakeup calls.</p>
 
-<p>The Raspberry Pi RUN status is monitored by <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span>. Once <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> has detected that the OS is no longer running it can physically cut the power from the Raspberry Pi and enter low power mode. In this mode the current consumption of the system is less than 100µA. This provides over a year of standby operation using the standard 2200mAh LiPo cell.</p>
+<p>The Raspberry Pi RUN status is monitored by <span style="font-family: 'Black Ops One', cursive; font-size:115%">&nbsp;Ardh@t</span>
+. Once <span style="font-family: 'Black Ops One', cursive; font-size:115%">&nbsp;Ardh@t</span>
+ has detected that the OS is no longer running it can physically cut the power from the Raspberry Pi and enter low power mode. In this mode the current consumption of the system is less than 100µA. This provides over a year of standby operation using the standard 2200mAh LiPo cell.</p>
 
-<p>The power is cut to the Raspberry Pi by setting <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> port A3 high.</p>
+<p>The power is cut to the Raspberry Pi by setting <span style="font-family: 'Black Ops One', cursive; font-size:115%">&nbsp;Ardh@t</span>
+ port A3 high.</p>
 
 <div class="note">
   <p>Note that the Raspberry Pi will not turn off if it is connected to USB power on its micro-USB connector.
-Also note that power from the Raspberry Pi will always be supplied to <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> even if this switch is off.</p>
+Also note that power from the Raspberry Pi will always be supplied to <span style="font-family: 'Black Ops One', cursive; font-size:115%">&nbsp;Ardh@t</span>
+ even if this switch is off.</p>
 </div>
 
 <p>The IMU and RTC can both be setup to generate interrupts to wakeup the system, see below.</p>

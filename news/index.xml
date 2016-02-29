@@ -14,13 +14,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://ubiqio.com/news/DIYnest/</guid>
-      <description>&lt;p&gt;Checkout the &lt;a href=&#34;http://ubiqio.com/doc/js/&#34;&gt;howto&lt;/a&gt; on using Javascript with &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;Checkout the &lt;a href=&#34;http://ubiqio.com/doc/js/&#34;&gt;howto&lt;/a&gt; on using Javascript with &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+.&lt;/p&gt;
 
 &lt;p&gt;For a more in-depth example, see this &lt;a href=&#34;https://www.smashingmagazine.com/2016/02/hardware-hacking-with-javascript-internet-of-things/&#34;&gt;article&lt;/a&gt; which shows how to build a simple &lt;a href=&#34;https://www.smashingmagazine.com/2016/02/hardware-hacking-with-javascript-internet-of-things/#home-monitoring&#34;&gt;home-monitoring system&lt;/a&gt;, similar to commercial products like Nest and Hive.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.smashingmagazine.com/2016/02/hardware-hacking-with-javascript-internet-of-things/#home-monitoring&#34;&gt;&lt;img  style=&#34;height:200px&#34; src=&#34;http://ubiqio.com/media/diynest.jpg&#34; alt=&#34;DIYnest&#34; title=&#34;DIYnest&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;And if you need it, you can get a proto board that fits the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; aesthetic in the &lt;a href=&#34;http://ubiqio.com/shop&#34;&gt;store&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;And if you need it, you can get a proto board that fits the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+ aesthetic in the &lt;a href=&#34;http://ubiqio.com/shop&#34;&gt;store&lt;/a&gt;!&lt;/p&gt;
 </description>
     </item>
     
@@ -37,7 +39,8 @@
 &lt;p&gt;Getting software-defined radio (SDR) tools into the hands of the community has been great for the development and decoding of previously-cryptic, if not encrypted, radio signals the world over.&lt;br /&gt;
 As soon as there’s a new protocol or modulation method, it’s in everyone’s sights. A lot of people have been working on LoRa, and &lt;a href=&#34;https://revspace.nl/Bertrik&#34;&gt;bertrik&lt;/a&gt; at &lt;a href=&#34;https://revspace.nl/DecodingLora&#34;&gt;RevSpace in The Hague&lt;/a&gt; has done some work of his own, and put together an amazing summary of the state of the art, including an &lt;a href=&#34;https://github.com/bertrik/loratest&#34;&gt;Arduino library&lt;/a&gt; for using it, based on the RadioHead libraries.&lt;/p&gt;
 
-&lt;p&gt;You can  get a LoRa equipped  &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; in the &lt;a href=&#34;http://ubiqio.com/shop&#34;&gt;store&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can  get a LoRa equipped  &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+ in the &lt;a href=&#34;http://ubiqio.com/shop&#34;&gt;store&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -65,7 +68,8 @@ As soon as there’s a new protocol or modulation method, it’s in everyone’s
       <guid>http://ubiqio.com/news/PlatformIO/</guid>
       <description>&lt;p&gt;PlatformIO is a cross-platform code builder and  library manager, great for using Ardhat from the command line, for example with a headless Raspberry Pi.&lt;/p&gt;
 
-&lt;p&gt;Now &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&amp;rsquo;s directly &lt;a href=&#34;http://docs.platformio.org/en/latest/platforms/atmelavr.html&#34;&gt;supported&lt;/a&gt;, so head over to &lt;a href=&#34;http://platformio.org/#!/&#34;&gt;PlatformIO&lt;/a&gt; and get started!&lt;/p&gt;
+&lt;p&gt;Now &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+&amp;rsquo;s directly &lt;a href=&#34;http://docs.platformio.org/en/latest/platforms/atmelavr.html&#34;&gt;supported&lt;/a&gt;, so head over to &lt;a href=&#34;http://platformio.org/#!/&#34;&gt;PlatformIO&lt;/a&gt; and get started!&lt;/p&gt;
 </description>
     </item>
     
@@ -91,7 +95,8 @@ As soon as there’s a new protocol or modulation method, it’s in everyone’s
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://ubiqio.com/news/FlipboardMag/</guid>
-      <description>&lt;p&gt;The ubIQio magazine &lt;strong&gt;Maker Planet&lt;/strong&gt; is full of awesome projects and news related to &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;The ubIQio magazine &lt;strong&gt;Maker Planet&lt;/strong&gt; is full of awesome projects and news related to &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+.&lt;/p&gt;
 
 &lt;p&gt;Hit the link below  for inspiration!&lt;/p&gt;
 

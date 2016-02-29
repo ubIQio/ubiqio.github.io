@@ -1410,21 +1410,27 @@
 
 <h2 id="inter-processor-communication:3e351769dc76254edaec0e63755feac0">Inter-processor communication</h2>
 
-<p>The Raspberry Pi and <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> can communicate over both Serial and I2C, but Serial is used for the main inter-processor communication.</p>
+<p>The Raspberry Pi and <span style="font-family: 'Black Ops One', cursive; font-size:115%">&nbsp;Ardh@t</span>
+ can communicate over both Serial and I2C, but Serial is used for the main inter-processor communication.</p>
 
 <p>When the Raspberry Pi is active, it is the master on the  I2C bus, and is responsible for setup of the Ardhat I2C peripherals (e.g. IMU, Altimeter, RTC).  When the Raspberry Pi is inactive, the Arduino can master the bus and interrogate the peripherals.  For example by watching the RTC, the Raspberry Pi can be started when the next crontab entry is about to come due.</p>
 
 <p>However, access to regular Arduino-compatible ports such as Analog and PWM is performed over Serial using a standardised protocol layer, or Data Link layer in <a href="https://en.wikipedia.org/wiki/OSI_model">OSI parlance</a>.</p>
 
-<p>This protocol layer is called <a href="https://www.arduino.cc/en/Reference/Firmata">Firmata</a>, and allows applications on the Pi to communicate with <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> provided they have a Firmata language binding. Although javascript is the recommended language (using the node.js Firmata library), other languages such as Python can easily be used instead.</p>
+<p>This protocol layer is called <a href="https://www.arduino.cc/en/Reference/Firmata">Firmata</a>, and allows applications on the Pi to communicate with <span style="font-family: 'Black Ops One', cursive; font-size:115%">&nbsp;Ardh@t</span>
+ provided they have a Firmata language binding. Although javascript is the recommended language (using the node.js Firmata library), other languages such as Python can easily be used instead.</p>
 
-<p>As an example, the factory <a href="https://github.com/Ardhat/ArdhatFirmata">image</a> that ships with <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> contains a modified version of standard <a href="https://www.arduino.cc/en/Reference/Firmata">Arduino Firmata</a> that adds several additional features, such as monitoring of the Navigation switch and Status LED control, using the Arduino <a href="http://playground.arduino.cc/Code/SMlib">SMlib</a>. This state machine library provides an extremely lightweight mechanism that allows primitive multitasking.</p>
+<p>As an example, the factory <a href="https://github.com/Ardhat/ArdhatFirmata">image</a> that ships with <span style="font-family: 'Black Ops One', cursive; font-size:115%">&nbsp;Ardh@t</span>
+ contains a modified version of standard <a href="https://www.arduino.cc/en/Reference/Firmata">Arduino Firmata</a> that adds several additional features, such as monitoring of the Navigation switch and Status LED control, using the Arduino <a href="http://playground.arduino.cc/Code/SMlib">SMlib</a>. This state machine library provides an extremely lightweight mechanism that allows primitive multitasking.</p>
 
-<p>In principle, an <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> host application can be written in any language that has a Firmata library, including Processing, Python, C++ and <a href="http://firmata.org/wiki/Download">many more</a>. However, in a Robotics or IoT environment, services are often distributed over a network whose availability cannot be guaranteed. A responsive system cannot  block while  waiting for these services to respond.</p>
+<p>In principle, an <span style="font-family: 'Black Ops One', cursive; font-size:115%">&nbsp;Ardh@t</span>
+ host application can be written in any language that has a Firmata library, including Processing, Python, C++ and <a href="http://firmata.org/wiki/Download">many more</a>. However, in a Robotics or IoT environment, services are often distributed over a network whose availability cannot be guaranteed. A responsive system cannot  block while  waiting for these services to respond.</p>
 
-<p>JavaScript’s support of callbacks, and the availability of non-blocking app frameworks such as <a href="http://nodejs.org/">node.js</a>, make it the natural choice for a web enabled system, and it is the main supported framework for local programming of <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span>. Node.js  is built on top of Google’s V8 javascript runtime, and is widely extensible through the use of additional libraries.  The addition of Express and AngularJS allow applications to be exposed over the web if required.</p>
+<p>JavaScript’s support of callbacks, and the availability of non-blocking app frameworks such as <a href="http://nodejs.org/">node.js</a>, make it the natural choice for a web enabled system, and it is the main supported framework for local programming of <span style="font-family: 'Black Ops One', cursive; font-size:115%">&nbsp;Ardh@t</span>
+. Node.js  is built on top of Google’s V8 javascript runtime, and is widely extensible through the use of additional libraries.  The addition of Express and AngularJS allow applications to be exposed over the web if required.</p>
 
-<p><a href="http://johnny-five.io/">Johnny-Five</a> is a great node library that sits on top of Firmata but provides some higher level functions to make use with node even easier. For example, <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> is unit tested using <a href="https://mochajs.org/">Mocha</a> on Johnny-Five on Firmata.</p>
+<p><a href="http://johnny-five.io/">Johnny-Five</a> is a great node library that sits on top of Firmata but provides some higher level functions to make use with node even easier. For example, <span style="font-family: 'Black Ops One', cursive; font-size:115%">&nbsp;Ardh@t</span>
+ is unit tested using <a href="https://mochajs.org/">Mocha</a> on Johnny-Five on Firmata.</p>
 
 <p>Application-specific projects can also be created on top of Node using accessible app generators such as  <a href="http://nodered.org/">Node-Red</a>.</p>
 

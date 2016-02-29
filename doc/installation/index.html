@@ -1406,13 +1406,16 @@
               </div>
               <h1>Installation</h1>
               <hr />
-              <p>Getting <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> installed and ready-to-go should only take a few minutes.</p>
+              <p>Getting <span style="font-family: 'Black Ops One', cursive; font-size:115%">&nbsp;Ardh@t</span>
+ installed and ready-to-go should only take a few minutes.</p>
 
-<p>The <a href="/doc/upgrading">Optiboot</a> bootloader is already installed on <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span>&rsquo;s processor, but we need to make sure the Raspberry Pi is setup correctly, and has the necessary software in place.</p>
+<p>The <a href="/doc/upgrading">Optiboot</a> bootloader is already installed on <span style="font-family: 'Black Ops One', cursive; font-size:115%">&nbsp;Ardh@t</span>
+&rsquo;s processor, but we need to make sure the Raspberry Pi is setup correctly, and has the necessary software in place.</p>
 
 <p>The easiest way to do this is from the command line, and the best way to do that, is to ssh into the Raspberry Pi so that you can copy and paste the commands below into your terminal (you can use <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">PuTTY</a> if you are not on a Unix based system like Linux or OS X).</p>
 
-<p>By default, Raspberry Pi copies its shell and kernel messages to the serial port. As <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> uses this channel to communicate with the host, we need to disable that. This is most easily done with the in-built utility <a href="https://www.raspberrypi.org/documentation/configuration/raspi-config.md">raspi-config</a>.</p>
+<p>By default, Raspberry Pi copies its shell and kernel messages to the serial port. As <span style="font-family: 'Black Ops One', cursive; font-size:115%">&nbsp;Ardh@t</span>
+ uses this channel to communicate with the host, we need to disable that. This is most easily done with the in-built utility <a href="https://www.raspberrypi.org/documentation/configuration/raspi-config.md">raspi-config</a>.</p>
 
 <section class="quickstart" >
   <div class="grid">
@@ -1447,7 +1450,8 @@ and disable shell and kernel messages on serial</p>
 <img src="/media/raspi-config-serial-no.png" alt="image alt text" /></p>
 
 <p><br>
-Back at the <code>Advanced Options</code> menu you&rsquo;ll also want to enable I2C, so that you can access the <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> peripherals directly if required</p>
+Back at the <code>Advanced Options</code> menu you&rsquo;ll also want to enable I2C, so that you can access the <span style="font-family: 'Black Ops One', cursive; font-size:115%">&nbsp;Ardh@t</span>
+ peripherals directly if required</p>
 
 <p><br>
 <img src="/media/raspi-config-I2C.png" alt="image alt text" /></p>
@@ -1512,7 +1516,8 @@ Enable both the <code>ARM I2C interface</code> &hellip;<br />
   </div>
 </section>
 
-<p>In order for the Arduino IDE to work properly with <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span>, it needs to perform a reset during code upload. It does this using the modified avrdude we just cloned, so enter the following commands:</p>
+<p>In order for the Arduino IDE to work properly with <span style="font-family: 'Black Ops One', cursive; font-size:115%">&nbsp;Ardh@t</span>
+, it needs to perform a reset during code upload. It does this using the modified avrdude we just cloned, so enter the following commands:</p>
 
 <section class="quickstart" >
   <div class="grid">
@@ -1549,7 +1554,8 @@ Enable both the <code>ARM I2C interface</code> &hellip;<br />
   </div>
 </section>
 
-<p>Finally, so that the Arduino IDE can &lsquo;see&rsquo; the <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> serial port, we need to create a symlink between the Raspberry Pi ttyAMA0 port and ttyS0.</p>
+<p>Finally, so that the Arduino IDE can &lsquo;see&rsquo; the <span style="font-family: 'Black Ops One', cursive; font-size:115%">&nbsp;Ardh@t</span>
+ serial port, we need to create a symlink between the Raspberry Pi ttyAMA0 port and ttyS0.</p>
 
 <section class="quickstart" >
   <div class="grid">

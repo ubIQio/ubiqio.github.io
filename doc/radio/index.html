@@ -1412,9 +1412,11 @@
 
 <h3 id="long-range-wireless-node:1bd5eb89186ef6bf841b9646b5fe2314">Long-range wireless node</h3>
 
-<p><span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> includes an optional long-range wireless mesh network transceiver that operates on either 433, 868, or 915 MHz  license-free ISM (Industrial, Scientific and Medical) frequency bands. Using lower frequencies than those of the 2.4 or 5.8 GHz ISM bands enables much better coverage to be achieved especially when the nodes are within buildings.</p>
+<p><span style="font-family: 'Black Ops One', cursive; font-size:115%">&nbsp;Ardh@t</span>
+ includes an optional long-range wireless mesh network transceiver that operates on either 433, 868, or 915 MHz  license-free ISM (Industrial, Scientific and Medical) frequency bands. Using lower frequencies than those of the 2.4 or 5.8 GHz ISM bands enables much better coverage to be achieved especially when the nodes are within buildings.</p>
 
-<p><span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> is available with 2 radio transceiver options. The first is compatible with the <a href="http://jeelabs.org/">Jeelabs</a>, <a href="http://lowpowerlab.com/moteino/">Moteino</a> and <a href="http://emoncms.org/">EmonCMS</a> nodes and can thus enable the Raspberry Pi as a gateway or master controller.  Ardhat uses the high power verion of the HopeRF module, the RFM68HCW.</p>
+<p><span style="font-family: 'Black Ops One', cursive; font-size:115%">&nbsp;Ardh@t</span>
+ is available with 2 radio transceiver options. The first is compatible with the <a href="http://jeelabs.org/">Jeelabs</a>, <a href="http://lowpowerlab.com/moteino/">Moteino</a> and <a href="http://emoncms.org/">EmonCMS</a> nodes and can thus enable the Raspberry Pi as a gateway or master controller.  Ardhat uses the high power verion of the HopeRF module, the RFM68HCW.</p>
 
 <p>The second uses the <a href="https://www.lora-alliance.org/">LoRaTM</a> RF physical layer, a form of spread spectrum modulation that significantly increases the available link budget. This option uses the HopeRF RFM95/96W.</p>
 
@@ -1431,17 +1433,20 @@
 
 <p>Great documentation on the library is available <a href="http://www.airspayce.com/mikem/arduino/RadioHead/index.html">here</a></p>
 
-<p>You&rsquo;ll need at least 2 radios of course, preferably <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span>s :), but you can also use <a href="http://www.digitalsmarties.net/products/jeelink">Jeelink</a>,  <a href="https://lowpowerlab.com/shop/moteino-r4">Moteino</a> or <a href="https://oshpark.com/shared_projects/RIumMBtN">Teensy</a> nodes.  Prepare the Ardhat board by <a href="https://ubiqio.com/doc/configuration/">attaching an antenna to the board</a>.</p>
+<p>You&rsquo;ll need at least 2 radios of course, preferably <span style="font-family: 'Black Ops One', cursive; font-size:115%">&nbsp;Ardh@t</span>
+s :), but you can also use <a href="http://www.digitalsmarties.net/products/jeelink">Jeelink</a>,  <a href="https://lowpowerlab.com/shop/moteino-r4">Moteino</a> or <a href="https://oshpark.com/shared_projects/RIumMBtN">Teensy</a> nodes.  Prepare the Ardhat board by <a href="https://ubiqio.com/doc/configuration/">attaching an antenna to the board</a>.</p>
 
 <div class="note warning">
   <p>Do not load the driver without an antenna attached, as running the transmitter without an appropriate load could cause permanent damage to the radio module</p>
 </div>
 
-<p>Then install the Radiohead <a href="https://github.com/Ardhat/Radiohead">library</a> into the Arduino library folder, either from the Arduino GUI Library Manager or alternatively from the console using the excellent Platformio code builder, which natively supports both <a href="http://platformio.org/#!/lib/search?query=radiohead">Radiohead</a> and <a href="http://docs.platformio.org/en/latest/platforms/atmelavr.html#boards"><span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span></a> .</p>
+<p>Then install the Radiohead <a href="https://github.com/Ardhat/Radiohead">library</a> into the Arduino library folder, either from the Arduino GUI Library Manager or alternatively from the console using the excellent Platformio code builder, which natively supports both <a href="http://platformio.org/#!/lib/search?query=radiohead">Radiohead</a> and <a href="http://docs.platformio.org/en/latest/platforms/atmelavr.html#boards"><span style="font-family: 'Black Ops One', cursive; font-size:115%">&nbsp;Ardh@t</span>
+</a> .</p>
 
 <p>There are a large number of examples provided with the library, but the <code>RF69_client</code> and <code>RF69_server</code> sketches are a great starting point.</p>
 
-<p>In both cases, you&rsquo;ll need to make sure you&rsquo;ve set the frequency correctly, depending on the <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span> radio module you have. Do this on the line</p>
+<p>In both cases, you&rsquo;ll need to make sure you&rsquo;ve set the frequency correctly, depending on the <span style="font-family: 'Black Ops One', cursive; font-size:115%">&nbsp;Ardh@t</span>
+ radio module you have. Do this on the line</p>
 
 <pre><code class="language-c">if (!rf69.setFrequency(868)) 
 </code></pre>
@@ -1452,7 +1457,8 @@
 RH_RF69 rf69(10, 3); // For RF69 on Ardhat
 </code></pre>
 
-<p>Then load up the <code>RF69_server.pde</code> sketch on the &lsquo;gateway&rsquo; <span style="font-family: 'Black Ops One', cursive; font-size:115%">Ardh@t</span>, and the <code>RF69_client.pde</code> sketch on the &lsquo;node&rsquo;. On the client, you should get replies to sent messages with a RSSI (Received Signal Strength Indication), and the activity LED will flash.</p>
+<p>Then load up the <code>RF69_server.pde</code> sketch on the &lsquo;gateway&rsquo; <span style="font-family: 'Black Ops One', cursive; font-size:115%">&nbsp;Ardh@t</span>
+, and the <code>RF69_client.pde</code> sketch on the &lsquo;node&rsquo;. On the client, you should get replies to sent messages with a RSSI (Received Signal Strength Indication), and the activity LED will flash.</p>
 
 <p>Once you have a basic radio link in place you can experiment with more advanced networking topologies, such as multinode mesh.</p>
 

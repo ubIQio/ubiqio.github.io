@@ -28,7 +28,8 @@
       
       <guid>http://ubiqio.com/shop/</guid>
       <description>&lt;p&gt;&lt;img align=&#34;left&#34; width=&#34;100px&#34; style=&#34;padding-left:10px; padding-right:20px; padding-top:5px;padding-bottom:5px&#34; src=&#34;http://ubiqio.com/img/snipcart150.png&#34;&gt;
-The &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;  store uses &lt;a href=&#34;https://snipcart.com/&#34;&gt;Snipcart&lt;/a&gt; to provide you with a secure and easy way to buy.&lt;/p&gt;
+The &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+  store uses &lt;a href=&#34;https://snipcart.com/&#34;&gt;Snipcart&lt;/a&gt; to provide you with a secure and easy way to buy.&lt;/p&gt;
 
 &lt;p&gt;Before ordering, read store terms here. For shipping terms and countries, see here.&lt;/p&gt;
 </description>
@@ -56,17 +57,21 @@ The &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size
       <guid>http://ubiqio.com/doc/battery/</guid>
       <description>
 
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; can perform full charge management of a single LiPo cell, and a custom 2200mAh battery that fits snugly between the shield headers is available in the &lt;a href=&#34;http://ubiqio.com/shop&#34;&gt;store&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+ can perform full charge management of a single LiPo cell, and a custom 2200mAh battery that fits snugly between the shield headers is available in the &lt;a href=&#34;http://ubiqio.com/shop&#34;&gt;store&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img style=&#34;width:300px;height:300px&#34; src=&#34;http://ubiqio.com/media/005AB.jpg&#34;&gt;&lt;/p&gt;
 
-&lt;p&gt;Whilst operating on battery, &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; generates the supplies required for the Raspberry Pi and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; peripherals from a boost converter. When the remaining battery capacity reaches a predetermined level, the Raspberry Pi can be  gracefully shutdown over the Firmata communication channel. The same channel can be  used to schedule events, for example to have a host wake up and perform a time-lapse image capture.  When the battery voltage reaches a critical level, all circuits are switched off to avoid damage to the battery due to over-discharging.&lt;/p&gt;
+&lt;p&gt;Whilst operating on battery, &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+ generates the supplies required for the Raspberry Pi and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+ peripherals from a boost converter. When the remaining battery capacity reaches a predetermined level, the Raspberry Pi can be  gracefully shutdown over the Firmata communication channel. The same channel can be  used to schedule events, for example to have a host wake up and perform a time-lapse image capture.  When the battery voltage reaches a critical level, all circuits are switched off to avoid damage to the battery due to over-discharging.&lt;/p&gt;
 
 &lt;h3 id=&#34;charge-control-system:dc4df0175cfa07cfdc9b78ac4adb3b60&#34;&gt;Charge Control System&lt;/h3&gt;
 
 &lt;p&gt;When connected to external power, the battery is charged using a constant-current /constant-voltage charge algorithm, with pre-conditioning and charge termination phases.&lt;/p&gt;
 
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; will charge and maintain any single 3.7V LiPo cell attached to the industry standard 2-pin JST-PH connector.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+ will charge and maintain any single 3.7V LiPo cell attached to the industry standard 2-pin JST-PH connector.&lt;/p&gt;
 
 &lt;div class=&#34;note warning&#34;&gt;
   &lt;p&gt;
@@ -103,26 +108,32 @@ Any cell with a standard JST-PH connector that physically fits your application 
 &lt;h4 id=&#34;protecting-shield-pins:a66b35d20295cb764719ac8bd35837ec&#34;&gt;Protecting shield pins&lt;/h4&gt;
 
 &lt;div class=&#34;note warning&#34;&gt;
-  &lt;p&gt;Before fitting &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; to a Raspberry Pi, be sure that you either fit spacers between the boards or place the insulating foam supplied on the Pi HDMI connector to prevent short-circuits on the shield connector which may cause damage to &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&lt;/p&gt;
+  &lt;p&gt;Before fitting &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+ to a Raspberry Pi, be sure that you either fit spacers between the boards or place the insulating foam supplied on the Pi HDMI connector to prevent short-circuits on the shield connector which may cause damage to &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;h4 id=&#34;arduino-shield-headers:a66b35d20295cb764719ac8bd35837ec&#34;&gt;Arduino shield headers&lt;/h4&gt;
 
-&lt;p&gt;Some versions of &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; do not come with headers pre installed, which gives you the option of running as a pure lightweight HAT, or as an Arduino compatible module. If you want to populate the supplied Arduino headers, a good trick to make sure you get them straight is to fit a shield to the headers &lt;em&gt;before&lt;/em&gt; soldering. Use a fine tipped iron and fine core solder (1mm).&lt;/p&gt;
+&lt;p&gt;Some versions of &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+ do not come with headers pre installed, which gives you the option of running as a pure lightweight HAT, or as an Arduino compatible module. If you want to populate the supplied Arduino headers, a good trick to make sure you get them straight is to fit a shield to the headers &lt;em&gt;before&lt;/em&gt; soldering. Use a fine tipped iron and fine core solder (1mm).&lt;/p&gt;
 
 &lt;h4 id=&#34;writing-to-hat-eeprom:a66b35d20295cb764719ac8bd35837ec&#34;&gt;Writing to HAT eeprom&lt;/h4&gt;
 
-&lt;p&gt;By default on the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; this is enabled. To disable remove the solder jumper bridge from the CFG jumper next to the RTC output pin.&lt;/p&gt;
+&lt;p&gt;By default on the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+ this is enabled. To disable remove the solder jumper bridge from the CFG jumper next to the RTC output pin.&lt;/p&gt;
 
 &lt;h4 id=&#34;radio-antenna:a66b35d20295cb764719ac8bd35837ec&#34;&gt;Radio antenna&lt;/h4&gt;
 
-&lt;p&gt;If you have a radio equipped &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;, you&amp;rsquo;ll need to attach an antenna to the board.&lt;/p&gt;
+&lt;p&gt;If you have a radio equipped &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+, you&amp;rsquo;ll need to attach an antenna to the board.&lt;/p&gt;
 
 &lt;div class=&#34;note warning&#34;&gt;
   &lt;p&gt;Do not load the radio driver without an antenna attached, as running the transmitter without an appropriate load could cause permanent damage to the radio module&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;p&gt;The attach point is near the radio module, and is marked with an antenna symbol on the top side of the board. The antenna is best left straight but will also work coiled but with a small effect on RSS (Received Signal Strength). The length of wire needed depends on the radio module frequency you have selected, and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; is supplied with a &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;4&lt;/sub&gt; wave antenna of appropriate length. For reference, the required antenna lengths are:&lt;/p&gt;
+&lt;p&gt;The attach point is near the radio module, and is marked with an antenna symbol on the top side of the board. The antenna is best left straight but will also work coiled but with a small effect on RSS (Received Signal Strength). The length of wire needed depends on the radio module frequency you have selected, and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+ is supplied with a &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;4&lt;/sub&gt; wave antenna of appropriate length. For reference, the required antenna lengths are:&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;433MHz:&lt;/strong&gt;&lt;/p&gt;
 
@@ -158,15 +169,18 @@ Any cell with a standard JST-PH connector that physically fits your application 
       <guid>http://ubiqio.com/doc/contributing/</guid>
       <description>
 
-&lt;p&gt;So you&amp;rsquo;ve got an awesome idea to throw into &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;. Great! Head over to &lt;a href=&#34;http://ubiqio.com/community&#34;&gt;the forum&lt;/a&gt; and let us know!&lt;/p&gt;
+&lt;p&gt;So you&amp;rsquo;ve got an awesome idea to throw into &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+. Great! Head over to &lt;a href=&#34;http://ubiqio.com/community&#34;&gt;the forum&lt;/a&gt; and let us know!&lt;/p&gt;
 
 &lt;h2 id=&#34;updating-documentation:cc4aac3e9be04e0413c9520f223b493c&#34;&gt;Updating Documentation&lt;/h2&gt;
 
-&lt;p&gt;We want the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; documentation to be the best it can be. We&amp;rsquo;ve
+&lt;p&gt;We want the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+ documentation to be the best it can be. We&amp;rsquo;ve
 open-sourced our docs and we welcome any pull requests if you find it
 lacking.&lt;/p&gt;
 
-&lt;p&gt;You can access the documentation for &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; just by clicking the pencil at the top of each document.&lt;/p&gt;
+&lt;p&gt;You can access the documentation for &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+ just by clicking the pencil at the top of each document.&lt;/p&gt;
 
 &lt;p&gt;All documentation pull requests should be directed at &lt;code&gt;master&lt;/code&gt;. Pull
 requests directed at another branch will not be accepted.&lt;/p&gt;
@@ -176,7 +190,8 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 &lt;div class=&#34;note&#34;&gt;
   &lt;h5&gt;Let us know what could be better!&lt;/h5&gt;
   &lt;p&gt;
-    Both using and hacking on &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; should be fun, simple, and easy, so if for
+    Both using and hacking on &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+ should be fun, simple, and easy, so if for
     some reason you find it’s a pain, please &lt;a
     href=&#34;http://ubiqio.com/community&#34;&gt;flag it&lt;/a&gt; on
     the forum describing your experience so we can make it better.
@@ -191,13 +206,15 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://ubiqio.com/news/DIYnest/</guid>
-      <description>&lt;p&gt;Checkout the &lt;a href=&#34;http://ubiqio.com/doc/js/&#34;&gt;howto&lt;/a&gt; on using Javascript with &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;Checkout the &lt;a href=&#34;http://ubiqio.com/doc/js/&#34;&gt;howto&lt;/a&gt; on using Javascript with &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+.&lt;/p&gt;
 
 &lt;p&gt;For a more in-depth example, see this &lt;a href=&#34;https://www.smashingmagazine.com/2016/02/hardware-hacking-with-javascript-internet-of-things/&#34;&gt;article&lt;/a&gt; which shows how to build a simple &lt;a href=&#34;https://www.smashingmagazine.com/2016/02/hardware-hacking-with-javascript-internet-of-things/#home-monitoring&#34;&gt;home-monitoring system&lt;/a&gt;, similar to commercial products like Nest and Hive.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.smashingmagazine.com/2016/02/hardware-hacking-with-javascript-internet-of-things/#home-monitoring&#34;&gt;&lt;img  style=&#34;height:200px&#34; src=&#34;http://ubiqio.com/media/diynest.jpg&#34; alt=&#34;DIYnest&#34; title=&#34;DIYnest&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;And if you need it, you can get a proto board that fits the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; aesthetic in the &lt;a href=&#34;http://ubiqio.com/shop&#34;&gt;store&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;And if you need it, you can get a proto board that fits the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+ aesthetic in the &lt;a href=&#34;http://ubiqio.com/shop&#34;&gt;store&lt;/a&gt;!&lt;/p&gt;
 </description>
     </item>
     
@@ -214,7 +231,8 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 &lt;p&gt;Getting software-defined radio (SDR) tools into the hands of the community has been great for the development and decoding of previously-cryptic, if not encrypted, radio signals the world over.&lt;br /&gt;
 As soon as there’s a new protocol or modulation method, it’s in everyone’s sights. A lot of people have been working on LoRa, and &lt;a href=&#34;https://revspace.nl/Bertrik&#34;&gt;bertrik&lt;/a&gt; at &lt;a href=&#34;https://revspace.nl/DecodingLora&#34;&gt;RevSpace in The Hague&lt;/a&gt; has done some work of his own, and put together an amazing summary of the state of the art, including an &lt;a href=&#34;https://github.com/bertrik/loratest&#34;&gt;Arduino library&lt;/a&gt; for using it, based on the RadioHead libraries.&lt;/p&gt;
 
-&lt;p&gt;You can  get a LoRa equipped  &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; in the &lt;a href=&#34;http://ubiqio.com/shop&#34;&gt;store&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can  get a LoRa equipped  &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+ in the &lt;a href=&#34;http://ubiqio.com/shop&#34;&gt;store&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -224,10 +242,12 @@ As soon as there’s a new protocol or modulation method, it’s in everyone’s
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://ubiqio.com/doc/env/</guid>
-      <description>&lt;p&gt;The &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;-E provides Environmental Sensing in addition to the basic functions of Arduino compatibility and power management. This is performed by a Bosch BMP/E280 integrated sensor, which provides&lt;/p&gt;
+      <description>&lt;p&gt;In addition to the basic functions of Arduino compatibility and power management, &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+&lt;strong&gt;- I&lt;/strong&gt; provides barometric pressure sensing, with &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+&lt;strong&gt;- E&lt;/strong&gt;  also providing a humidity sensing function. This is performed by a Bosch BMP/E280 integrated sensor, which provides&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;humidity sensor (optional on some models)&lt;/li&gt;
+&lt;li&gt;humidity sensor (-E only)&lt;/li&gt;
 &lt;li&gt;barometric pressure sensor&lt;/li&gt;
 &lt;li&gt;temperature sensor&lt;/li&gt;
 &lt;/ul&gt;
@@ -260,17 +280,25 @@ As soon as there’s a new protocol or modulation method, it’s in everyone’s
 
 &lt;h3 id=&#34;arduino-compatibility:636f077861fb676b2ad14870f3ad09aa&#34;&gt;Arduino Compatibility&lt;/h3&gt;
 
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; contains a complete Arduino Uno R3 compatible subsystem clocked at 16MHz.  Most newer technologies, including the Raspberry Pi itself,  operate at 3.3V. This can be a problem when connecting to common real world systems like servos and Smart LEDs that operate at 5V.  &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; has the necessary interface circuitry to act as a bridge between the 5V and 3V worlds, allowing the Raspberry Pi to connect with either system type. &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; may also be operated independently of a Raspberry Pi by powering it from either an external supply or the built in LiPo.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+ contains a complete Arduino Uno R3 compatible subsystem clocked at 16MHz.  Most newer technologies, including the Raspberry Pi itself,  operate at 3.3V. This can be a problem when connecting to common real world systems like servos and Smart LEDs that operate at 5V.  &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+ has the necessary interface circuitry to act as a bridge between the 5V and 3V worlds, allowing the Raspberry Pi to connect with either system type. &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+ may also be operated independently of a Raspberry Pi by powering it from either an external supply or the built in LiPo.&lt;/p&gt;
 
 &lt;h3 id=&#34;arduino-shield-support:636f077861fb676b2ad14870f3ad09aa&#34;&gt;Arduino Shield Support&lt;/h3&gt;
 
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; supports all Uno compatible shields. AVR SPI is available on the ICSP header which is used by the majority of shields that require SPI.  The latest R3 features such as IOREF are included. For more information see the &lt;a href=&#34;http://ubiqio.com/doc/io/&#34;&gt;IO usage page&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+ supports all Uno compatible shields. AVR SPI is available on the ICSP header which is used by the majority of shields that require SPI.  The latest R3 features such as IOREF are included. For more information see the &lt;a href=&#34;http://ubiqio.com/doc/io/&#34;&gt;IO usage page&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;raspberry-pi-hugoshortcode-5-communication:636f077861fb676b2ad14870f3ad09aa&#34;&gt;Raspberry Pi &amp;lt;&amp;gt; &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; communication&lt;/h3&gt;
+&lt;h3 id=&#34;raspberry-pi-hugoshortcode-5-communication:636f077861fb676b2ad14870f3ad09aa&#34;&gt;Raspberry Pi &amp;lt;&amp;gt; &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+ communication&lt;/h3&gt;
 
-&lt;p&gt;The Raspberry Pi and Arduino can communicate over both Serial and I2C. Serial is used for the main inter-processor communication, and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; can be programmed using the Arduino IDE through the Raspberry Pi serial port. DTR emulation is provided using Raspberry Pi GPIO 22.&lt;/p&gt;
+&lt;p&gt;The Raspberry Pi and Arduino can communicate over both Serial and I2C. Serial is used for the main inter-processor communication, and &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+ can be programmed using the Arduino IDE through the Raspberry Pi serial port. DTR emulation is provided using Raspberry Pi GPIO 22.&lt;/p&gt;
 
-&lt;p&gt;When the Raspberry Pi is active, it is the master on the  I2C bus, and is responsible for setup of the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;  I2C peripherals (e.g.IMU, Altimeter, RTC etc.).  When the Raspberry Pi is inactive, &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; can master the bus and interrogate the peripherals.  For example by watching the RTC, the Raspberry Pi can be started when the next crontab entry is about to come due.&lt;/p&gt;
+&lt;p&gt;When the Raspberry Pi is active, it is the master on the  I2C bus, and is responsible for setup of the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+  I2C peripherals (e.g.IMU, Altimeter, RTC etc.).  When the Raspberry Pi is inactive, &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+ can master the bus and interrogate the peripherals.  For example by watching the RTC, the Raspberry Pi can be started when the next crontab entry is about to come due.&lt;/p&gt;
 </description>
     </item>
     
@@ -280,13 +308,15 @@ As soon as there’s a new protocol or modulation method, it’s in everyone’s
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://ubiqio.com/doc/github/</guid>
-      <description>&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&amp;rsquo;s documentation is kept on github and you can help improve it.&lt;/p&gt;
+      <description>&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+&amp;rsquo;s documentation is kept on github and you can help improve it.&lt;/p&gt;
 
 &lt;p&gt;Just click the pencil link  at the top right of any of the docs to go straight there.&lt;/p&gt;
 
 &lt;p&gt;(You may need to clone the repo and generate a pull request).&lt;/p&gt;
 
-&lt;p&gt;In addition, all Ardhat software is available at the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; github repository
+&lt;p&gt;In addition, all Ardhat software is available at the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+ github repository
 &lt;a href=&#34;https://github.com/Ardhat&#34;&gt;https://github.com/Ardhat&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
@@ -297,7 +327,9 @@ As soon as there’s a new protocol or modulation method, it’s in everyone’s
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://ubiqio.com/doc/io/</guid>
-      <description>&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; has full Arduino Shield compatibility, as well as being Raspberry Pi HAT compliant. Some of the pins have a special usage in the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; environment as detailed below:&lt;/p&gt;
+      <description>&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+ has full Arduino Shield compatibility, as well as being Raspberry Pi HAT compliant. Some of the pins have a special usage in the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+ environment as detailed below:&lt;/p&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -490,7 +522,8 @@ As soon as there’s a new protocol or modulation method, it’s in everyone’s
 
 &lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/mpu9250.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;The IMU is connected to the I2C bus. It is mounted at &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&amp;rsquo;s  geographic center to avoid offset errors. It consists of an Invensense MPU9250, which provides&lt;/p&gt;
+&lt;p&gt;The IMU is connected to the I2C bus. It is mounted at &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+&amp;rsquo;s  geographic center to avoid offset errors. It consists of an Invensense MPU9250, which provides&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;3-axis gyroscope&lt;/li&gt;
@@ -498,13 +531,16 @@ As soon as there’s a new protocol or modulation method, it’s in everyone’s
 &lt;li&gt;3-axis magnetometer (compass)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;During normal operation, these devices may be monitored directly by either processor, but in sleep mode they can be monitored by &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; and used to wakeup the Raspberry Pi.&lt;/p&gt;
+&lt;p&gt;During normal operation, these devices may be monitored directly by either processor, but in sleep mode they can be monitored by &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+ and used to wakeup the Raspberry Pi.&lt;/p&gt;
 
 &lt;h4 id=&#34;imu-and-drones:53cfe453f14e91a110c18a8c31803e02&#34;&gt;IMU and Drones&lt;/h4&gt;
 
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&amp;rsquo;s MPU9250, together with the BMP280 altimeter, are the perfect combination to offload the Flight Control RealTime processing from a Raspberry Pi.  This allows you to use the full processing power of a Linux machine for machine vision and other processor intensive tasks, whilst maintaining an ultra reliable flight controller.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+&amp;rsquo;s MPU9250, together with the BMP280 altimeter, are the perfect combination to offload the Flight Control RealTime processing from a Raspberry Pi.  This allows you to use the full processing power of a Linux machine for machine vision and other processor intensive tasks, whilst maintaining an ultra reliable flight controller.&lt;/p&gt;
 
-&lt;p&gt;The  &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; Github repo has an &lt;a href=&#34;https://github.com/Ardhat/ArdhatMFC&#34;&gt;updated version of the MultiWii Flight Controller&lt;/a&gt; library, extended with support for both the MPU9250, and the excellent Chrome  based &lt;a href=&#34;https://chrome.google.com/webstore/detail/cleanflight-configurator/enacoimjcgeinfnnnpajinjgmkahmfgb?hl=en&#34;&gt;Cleanflight Configurator&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The  &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+ Github repo has an &lt;a href=&#34;https://github.com/Ardhat/ArdhatMFC&#34;&gt;updated version of the MultiWii Flight Controller&lt;/a&gt; library, extended with support for both the MPU9250, and the excellent Chrome  based &lt;a href=&#34;https://chrome.google.com/webstore/detail/cleanflight-configurator/enacoimjcgeinfnnnpajinjgmkahmfgb?hl=en&#34;&gt;Cleanflight Configurator&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/ArdhatCleanflight.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
 
@@ -516,19 +552,23 @@ As soon as there’s a new protocol or modulation method, it’s in everyone’s
 
 &lt;h4 id=&#34;imu-and-robotics:53cfe453f14e91a110c18a8c31803e02&#34;&gt;IMU and Robotics&lt;/h4&gt;
 
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&amp;rsquo;s  high performance IMU, together with Real-Time processing, PWM and analogue sensing , are essential requirements for the core of any robotics system. For those who like a challenge, one of the most interesting robot variants is the the 3D Balance Bot, more commonly called a &lt;a href=&#34;https://en.wikipedia.org/wiki/Ballbot&#34;&gt;BallBot&lt;/a&gt;.  This concept was originally rendered in Mindstorms by  &lt;a href=&#34;http://lejos-osek.sourceforge.net/&#34;&gt;Takashi Chikamasa&lt;/a&gt;,  using a Lejos, a custom Real-Time kernel for Mindstorms.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+&amp;rsquo;s  high performance IMU, together with Real-Time processing, PWM and analogue sensing , are essential requirements for the core of any robotics system. For those who like a challenge, one of the most interesting robot variants is the the 3D Balance Bot, more commonly called a &lt;a href=&#34;https://en.wikipedia.org/wiki/Ballbot&#34;&gt;BallBot&lt;/a&gt;.  This concept was originally rendered in Mindstorms by  &lt;a href=&#34;http://lejos-osek.sourceforge.net/&#34;&gt;Takashi Chikamasa&lt;/a&gt;,  using a Lejos, a custom Real-Time kernel for Mindstorms.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=video-container&gt;
 &lt;iframe src=&#34;https://www.youtube.com/embed/f8jxGsg3p0Y&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;&lt;/p&gt;
 
-&lt;p&gt;We&amp;rsquo;ve updated the concept to Mindstorms EV3 using &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;, a motor shield and a 3-cell LiPo,&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ve updated the concept to Mindstorms EV3 using &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+, a motor shield and a 3-cell LiPo,&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://ubiqio.com/media/balbot.jpg&#34; alt=&#34;image alt text&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;More details, including Lego Digital designer build instructions and code are in the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; Github repository.&lt;/p&gt;
+&lt;p&gt;More details, including Lego Digital designer build instructions and code are in the &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+ Github repository.&lt;/p&gt;
 
-&lt;p&gt;For &lt;strong&gt;much&lt;/strong&gt; more information on IMU programming see &lt;a href=&#34;https://github.com/Ardhat/MPU-9250&#34;&gt;this Article&lt;/a&gt; from Kris Winer, with an accompanying sketch &lt;a href=&#34;https://github.com/Ardhat/MPU-9250&#34;&gt;here&lt;/a&gt; that you can use if you want to drive the IMU directly from &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;For &lt;strong&gt;much&lt;/strong&gt; more information on IMU programming see &lt;a href=&#34;https://github.com/Ardhat/MPU-9250&#34;&gt;this Article&lt;/a&gt; from Kris Winer, with an accompanying sketch &lt;a href=&#34;https://github.com/Ardhat/MPU-9250&#34;&gt;here&lt;/a&gt; that you can use if you want to drive the IMU directly from &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+.&lt;/p&gt;
 
 &lt;p&gt;The MPU9250 is also compatible with the popular &lt;a href=&#34;https://github.com/richards-tech/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;.&lt;/p&gt;
 </description>
@@ -542,15 +582,18 @@ As soon as there’s a new protocol or modulation method, it’s in everyone’s
       <guid>http://ubiqio.com/doc/js/</guid>
       <description>
 
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&amp;rsquo;s features can be accessed from a compatible host, such as Raspberry Pi, using the &lt;a href=&#34;https://github.com/firmata/protocol&#34;&gt;Firmata&lt;/a&gt; protocol over serial (for more information see &lt;a href=&#34;http://ubiqio.com/doc/progmodel/&#34;&gt;Programming Model&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+&amp;rsquo;s features can be accessed from a compatible host, such as Raspberry Pi, using the &lt;a href=&#34;https://github.com/firmata/protocol&#34;&gt;Firmata&lt;/a&gt; protocol over serial (for more information see &lt;a href=&#34;http://ubiqio.com/doc/progmodel/&#34;&gt;Programming Model&lt;/a&gt;).&lt;/p&gt;
 
-&lt;p&gt;Firmata provides a standardized mechanism to exchange information between a real-time processor such as &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt; and a host, useable by many programming languages.&lt;/p&gt;
+&lt;p&gt;Firmata provides a standardized mechanism to exchange information between a real-time processor such as &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+ and a host, useable by many programming languages.&lt;/p&gt;
 
 &lt;p&gt;Javascript is an interpreted language like Python, and therefore relies on an interpreter to be running to execute its functions. The most common javascript interpreter is the web browser, and one of the fastest is the one built into Google&amp;rsquo;s Chrome browser.&lt;/p&gt;
 
 &lt;p&gt;Node.js® is a JavaScript runtime built on Chrome&amp;rsquo;s V8 JavaScript engine, and uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. The Node.js 200,000+ package ecosystem, npm, is the &lt;a href=&#34;http://www.modulecounts.com/&#34;&gt;largest ecosystem&lt;/a&gt; of open source libraries in the world.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://johnny-five.io/&#34;&gt;&lt;img align=&#34;right&#34; style=&#34;height:200px; padding-left: 10px; padding-top: 5px&#34; src=&#34;http://ubiqio.com/media/johnnyfive.png&#34; alt=&#34;Johnny Five&#34; title=&#34;Johnny Five&#34;&gt;&lt;/a&gt; One of those many libraries includes &lt;a href=&#34;https://github.com/jgautier/firmata&#34;&gt;node firmata&lt;/a&gt;, which means that once node.js is installed, we can use the wide range of node packages directly with &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;Ardh@t&lt;/span&gt;&amp;rsquo;s hardware, allowing the rapid creation of web-based sensor systems.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://johnny-five.io/&#34;&gt;&lt;img align=&#34;right&#34; style=&#34;height:200px; padding-left: 10px; padding-top: 5px&#34; src=&#34;http://ubiqio.com/media/johnnyfive.png&#34; alt=&#34;Johnny Five&#34; title=&#34;Johnny Five&#34;&gt;&lt;/a&gt; One of those many libraries includes &lt;a href=&#34;https://github.com/jgautier/firmata&#34;&gt;node firmata&lt;/a&gt;, which means that once node.js is installed, we can use the wide range of node packages directly with &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+&amp;rsquo;s hardware, allowing the rapid creation of web-based sensor systems.&lt;/p&gt;
 
 &lt;p&gt;In this example we are going to use
 &lt;a href=&#34;http://johnny-five.io/&#34;&gt;Johnny-Five&lt;/a&gt;, which uses node firmata, and is an excellent programming framework which abstracts the hardware and makes cloud connected device programming much easier.&lt;/p&gt;
