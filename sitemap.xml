@@ -3,8 +3,11 @@
   
   <url>
     <loc>http://ubiqio.com/</loc>
-    <lastmod>2015-09-21T14:29:14+01:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://ubiqio.com/news/Pi3/</loc>
   </url>
   
   <url>
