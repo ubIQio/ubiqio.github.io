@@ -568,7 +568,7 @@ As soon as there’s a new protocol or modulation method, it’s in everyone’s
 &lt;p&gt;For &lt;strong&gt;much&lt;/strong&gt; more information on IMU programming see &lt;a href=&#34;https://github.com/Ardhat/MPU-9250&#34;&gt;this Article&lt;/a&gt; from Kris Winer, with an accompanying sketch &lt;a href=&#34;https://github.com/Ardhat/MPU-9250&#34;&gt;here&lt;/a&gt; that you can use if you want to drive the IMU directly from &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
 .&lt;/p&gt;
 
-&lt;p&gt;The MPU9250 is also compatible with the popular &lt;a href=&#34;https://github.com/richards-tech/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The MPU9250 is also compatible with the popular &lt;a href=&#34;https://github.com/Ardhat/RTIMULib-Arduino&#34;&gt;RTIMUlib&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
