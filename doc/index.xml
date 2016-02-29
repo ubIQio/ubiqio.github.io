@@ -165,15 +165,13 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://ubiqio.com/doc/env/</guid>
-      <description>&lt;p&gt;In addition to the basic functions of Arduino compatibility and power management, &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
-&lt;strong&gt;- I&lt;/strong&gt; provides barometric pressure sensing, with &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
-&lt;strong&gt;- E&lt;/strong&gt;  also providing a humidity sensing function. This is performed by a Bosch BMP/E280 integrated sensor, which provides&lt;/p&gt;
+      <description>&lt;p&gt;In addition to the basic functions of Arduino compatibility and power management,  &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+&lt;strong&gt;-I&lt;/strong&gt; has a barometric pressure sensor or altimeter, which is designed to work in unison with the 9-DOF &lt;a href=&#34;http://ubiqio.com/doc/imu&#34;&gt;IMU&lt;/a&gt;.&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;humidity sensor (-E only)&lt;/li&gt;
-&lt;li&gt;barometric pressure sensor&lt;/li&gt;
-&lt;li&gt;temperature sensor&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;The &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+&lt;strong&gt;-E&lt;/strong&gt; includes both pressure and humidity sensing (but without the IMU).&lt;/p&gt;
+
+&lt;p&gt;These functions are performed by Bosch SensorTec integrated environmental sensors, the BMP280 and the BME280.&lt;/p&gt;
 
 &lt;p&gt;From the Bosch &lt;a href=&#34;http://www.bosch-sensortec.com/de/homepage/products_3/environmental_sensors_1/bme280/bme280_1&#34;&gt;website&lt;/a&gt;&amp;hellip;&lt;/p&gt;
 
@@ -187,7 +185,7 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 
 &lt;p&gt;There&amp;rsquo;s a native BMP280 library written by Limor Fried and Kevin Townsend, of Adafruit fame, on the &lt;a href=&#34;https://github.com/Ardhat/Adafruit_BMP280_Library&#34;&gt;Ardhat Github repo&lt;/a&gt;, and a BME280 version with humidity functions also &lt;a href=&#34;https://github.com/Ardhat/Adafruit_BME280_Library/blob/master/Adafruit_BME280.cpp&#34;&gt;available&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;The official Bosch driver for BMP280 is on the Bosch SensorTech &lt;a href=&#34;https://github.com/BoschSensortec/BMP280_driver&#34;&gt;BMP280 Github repo&lt;/a&gt;, and also for the BME280 &lt;a href=&#34;https://github.com/BoschSensortec/BME280_driver&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The official Bosch driver for BMP280 is on the &lt;a href=&#34;https://github.com/BoschSensortec/BMP280_driver&#34;&gt;Bosch SensorTec Github repo&lt;/a&gt;, as is the  &lt;a href=&#34;https://github.com/BoschSensortec/BME280_driver&#34;&gt;BME280 driver&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;For more in-depth info on the devices, refer to the &lt;a href=&#34;https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMP280-DS001-12.pdf&#34;&gt;BMP280&lt;/a&gt; and &lt;a href=&#34;https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280_DS001-11.pdf&#34;&gt;BME280&lt;/a&gt; datasheets.&lt;/p&gt;
 </description>
