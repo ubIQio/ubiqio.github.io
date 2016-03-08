@@ -273,12 +273,12 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 
 &lt;tr&gt;
 &lt;td&gt;&lt;strong&gt;GPIO 14&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Serial RXD – used for programming the Arduino with GPIO 13&lt;/td&gt;
+&lt;td&gt;Serial RXD – used for programming the Arduino with GPIO 22&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
 &lt;td&gt;&lt;strong&gt;GPIO 15&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Serial TXD – used for programming the Arduino with GPIO 13&lt;/td&gt;
+&lt;td&gt;Serial TXD – used for programming the Arduino with GPIO 22&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
@@ -308,12 +308,16 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;
+The table below shows the shield I/O usage by &lt;span style=&#34;font-family: &#39;Black Ops One&#39;, cursive; font-size:115%&#34;&gt;&amp;nbsp;Ardh@t&lt;/span&gt;
+. Unlike a standard Arduino, the processor used has 2 extra analog I/O , A6 and A7, which are used for battery and supply monitoring, and which are connected to the pins normally used by A4 and A5, in case you want to access these signals in your applications.
+The standard A4 and A5 pins are brought out, as in Arduino Uno, to the shield SDA and SCL pins as they are permanently assigned to I2C.
+&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;&lt;strong&gt;Arduino I/O&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;Arduino Shield I/O&lt;/strong&gt;&lt;/th&gt;
 &lt;th&gt;Usage&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
@@ -361,22 +365,12 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 
 &lt;tr&gt;
 &lt;td&gt;&lt;strong&gt;A4&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;I2C SDA to Raspberry Pi and Peripherals&lt;/td&gt;
+&lt;td&gt;Connected to A6, External supply voltage monitor&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
 &lt;td&gt;&lt;strong&gt;A5&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;I2C SCL to Raspberry Pi and Peripherals&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;A6&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;External supply voltage monitor&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;A7&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Power/Nav Switch and LiPo  voltage  monitor&lt;/td&gt;
+&lt;td&gt;Connected to A7, Power/Nav Switch and LiPo  voltage  monitor&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
@@ -398,10 +392,27 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 &lt;td&gt;&lt;strong&gt;SPARE&lt;/strong&gt;&lt;/td&gt;
 &lt;td&gt;The unused shield pin next to IOREF is the 5V level shifted O/P from GPIO18 (PiPWM) (see above)&lt;/td&gt;
 &lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;AREF&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;AVR analog reference voltage&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;SCL&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;I2C SDA to Raspberry Pi and Peripherals (A4 on standard Arduino)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;SDA&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;I2C SCL to Raspberry Pi and Peripherals (A5 on standard Arduino)&lt;/td&gt;
+&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;*The above marked pins are available for use if the radio module is not fitted.&lt;/p&gt;
+&lt;div class=&#34;note info&#34;&gt;
+  &lt;p&gt;The pins above marked * are available for use if the radio module is not fitted.&lt;/p&gt;
+&lt;/div&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
