@@ -293,12 +293,12 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 
 &lt;tr&gt;
 &lt;td&gt;&lt;strong&gt;ID_SC&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;HAT EEPROM Clock – used for read-writing the ArdHAT EEPROM&lt;/td&gt;
+&lt;td&gt;HAT EEPROM Clock – used for read/writing the ArdHAT EEPROM&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
 &lt;td&gt;&lt;strong&gt;ID_SD&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;HAT EEPROM Data – used for read-writing the ArdHAT EEPROM&lt;/td&gt;
+&lt;td&gt;HAT EEPROM Data – used for read/writing the ArdHAT EEPROM&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
