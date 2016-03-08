@@ -303,7 +303,7 @@ requests directed at another branch will not be accepted.&lt;/p&gt;
 
 &lt;tr&gt;
 &lt;td&gt;&lt;strong&gt;5V&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Connected to Ardhat 5V through a MOSFET switch controlled by Ardhat A3 (see below) NB even when the switch is off current can flow from the Raspberry Pi to Ardhat&lt;/td&gt;
+&lt;td&gt;Connected to Ardhat 5V through a MOSFET switch controlled by Ardhat A3 (see below) NB even when the switch is off current can flow &lt;em&gt;from&lt;/em&gt; the Raspberry Pi &lt;em&gt;to&lt;/em&gt; Ardhat&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
