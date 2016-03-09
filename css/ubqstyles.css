@@ -682,12 +682,21 @@ vertical-align: bottom;
   -moz-opacity: 0.8;
   opacity: 0.8;
   font-size: 70%;
-  color: #ddd;
+  color: #fff;
 
 }
 .footer .fa-heart {
   color: #ddd;
 }
+
+.footer .copyright a {
+  color: #ffd400;
+}
+
+.footer .copyright a:hover  {
+  color: #0f0;
+}
+
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
   .header .main-nav button {
