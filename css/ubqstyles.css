@@ -1036,7 +1036,7 @@ ul.rig li a {
 
 }
 ul.rig li a:hover {
-    background: #ddd;
+    background: #4caf50;
 }
 ul.rig li a.active {
     background: #333;
